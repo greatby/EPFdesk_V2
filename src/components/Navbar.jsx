@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <header className="">
-      <div className="fixed w-[98%] backdrop-blur-[1px] bg-[#ffffff21] m-[15px] p-[_0_15px] rounded-[10px]">
+      <div className="fixed w-[98%] backdrop-blur-sm backdrop-saturate-150 bg-white/10 border border-white/15 rounded-xl shadow-lg px-4 m-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a href="/" className="text-white font-semibold text-xl">
