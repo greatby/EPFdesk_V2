@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <Navbar />
-    <div>
+    {/* <div>
        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et rem
       officiis itaque odio magnam id, molestiae similique vero! Esse,
       accusantium quod. Eligendi quaerat vel architecto ullam at quae possimus
@@ -59,8 +59,8 @@ function App() {
       ab dolores cupiditate rem illum aliquid. Id iusto optio vel eum blanditiis
       fugiat earum hic consectetur eos modi pariatur officiis cupiditate, iste
       dignissimos eius omnis ea?
-    </div>
-    <Footer />
+    </div> */}
+    {/* <Footer /> */}
     </>
   );
 }
