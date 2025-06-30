@@ -137,7 +137,7 @@ function Card({ card, index }) {
   return (
     <motion.li
       ref={ref}
-      className={`card card-${index + 1} sticky top-[100px] mb-[-140px] z-[${10 - index}] rounded-2xl shadow-xl overflow-hidden ${card.color}`}
+      className={`card card-${index + 1} sticky top-[100px] z-[${10 - index}] rounded-2xl shadow-xl overflow-hidden ${card.color}`}
       style={{ scale, opacity }}
     >
       <div className="left-side p-8">

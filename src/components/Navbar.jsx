@@ -53,7 +53,7 @@ export default function Navbar({ banner }) {
                 Services
                 <ChevronDownIcon className="w-6 h-6 mt-1 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="absolute left-1/2 top-full z-50 mt-3 w-[500px] -translate-x-1/2 rounded-xl border border-gray-200 bg-white shadow-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+              <div className="absolute left-1/2 top-full z-50 mt-3 w-[500px] -translate-x-1/2 rounded-[20px] border border-gray-200 bg-white shadow-[_0px_10px_50px_10px_#0000004d] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                 <div className="grid grid-cols-2 divide-x divide-gray-100">
                   <div className="p-6 space-y-3">
                     <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
