@@ -1,53 +1,176 @@
-export default function Navbar() {
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/24/outline";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
+import { PlusGrid, PlusGridItem, PlusGridRow } from "./plus-grid";
+
+const links = [
+  { href: "/aboutUs", label: "About Us" },
+  { href: "/company", label: "Join" },
+  { href: "/login", label: "Sign In" },
+];
+
+const services = [
+  { href: "/epf", label: "🏢 EPF" },
+  { href: "/esic", label: "🏥 ESIC" },
+  { href: "/lwf", label: "💼 LWF" },
+  { href: "/employer", label: "💼 Employer" },
+  { href: "/employee", label: "👤 Employee" },
+  { href: "/link1", label: "📄 Link 1" },
+  { href: "/link2", label: "📌 Link 2" },
+];
+
+export default function Navbar({ banner }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <header className="">
-      <div className="fixed w-[98%] backdrop-blur-sm backdrop-saturate-150 bg-white/10 border border-white/15 rounded-xl shadow-lg px-4 m-4">
-        <div className="flex justify-between items-center h-16">
+    <header className="fixed z-[9999] w-full border-b border-gray-200 bg-white/90 px-5 backdrop-blur-md">
+      <PlusGrid>
+        <PlusGridRow className="relative flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <a href="/" className="text-white font-semibold text-xl">
-            EPFdesk
-          </a>
-
-          {/* Links */}
-          <nav className="hidden md:flex space-x-8 text-white/80 font-medium text-sm">
-            <a href="#product" className="hover:text-white transition">Product</a>
-            <a href="#enterprise" className="hover:text-white transition">Enterprise</a>
-            <a href="#pricing" className="hover:text-white transition">Pricing</a>
-            <a href="#resources" className="hover:text-white transition">Resources</a>
-          </nav>
-
-          {/* CTA */}
-          <div className="hidden md:flex space-x-4">
-            <a
-              href="/login"
-              className="text-white/80 hover:text-white text-sm font-medium"
-            >
-              Sign in
-            </a>
-            <a
-              href="/signup"
-              className="text-black bg-white px-4 py-2 rounded-[2px] text-sm font-medium hover:bg-white/90 transition"
-            >
-              Try for free
-            </a>
+          <div className="flex items-center">
+            <PlusGridItem className="py-3">
+              <Link to="/" title="Home">
+                <img
+                  src="/images/EPFdesk (1).svg"
+                  alt="Logo"
+                  width={150}
+                  height={100}
+                />
+              </Link>
+            </PlusGridItem>
           </div>
 
-          {/* Mobile Menu Placeholder */}
-          <div className="md:hidden text-white">
-            <button aria-label="Open menu">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
+          {/* Center: Services Dropdown - Desktop */}
+          <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="relative group">
+              <button className="flex items-center gap-1 text-xl font-semibold text-gray-800 p-2 hover:bg-gray-200 rounded-md">
+                Services
+                <ChevronDownIcon className="w-6 h-6 mt-1 transition-transform group-hover:rotate-180" />
+              </button>
+              <div className="absolute left-1/2 top-full z-50 mt-3 w-[500px] -translate-x-1/2 rounded-xl border border-gray-200 bg-white shadow-xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                <div className="grid grid-cols-2 divide-x divide-gray-100">
+                  <div className="p-6 space-y-3">
+                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Schemes
+                    </p>
+                    {services.slice(0, 3).map(({ href, label }) => (
+                      <Link
+                        key={href}
+                        to={href}
+                        className="block text-base rounded-md p-2 text-gray-700 hover:bg-gray-200"
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      Stakeholders
+                    </p>
+                    {services.slice(3).map(({ href, label }) => (
+                      <Link
+                        key={href}
+                        to={href}
+                        className="block text-base text-gray-700 hover:bg-gray-200 p-2 rounded-md"
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Nav Links - Desktop */}
+          <div className="hidden md:flex items-center space-x-4">
+            {links.map(({ href, label }) => (
+              <Link
+                key={href}
+                to={href}
+                className="text-xl font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+                {label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setMobileMenuOpen(true)}
+              className="p-2 border rounded-md hover:bg-gray-100"
+            >
+              <Bars3Icon className="h-6 w-6 text-gray-800" />
             </button>
           </div>
-        </div>
-      </div>
+        </PlusGridRow>
+      </PlusGrid>
+
+      {/* Mobile Menu Dialog */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <Dialog
+            open={mobileMenuOpen}
+            onClose={setMobileMenuOpen}
+            className="md:hidden"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 z-50 bg-white p-4 overflow-y-auto"
+            >
+              <div className="flex justify-between items-center mb-6">
+                <img src="/images/EPFdesk (1).svg" alt="Logo" className="h-8" />
+                <button onClick={() => setMobileMenuOpen(false)}>
+                  <XMarkIcon className="h-6 w-6 text-gray-800" />
+                </button>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <p className="text-sm font-semibold text-gray-500 uppercase mb-2">
+                    Services
+                  </p>
+                  <div className="grid grid-cols-2 gap-4">
+                    {services.map(({ href, label }) => (
+                      <Link
+                        key={href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        to={href}
+                        className="block text-sm text-gray-800 hover:text-blue-600"
+                      >
+                        {label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-gray-200">
+                  {links.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      to={href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block text-sm font-medium text-gray-800 hover:text-blue-600 py-2"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </Dialog>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
