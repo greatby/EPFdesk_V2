@@ -123,7 +123,7 @@ export default function Navbar({ banner }) {
               onClick={() => setMobileMenuOpen(true)}
               className="p-2 border rounded-md hover:bg-gray-100"
             >
-              <Bars3Icon className="h-6 w-6 text-gray-800" />
+              <Bars3Icon className={`h-6 w-6 ${!scrolled ? "text-white" : "text-gray-700"}`} />
             </button>
           </div>
         </PlusGridRow>

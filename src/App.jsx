@@ -10,6 +10,9 @@ import TrustIndicators from "./components/trustIndicators";
 import HrChallenges from "./components/hrChallenges";
 import ComplianceSolution from "./components/complaincesolution";
 import ServiceCards from "./components/serviceCards";
+import ESICCompliance from "./components/esicCompliance";
+import ProfessionalTax from "./components/professionalTax";
+import LabourWelfareFund from "./components/labourWelfareFund";
 
 
 
@@ -41,6 +44,9 @@ function App() {
       />
      
      <Route path="/epf" element={<Layout><EPFManagement /></Layout>}/>
+     <Route path="/esic" element={<Layout><ESICCompliance /></Layout>}/>
+     <Route path="/pt" element={<Layout><ProfessionalTax /></Layout>}/>
+     <Route path="/lwf" element={<Layout><LabourWelfareFund /></Layout>}/>
     </Routes>
   );
 }
