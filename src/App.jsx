@@ -13,6 +13,8 @@ import ServiceCards from "./components/serviceCards";
 import ESICCompliance from "./components/esicCompliance";
 import ProfessionalTax from "./components/professionalTax";
 import LabourWelfareFund from "./components/labourWelfareFund";
+import StackedCards from "./components/scrollCards";
+
 
 
 
@@ -38,7 +40,8 @@ function App() {
              <FadeInWhenVisible>
             <ServiceCards/>
             </FadeInWhenVisible>
-       
+       <StackedCards />
+   
           </Layout>
         }
       />

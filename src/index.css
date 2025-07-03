@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+  scroll-timeline: --cards-scroll vertical;
+}
 
 @keyframes scale-card {
   0% {
@@ -15,11 +17,11 @@
 
 .wrapper {
   margin: 120px auto;
-height: 100vh;
+/* height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
- scrollbar-width: none;
+ scrollbar-width: none; */
 }
 
 .slp-container {

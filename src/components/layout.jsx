@@ -12,7 +12,7 @@ import FadeInWhenVisible from "./fadeInWhenVisible";
 
 export default function Layout({ children }) {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Navbar />
       <div className="">{children}</div>
       {/* <StackedCardsSection /> */}
