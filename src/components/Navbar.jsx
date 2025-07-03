@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -12,24 +12,40 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from "./plus-grid";
 const links = [
   { href: "/aboutUs", label: "About Us" },
   { href: "/company", label: "Join" },
+   { href: "/resources", label: "Resources" },
   { href: "/login", label: "Sign In" },
 ];
 
 const services = [
-  { href: "/epf", label: "🏢 EPF" },
-  { href: "/esic", label: "🏥 ESIC" },
-  { href: "/lwf", label: "💼 LWF" },
-  { href: "/employer", label: "💼 Employer" },
-  { href: "/employee", label: "👤 Employee" },
-  { href: "/link1", label: "📄 Link 1" },
-  { href: "/link2", label: "📌 Link 2" },
+  { href: "/epf", label: "🏢 EPF Management" },
+  { href: "/esic", label: "🏥 ESIC Compliance" },
+  { href: "/lwf", label: "💼 Labour Welfare Fund" },
+   { href: "/pt", label: "📄 Professional Tax" },
+  // { href: "/employer", label: "💼 Employer" },
+  // { href: "/employee", label: "👤 Employee" },
+  // { href: "/link1", label: "📄 Link 1" },
+  // { href: "/link2", label: "📌 Link 2" },
 ];
 
 export default function Navbar({ banner }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed z-[9999] w-full border-b border-gray-200 bg-white/90 px-5 backdrop-blur-md">
+    <header  className={`fixed z-[9999] w-full border-b px-5 backdrop-blur-md transition-colors duration-300 ${
+        scrolled
+          ? "bg-white border-gray-200"
+          : "bg-transparent border-transparent"
+      }`}>
       <PlusGrid>
         <PlusGridRow className="relative flex items-center justify-between h-[72px]">
           {/* Logo */}
@@ -49,27 +65,27 @@ export default function Navbar({ banner }) {
           {/* Center: Services Dropdown - Desktop */}
           <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="relative group">
-              <button className="flex items-center gap-1 text-xl font-semibold text-gray-800 p-2 hover:bg-gray-200 rounded-md">
+              <button className={`flex items-center gap-1 text-xl font-semibold ${scrolled ? "text-gray-800" : "text-white"} p-2 hover:bg-transparent text-black rounded-md`}>
                 Services
                 <ChevronDownIcon className="w-6 h-6 mt-1 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="absolute left-1/2 top-full z-50 mt-3 w-[500px] -translate-x-1/2 rounded-[20px] border border-gray-200 bg-white shadow-[_0px_10px_50px_10px_#0000004d] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
-                <div className="grid grid-cols-2 divide-x divide-gray-100">
+              <div className="absolute left-1/2 top-full z-50 mt-3 w-[300px] -translate-x-1/2 rounded-[20px] border border-gray-200 bg-white shadow-[_0px_10px_50px_10px_#0000004d] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+                <div className="grid grid-cols-1 ">
                   <div className="p-6 space-y-3">
-                    <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                    <p className="text-xl font-semibold text-gray-500 uppercase tracking-wide">
                       Schemes
                     </p>
-                    {services.slice(0, 3).map(({ href, label }) => (
+                    {services.slice(0, 4).map(({ href, label }) => (
                       <Link
                         key={href}
                         to={href}
-                        className="block text-base rounded-md p-2 text-gray-700 hover:bg-gray-200"
+                        className="block text-[18px] font-semibold rounded-md p-2 text-gray-700 hover:bg-gray-200"
                       >
                         {label}
                       </Link>
                     ))}
                   </div>
-                  <div className="p-6 space-y-3">
+                  {/* <div className="p-6 space-y-3">
                     <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
                       Stakeholders
                     </p>
@@ -82,7 +98,7 @@ export default function Navbar({ banner }) {
                         {label}
                       </Link>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -94,7 +110,7 @@ export default function Navbar({ banner }) {
               <Link
                 key={href}
                 to={href}
-                className="text-xl font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md"
+                className={`text-xl font-semibold ${scrolled ? "text-gray-800" : "text-white"} hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
               >
                 {label}
               </Link>
