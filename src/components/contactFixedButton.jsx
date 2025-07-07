@@ -21,14 +21,14 @@ export default function FloatingFormToggle({ animate = true }) {
             }}
             className="flex h-[50px] w-[165px] cursor-pointer items-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
-            <IoLogoWhatsapp className="size-6" /> WhatsApp
+            <IoLogoWhatsapp className="size-5" /> WhatsApp
           </button>
 
           <button
             onClick={() => setIsOpen(true)}
             className="flex h-[50px] w-[165px] cursor-pointer items-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
-            <EnvelopeIcon className="size-6" /> Contact Sales
+            <EnvelopeIcon className="size-5" /> Contact Sales
           </button>
         </div>
       </>

@@ -1,4 +1,3 @@
-
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout";
 import Home from "./components/home";
@@ -14,9 +13,7 @@ import ESICCompliance from "./components/esicCompliance";
 import ProfessionalTax from "./components/professionalTax";
 import LabourWelfareFund from "./components/labourWelfareFund";
 import StackedCards from "./components/scrollCards";
-
-
-
+import CustomerCarousel from "./components/customerCarousel";
 
 function App() {
   return (
@@ -29,27 +26,55 @@ function App() {
               <Hero />
             </FadeInWhenVisible>
             <FadeInWhenVisible>
-            <TrustIndicators/>
+              <TrustIndicators />
             </FadeInWhenVisible>
             <FadeInWhenVisible>
-            <HrChallenges/>
+              <HrChallenges />
             </FadeInWhenVisible>
-             <FadeInWhenVisible>
-            <ComplianceSolution/>
+            <FadeInWhenVisible>
+              <ComplianceSolution />
             </FadeInWhenVisible>
-             <FadeInWhenVisible>
-            <ServiceCards/>
+            <FadeInWhenVisible>
+              <ServiceCards />
             </FadeInWhenVisible>
-       <StackedCards />
-   
+            <StackedCards />
+            {/* <CustomerCarousel /> */}
           </Layout>
         }
       />
-     
-     <Route path="/epf" element={<Layout><EPFManagement /></Layout>}/>
-     <Route path="/esic" element={<Layout><ESICCompliance /></Layout>}/>
-     <Route path="/pt" element={<Layout><ProfessionalTax /></Layout>}/>
-     <Route path="/lwf" element={<Layout><LabourWelfareFund /></Layout>}/>
+
+      <Route
+        path="/epf"
+        element={
+          <Layout>
+            <EPFManagement />
+          </Layout>
+        }
+      />
+      <Route
+        path="/esic"
+        element={
+          <Layout>
+            <ESICCompliance />
+          </Layout>
+        }
+      />
+      <Route
+        path="/pt"
+        element={
+          <Layout>
+            <ProfessionalTax />
+          </Layout>
+        }
+      />
+      <Route
+        path="/lwf"
+        element={
+          <Layout>
+            <LabourWelfareFund />
+          </Layout>
+        }
+      />
     </Routes>
   );
 }
