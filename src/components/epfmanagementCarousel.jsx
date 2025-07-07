@@ -80,7 +80,7 @@ const EPFManagementCarousel = () => {
               transform: `translateX(-${currentIndex * (carouselWidth / services.length)}px)`,
             }}
           >
-            {services.concat(services).map((service, idx) => ( 
+            {services.map((service, idx) => ( 
               <div
                 key={idx}
                 className="flex-shrink-0 p-8 mx-4 flex flex-col justify-end items-start bg-indigo-50 rounded-2xl shadow-lg transition-all duration-300 snap-start"
