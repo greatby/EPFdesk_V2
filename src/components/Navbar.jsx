@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 import { PlusGrid, PlusGridItem, PlusGridRow } from "./plus-grid";
 
 const links = [
-  { href: "/aboutUs", label: "About Us" },
-  { href: "/company", label: "Join" },
-  { href: "/resources", label: "Resources" },
-  { href: "/login", label: "Sign In" },
+  { href: "https://about-us-flame.vercel.app/", label: "About Us" },
+  { href: "https://jobs-zeta-two.vercel.app/", label: "Join" },
+  { href: "/res", label: "Resources" },
+  { href: "/sig", label: "Sign In" },
 ];
 
 const services = [
@@ -131,6 +131,7 @@ export default function Navbar({ banner }) {
               <Link
                 key={href}
                 to={href}
+                target="_blank"
                 className={`text-xl font-semibold ${
                   scrolled ? "text-gray-800" : "text-white"
                 } hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
@@ -147,7 +148,7 @@ export default function Navbar({ banner }) {
             >
               <Bars3Icon
                 className={`h-6 w-6 ${
-                  !scrolled ? "text-gray-700" : "text-gray-700"
+                  scrolled || mobileMenuOpen ? "text-gray-700" : "text-white"
                 }`}
               />
             </button>

@@ -44,7 +44,7 @@ const EPFManagementCarousel = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-white py-4 px-4 md:px-12 md:py-16 lg:px-12 lg:py-16">
       <div className="max-w-7xl mx-auto hidden md:flex flex-col md:flex-row items-center justify-between">
         {/* Left Column: Text and Buttons for Desktop */}
         <div className="w-full md:w-1/3 lg:w-1/3 text-center md:text-left mb-8 md:mb-0">
@@ -100,7 +100,10 @@ const EPFManagementCarousel = () => {
       </div>
 
       {/* Mobile and Tablet: Thumb Cards Scrollable */}
-      <div className="md:hidden mt-8">
+      <div className="md:hidden mt-4">
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Why Choose Our EPF Management Services?
+          </h2>
         <div
           className="thumb-carousel-container flex space-x-4 overflow-x-auto snap-x snap-mandatory"
           style={{ scrollSnapType: "x mandatory", scrollBehavior: "smooth" }}
@@ -108,7 +111,7 @@ const EPFManagementCarousel = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 p-4 max-w-xs max-h-[400px] bg-indigo-50 rounded-2xl shadow-md cursor-pointer"
+              className="flex-shrink-0 p-4 max-w-xs min-h-[150px] bg-indigo-50 rounded-2xl shadow-md cursor-pointer"
               onClick={() => setCurrentIndex(idx)} // Scroll the main carousel to selected card
             >
               <h4 className="text-lg font-semibold text-gray-800 mb-2">{service.title}</h4>
