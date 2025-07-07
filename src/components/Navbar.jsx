@@ -103,15 +103,15 @@ export default function Navbar({ banner }) {
             {/* Services Dropdown FIRST */}
             <div className="relative group">
               <button
-                className={`flex items-center gap-1 text-xl font-semibold ${
+                className={`flex items-center gap-1 text-[18px] font-semibold ${
                   scrolled ? "text-gray-800" : "text-white"
                 } p-2 rounded-md hover:bg-gray-200 hover:text-gray-700`}
               >
                 Services
-                <ChevronDownIcon className="w-6 h-6 transition-transform group-hover:rotate-180 mt-1" />
+                <ChevronDownIcon className="w-5 h-5 transition-transform group-hover:rotate-180 mt-1" />
               </button>
 
-              <div className="absolute right-0 top-full z-50 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
+              <div className="absolute right-2 -left-20 top-full z-50 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                 <div className="p-4 space-y-2">
                   {services.map(({ href, label }) => (
                     <Link
@@ -132,7 +132,7 @@ export default function Navbar({ banner }) {
                 key={href}
                 to={href}
                 target="_blank"
-                className={`text-xl font-semibold ${
+                className={`text-[18px] font-semibold ${
                   scrolled ? "text-gray-800" : "text-white"
                 } hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
               >
