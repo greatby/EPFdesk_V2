@@ -155,7 +155,7 @@ const StackedCards = () => {
                   </li>
                 </ul>
               </div>
-              <div className="right-side">
+              <div className="right-side hidden md:block">
                 <img
                   src="https://about.gitlab.com/images/homepage/card-flip-duo-chat.svg"
                   alt="dummy"
@@ -259,7 +259,7 @@ const StackedCards = () => {
                   </svg>
                 </a>
               </div>
-              <div className="right-side" data-v-c1476a23="">
+              <div className="right-side hidden md:block" data-v-c1476a23="">
                 <img
                   src="https://about.gitlab.com/images/homepage/card-flip-security.svg"
                   loading="lazy"
@@ -315,7 +315,7 @@ const StackedCards = () => {
                   </svg>
                 </a>
               </div>
-              <div className="right-side" data-v-c1476a23="">
+              <div className="right-side hidden md:block" data-v-c1476a23="">
                 <img
                   src="https://about.gitlab.com/images/homepage/card-flip-code-review.svg"
                   loading="lazy"

@@ -38,7 +38,7 @@ function App() {
               <ServiceCards />
             </FadeInWhenVisible>
             <StackedCards />
-            {/* <CustomerCarousel /> */}
+            <CustomerCarousel />
           </Layout>
         }
       />
