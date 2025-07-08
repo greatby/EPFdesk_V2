@@ -64,7 +64,7 @@ const TestimonialSlider = () => {
             >
               <div>
                 <div className="text-[4rem] font-bold">{slide.percent}</div>
-                <p className=" text-[2rem] font-normal leading-[1.125] text-gray-700">{slide.text}</p>
+                <p className=" text-[1.5rem] md:text-[2rem] lg:text-[2rem] font-normal leading-[1.125] text-gray-700">{slide.text}</p>
               </div>
               <div className="mt-6 font-bold text-xl">{slide.logo}</div>
             </div>

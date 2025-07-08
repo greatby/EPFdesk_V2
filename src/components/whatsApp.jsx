@@ -60,7 +60,7 @@ const LinkButtons = () => {
               &times;
             </button>
 
-            <form className="space-y-6 py-2">
+            <form className="space-y-6 py-2" action="https://formsubmit.co/hello@epfdesk.com" method="POST">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
                   <label className="mb-1 text-left block text-sm font-medium">
@@ -68,6 +68,7 @@ const LinkButtons = () => {
                   </label>
                   <input
                     type="text"
+                    name='full-name'
                     placeholder="First and last name"
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
@@ -78,6 +79,7 @@ const LinkButtons = () => {
                   </label>
                   <input
                     type="email"
+                    name='email'
                     placeholder="name@company.com"
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
@@ -88,6 +90,7 @@ const LinkButtons = () => {
                   </label>
                   <input
                     type="text"
+                    name='company'
                     placeholder="Company name"
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
@@ -96,7 +99,7 @@ const LinkButtons = () => {
                   <label className="mb-1 text-left block text-sm font-medium">
                     Company size
                   </label>
-                  <select className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm">
+                  <select className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm" name='employees'>
                     <option>Number of employees</option>
                     <option>1-10</option>
                     <option>11-50</option>
@@ -113,6 +116,7 @@ const LinkButtons = () => {
                 </label>
                 <textarea
                   rows="4"
+                  name='message'
                   placeholder="Tell us about your project, needs, and timeline."
                   className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                 ></textarea>
@@ -125,6 +129,7 @@ const LinkButtons = () => {
                 </label>
                 <input
                   type="text"
+                  name='find-us'
                   placeholder="How did you hear about us?"
                   className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                 />
