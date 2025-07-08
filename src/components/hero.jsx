@@ -37,30 +37,7 @@ export default function Hero({ setShowFloating }) {
   }, [setShowFloating]);
   return (
     <div className="relative" id="hero-section">
-      {/* <Container className="relative">
-        <div className="px-4" id="hero-section">
-          <div className="mx-auto mt-24 mb-6 w-full space-y-4 text-center md:mx-auto md:w-[75%] lg:w-[75%]">
-            <p className="text-black-600 text-3xl font-bold sm:text-5xl">
-              Complete EPFO Compliance Made Simple
-            </p>
-            <h1 className="text-[20px] font-bold text-gray-900 sm:text-[20px]">
-              Stop struggling with monthly EPF filings. Let our expert team
-              handle all your EPFO, ESIC, PT & LWF compliance while you focus on
-              growing your business.
-            </h1>
-            <p className="text-black-600 text-[20px] font-bold">
-              Trusted by a growing number of HR teams in India.
-            </p>
-          </div>
-        </div>
-        <div>
-          <LinkButtons />
-        </div>
-        <div className="flex items-center justify-center">
-          <ZendeskHeroStack />
-        </div>
-      </Container> */}
-      <section className="bg-[#1d3d3c] py-20 px-6 md:px-12">
+      {/* <section className="bg-[#1d3d3c] py-20 px-6 md:px-12">
       <div className=" w-full md:max-w-2xl lg:max-w-2xl text-left">
         <h1 className="text-4xl sm:text-5xl font-bold text-[#f8f7ff] mb-10">
           Complete EPFO Compliance Made Simple
@@ -77,7 +54,33 @@ export default function Hero({ setShowFloating }) {
           </button>
         </div>
       </div>
-    </section>
+    </section> */}
+    <section className="bg-white py-24 px-6 md:px-12">
+  <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12">
+    {/* Left Text Content */}
+    <div className="w-full md:w-1/2 text-left">
+      <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">
+        Complete EPFO Compliance Made Simple
+      </h1>
+      <p className="text-lg sm:text-xl text-black mb-10">
+        Stop struggling with monthly EPF filings. Let our expert team handle all your EPFO, ESIC, PT & LWF compliance while you focus on growing your business.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4">
+       <LinkButtons />
+      </div>
+    </div>
+
+    {/* Right Image */}
+    <div className="w-full md:w-1/2">
+      <img
+        src="/images/hero_maze_optimized.webp" 
+        alt="EPFO Compliance Illustration"
+        className="w-full h-auto object-contain"
+      />
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

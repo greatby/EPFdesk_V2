@@ -34,19 +34,19 @@ const LinkButtons = () => {
           }}
           className="flex h-[50px] w-[155px] cursor-pointer items-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
         >
-          <IoLogoWhatsapp className="size-6" /> WhatsApp
+          <IoLogoWhatsapp className="size-5" /> WhatsApp
         </button>
 
         <button
           onClick={() => setIsOpen(true)}
           className="flex h-[50px] w-[155px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-3 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
         >
-          <FaRegEnvelope size={20} /> Contact Sales
+          <FaRegEnvelope size={18} /> Contact Sales
         </button>
       </div>
-      <div className="my-2 text-center text-[20px] font-bold text-black">
+      {/* <div className="my-2 text-center text-[20px] font-bold text-black">
         <p>Get started in 24 hours</p>
-      </div>
+      </div> */}
       {isOpen && (
         <div className="animate-fadeIn fixed inset-0 z-[10000] flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div

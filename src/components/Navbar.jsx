@@ -42,11 +42,7 @@ export default function Navbar({ banner }) {
 
   return (
     <header
-      className={`fixed z-[9999] w-full border-b px-5 backdrop-blur-md transition-colors duration-300 ${
-        scrolled
-          ? "bg-white border-gray-200"
-          : "bg-transparent border-transparent"
-      }`}
+      className={`fixed z-[9999] w-full border-b px-5 backdrop-blur-md transition-colors duration-300 `}
     >
       <PlusGrid>
         <PlusGridRow className="relative flex items-center justify-between h-[72px]">
@@ -103,8 +99,7 @@ export default function Navbar({ banner }) {
             {/* Services Dropdown FIRST */}
             <div className="relative group">
               <button
-                className={`flex items-center gap-1 text-[18px] font-semibold ${
-                  scrolled ? "text-gray-800" : "text-white"
+                className={`flex items-center gap-1 text-[18px] font-semibold text-gray-800
                 } p-2 rounded-md hover:bg-gray-200 hover:text-gray-700`}
               >
                 Services
@@ -132,9 +127,7 @@ export default function Navbar({ banner }) {
                 key={href}
                 to={href}
                 target="_blank"
-                className={`text-[18px] font-semibold ${
-                  scrolled ? "text-gray-800" : "text-white"
-                } hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
+                className={`text-[18px] font-semibold  text-gray-800} hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
               >
                 {label}
               </Link>
@@ -147,8 +140,7 @@ export default function Navbar({ banner }) {
               className="p-2 border rounded-md hover:bg-gray-100"
             >
               <Bars3Icon
-                className={`h-6 w-6 ${
-                  scrolled || mobileMenuOpen ? "text-gray-700" : "text-white"
+                className={`h-6 w-6 text-gray-700
                 }`}
               />
             </button>
