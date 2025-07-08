@@ -170,7 +170,7 @@ export default function Navbar({ banner }) {
                 </button>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-6 mt-10">
                 <div>
                   <p className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Services

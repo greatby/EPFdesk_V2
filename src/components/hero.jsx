@@ -55,32 +55,33 @@ export default function Hero({ setShowFloating }) {
         </div>
       </div>
     </section> */}
-    <section className="bg-white pt-32 pb-20 px-6 md:px-12">
-  <div className="flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto gap-12">
-    {/* Left Text Content */}
-    <div className="w-full md:w-1/2 text-left">
-      <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">
-        Complete EPFO Compliance Made Simple
-      </h1>
-      <p className="text-lg sm:text-xl text-black mb-10">
-        Stop struggling with monthly EPF filings. Let our expert team handle all your EPFO, ESIC, PT & LWF compliance while you focus on growing your business.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4">
-       <LinkButtons />
-      </div>
-    </div>
+      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-20 lg:pb-20 px-6 md:px-12">
+        <div className="flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto gap-6 md:gap-12 lg:gap-12">
+          {/* Left Text Content */}
+          <div className="w-full md:w-1/2 text-center md:text-left lg:text-left">
+            <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">
+              Complete EPFO Compliance Made Simple
+            </h1>
+            <p className="text-lg sm:text-xl text-black mb-6 md:mb-10 lg:mb-10">
+              Stop struggling with monthly EPF filings. Let our expert team
+              handle all your EPFO, ESIC, PT & LWF compliance while you focus on
+              growing your business.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <LinkButtons />
+            </div>
+          </div>
 
-    {/* Right Image */}
-    <div className="w-full md:w-1/2">
-      <img
-        src="/images/hero_maze_optimized.webp" 
-        alt="EPFO Compliance Illustration"
-        className="w-full h-auto object-contain"
-      />
-    </div>
-  </div>
-</section>
-
+          {/* Right Image */}
+          <div className="w-full md:w-1/2">
+            <img
+              src="/images/hero_maze_optimized.webp"
+              alt="EPFO Compliance Illustration"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

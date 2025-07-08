@@ -25,7 +25,7 @@ const LinkButtons = () => {
 
   return (
     <>
-      <div className="my-5 flex flex-col items-center justify-center gap-2 px-4 md:flex-row">
+      <div className="my-5 flex flex-row lg: items-center justify-center gap-2 md:flex-row">
         <button
           onClick={() => {
             const phone = '919591773588'
@@ -48,10 +48,10 @@ const LinkButtons = () => {
         <p>Get started in 24 hours</p>
       </div> */}
       {isOpen && (
-        <div className="animate-fadeIn fixed inset-0 z-[10000] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div className="animate-fadeIn fixed inset-0 z-[10000] flex items-center justify-center bg-black/50 backdrop-blur-sm ">
           <div
             ref={modalRef}
-            className="animate-slideUp relative mx-4 w-full max-w-2xl rounded-lg bg-white p-6 shadow-xl transition-all duration-300"
+            className="animate-slideUp relative mx-4 w-full max-w-2xl rounded-lg bg-white p-6 shadow-xl transition-all duration-300 max-h-[90vh] overflow-y-auto"
           >
             <button
               onClick={() => setIsOpen(false)}
@@ -63,7 +63,7 @@ const LinkButtons = () => {
             <form className="space-y-6 py-2">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
-                  <label className="mb-1 block text-sm font-medium">
+                  <label className="mb-1 text-left block text-sm font-medium">
                     Full name
                   </label>
                   <input
@@ -73,7 +73,7 @@ const LinkButtons = () => {
                   />
                 </div>
                 <div>
-                  <label className="mb-1 block text-sm font-medium">
+                  <label className="mb-1 text-left block text-sm font-medium">
                     Work email
                   </label>
                   <input
@@ -83,7 +83,7 @@ const LinkButtons = () => {
                   />
                 </div>
                 <div>
-                  <label className="mb-1 block text-sm font-medium">
+                  <label className="mb-1 text-left block text-sm font-medium">
                     Company
                   </label>
                   <input
@@ -93,7 +93,7 @@ const LinkButtons = () => {
                   />
                 </div>
                 <div>
-                  <label className="mb-1 block text-sm font-medium">
+                  <label className="mb-1 text-left block text-sm font-medium">
                     Company size
                   </label>
                   <select className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm">
@@ -108,7 +108,7 @@ const LinkButtons = () => {
               </div>
 
               <div>
-                <label className="mb-1 block text-sm font-medium">
+                <label className="mb-1 text-left block text-sm font-medium">
                   Message <span className="text-gray-500">(optional)</span>
                 </label>
                 <textarea
@@ -119,7 +119,7 @@ const LinkButtons = () => {
               </div>
 
               <div>
-                <label className="mb-1 block text-sm font-medium">
+                <label className="mb-1 text-left block text-sm font-medium">
                   Where did you find us?{' '}
                   <span className="text-gray-500">(optional)</span>
                 </label>
