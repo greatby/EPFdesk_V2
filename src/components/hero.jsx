@@ -36,7 +36,7 @@ export default function Hero({ setShowFloating }) {
     };
   }, [setShowFloating]);
   return (
-    <div className="relative" id="hero-section">
+    <div className="relative">
       {/* <section className="bg-[#1d3d3c] py-20 px-6 md:px-12">
       <div className=" w-full md:max-w-2xl lg:max-w-2xl text-left">
         <h1 className="text-4xl sm:text-5xl font-bold text-[#f8f7ff] mb-10">
@@ -55,8 +55,8 @@ export default function Hero({ setShowFloating }) {
         </div>
       </div>
     </section> */}
-    <section className="bg-white py-24 px-6 md:px-12">
-  <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12">
+    <section className="bg-white pt-32 pb-20 px-6 md:px-12">
+  <div className="flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto gap-12">
     {/* Left Text Content */}
     <div className="w-full md:w-1/2 text-left">
       <h1 className="text-4xl sm:text-5xl font-bold text-black mb-8">

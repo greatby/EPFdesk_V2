@@ -6,8 +6,8 @@ import ESCIServicesSection from "./esciServicesSection";
 function Hero() {
   return (
     <div className="relative">
-      <section className=" py-24 px-6 md:px-12">
-        <div className=" w-full md:max-w-2xl lg:max-w-2xl text-left">
+      <section className=" pt-32 px-6 md:px-12">
+        <div className=" w-full md:max-w-2xl lg:max-w-3xl text-center mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-10">
             Complete ESIC Compliance & Medical Benefits Management.
           </h1>

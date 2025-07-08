@@ -7,8 +7,8 @@ import FadeInWhenVisible from "./fadeInWhenVisible";
 function Hero() {
   return (
     <div className="relative">
-      <section className="py-24 px-6 md:px-12">
-        <div className=" w-full md:max-w-2xl lg:max-w-2xl text-left">
+      <section className="pt-32 px-6 md:px-12">
+        <div className=" w-full md:max-w-2xl lg:max-w-3xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-10">
             Complete EPF Management & EPFO Compliance Services.
           </h1>
