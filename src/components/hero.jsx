@@ -67,7 +67,7 @@ export default function Hero({ setShowFloating }) {
               handle all your EPFO, ESIC, PT & LWF compliance while you focus on
               growing your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <LinkButtons />
             </div>
           </div>
