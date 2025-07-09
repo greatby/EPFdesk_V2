@@ -53,24 +53,31 @@ export default function FloatingFormToggle({ animate = true }) {
       return;
     }
 
-    try {
-      const res = await axios.post(
-        "http://localhost:5000/api/contact",
-        formData
-      );
-      alert("✅ Form submitted successfully!");
-      setFormData({
-        fullName: "",
-        email: "",
-        company: "",
-        employees: "",
-        message: "",
-        findUs: "",
-      });
-      setErrors({});
-    } catch (err) {
-      alert("❌ Something went wrong.");
-    }
+    // try {
+    //   const res = await axios.post(
+    //     "http://localhost:5000/api/contact",
+    //     formData
+    //   );
+    //   alert("✅ Form submitted successfully!");
+    //   setFormData({
+    //     fullName: "",
+    //     email: "",
+    //     company: "",
+    //     employees: "",
+    //     message: "",
+    //     findUs: "",
+    //   });
+    //   setErrors({});
+    // } catch (err) {
+    //   alert("❌ Something went wrong.");
+    // }
+
+      try {
+    const res = await axios.post('/api/contact', formData);
+    console.log(res.data);
+  } catch (err) {
+    console.error(err);
+  }
     setIsOpen(false)
   };
 

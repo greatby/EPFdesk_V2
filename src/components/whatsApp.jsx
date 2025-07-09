@@ -47,6 +47,9 @@ const LinkButtons = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+
+ const API = '';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -55,25 +58,31 @@ const LinkButtons = () => {
       return;
     }
 
+    // try {
+    //   const res = await axios.post(
+    //     "http://localhost:5000/api/contact",
+    //     formData
+    //   );
+    //   alert("✅ Form submitted successfully!");
+    //   setFormData({
+    //     fullName: "",
+    //     email: "",
+    //     company: "",
+    //     employees: "",
+    //     message: "",
+    //     findUs: "",
+    //   });
+    //   setErrors({});
+    // } catch (err) {
+    //   alert("❌ Something went wrong.");
+    // }
     try {
-      const res = await axios.post(
-        "http://localhost:5000/api/contact",
-        formData
-      );
-      alert("✅ Form submitted successfully!");
-      setFormData({
-        fullName: "",
-        email: "",
-        company: "",
-        employees: "",
-        message: "",
-        findUs: "",
-      });
-      setErrors({});
+      const res = await axios.post(`/api/contact`, formData)
+      console.log(res.data);
     } catch (err) {
-      alert("❌ Something went wrong.");
+      console.error(err);
     }
-    setIsOpen(false)
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -174,9 +183,7 @@ const LinkButtons = () => {
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
                   {errors.email && (
-                    <p className="text-sm text-red-600 mt-1">
-                      {errors.email}
-                    </p>
+                    <p className="text-sm text-red-600 mt-1">{errors.email}</p>
                   )}
                 </div>
                 <div>
@@ -191,7 +198,7 @@ const LinkButtons = () => {
                     placeholder="Company name"
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
-                   {errors.company && (
+                  {errors.company && (
                     <p className="text-sm text-red-600 mt-1">
                       {errors.company}
                     </p>
@@ -214,7 +221,7 @@ const LinkButtons = () => {
                     <option>201-500</option>
                     <option>500+</option>
                   </select>
-                   {errors.employees && (
+                  {errors.employees && (
                     <p className="text-sm text-red-600 mt-1">
                       {errors.employees}
                     </p>
