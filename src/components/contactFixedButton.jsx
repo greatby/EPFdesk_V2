@@ -74,6 +74,7 @@ export default function FloatingFormToggle({ animate = true }) {
 
       try {
     const res = await axios.post('/api/contact', formData);
+    alert('✅ Your message was sent successfully!')
     console.log(res.data);
   } catch (err) {
     console.error(err);

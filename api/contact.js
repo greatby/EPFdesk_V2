@@ -20,9 +20,9 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         ticket: {
-          subject: `New Contact from ${fullName}`,
+          subject: `New form submitted from ${fullName}`,
           comment: {
-            body: `Company: ${company}\nEmployees: ${employees}\nMessage: ${message}\nSource: ${findUs}`,
+            body: `Full-Name:${fullName}\nEmail:${email}\nCompany: ${company}\nEmployees: ${employees}\nMessage: ${message}\nSource: ${findUs}`,
           },
           requester: {
             name: fullName,
