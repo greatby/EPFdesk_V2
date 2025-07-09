@@ -42,7 +42,18 @@ export default function FloatingFormToggle({ animate = true }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+   
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+  
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "", 
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -72,14 +83,14 @@ export default function FloatingFormToggle({ animate = true }) {
     //   alert("❌ Something went wrong.");
     // }
 
-      try {
-    const res = await axios.post('/api/contact', formData);
-    alert('✅ Your message was sent successfully!')
-    console.log(res.data);
-  } catch (err) {
-    console.error(err);
-  }
-    setIsOpen(false)
+    try {
+      const res = await axios.post("/api/contact", formData);
+      alert("✅ Your message was sent successfully!");
+      console.log(res.data);
+    } catch (err) {
+      console.error(err);
+    }
+    setIsOpen(false);
   };
 
   return (
@@ -131,7 +142,6 @@ export default function FloatingFormToggle({ animate = true }) {
               </button>
             </div>
 
-          
             <form className="space-y-6 py-2" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
@@ -165,9 +175,7 @@ export default function FloatingFormToggle({ animate = true }) {
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
                   {errors.email && (
-                    <p className="text-sm text-red-600 mt-1">
-                      {errors.email}
-                    </p>
+                    <p className="text-sm text-red-600 mt-1">{errors.email}</p>
                   )}
                 </div>
                 <div>
@@ -182,7 +190,7 @@ export default function FloatingFormToggle({ animate = true }) {
                     placeholder="Company name"
                     className="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm"
                   />
-                   {errors.company && (
+                  {errors.company && (
                     <p className="text-sm text-red-600 mt-1">
                       {errors.company}
                     </p>
@@ -205,7 +213,7 @@ export default function FloatingFormToggle({ animate = true }) {
                     <option>201-500</option>
                     <option>500+</option>
                   </select>
-                   {errors.employees && (
+                  {errors.employees && (
                     <p className="text-sm text-red-600 mt-1">
                       {errors.employees}
                     </p>

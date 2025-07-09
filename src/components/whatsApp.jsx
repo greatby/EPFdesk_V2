@@ -44,11 +44,21 @@ const LinkButtons = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+   
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+
+    
+    setErrors((prev) => ({
+      ...prev,
+      [name]: "", 
+    }));
   };
 
-
- const API = '';
+  const API = "";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -77,13 +87,13 @@ const LinkButtons = () => {
     //   alert("❌ Something went wrong.");
     // }
     try {
-      const res = await axios.post(`/api/contact`, formData)
-        alert('✅ Your message was sent successfully!')
+      const res = await axios.post(`/api/contact`, formData);
+      alert("✅ Your message was sent successfully!");
       console.log(res.data);
     } catch (err) {
       console.error(err);
     }
-    setFormData({})
+    setFormData({});
     setIsOpen(false);
   };
 
