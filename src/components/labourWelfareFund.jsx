@@ -5,6 +5,8 @@ import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LWFServicesSection from "./lwfServicesSection";
 import LWFComplianceROI from "./lwfcompliance";
+import FaqAccordion from "./faqAccordian";
+import { lwfFaq } from "../../utils/data";
 
 function Hero() {
   return (
@@ -12,12 +14,13 @@ function Hero() {
       <section className=" pt-32 px-6 md:px-12">
         <div className=" w-full md:max-w-2xl lg:max-w-3xl text-center mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-black mb-10">
-            Labour Welfare Fund Management & Compliance
+            Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for
+            Flawless Adherence
           </h1>
           <p className="text-lg sm:text-xl text-black mb-10">
-            Complete LWF compliance for applicable states and employee
-            categories. Ensure proper contributions and avoid penalties with our
-            expert management.
+            Master LWF compliance across India with EPFDesk.com. We handle
+            state-specific calculations, filings & ensure timely adherence.
+            Avoid penalties, achieve 100% accuracy for LWF.
           </p>
         </div>
       </section>
@@ -31,12 +34,15 @@ const LabourWelfareFund = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-     
+
       <FadeInWhenVisible>
         <LWFServicesSection />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <LWFComplianceROI/>
+        <LWFComplianceROI />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={lwfFaq} />
       </FadeInWhenVisible>
     </>
   );

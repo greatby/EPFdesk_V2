@@ -14,6 +14,7 @@ import ProfessionalTax from "./components/professionalTax";
 import LabourWelfareFund from "./components/labourWelfareFund";
 import StackedCards from "./components/scrollCards";
 import CustomerCarousel from "./components/customerCarousel";
+import LimitedCapacitySection from "./components/limitedCapacitySection";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             </FadeInWhenVisible>
             <StackedCards />
             <CustomerCarousel />
+            <LimitedCapacitySection />
           </Layout>
         }
       />

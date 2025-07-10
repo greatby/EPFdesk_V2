@@ -3,36 +3,35 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
   {
-    percent: "50%",
-    text: "faster vulnerability detection",
-    logo: "cube.",
-    bg: "bg-violet-100",
+    name: "Richa Maheshwari",
+    title: "Manager, Delhi",
+    org: "Large Multinational Company",
+    message:
+      "EPFDesk.com has transformed our Gurgaon operations by handling all statutory compliance seamlessly, allowing my team to focus on strategic initiatives rather than portal management. Having a dedicated compliance partner who ensures our employees' EPFO and ESIC requirements are met without any hassle has been invaluable for our productivity and peace of mind.",
   },
   {
-    percent: "13x",
-    text: "faster security scanning",
-    logo: "CACI",
-    bg: "bg-purple-100",
+    name: "Adarsh Hoizal",
+    title: "",
+    org: "Large Staffing Company",
+    message:
+      "Managing statutory compliance for our workforce across multiple states was a nightmare until we partnered with EPFDesk.com – their pan-India support has streamlined our entire compliance process. With hundreds of employees joining and leaving monthly, having EPFDesk handle all EPFO, ESIC, PT, and LWF requirements has transformed our operations from reactive firefighting to proactive business growth.",
   },
   {
-    percent: "20x",
-    text: "decrease in pipeline execution time with GitLab",
-    logo: "INTUITIVE MACHINES",
-    bg: "bg-blue-100",
+    name: "Amith Chitrapur",
+    title: "Chartered Accountant",
+    org: "Multiple Clients Across India",
+    message:
+      "As an auditor managing large clients nationwide, I need seamless multi-state compliance support – EPFDesk.com delivers exactly that for all my clients' complex statutory requirements. Their expertise in handling intricate EPFO, ESIC, PT, and LWF compliance across different states has eliminated my biggest operational headache.",
   },
   {
-    percent: "100",
-    text: "fewer hours of developer downtime per month",
-    logo: "ally",
-    bg: "bg-violet-100",
-  },
-  {
-    percent: "6x",
-    text: "faster time to market",
-    logo: "T-Mobile",
-    bg: "bg-green-100",
+    name: "Neeta",
+    title: "Director",
+    org: "Technical Services Company",
+    message:
+      "With our teams spread across India handling large contracts subject to strict audits, EPFDesk.com has been instrumental in maintaining our 100% audit success rate. As we scale nationwide, they seamlessly handle new state registrations, employee linking, and all statutory compliance requirements.",
   },
 ];
+
 
 const TestimonialSlider = () => {
   const containerRef = useRef(null);
@@ -47,12 +46,9 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="w-full py-12">
-      {/* <h2 className="text-center text-2xl md:text-3xl font-bold mb-6">
-        One platform for teams of every size
-      </h2> */}
+    <section className="w-full py-12 bg-gray-50">
+      <h4 className="px-8 text-2xl">Trusted by a growing number of HR departments in India</h4>
       <div className="relative">
-        {/* Scrollable Container */}
         <div
           ref={containerRef}
           className="flex overflow-x-auto gap-6 px-8 py-4 scroll-smooth no-scrollbar overflow-y-hidden"
@@ -60,13 +56,15 @@ const TestimonialSlider = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`${slide.bg} min-w-[90%] md:min-w-[340px] lg:min-w-[320px] h-[280px] md:h-[300px] lg:h-[370px] rounded-xl p-6 flex flex-col justify-between transform transition-transform duration-300 hover:scale-[1.05] hover:shadow-md`}
+              className="bg-white min-w-[90%] md:min-w-[340px] lg:min-w-[400px] h-auto rounded-xl p-6 flex flex-col justify-between shadow hover:shadow-lg transition"
             >
-              <div>
-                <div className="text-[4rem] font-bold">{slide.percent}</div>
-                <p className=" text-[1.5rem] md:text-[2rem] lg:text-[2rem] font-normal leading-[1.125] text-gray-700">{slide.text}</p>
+              <p className="text-gray-700 text-base leading-relaxed mb-4">"{slide.message}"</p>
+
+              <div className="mt-6">
+                <p className="text-lg font-semibold text-gray-900">{slide.name}</p>
+                {slide.title && <p className="text-sm text-gray-600">{slide.title}</p>}
+                <p className="text-sm font-medium text-blue-600">{slide.org}</p>
               </div>
-              <div className="mt-6 font-bold text-xl">{slide.logo}</div>
             </div>
           ))}
         </div>
@@ -74,16 +72,16 @@ const TestimonialSlider = () => {
         {/* Navigation Buttons */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-2 md:left-12 lg:left-24 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10"
+          className="absolute left-2 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10"
         >
-          <FaChevronLeft className="size-6" />
+          <FaChevronLeft className="size-5 text-gray-600" />
         </button>
 
         <button
           onClick={() => scroll("right")}
           className="absolute right-2 md:right-12 lg:right-20 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10"
         >
-          <FaChevronRight className="size-6" />
+          <FaChevronRight className="size-5 text-gray-600" />
         </button>
       </div>
     </section>

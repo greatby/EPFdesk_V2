@@ -7,46 +7,81 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
 
-
 const epfServices = [
   {
-    title: "Registration & Setup",
+    title: "ESIC Registration & Applicability Management",
     icon: ClipboardDocumentCheckIcon,
     items: [
-      "Employer ESIC registration and code generation",
-      "Employee ESIC registration and IP number allocation",
-      "Coverage verification and benefit calculation",
-      "Dependent registration and family coverage",
+      `Complete ESIC registration process: We guide you through and meticulously
+handle all steps for "ESIC registration process online India," including online
+application, documentation, and swift ESIC code allocation.`,
+      `Precise applicability assessment: We accurately determine "Who is eligible for
+ESIC registration?" based on employee count (e.g., 10+ or 20+ depending on state)
+and wage limits, ensuring correct and ongoing coverage without a hitch.`,
+      `Required documentation compilation: We assist in gathering and submitting all
+"documents required for ESIC registration," streamlining the initial setup within
+statutory time limits.`,
+      `Coverage continuity management: We advise on crucial aspects like the "once
+covered, always covered" rule, ensuring compliance even if the number of
+employees temporarily goes below the minimum limit.`,
     ],
   },
   {
-    title: "Monthly Compliance",
+    title: "Accurate ESIC Contribution Calculation & Payment",
     icon: UsersIcon,
     items: [
-      "ESIC contribution calculation (4.75% employer + 1.75% employee)",
-      "Monthly challan generation and payment",
-      "Return filing and reconciliation",
-      "Wage ceiling compliance verification",
+      `Precision contribution calculation: We perform accurate "ESIC calculation on
+salary" using the "current ESIC contribution rate employer and employee" (e.g.,
+Employer: 3.25%, Employee: 0.75%) and the "ESIC wage ceiling current" (₹21,000
+for general employees, ₹25,000 for persons with disabilities).`,
+      `Correct wage component inclusion: We meticulously identify and include all
+applicable "salary components for ESIC wages" (Basic, DA, HRA, CCA, production
+incentive, night shift, meal/food allowance), ensuring "ESIC is deducted on gross
+salary, not just basic."`,
+      `Exemption management: We accurately identify and manage "exemptions from
+ESIC contributions for low-wage employees" (e.g., daily wage up to ₹176),
+optimizing your deductions while remaining compliant.`,
+      `Timely payment facilitation: We generate accurate "ESIC challan online" and
+support "how to pay ESIC contribution online," guaranteeing deposits are made
+well before the "Monthly ESIC return filing deadline" (15th of the following
+month).`,
     ],
   },
   {
-    title: "Claim Processing:",
+    title: "Seamless Monthly Filings & Employee Data Management",
     icon: CalendarDaysIcon,
     items: [
-      "Medical reimbursement claim processing",
-      "Sickness benefit claim assistance",
-      "Maternity benefit processing",
-      "Disability benefit claim support",
+      `Monthly ESIC return filing: We manage the entire "ESIC return filing process"
+with 100% accuracy and punctuality before the 15th of the following month
+deadline.`,
+      `Employee data updates & IP Management: We handle "how to update employee
+details in ESIC portal by employer," ensuring accurate records for your workforce,
+including "generating ESIC Code number" (17-digit ID) and managing "ESIC login
+for insured person" access.`,
+      `Employer Portal Navigation: We expertly manage all interactions on the "ESIC
+employer login portal," ensuring accurate data reflection, complete submissions,
+and efficient grievance management (like EPFiGMS).`,
+      `Contribution Period Tracking: We meticulously track "ESIC Contribution Period
+vs. Cash Benefit Period" to maintain continuous coverage for your employees,
+even if salaries briefly exceed the ceiling.`,
     ],
   },
   {
-    title: "Employee Services",
+    title: "Proactive Regulatory Updates & Risk Management",
     icon: UserCircleIcon,
     items: [
-      "ESIC card generation and dispatch",
-      "Medical coverage verification",
-      "Hospital empanelment information",
-      "Benefit eligibility checking",
+      `Continuous regulatory monitoring: Our dedicated experts meticulously monitor
+the latest "ESIC Act amendments," "ESIC circulars," and "ESIC contribution rate
+changes.`,
+      `Impact analysis & strategic advice: We translate complex legal updates into clear,
+actionable business insights tailored to your operations, ensuring you understand
+the "consequences of ESIC non-compliance.`,
+      `Penalty prevention strategies: We implement proactive measures to safeguard
+against "what happens if employer does not pay ESIC contribution?" and other
+common non-compliance scenarios.`,
+      `Audit readiness support: We provide complete assistance for any ESIC
+inspections or audits, ensuring you are fully prepared with complete
+documentation and expert representation.`,
     ],
   },
 ];
@@ -60,13 +95,18 @@ function EPFAccordion() {
 
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-10">Comprehensive ESIC Services</h2>
+      <h2 className="text-3xl font-bold text-center mb-10">
+        Comprehensive ESIC Compliance Management Services
+      </h2>
       <div className="space-y-4">
         {epfServices.map((section, i) => {
           const Icon = section.icon;
           const isOpen = openIndex === i;
           return (
-            <div key={i} className="border border-gray-200 rounded-xl overflow-hidden transition">
+            <div
+              key={i}
+              className="border border-gray-200 rounded-xl overflow-hidden transition"
+            >
               <button
                 onClick={() => toggle(i)}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-gray-50 transition"
@@ -101,60 +141,22 @@ function EPFAccordion() {
   );
 }
 
-const plans = [
-  {
-    title: "Manufacturing Companies",
-    features: [
-      "High-risk industry compliance",
-      "Accident claim processing",
-      "Disability benefit management",
-      "Safety protocol integration"
-    ],
-  },
-  {
-    title: "IT & Service Companies",
-    features: [
-      "Employee wellness programs",
-      "Maternity benefit optimization",
-      "Dependent coverage management",
-      "Health checkup coordination"
-    ],
- 
-  },
-  {
-    title: "Retail & Hospitality",
-    features: [
-      "Multi-location compliance",
-      "Seasonal worker management",
-      "Medical emergency support",
-      "Coverage optimization"
-    ],
-  
-  },
-    {
-    title: "Legal Benefits",
-    features: [
-      "Avoid penalties up to ₹25,000 per violation",
-      "Prevent prosecution under ESIC Act",
-      "Maintain good standing with authorities",
-      "Ensure audit readiness"
-    ],
-  
-  },
- 
-];
 
-export default function ESCIServicesSection() {
+
+export default function ESCIServicesSection({plans}) {
   return (
     <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
       <div className="space-y-4 max-w-3xl mx-auto">
         <EPFAccordion />
       </div>
 
-      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">ESIC Solutions for Every Business</h2>
+      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
+       
+       {plans.mainTitle}
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {plans.map((plan, idx) => (
+        {plans?.cards?.map((plan, idx) => (
           <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
             <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
             <ul className="text-sm space-y-2 mb-4 list-disc list-inside">
