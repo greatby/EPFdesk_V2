@@ -32,9 +32,9 @@ const ESICCompliance = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <ESICComplianceCarousel />
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
       <FadeInWhenVisible>
         <ESCIServicesSection plans={plans} />
       </FadeInWhenVisible>

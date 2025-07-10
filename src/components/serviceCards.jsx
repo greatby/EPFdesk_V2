@@ -39,6 +39,12 @@ const services = [
 
 const ServiceCards = () => {
   const navigate = useNavigate();
+   const handleNavigation = (link) => {
+    // Scroll to the top of the page before navigating
+    window.scrollTo(0, 0);
+    // Navigate to the target link
+    navigate(link);
+  };
   return (
     <section className="bg-white py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +80,7 @@ const ServiceCards = () => {
 
                 <div className="mt-auto pt-4">
                   <button
-                    onClick={() => navigate(service.link)}
+                    onClick={() => handleNavigation(service.link)}
                     className="inline-block px-4 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                   >
                     Learn more...

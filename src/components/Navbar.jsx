@@ -10,22 +10,27 @@ import { Link } from "react-router-dom";
 import { PlusGrid, PlusGridItem, PlusGridRow } from "./plus-grid";
 
 const links = [
+  { href: "/epfDesk", label: "EPFdesk" },
+   { href: "/epf", label: "EPFO" },
+  { href: "/esic", label: "ESIC" },
+  { href: "/lwf", label: "LWF" },
+  { href: "/pt", label: "PT" },
   { href: "https://about-us-flame.vercel.app/", label: "About Us" },
   { href: "https://jobs-zeta-two.vercel.app/", label: "Join" },
-  { href: "/res", label: "Resources" },
+  // { href: "/res", label: "Resources" },
   { href: "https://sign-up-two-sandy.vercel.app", label: "Sign In" },
 ];
 
-const services = [
-  { href: "/epf", label: "🏢 EPF Management" },
-  { href: "/esic", label: "🏥 ESIC Compliance" },
-  { href: "/lwf", label: "💼 Labour Welfare Fund" },
-  { href: "/pt", label: "📄 Professional Tax" },
-  // { href: "/employer", label: "💼 Employer" },
-  // { href: "/employee", label: "👤 Employee" },
-  // { href: "/link1", label: "📄 Link 1" },
-  // { href: "/link2", label: "📌 Link 2" },
-];
+// const services = [
+//   { href: "/epf", label: "🏢 EPF Management" },
+//   { href: "/esic", label: "🏥 ESIC Compliance" },
+//   { href: "/lwf", label: "💼 Labour Welfare Fund" },
+//   { href: "/pt", label: "📄 Professional Tax" },
+//   // { href: "/employer", label: "💼 Employer" },
+//   // { href: "/employee", label: "👤 Employee" },
+//   // { href: "/link1", label: "📄 Link 1" },
+//   // { href: "/link2", label: "📌 Link 2" },
+// ];
 
 export default function Navbar({ banner }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -96,19 +101,19 @@ export default function Navbar({ banner }) {
           {/* Right: Nav Links - Desktop */}
 
           <div className="hidden md:flex items-center space-x-4">
-            {/* Services Dropdown FIRST */}
+         
             <div className="relative group">
-              <button
+              {/* <button
                 className={`flex items-center gap-1 text-[18px] font-semibold text-gray-800
                 } p-2 rounded-md hover:bg-gray-200 hover:text-gray-700`}
               >
                 Services
                 <ChevronDownIcon className="w-5 h-5 transition-transform group-hover:rotate-180 mt-1" />
-              </button>
+              </button> */}
 
               <div className="absolute right-2 -left-20 top-full z-50 mt-2 w-64 rounded-lg border border-gray-200 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
                 <div className="p-4 space-y-2">
-                  {services.map(({ href, label }) => (
+                  {/* {services.map(({ href, label }) => (
                     <Link
                       key={href}
                       to={href}
@@ -116,17 +121,17 @@ export default function Navbar({ banner }) {
                     >
                       {label}
                     </Link>
-                  ))}
+                  ))} */}
                 </div>
               </div>
             </div>
 
-            {/* Other Nav Links */}
+          
             {links.map(({ href, label }) => (
               <Link
                 key={href}
                 to={href}
-                target="_blank"
+                
                 className={`text-[18px] font-semibold  text-gray-800} hover:bg-gray-200 hover:text-gray-700 p-2 rounded-md`}
               >
                 {label}
@@ -175,11 +180,11 @@ export default function Navbar({ banner }) {
 
               <div className="space-y-6 mt-10">
                 <div>
-                  <p className="text-sm font-semibold text-gray-500 uppercase mb-2">
+                  {/* <p className="text-sm font-semibold text-gray-500 uppercase mb-2">
                     Services
-                  </p>
+                  </p> */}
                   <div className="grid grid-cols-2 gap-4">
-                    {services.map(({ href, label }) => (
+                    {/* {services.map(({ href, label }) => (
                       <Link
                         key={href}
                         onClick={() => setMobileMenuOpen(false)}
@@ -188,11 +193,11 @@ export default function Navbar({ banner }) {
                       >
                         {label}
                       </Link>
-                    ))}
+                    ))} */}
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
+                <div className="">
                   {links.map(({ href, label }) => (
                     <Link
                       key={href}

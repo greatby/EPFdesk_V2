@@ -24,5 +24,5 @@ export default function HeroObserver() {
 
    const isLandingPage = location.pathname === '/'
 
-  return isLandingPage && showFloating ? <FloatingFormToggle animate={true}/> : null
+  return  showFloating ? <FloatingFormToggle animate={true}/> : null
 }

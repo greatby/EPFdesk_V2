@@ -13,6 +13,19 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    const handleScrollToTop = (link) => {
+    // Scroll to top before navigating
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // If it's an internal link, navigate to that page
+    if (link.startsWith('/')) {
+      navigate(link);
+    } else {
+      // Otherwise, for external links, just open the link in a new tab
+      window.open(link, '_blank');
+    }
+  };
+
   return (
     <footer
       className="z-[9999] w-full border-t border-solid border-t-[#11110d1a] bg-[#ffffffa8] px-5 backdrop-blur-[3px]"
@@ -38,80 +51,35 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2">
               <li>
-                <Link to="/epf">EPF Management</Link>
+                <Link to="/epf" onClick={() => handleScrollToTop('/epf')}>EPFO</Link>
               </li>
               <li>
-                <Link to="/esic">ESIC Compliance</Link>
+                <Link to="/esic" onClick={() => handleScrollToTop('/esic')}>ESIC</Link>
               </li>
               <li>
-                <Link to="/pt">Professional Tax</Link>
+                <Link to="/pt" onClick={() => handleScrollToTop('/pt')}>PT</Link>
               </li>
               <li>
-                <Link to="/lwf">Labour Welfare Fund</Link>
+                <Link to="/lwf" onClick={() => handleScrollToTop('/lwf')}>LWF</Link>
               </li>
               <li>
-                <Link to="/about">About Us</Link>
+                <a href="https://about-us-flame.vercel.app/" onClick={() => handleScrollToTop('https://about-us-flame.vercel.app/')}>About Us</a>
               </li>
               <li>
-                <Link to="/careers">Careers</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/privacy">Privacy Policy</Link>
+                <a href="https://jobs-zeta-two.vercel.app/" onClick={() => handleScrollToTop('https://jobs-zeta-two.vercel.app/')}>Jobs</a>
               </li>
             </ul>
           </div>
 
-          {/* Support */}
-          <div>
-            <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
-              Support
-            </h5>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/help">Help Center</Link>
-              </li>
-              <li>
-                <Link to="/resources">Resources</Link>
-              </li>
-              <li>
-                <Link to="/updates">Compliance Updates</Link>
-              </li>
-              <li>
-                <Link to="/portal">Employee Portal</Link>
-              </li>
-              <li>
-                <Link to="/knowledge">Knowledge Base</Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
-              Contact
-            </h5>
-            <ul className="space-y-2 text-sm text-gray-700">
-              <li>📞 +91-9876543210</li>
-              <li>📧 hello@epfdesk.com</li>
-              <li>🏢 [Your Business Address]</li>
-              <li>🕘 Mon-Sat 9:00 AM - 6:00 PM</li>
-            </ul>
-          </div>
+          
         </div>
 
         {/* Trust Signals (visible on all pages) */}
         <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
           <p>
-            "Trusted by 5000+ Companies" | "99.8% Filing Accuracy" | "24/7
-            Employee Support"
+            Workforce Limited C 2025.
           </p>
-          <p>
-            "Zero Penalty Guarantee" | "Certified EPF Professionals" | "10+
-            Years Experience"
-          </p>
+          
         </div>
 
         {/* Scroll To Top */}

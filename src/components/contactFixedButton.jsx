@@ -109,7 +109,7 @@ export default function FloatingFormToggle({ animate = true }) {
             }}
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
-            <IoLogoWhatsapp className="size-6" />
+            <IoLogoWhatsapp className="size-5" />
             <span className="hidden sm:inline">WhatsApp</span>
           </button>
 
@@ -117,7 +117,7 @@ export default function FloatingFormToggle({ animate = true }) {
             onClick={() => setIsOpen(true)}
             className="flex h-[50px] w-[50px] sm:w-[165px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-0 md:p-4 lg:p-4 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
           >
-            <EnvelopeIcon className="size-6" />
+            <EnvelopeIcon className="size-5" />
             <span className="hidden sm:inline">Contact Sales</span>
           </button>
         </div>

@@ -420,3 +420,170 @@ available to streamline the process for maximum efficiency.`,
   },
  
 ];
+
+export const epfDeskServices = [
+  {
+    title: "Secure & Intuitive Employee Access (24/7)",
+    icon: ClipboardDocumentCheckIcon,
+    items: [
+      `Dedicated Member Login Portal: Provides secure, personalized employee access to the EPFDesk platform,
+making it their central hub for all EPF matters.`,
+      `User-Friendly Interface: Designed for clarity and ease of use, ensuring all employees, regardless of technical
+skill, can effortlessly navigate and find solutions.`,
+      `Mobile-Responsive Design: Guarantees seamless support availability on any device – desktop, tablet, or
+smartphone – for ultimate convenience.`,
+      `Instant Expert Access: Employees get immediate access to EPF expertise without needing HR intervention,
+streamlining their journey from query to resolution.`,
+    ],
+  },
+  {
+    title: "Streamlined Query Management System",
+    icon: UsersIcon,
+    items: [
+      `Guided Ticket Creation: Employees can easily log tickets for virtually all EPF issues. This includes common
+queries like "How to check EPF balance online," "How to activate UAN," "How to update EPF KYC," and "EPF
+withdrawal process.`,
+      `Real-time Progress Tracking: Each submitted ticket comes with a clear, live progress bar, transparent status
+updates, and estimated resolution timelines. Employees always know where their request stands, reducing
+anxiety and eliminating the need for constant follow-ups.`,
+      `Automated Notifications: Employees receive proactive updates via email or SMS as their ticket progresses
+through the resolution stages, keeping them fully informed without having to manually check the portal.`,
+      `Comprehensive Issue Coverage: Our system handles a vast range of concerns, from simple queries (e.g.,
+"How to download EPF passbook") to more complex EPF transfer cases and pension-related inquiries.`,
+    ],
+  },
+  {
+    title: "Expert-Led Resolution & Direct EPFO Liaison",
+    icon: CalendarDaysIcon,
+    items: [
+      `Dedicated EPF Specialists: Our team comprises seasoned professionals who take full ownership of each
+employee query, specializing in accurate resolutions for issues like "Why is my EPF passbook not updated?"
+or "What to do if employer is not depositing PF?"`,
+      `Direct EPFO Communication Channels: We utilize established channels for faster resolution and
+documentation exchange with the Employees' Provident Fund Organisation (EPFO), eliminating the need for
+your HR to act as a middleman.`,
+      `Complex Case Management: Our expertise extends to intricate cases such as inter-company EPF transfers,
+legacy account merging, pension payment processing, and resolving discrepancies in contribution
+claims.`,
+      `Complete Resolution Lifecycle: We manage the entire resolution journey, from the initial query submission to
+final settlement or problem closure, including necessary employer attestation for EPF transfer claims and
+approval of online EPF claims from an employer's perspective.`,
+    ],
+  },
+  {
+    title: "Nationwide On-Ground Support for Unresolved Cases",
+    icon: UserCircleIcon,
+    items: [
+      `Local Teams Across Major Metros: Unlike purely online services, our on-ground teams in key Indian cities
+(including Delhi NCR, Mumbai, Bengaluru, Chennai, and Hyderabad, Pune) provide invaluable physical support where it
+matters most.`,
+      `In-Person EPFO Office Representation: For complex or unresolved cases that mandate direct interaction,
+submission of physical documents, or follow-ups at regional EPFO offices, our local teams ensure swift and effective
+resolution. This addresses queries related to "EPFO portal usage" and "employer's guide to EPFiGMS."`,
+      `Physical Verification Assistance: When required by EPFO processes (e.g., for certain withdrawal claims or death
+claim processing), our teams provide on-ground assistance for physical verification, bridging any logistical gaps.Guaranteed Case Closure: This unique capability ensures even the most challenging or bureaucratic EPF issues are
+resolved efficiently, guaranteeing 100% issue resolution regardless of geographical or administrative complexities.`,
+    ],
+  },
+];
+
+export const epfDeskStatergy = [
+  {
+    title: "Complete HR Team Liberation",
+    icon: ClipboardDocumentCheckIcon,
+    items: [
+      `Significant reduction (e.g., 80%) in daily EPF-related employee queries: Freeing up countless hours
+previously spent on routine tasks.`,
+      `Valuable HR bandwidth reclaimed (e.g., 15-20 hours monthly): Allowing your HR team to focus on strategic
+initiatives like talent acquisition, employee development programs, and fostering a vibrant workplace culture.`,
+      `Eliminated EPFO liaison requirement: Your HR team no longer needs to be the middleman for individual
+employee EPF issues, reducing their administrative overhead.`,
+      `Shift to Strategic Focus: Empowering HR to lead retention strategies, succession planning, and workplace
+culture building.`,
+    ],
+  },
+  {
+    title: "Enhanced Employee Experience & Satisfaction",
+    icon: UsersIcon,
+    items: [
+      `Instant expert access: Employees experience swift resolution, eliminating frustration associated with delayed
+responses or unanswered questions.`,
+      `Transparent resolution process: Builds confidence in how their EPF matters are managed, as they can track
+progress in real-time.`,
+      `Professional support quality: The consistent and expert support enhances the perception of employer care
+and commitment to employee well-being.`,
+      `Empowered workforce: Employees feel more in control and informed about their provident fund matters,
+leading to increased satisfaction and morale.`,
+    ],
+  },
+ 
+];
+
+
+export const plansEpfDesk = {
+  mainTitle:
+    "Simple Implementation & Ongoing Support",
+  cards: [
+    {
+      title: "24-Hour Platform Activation",
+      features: [
+        `Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal,
+customizing access configuration as needed.`,
+        `Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials
+or guide your employees through a simple self-registration process.`,
+        `Comprehensive Employee Onboarding Kit Delivery: We provide easy-to-understand usage guides, FAQs, and
+tutorials to ensure your employees can quickly adopt and benefit from the platform.`,
+        `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
+within 24 hours of onboarding completion, experiencing instant value.`,
+      ],
+    },
+    {
+      title: "Seamless Integration & Proactive Management",
+      features: [
+        `Optional HR Dashboard: While we handle direct employee resolution, your HR team can access an optional
+dashboard to monitor common query trends (anonymized), view overall ticket resolution rates, and identify areas for
+internal communication.`,
+        `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
+organizational-level support, reporting needs, and any high-level strategic consultations.`,
+        `Continuous Platform Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
+EPFO processes, and emerging employee needs, ensuring your employees always have access to the best support.`,
+        `Scalable Solution: Our platform and expert teams are built to handle ever-increasing query volumes, seamlessly
+growing with your workforce from mid-sized companies to large enterprises.`,
+      ],
+    },
+    {
+      title: "Common Employee Issues We Resolve:",
+      features: [
+        `EPF balance checking and passbook updates: Including "How to check EPF balance online" and resolving "Why is
+my EPF passbook not updated?`,
+        `UAN activation, linking, and Aadhaar integration: Expert assistance with "How to activate UAN," "How to know
+your UAN," and managing "Common UAN login issues and solutions.`,
+        `KYC document updates and verification: Guidance and processing for "How to update EPF KYC"and other member
+profile corrections.`,
+        `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
+to withdraw EPF online" and required documents.`,
+`EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
+continuity of funds.`,
+`Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
+to get EPS Scheme Certificate."`,
+
+      ],
+    },
+    {
+      title: "Rapid Implementation & Ongoing Support",
+      features: [
+        `Initial Consultation: A quick, efficient session to understand your current ESIC
+setup, employee count, and specific organizational requirements.`,
+        `Secure Data Integration: Our team securely accesses necessary payroll and
+employee information via compliant channels for initial ESIC processing.`,
+        `ESIC Portal Setup & Linkage: We manage the efficient setup and linkage with the
+ESIC employer portal and other relevant online platforms.`,
+        `Brief Team Orientation: A concise, practical orientation session for your relevant
+HR and Finance staff to ensure a smooth operational handover and understanding
+of our processes.`,
+        `Full Service Activation: Your ESIC compliance is fully operational and seamlessly
+managed by EPFDesk.com experts within 24-48 hours of successful onboarding.`,
+      ],
+    },
+  ],
+};

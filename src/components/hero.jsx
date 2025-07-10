@@ -56,7 +56,7 @@ export default function Hero({ setShowFloating }) {
       </div>
     </section> */}
       <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-20 lg:pb-20 px-6 md:px-12">
-        <div className="flex flex-col-reverse md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-6">
+        <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-6">
           {/* Left Text Content */}
           <div className="w-full md:w-1/2 text-center">
             <h1 className="text-4xl sm:text-4xl font-bold text-black mb-8">

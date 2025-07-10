@@ -15,6 +15,7 @@ import LabourWelfareFund from "./components/labourWelfareFund";
 import StackedCards from "./components/scrollCards";
 import CustomerCarousel from "./components/customerCarousel";
 import LimitedCapacitySection from "./components/limitedCapacitySection";
+import EPFDesk from "./components/epfDesk";
 
 function App() {
   return (
@@ -26,21 +27,30 @@ function App() {
             <FadeInWhenVisible>
               <Hero />
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <TrustIndicators />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
               <HrChallenges />
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
+            {/* <FadeInWhenVisible>
               <ComplianceSolution />
-            </FadeInWhenVisible>
+            </FadeInWhenVisible> */}
             <FadeInWhenVisible>
               <ServiceCards />
             </FadeInWhenVisible>
             <StackedCards />
             <CustomerCarousel />
             <LimitedCapacitySection />
+          </Layout>
+        }
+      />
+
+       <Route
+        path="/epfDesk"
+        element={
+          <Layout>
+            <EPFDesk />
           </Layout>
         }
       />

@@ -34,9 +34,9 @@ const ProfessionalTax = () => {
       <FadeInWhenVisible>
         <Hero />
       </FadeInWhenVisible>
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <PFCarousel />
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
       <FadeInWhenVisible>
         <PFServicesSection />
       </FadeInWhenVisible>

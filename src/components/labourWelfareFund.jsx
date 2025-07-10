@@ -38,9 +38,9 @@ const LabourWelfareFund = () => {
       <FadeInWhenVisible>
         <LWFServicesSection />
       </FadeInWhenVisible>
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <LWFComplianceROI />
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
       <FadeInWhenVisible>
         <FaqAccordion faqs={lwfFaq} />
       </FadeInWhenVisible>
