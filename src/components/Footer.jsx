@@ -51,6 +51,9 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2">
               <li>
+                <Link to="/epfDesk" onClick={() => handleScrollToTop('/epfDesk')}>EPFDesk</Link>
+              </li>
+              <li>
                 <Link to="/epf" onClick={() => handleScrollToTop('/epf')}>EPFO</Link>
               </li>
               <li>
