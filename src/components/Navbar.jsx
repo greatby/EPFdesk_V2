@@ -13,7 +13,7 @@ const links = [
   { href: "https://about-us-flame.vercel.app/", label: "About Us" },
   { href: "https://jobs-zeta-two.vercel.app/", label: "Join" },
   { href: "/res", label: "Resources" },
-  { href: "/sig", label: "Sign In" },
+  { href: "https://sign-up-two-sandy.vercel.app", label: "Sign In" },
 ];
 
 const services = [
