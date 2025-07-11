@@ -568,70 +568,140 @@ leading to increased satisfaction and morale.`,
 ];
 
 
+// export const plansEpfDesk = {
+//   mainTitle:
+//     "Simple Implementation & Ongoing Support",
+//   cards: [
+//     {
+//       id:"01",
+//       title: "24-Hour Platform Activation",
+//         bg: 'bg-[#fceff1]',
+//       desc: [
+//         `Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal,
+// customizing access configuration as needed.`,
+//         `Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials
+// or guide your employees through a simple self-registration process.`,
+//         `Comprehensive Employee Onboarding Kit Delivery: We provide easy-to-understand usage guides, FAQs, and
+// tutorials to ensure your employees can quickly adopt and benefit from the platform.`,
+//         `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
+// within 24 hours of onboarding completion, experiencing instant value.`,
+//       ],
+//     },
+//     {
+//       id:"02",
+//       title: "Seamless Integration & Proactive Management",
+//       bg: 'bg-[#f0f4ff]',
+//       desc: [
+//         `Optional HR Dashboard: While we handle direct employee resolution, your HR team can access an optional
+// dashboard to monitor common query trends (anonymized), view overall ticket resolution rates, and identify areas for
+// internal communication.`,
+//         `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
+// organizational-level support, reporting needs, and any high-level strategic consultations.`,
+//         `Continuous Platform Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
+// EPFO processes, and emerging employee needs, ensuring your employees always have access to the best support.`,
+//         `Scalable Solution: Our platform and expert teams are built to handle ever-increasing query volumes, seamlessly
+// growing with your workforce from mid-sized companies to large enterprises.`,
+//       ],
+//     },
+//     {
+//       id:"03",
+//       title: "Common Employee Issues We Resolve:",
+//       bg: 'bg-[#e7fbe9]',
+//       desc: [
+//         `EPF balance checking and passbook updates: Including "How to check EPF balance online" and resolving "Why is
+// my EPF passbook not updated?`,
+//         `UAN activation, linking, and Aadhaar integration: Expert assistance with "How to activate UAN," "How to know
+// your UAN," and managing "Common UAN login issues and solutions.`,
+//         `KYC document updates and verification: Guidance and processing for "How to update EPF KYC"and other member
+// profile corrections.`,
+//         `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
+// to withdraw EPF online" and required documents.`,
+// `EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
+// continuity of funds.`,
+// `Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
+// to get EPS Scheme Certificate."`,
+
+//       ],
+//     },
+//     {
+//       id:"04",
+//       title: "Rapid Implementation & Ongoing Support",
+//        bg: 'bg-[#fff7ed]',
+//       desc: [
+//         `Initial Consultation: A quick, efficient session to understand your current ESIC
+// setup, employee count, and specific organizational requirements.`,
+//         `Secure Data Integration: Our team securely accesses necessary payroll and
+// employee information via compliant channels for initial ESIC processing.`,
+//         `ESIC Portal Setup & Linkage: We manage the efficient setup and linkage with the
+// ESIC employer portal and other relevant online platforms.`,
+//         `Brief Team Orientation: A concise, practical orientation session for your relevant
+// HR and Finance staff to ensure a smooth operational handover and understanding
+// of our processes.`,
+//         `Full Service Activation: Your ESIC compliance is fully operational and seamlessly
+// managed by EPFDesk.com experts within 24-48 hours of successful onboarding.`,
+//       ],
+//     },
+//   ],
+// };
+
+
 export const plansEpfDesk = {
-  mainTitle:
-    "Simple Implementation & Ongoing Support",
+  mainTitle: 'Simple Implementation & Ongoing Support',
   cards: [
     {
-      title: "24-Hour Platform Activation",
-      features: [
-        `Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal,
-customizing access configuration as needed.`,
-        `Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials
-or guide your employees through a simple self-registration process.`,
-        `Comprehensive Employee Onboarding Kit Delivery: We provide easy-to-understand usage guides, FAQs, and
-tutorials to ensure your employees can quickly adopt and benefit from the platform.`,
-        `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
-within 24 hours of onboarding completion, experiencing instant value.`,
+      id: '01',
+      title: '24-Hour Platform Activation',
+      bg: 'bg-[#fceff1]',
+      heading: 'Experience immediate productivity with same-day activation.',
+      body: [
+        'Platform Setup & Configuration: Our team handles the swift setup of your company\'s EPFDesk portal, customizing access configuration as needed.',
+        'Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials or guide your employees through a simple self-registration process.',
+        'Comprehensive Employee Onboarding Kit Delivery: Easy-to-understand guides, FAQs, and tutorials.',
+        'Immediate Platform Availability: Employees can begin accessing support within 24 hours of onboarding.'
       ],
+      image: 'https://dummyimage.com/600x400/fceff1/333&text=Activation'
     },
     {
-      title: "Seamless Integration & Proactive Management",
-      features: [
-        `Optional HR Dashboard: While we handle direct employee resolution, your HR team can access an optional
-dashboard to monitor common query trends (anonymized), view overall ticket resolution rates, and identify areas for
-internal communication.`,
-        `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
-organizational-level support, reporting needs, and any high-level strategic consultations.`,
-        `Continuous Platform Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
-EPFO processes, and emerging employee needs, ensuring your employees always have access to the best support.`,
-        `Scalable Solution: Our platform and expert teams are built to handle ever-increasing query volumes, seamlessly
-growing with your workforce from mid-sized companies to large enterprises.`,
+      id: '02',
+      title: 'Seamless Integration & Proactive Management',
+      bg: 'bg-[#f0f4ff]',
+      heading: 'Scale confidently with expert-led integration.',
+      body: [
+        'Optional HR Dashboard for insights and anonymized trend data.',
+        'Dedicated Client Manager for strategic guidance and support.',
+        'Continuous Platform Enhancement based on feedback and compliance changes.',
+        'Scalable to handle increased volumes as your workforce grows.'
       ],
+      image: 'https://dummyimage.com/600x400/f0f4ff/333&text=Integration'
     },
     {
-      title: "Common Employee Issues We Resolve:",
-      features: [
-        `EPF balance checking and passbook updates: Including "How to check EPF balance online" and resolving "Why is
-my EPF passbook not updated?`,
-        `UAN activation, linking, and Aadhaar integration: Expert assistance with "How to activate UAN," "How to know
-your UAN," and managing "Common UAN login issues and solutions.`,
-        `KYC document updates and verification: Guidance and processing for "How to update EPF KYC"and other member
-profile corrections.`,
-        `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
-to withdraw EPF online" and required documents.`,
-`EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
-continuity of funds.`,
-`Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
-to get EPS Scheme Certificate."`,
-
+      id: '03',
+      title: 'Common Employee Issues We Resolve:',
+      bg: 'bg-[#e7fbe9]',
+      heading: 'Relieve HR stress with our comprehensive support.',
+      body: [
+        'EPF balance and passbook update support.',
+        'UAN activation, Aadhaar linking, and login help.',
+        'KYC updates and profile corrections.',
+        'Assistance with EPF withdrawal rules and documentation.',
+        'Expert-managed EPF transfers between employers/states.',
+        'Pension-related EPS benefits and certification guidance.'
       ],
+      image: 'https://dummyimage.com/600x400/e7fbe9/333&text=Support'
     },
     {
-      title: "Rapid Implementation & Ongoing Support",
-      features: [
-        `Initial Consultation: A quick, efficient session to understand your current ESIC
-setup, employee count, and specific organizational requirements.`,
-        `Secure Data Integration: Our team securely accesses necessary payroll and
-employee information via compliant channels for initial ESIC processing.`,
-        `ESIC Portal Setup & Linkage: We manage the efficient setup and linkage with the
-ESIC employer portal and other relevant online platforms.`,
-        `Brief Team Orientation: A concise, practical orientation session for your relevant
-HR and Finance staff to ensure a smooth operational handover and understanding
-of our processes.`,
-        `Full Service Activation: Your ESIC compliance is fully operational and seamlessly
-managed by EPFDesk.com experts within 24-48 hours of successful onboarding.`,
+      id: '04',
+      title: 'Rapid Implementation & Ongoing Support',
+      bg: 'bg-[#fff7ed]',
+      heading: 'Quick setup and dependable ESIC compliance.',
+      body: [
+        'Initial Consultation to understand your requirements.',
+        'Secure Data Integration for payroll and employee info.',
+        'ESIC Portal Setup and configuration.',
+        'Concise Orientation for HR and Finance teams.',
+        'Full Service Activation within 24-48 hours.'
       ],
-    },
-  ],
+      image: 'https://dummyimage.com/600x400/fff7ed/333&text=Implementation'
+    }
+  ]
 };

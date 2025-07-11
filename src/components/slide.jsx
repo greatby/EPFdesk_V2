@@ -1,89 +1,50 @@
-export default function Slide({ title, desc, image, author, bg = "bg-white" }) {
+// export default function Slide({ title, desc, bg = "bg-white" }) {
+//   return (
+//     <section className={`w-full h-screen snap-start ${bg}`}>
+//       <div className="flex flex-col lg:flex-row items-center justify-center h-full max-w-7xl mx-auto px-6 py-12">
+//         {/* Title Left Column */}
+//         <div className="w-full lg:w-1/2 flex items-center justify-center h-full">
+//           <h2 className="text-3xl sm:text-4xl font-bold text-center lg:text-left">
+//             {title}
+//           </h2>
+//         </div>
+
+//         {/* Description Right Column */}
+//         <div className="w-full lg:w-1/2 flex items-center justify-center h-full">
+//           <p className="text-lg text-gray-600 text-center lg:text-left max-w-lg">
+//             {desc}
+//           </p>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+import { CheckCircleIcon } from '@heroicons/react/24/solid';
+export default function Slide({ title, heading, body, image, bg = 'bg-white' }) {
   return (
-    // <section className={`min-h-screen w-full snap-start ${bg}`}>
-    //   <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-8 px-6 py-12 max-w-7xl mx-auto overflow-hidden">
-
-    //     {/* Left Column */}
-    //     <div className="w-full lg:w-1/2 space-y-6">
-    //       <div>
-    //         <h2 className="text-3xl sm:text-4xl font-bold">{title}</h2>
-    //         <p className="mt-4 text-lg text-gray-600">{desc}</p>
-    //       </div>
-
-    //       {/* {author?.quote && (
-    //         <>
-    //           <div className="h-[1px] bg-gray-300 w-16" />
-    //           <div className="flex items-start gap-4">
-    //             {author?.photo && (
-    //               <div className="flex-shrink-0">
-    //                 <img
-    //                   src={author.photo}
-    //                   alt={author.name}
-    //                   className="w-12 h-12 rounded-full object-cover"
-    //                 />
-    //                 {author.logo && (
-    //                   <img src={author.logo} alt="Company logo" className="w-6 mt-2" />
-    //                 )}
-    //               </div>
-    //             )}
-    //             <div>
-    //               <blockquote className="italic text-gray-700">“{author.quote}”</blockquote>
-    //               <div className="font-semibold mt-2">{author.name}</div>
-    //               {author.role && author.company && (
-    //                 <div className="text-sm text-gray-500">
-    //                   {author.role}, {author.company}
-    //                 </div>
-    //               )}
-    //             </div>
-    //           </div>
-    //         </>
-    //       )} */}
-    //     </div>
-
-    //     {/* Right Column (Image) */}
-    //     {/* <div className="w-full lg:w-1/2">
-    //       <img
-    //         src={image}
-    //         alt={title}
-    //         className="w-full h-[300px] sm:h-[400px] lg:h-full object-cover rounded-xl"
-    //       />
-    //     </div> */}
-    //   </div>
-    // </section>
-    // <section className={`min-h-screen w-full snap-start ${bg}`}>
-    //   <div className="flex flex-col lg:flex-row h-full items-center justify-center px-6 py-12 max-w-7xl mx-auto overflow-hidden">
-    //     {/* Title Left Column */}
-    //     <div className="w-full lg:w-1/2 flex items-center justify-center">
-    //       <h2 className="text-3xl sm:text-4xl font-bold text-center lg:text-left">
-    //         {title}
-    //       </h2>
-    //     </div>
-
-    //     {/* Description Right Column */}
-    //     <div className="w-full lg:w-1/2 flex items-center justify-center">
-    //       <p className="text-lg text-gray-600 text-center lg:text-left max-w-lg">
-    //         {desc}
-    //       </p>
-    //     </div>
-    //   </div>
-    // </section>
     <section className={`w-full h-screen snap-start ${bg}`}>
-  <div className="flex flex-col lg:flex-row items-center justify-center h-full max-w-7xl mx-auto px-6 py-12">
-    {/* Title Left Column */}
-    <div className="w-full lg:w-1/2 flex items-center justify-center h-full">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center lg:text-left">
-        {title}
-      </h2>
-    </div>
+      <div className="flex flex-col lg:flex-row items-center justify-center h-full max-w-7xl mx-auto px-6 py-12 gap-8">
+        {/* Title Left Column */}
+        <div className="w-full lg:w-1/2 flex flex-col items-start justify-center h-full space-y-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-left">{title}</h2>
+          <p className="text-lg text-gray-600 text-left max-w-md">{heading}</p>
+        </div>
 
-    {/* Description Right Column */}
-    <div className="w-full lg:w-1/2 flex items-center justify-center h-full">
-      <p className="text-lg text-gray-600 text-center lg:text-left max-w-lg">
-        {desc}
-      </p>
-    </div>
-  </div>
-</section>
-
+        {/* Features Right Column */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center h-full">
+          <div className="max-w-lg w-full space-y-6 bg-white/80 backdrop-blur-md rounded-xl shadow-lg p-6">
+            <ul className="space-y-4 text-left text-gray-700">
+              {body.map((point, idx) => (
+                <li key={idx} className="flex items-start gap-2">
+                  <CheckCircleIcon className="w-5 h-5 text-green-500 mt-1" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+            {image && <img src={image} alt={title} className="rounded-xl w-full h-auto object-cover" />}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

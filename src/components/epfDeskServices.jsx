@@ -11,8 +11,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { epfDeskServices, epfDeskStatergy } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-
-
+import VerticalCarousel from "./verticalCarousel";
 
 const EPFSlider = ({ epfServices }) => {
   const sliderRef = useRef(null);
@@ -77,21 +76,20 @@ const EPFSlider = ({ epfServices }) => {
             return (
               <motion.div
                 key={index}
+                id={`card-${index}`}
                 className="min-w-[280px] max-w-xs flex-shrink-0 snap-start border rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition p-6 cursor-pointer"
                 onClick={() => {
+                  const container = sliderRef.current;
                   const cardEl = document.getElementById(`card-${index}`);
-                  cardEl?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "nearest", // prevents vertical scroll jump
-                    inline: "center",
-                  });
+                  if (container && cardEl) {
+                    const left = cardEl.offsetLeft - 16; // adjust this if you use padding/gap
+                    container.scrollTo({ left, behavior: "smooth" });
+                  }
                 }}
-                id={`card-${index}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
               >
-                
                 <p className="text-sm text-gray-700 mt-2 leading-relaxed">
                   {item.content.includes(":") ? (
                     <>
@@ -179,7 +177,12 @@ const EPFStackTabs = ({ epfServices }) => {
 };
 
 const AlternatingFeatureCards = ({ cards }) => {
-  const bgColors = ["bg-indigo-50", "bg-teal-50", "bg-purple-50", "bg-yellow-50"];
+  const bgColors = [
+    "bg-indigo-50",
+    "bg-teal-50",
+    "bg-purple-50",
+    "bg-yellow-50",
+  ];
 
   return (
     <section className="px-4 py-16 max-w-7xl mx-auto space-y-24">
@@ -280,7 +283,8 @@ export default function EPFdeskServices({ plans }) {
           </div>
         ))}
       </div> */}
-      <AlternatingFeatureCards cards={plans.cards} />
+      {/* <AlternatingFeatureCards cards={plans.cards} /> */}
+      {/* <VerticalCarousel cards={plans.cards}/> */}
     </section>
   );
 }
