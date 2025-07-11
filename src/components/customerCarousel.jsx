@@ -35,6 +35,7 @@ const slides = [
 
 const TestimonialSlider = () => {
   const containerRef = useRef(null);
+  const cardRefs = useRef([]);
 
   const scroll = (direction) => {
     const container = containerRef.current;
@@ -45,9 +46,23 @@ const TestimonialSlider = () => {
     });
   };
 
+  const scrollToCard = (index) => {
+    const container = containerRef.current;
+    const card = cardRefs.current[index];
+    if (container && card) {
+      const cardOffsetLeft = card.offsetLeft;
+      container.scrollTo({
+        left: cardOffsetLeft - 16, // adjust padding offset
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="w-full py-12 bg-gray-50">
-      <h4 className="px-8 text-2xl">Trusted by a growing number of HR departments in India</h4>
+      <h4 className="px-8 text-2xl mb-4">
+        Trusted by a growing number of HR departments in India
+      </h4>
       <div className="relative">
         <div
           ref={containerRef}
@@ -56,10 +71,11 @@ const TestimonialSlider = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="bg-white min-w-[90%] md:min-w-[340px] lg:min-w-[400px] h-auto rounded-xl p-6 flex flex-col justify-between shadow hover:shadow-lg transition"
+              ref={(el) => (cardRefs.current[index] = el)}
+              onClick={() => scrollToCard(index)}
+              className="cursor-pointer bg-white min-w-[90%] md:min-w-[340px] lg:min-w-[400px] h-auto rounded-xl p-6 flex flex-col justify-between shadow hover:shadow-lg transition"
             >
               <p className="text-gray-700 text-base leading-relaxed mb-4">"{slide.message}"</p>
-
               <div className="mt-6">
                 <p className="text-lg font-semibold text-gray-900">{slide.name}</p>
                 {slide.title && <p className="text-sm text-gray-600">{slide.title}</p>}

@@ -37,29 +37,62 @@ const challenges = [
   },
 ];
 
+// const FlipCard = ({ item }) => {
+//   const [flipped, setFlipped] = useState(false);
+
+//   return (
+//     <div className="group [perspective:1000px]">
+//       <div
+//         className={`flip-card-inner h-64 w-full rounded-2xl relative transition-transform duration-500 ${
+//           flipped ? "rotate-y-180" : "group-hover:rotate-y-180"
+//         }`}
+//         onClick={() => setFlipped((prev) => !prev)}
+//       >
+//         {/* Front */}
+//         <div
+//           className="flip-card-front absolute inset-0 p-6 rounded-2xl shadow-sm"
+//           style={{ backgroundColor: item.bgColor }}
+//         >
+//           <div className="mb-4">{item.icon}</div>
+//           <h3 className="text-[2rem] leading-tight font-bold text-gray-800">{item.title}</h3>
+//         </div>
+
+//         {/* Back */}
+//         <div
+//           className="flip-card-back absolute inset-0 p-6 rounded-2xl shadow-md"
+//           style={{ backgroundColor: item.bgColor }}
+//         >
+//           <p className="text-gray-700 text-[17px]">{item.description}</p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
 const FlipCard = ({ item }) => {
   const [flipped, setFlipped] = useState(false);
 
   return (
-    <div className="group [perspective:1000px]">
+    <div className="[perspective:1000px] cursor-pointer" onClick={() => setFlipped((prev) => !prev)}>
       <div
-        className={`flip-card-inner h-64 w-full rounded-2xl relative transition-transform duration-500 ${
-          flipped ? "rotate-y-180" : "group-hover:rotate-y-180"
+        className={`relative h-64 w-full transition-transform duration-500 [transform-style:preserve-3d] rounded-2xl ${
+          flipped ? "rotate-y-180" : ""
         }`}
-        onClick={() => setFlipped((prev) => !prev)}
       >
-        {/* Front */}
+        {/* Front Side */}
         <div
-          className="flip-card-front absolute inset-0 p-6 rounded-2xl shadow-sm"
+          className="absolute inset-0 backface-hidden rounded-2xl p-6 shadow-sm"
           style={{ backgroundColor: item.bgColor }}
         >
           <div className="mb-4">{item.icon}</div>
-          <h3 className="text-[2rem] leading-tight font-bold text-gray-800">{item.title}</h3>
+          <h3 className="text-[2rem] leading-tight font-bold text-gray-800">
+            {item.title}
+          </h3>
         </div>
 
-        {/* Back */}
+        {/* Back Side */}
         <div
-          className="flip-card-back absolute inset-0 p-6 rounded-2xl shadow-md"
+          className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl p-6 shadow-md"
           style={{ backgroundColor: item.bgColor }}
         >
           <p className="text-gray-700 text-[17px]">{item.description}</p>
@@ -68,7 +101,6 @@ const FlipCard = ({ item }) => {
     </div>
   );
 };
-
 const HrChallenges = () => {
   return (
     <section className={`bg-white px-6 md:px-12`}>
