@@ -16,6 +16,7 @@ import StackedCards from "./components/scrollCards";
 import CustomerCarousel from "./components/customerCarousel";
 import LimitedCapacitySection from "./components/limitedCapacitySection";
 import EPFDesk from "./components/epfDesk";
+import VerticalCarousel from "./components/verticalCarousel";
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
             <FadeInWhenVisible>
               <HrChallenges />
             </FadeInWhenVisible>
+            {/* <div>
+
+            <VerticalCarousel />
+            </div> */}
             {/* <FadeInWhenVisible>
               <ComplianceSolution />
             </FadeInWhenVisible> */}

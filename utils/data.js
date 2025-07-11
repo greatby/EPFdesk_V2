@@ -421,6 +421,55 @@ available to streamline the process for maximum efficiency.`,
  
 ];
 
+export const epfDeskFaq = [
+  {
+    question: "How do our employees get access to the EPFDesk platform?",
+    answer: `After company onboarding, employees receive secure login credentials or guided registration instructions for immediate
+platform use via a dedicated portal link.`,
+  },
+  {
+    question:
+      "What specific EPF issues can employees resolve through EPFDesk?",
+    answer: `Employees can raise tickets for virtually all EPF-related queries including balance checks, UAN activation, KYC updates,
+withdrawals (partial/full), transfers, pension matters, passbook updates, and portal login issues.`,
+  },
+  {
+    question:
+      "Is there any cost to our employees for using EPFDesk?",
+    answer: `No, the EPFDesk platform and all its support services are included as part of your company's partnership with
+EPFDesk.com. There is no direct cost to individual employees.`,
+  },
+  {
+    question: "How quickly are employee EPF issues typically resolved through EPFDesk?",
+    answer: `While resolution times can vary based on complexity and EPFO processing, our expert teams prioritize speed and accuracy.
+Employees can track real-time progress, with most common queries resolved within days.`,
+  },
+  {
+    question: "Can employees still contact our internal HR for EPF matters?",
+    answer: `While EPFDesk is designed to be the primary resolution channel for EPF queries, employees always retain the option to
+contact your internal HR for company-specific policy questions or non-EPF related matters.`,
+  },
+  {
+    question:
+      "How does EPFDesk ensure the security and privacy of employee data?",
+    answer: `We employ industry-standard data encryption, secure login protocols, and strict data privacy policies, ensuring complete
+confidentiality and compliance with data protection regulations.`,
+  },
+  {
+    question:
+      "What happens if an employee's case requires visiting EPFO offices?",
+    answer: `Our unique on-ground teams across India handle these situations. For cases requiring physical presence at EPFO offices,
+our local experts manage all interactions directly, ensuring resolution without burdening your employee or HR.`,
+  },
+   {
+    question:
+      "Can the platform handle high volumes of employee queries for large companies?",
+    answer: `Yes, our scalable platform and expert teams are specifically designed and equipped to handle high query volumes for
+organizations of all sizes, from mid-sized companies to large enterprises seamlessly.`,
+  },
+ 
+];
+
 export const epfDeskServices = [
   {
     title: "Secure & Intuitive Employee Access (24/7)",
@@ -516,7 +565,6 @@ and commitment to employee well-being.`,
 leading to increased satisfaction and morale.`,
     ],
   },
- 
 ];
 
 

@@ -6,6 +6,7 @@ module.exports = {
         sans: ['Manrope', 'sans-serif'],
         roboto:['Roboto','san-serif']
       },
+       transform: ['group-hover'],
     },
   },
   plugins: [],

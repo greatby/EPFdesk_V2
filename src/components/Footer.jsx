@@ -38,10 +38,10 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-3 text-gray-900">
               EPFdesk
             </h4>
-            <p className="text-sm text-gray-600">
+            {/* <p className="text-sm text-gray-600">
               India's most trusted EPFO compliance partner. Serving 5000+
               companies with 99.8% accuracy since 2020.
-            </p>
+            </p> */}
           </div>
 
           {/* Quick Links */}

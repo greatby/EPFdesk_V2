@@ -7,7 +7,7 @@ import FaqAccordion from "./faqAccordian";
 import { epfManagementFaq } from "../../utils/data";
 import EPFdeskServices from "./epfDeskServices";
 import ESCIServicesSection from "./esciServicesSection";
-import { plansEpfDesk } from "../../utils/data";
+import { plansEpfDesk,epfDeskFaq } from "../../utils/data";
 
 function Hero() {
   return (
@@ -35,11 +35,11 @@ const EPFDesk = () => {
         <Hero />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <EPFdeskServices />
+        <EPFdeskServices plans={plansEpfDesk} />
       </FadeInWhenVisible>
-       <FadeInWhenVisible>
-              <ESCIServicesSection plans={plansEpfDesk}/>
-            </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <FaqAccordion faqs={epfDeskFaq} />
+      </FadeInWhenVisible>
     </>
   );
 };
