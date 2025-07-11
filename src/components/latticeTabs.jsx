@@ -5,106 +5,146 @@ import { useEffect, useState } from "react";
 
 const cards = [
   {
-    title: "Unified Data",
-    description: "Pay employees and contractors in a few clicks.",
-    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
+    title: 'Unified Data',
+    description: 'Pay employees and contractors in a few clicks.',
+    image: '/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp',
     color: {
-      bg: "bg-rose-100",
-      border: "border-rose-200",
-      raw: "#ffe4e6",
-      stroke: "#ffe4e6",
+      bg: 'bg-rose-100',
+      border: 'border-rose-200',
+      raw: '#ffe4e6',
+      stroke: '#ffe4e6'
     },
     content: (
-      <>
-        <h2 className="text-2xl font-bold">Unified Data</h2>
-        <p className="mt-2 text-gray-700">
-          Centralize employee and contractor data for easy access and
-          management.
-        </p>
-      </>
-    ),
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Peace of mind for every pay cycle.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            With a unified employee record, your payroll information is always up to date.
+            Lattice calculates payroll and tracks deductions and contributions so you don’t have to.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67db49b01109f51c7bb212c2_a9ba4cd2bfdef51480350a75b0569f4e_feat-image-payroll-unified-data.webp"
+          alt="Unified Data Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    )
   },
   {
-    title: "Tax Compliance",
-    description: "Auto-calculate & file all payroll taxes.",
-    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
+    title: 'Tax Compliance',
+    description: 'Auto-calculate & file all payroll taxes.',
+    image: '/images/67db431bc50e51569725f6a0_Tax compliance.webp',
     color: {
-      bg: "bg-yellow-100",
-      border: "border-yellow-200",
-      raw: "#fef9c3",
-      stroke: "#fef9c3",
+      bg: 'bg-yellow-100',
+      border: 'border-yellow-200',
+      raw: '#fef9c3',
+      stroke: '#fef9c3'
     },
     content: (
-      <>
-        <h2 className="text-2xl font-bold">Tax Compliance</h2>
-        <p className="mt-2 text-gray-700">
-          Automatically manage tax calculations, filings, and compliance
-          effortlessly.
-        </p>
-      </>
-    ),
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Simplify compliance with worry-free withholdings.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Lattice files taxes on your behalf, and gives you all the data you need for reporting and auditing.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc43c71f563ef421a38eaa_a44c8c1ae5b22c26ebccb00e1b2b04f0_feat-image-payroll-tax-compliance.webp"
+          alt="Tax Compliance Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    )
   },
   {
-    title: "Employee Self Service",
-    description: "Reduce HR admin burden.",
-    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
-
+    title: 'Employee Self Service',
+    description: 'Reduce HR admin burden.',
+    image: '/images/67db434ac50e515697262a2b_Employee self service-p-500.webp',
     color: {
-      bg: "bg-blue-100",
-      border: "border-blue-200",
-      raw: "#dbeafe",
-      stroke: "#dbeafe",
+      bg: 'bg-blue-100',
+      border: 'border-blue-200',
+      raw: '#dbeafe',
+      stroke: '#dbeafe'
     },
     content: (
-      <>
-        <h2 className="text-2xl font-bold">Employee Self Service</h2>
-        <p className="mt-2 text-gray-700">
-          Empower employees to manage their own details, pay history, and
-          documents.
-        </p>
-      </>
-    ),
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Empower employees with an easy, intuitive platform.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Let employees view and manage paystubs, bank accounts, and tax documents without asking HR.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e5669a66ad33bbfbabf4a3_feat-image-employee-self-service.webp"
+          alt="Employee Self Service Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    )
   },
   {
-    title: "Time Tracking",
-    description: "Track, approve, and sync hours to payroll.",
-    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
-
+    title: 'Time Tracking',
+    description: 'Track, approve, and sync hours to payroll.',
+    image: '/images/67db437a17d3aaef94ed34ad_Time tracking.webp',
     color: {
-      bg: "bg-green-100",
-      border: "border-green-200",
-      raw: "#dcfce7",
-      stroke: "#dcfce7",
+      bg: 'bg-green-100',
+      border: 'border-green-200',
+      raw: '#dcfce7',
+      stroke: '#dcfce7'
     },
     content: (
-      <>
-        <h2 className="text-2xl font-bold">Time Tracking</h2>
-        <p className="mt-2 text-gray-700">
-          Simplify hour tracking with smart time cards and payroll sync.
-        </p>
-      </>
-    ),
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Get time back with built-in time tracking.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Cut down on manual data entry and errors with fast time card entry, review, and approval—synced automatically to payroll.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e2b51dfb00d11fe21ace11_feat-image-time-tracking.webp"
+          alt="Time Tracking Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    )
   },
   {
-    title: "Integrations",
-    description: "Connect Payroll to your favorite third-party apps.",
-    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
-
+    title: 'Integrations',
+    description: 'Connect Payroll to your favorite third-party apps.',
+    image: '/images/67db439ff5e0bea132971dd4_Integrations.webp',
     color: {
-      bg: "bg-purple-100",
-      border: "border-purple-200",
-      raw: "#f3e8ff",
-      stroke: "#f3e8ff",
+      bg: 'bg-purple-100',
+      border: 'border-purple-200',
+      raw: '#f3e8ff',
+      stroke: '#f3e8ff'
     },
     content: (
-      <>
-        <h2 className="text-2xl font-bold">Integrations</h2>
-        <p className="mt-2 text-gray-700">
-          Seamlessly integrate with tools like Slack, QuickBooks, and more.
-        </p>
-      </>
-    ),
-  },
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Ensure every system works together seamlessly.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Lattice Payroll integrates with your preferred third-party apps, like benefits, 401(k), and more.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc42fb273047112e42863a_cc3ed45b7dc81f77e5b48e5f03f5f3e1_feat-image-payroll-integrations.webp"
+          alt="Integrations Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    )
+  }
 ];
 
 function useMediaQuery(query) {
@@ -135,7 +175,7 @@ export default function FeatureTabs() {
         {isLargeScreen ? (
           <>
             {/* Desktop Tabs */}
-            <div className="relative mb-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
+            <div className="relative mb-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
               {cards.map((card, i) => {
                 const isActive = activeIndex === i;
                 const color = card.color;
@@ -152,7 +192,7 @@ export default function FeatureTabs() {
                           }
                         : {}
                     }
-                    className={`relative cursor-pointer rounded-[20px] border border-[#0000001c] px-4 py-3 shadow-[0px_0px_6px_#0000001c] transition-all ${
+                    className={`relative cursor-pointer rounded-[18px] border border-[#0000001c] px-4 py-3 shadow-[0px_0px_6px_#0000001c] transition-all ${
                       isActive
                         ? `z-20 -mb-4 rounded-b-none ${color.bg} border-0 shadow-none`
                         : "bg-white hover:shadow"

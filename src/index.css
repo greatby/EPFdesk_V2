@@ -736,7 +736,7 @@ body {
 }
 
 .feature-tab-corner.is-left {
-  top: 38px;
+  top: 22px;
   bottom: 0;
   /* left: 261px; */
   right: 1px;
@@ -744,7 +744,7 @@ body {
 }
 
 .feature-tab-corner.is-right {
-  top: 38px;
+  top: 22px;
   bottom: 0;
   left: 2px;
   right: 0px;
