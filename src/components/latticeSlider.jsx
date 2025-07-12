@@ -41,7 +41,7 @@ const LatticeSlider = () => {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 overflow-hidden">
-        <h2 className="text-3xl font-bold text-center mb-4">
+        <h2 className="text-3xl font-bold text-center mb-16">
           Complete Employee EPF Support Platform
         </h2>
         <h3 className="text-2xl font-bold mb-8 text-center md:text-left">
