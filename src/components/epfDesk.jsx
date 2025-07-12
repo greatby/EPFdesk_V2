@@ -4,7 +4,7 @@ import EPFServicesSection from "./epfServicesSection";
 import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
-import { epfManagementFaq } from "../../utils/data";
+import { epfManagementFaq, slides } from "../../utils/data";
 import EPFdeskServices from "./epfDeskServices";
 import ESCIServicesSection from "./esciServicesSection";
 import { plansEpfDesk, epfDeskFaq } from "../../utils/data";
@@ -39,7 +39,7 @@ const EPFDesk = () => {
         <Hero />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <LatticeSlider />
+        <LatticeSlider slides={slides[0]}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <ResourcesGrid />

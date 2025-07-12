@@ -265,14 +265,12 @@ where an employee's monthly wage does not exceed ₹21,000 (or ₹25,000 for per
 disabilities). We can confirm your specific applicability.`,
   },
   {
-    question:
-      "What are the current ESIC contribution rates?",
+    question: "What are the current ESIC contribution rates?",
     answer: `As per current regulations, the employer contributes 3.25% and the employee contributes
 0.75% of gross monthly wages, up to the defined wage ceiling.`,
   },
   {
-    question:
-      "Which salary components are included in ESIC calculations?",
+    question: "Which salary components are included in ESIC calculations?",
     answer: `ESIC contributions are calculated on gross wages, typically encompassing basic pay,
 dearness allowance (DA), house rent allowance (HRA), city compensatory allowance (CCA),
 production incentives, night shift allowance, and other applicable allowances.`,
@@ -302,16 +300,14 @@ support, timely regulatory updates, ongoing data management, and full audit-read
 employees to all their entitled ESIC benefits, including medical care, various cash benefits,
 and social security entitlements.`,
   },
-    {
-    question:
-      "Can you help with new company ESIC registration?",
+  {
+    question: "Can you help with new company ESIC registration?",
     answer: `Yes, we provide comprehensive registration support, from initial applicability assessment
 and documentation to successful ESIC code allocation, streamlining the entire setup process
 for new establishments.`,
   },
-   {
-    question:
-      "How do you handle multi-state ESIC compliance?",
+  {
+    question: "How do you handle multi-state ESIC compliance?",
     answer: `Our nationwide operational footprint and deep understanding of varied state-level ESIC
 regulations enable us to manage compliance effectively across all Indian states and
 territories, providing consistent support for multi-location businesses.`,
@@ -333,20 +329,21 @@ be deducted monthly, half-yearly (e.g., June & December), or annually (e.g., Dec
 depending on the specific state's LWF Act.10`,
   },
   {
-    question:
-      "Which employees are typically covered under the LWF Act?",
+    question: "Which employees are typically covered under the LWF Act?",
     answer: `Generally, LWF applies to all employees except those in managerial or supervisory
 positions earning above a certain wage threshold, which varies by state. We ensure
 accurate applicability for your workforce in each state.`,
   },
   {
-    question: "What penalties can apply for LWF non-compliance or late payments?",
+    question:
+      "What penalties can apply for LWF non-compliance or late payments?",
     answer: `Penalties for LWF non-compliance vary by state but can include monetary fines (e.g.,
 ₹500 to ₹5,000+), interest on unpaid amounts (e.g., 12-25% per annum), and even
 imprisonment (up to 3-6 months) for repeated or willful defaults.`,
   },
   {
-    question: "Do you handle LWF compliance for companies operating in multiple states?",
+    question:
+      "Do you handle LWF compliance for companies operating in multiple states?",
     answer: `Absolutely. Our nationwide operational footprint and deep expertise in state-specific
 LWF Acts enable us to manage and ensure flawless compliance across all Indian states
 where you operate.`,
@@ -359,13 +356,11 @@ rates, wage components, and frequencies. We use multi-layer validation and exper
 review to ensure 99.9% accuracy for every contribution and filing.`,
   },
   {
-    question:
-      "Can LWF payments be made online?",
+    question: "Can LWF payments be made online?",
     answer: `Many states now offer online portals for LWF payments and return filings (e.g.,
 Maharashtra, Gujarat, Haryana).11 We utilize these online systems where available to
 streamline the process. For states requiring manual submission, we handle that as well.`,
   },
- 
 ];
 
 export const ptFaq = [
@@ -376,29 +371,29 @@ currently applicable in approximately 18-20 states and Union Territories in Indi
 rules vary significantly from one state to another.`,
   },
   {
-    question:
-      "What are the typical PT rates and how often are they paid?",
+    question: "What are the typical PT rates and how often are they paid?",
     answer: `PT rates are based on a slab system tied to income, varying by state. The maximum
 annual PT payable by an individual cannot exceed ₹2,500. Payment frequency also
 varies: some states require monthly payments, others quarterly, half-yearly, or annually,
 depending on the tax liability or type of registration.`,
   },
   {
-    question:
-      "Which employees are typically covered under Professional Tax?",
+    question: "Which employees are typically covered under Professional Tax?",
     answer: `Generally, Professional Tax applies to all salaried individuals and self-employed
 professionals earning above a certain income threshold, which is set by each state. We
 ensure accurate applicability for your specific workforce in each state.`,
   },
   {
-    question: "What penalties apply for late Professional Tax payments or non-compliance?",
+    question:
+      "What penalties apply for late Professional Tax payments or non-compliance?",
     answer: `Penalties for PT non-compliance vary significantly by state but commonly include
 interest on delayed payments (e.g., 1% to 2% per month), fixed fines for late registration
 (e.g., ₹5 to ₹1,000 per day), and penalties for late filing or non-payment (e.g., 10% to 50%
 of the tax due).`,
   },
   {
-    question: "Do you handle Professional Tax compliance for companies operating in multiple states?",
+    question:
+      "Do you handle Professional Tax compliance for companies operating in multiple states?",
     answer: `Yes, absolutely. Our nationwide operational footprint and deep expertise in each
 state's unique Professional Tax laws enable us to seamlessly manage and ensure
 flawless PT compliance across all Indian states where your company operates.`,
@@ -412,13 +407,11 @@ to ensure 99.9% accuracy for every contribution and filing, protecting you from
 discrepancies.`,
   },
   {
-    question:
-      "Can Professional Tax payments be made online?",
+    question: "Can Professional Tax payments be made online?",
     answer: `Most states now offer online portals for Professional Tax payments and return filings
 (e.g., Maharashtra, Karnataka, West Bengal). We utilize these online systems where
 available to streamline the process for maximum efficiency.`,
   },
- 
 ];
 
 export const epfDeskFaq = [
@@ -428,19 +421,18 @@ export const epfDeskFaq = [
 platform use via a dedicated portal link.`,
   },
   {
-    question:
-      "What specific EPF issues can employees resolve through EPFDesk?",
+    question: "What specific EPF issues can employees resolve through EPFDesk?",
     answer: `Employees can raise tickets for virtually all EPF-related queries including balance checks, UAN activation, KYC updates,
 withdrawals (partial/full), transfers, pension matters, passbook updates, and portal login issues.`,
   },
   {
-    question:
-      "Is there any cost to our employees for using EPFDesk?",
+    question: "Is there any cost to our employees for using EPFDesk?",
     answer: `No, the EPFDesk platform and all its support services are included as part of your company's partnership with
 EPFDesk.com. There is no direct cost to individual employees.`,
   },
   {
-    question: "How quickly are employee EPF issues typically resolved through EPFDesk?",
+    question:
+      "How quickly are employee EPF issues typically resolved through EPFDesk?",
     answer: `While resolution times can vary based on complexity and EPFO processing, our expert teams prioritize speed and accuracy.
 Employees can track real-time progress, with most common queries resolved within days.`,
   },
@@ -461,13 +453,12 @@ confidentiality and compliance with data protection regulations.`,
     answer: `Our unique on-ground teams across India handle these situations. For cases requiring physical presence at EPFO offices,
 our local experts manage all interactions directly, ensuring resolution without burdening your employee or HR.`,
   },
-   {
+  {
     question:
       "Can the platform handle high volumes of employee queries for large companies?",
     answer: `Yes, our scalable platform and expert teams are specifically designed and equipped to handle high query volumes for
 organizations of all sizes, from mid-sized companies to large enterprises seamlessly.`,
   },
- 
 ];
 
 export const epfDeskServices = [
@@ -567,7 +558,6 @@ leading to increased satisfaction and morale.`,
   },
 ];
 
-
 // export const plansEpfDesk = {
 //   mainTitle:
 //     "Simple Implementation & Ongoing Support",
@@ -644,64 +634,442 @@ leading to increased satisfaction and morale.`,
 //   ],
 // };
 
-
 export const plansEpfDesk = {
-  mainTitle: 'Simple Implementation & Ongoing Support',
+  mainTitle: "Simple Implementation & Ongoing Support",
   cards: [
     {
-      id: '01',
-      title: '24-Hour Platform Activation',
-      bg: 'bg-[#fceff1]',
-      heading: 'Experience immediate productivity with same-day activation.',
+      id: "01",
+      title: "24-Hour Platform Activation",
+      bg: "bg-[#fceff1]",
+      heading: "Experience immediate productivity with same-day activation.",
       body: [
-        'Platform Setup & Configuration: Our team handles the swift setup of your company\'s EPFDesk portal, customizing access configuration as needed.',
-        'Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials or guide your employees through a simple self-registration process.',
-        'Comprehensive Employee Onboarding Kit Delivery: Easy-to-understand guides, FAQs, and tutorials.',
-        'Immediate Platform Availability: Employees can begin accessing support within 24 hours of onboarding.'
+        "Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal, customizing access configuration as needed.",
+        "Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials or guide your employees through a simple self-registration process.",
+        "Comprehensive Employee Onboarding Kit Delivery: Easy-to-understand guides, FAQs, and tutorials.",
+        "Immediate Platform Availability: Employees can begin accessing support within 24 hours of onboarding.",
       ],
-      image: 'https://dummyimage.com/600x400/fceff1/333&text=Activation'
+      image: "https://dummyimage.com/600x400/fceff1/333&text=Activation",
     },
     {
-      id: '02',
-      title: 'Seamless Integration & Proactive Management',
-      bg: 'bg-[#f0f4ff]',
-      heading: 'Scale confidently with expert-led integration.',
+      id: "02",
+      title: "Seamless Integration & Proactive Management",
+      bg: "bg-[#f0f4ff]",
+      heading: "Scale confidently with expert-led integration.",
       body: [
-        'Optional HR Dashboard for insights and anonymized trend data.',
-        'Dedicated Client Manager for strategic guidance and support.',
-        'Continuous Platform Enhancement based on feedback and compliance changes.',
-        'Scalable to handle increased volumes as your workforce grows.'
+        "Optional HR Dashboard for insights and anonymized trend data.",
+        "Dedicated Client Manager for strategic guidance and support.",
+        "Continuous Platform Enhancement based on feedback and compliance changes.",
+        "Scalable to handle increased volumes as your workforce grows.",
       ],
-      image: 'https://dummyimage.com/600x400/f0f4ff/333&text=Integration'
+      image: "https://dummyimage.com/600x400/f0f4ff/333&text=Integration",
     },
     {
-      id: '03',
-      title: 'Common Employee Issues We Resolve:',
-      bg: 'bg-[#e7fbe9]',
-      heading: 'Relieve HR stress with our comprehensive support.',
+      id: "03",
+      title: "Common Employee Issues We Resolve:",
+      bg: "bg-[#e7fbe9]",
+      heading: "Relieve HR stress with our comprehensive support.",
       body: [
-        'EPF balance and passbook update support.',
-        'UAN activation, Aadhaar linking, and login help.',
-        'KYC updates and profile corrections.',
-        'Assistance with EPF withdrawal rules and documentation.',
-        'Expert-managed EPF transfers between employers/states.',
-        'Pension-related EPS benefits and certification guidance.'
+        "EPF balance and passbook update support.",
+        "UAN activation, Aadhaar linking, and login help.",
+        "KYC updates and profile corrections.",
+        "Assistance with EPF withdrawal rules and documentation.",
+        "Expert-managed EPF transfers between employers/states.",
+        "Pension-related EPS benefits and certification guidance.",
       ],
-      image: 'https://dummyimage.com/600x400/e7fbe9/333&text=Support'
+      image: "https://dummyimage.com/600x400/e7fbe9/333&text=Support",
     },
     {
-      id: '04',
-      title: 'Rapid Implementation & Ongoing Support',
-      bg: 'bg-[#fff7ed]',
-      heading: 'Quick setup and dependable ESIC compliance.',
+      id: "04",
+      title: "Rapid Implementation & Ongoing Support",
+      bg: "bg-[#fff7ed]",
+      heading: "Quick setup and dependable ESIC compliance.",
       body: [
-        'Initial Consultation to understand your requirements.',
-        'Secure Data Integration for payroll and employee info.',
-        'ESIC Portal Setup and configuration.',
-        'Concise Orientation for HR and Finance teams.',
-        'Full Service Activation within 24-48 hours.'
+        "Initial Consultation to understand your requirements.",
+        "Secure Data Integration for payroll and employee info.",
+        "ESIC Portal Setup and configuration.",
+        "Concise Orientation for HR and Finance teams.",
+        "Full Service Activation within 24-48 hours.",
       ],
-      image: 'https://dummyimage.com/600x400/fff7ed/333&text=Implementation'
-    }
-  ]
+      image: "https://dummyimage.com/600x400/fff7ed/333&text=Implementation",
+    },
+  ],
 };
+
+export const dummyCards = [
+  {
+    title: "Seamless Employee Lifecycle Management",
+    description: "Pay employees and contractors in a few clicks.",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
+    color: {
+      bg: "bg-rose-100",
+      border: "border-rose-200",
+      raw: "#ffe4e6",
+      stroke: "#ffe4e6",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Peace of mind for every pay cycle.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            With a unified employee record, your payroll information is always
+            up to date. Lattice calculates payroll and tracks deductions and
+            contributions so you don’t have to.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67db49b01109f51c7bb212c2_a9ba4cd2bfdef51480350a75b0569f4e_feat-image-payroll-unified-data.webp"
+          alt="Unified Data Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Tax Compliance",
+    description: "Auto-calculate & file all payroll taxes.",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
+    color: {
+      bg: "bg-yellow-100",
+      border: "border-yellow-200",
+      raw: "#fef9c3",
+      stroke: "#fef9c3",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Simplify compliance with worry-free withholdings.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Lattice files taxes on your behalf, and gives you all the data you
+            need for reporting and auditing.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc43c71f563ef421a38eaa_a44c8c1ae5b22c26ebccb00e1b2b04f0_feat-image-payroll-tax-compliance.webp"
+          alt="Tax Compliance Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Employee Self Service",
+    description: "Reduce HR admin burden.",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
+    color: {
+      bg: "bg-blue-100",
+      border: "border-blue-200",
+      raw: "#dbeafe",
+      stroke: "#dbeafe",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Empower employees with an easy, intuitive platform.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Let employees view and manage paystubs, bank accounts, and tax
+            documents without asking HR.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e5669a66ad33bbfbabf4a3_feat-image-employee-self-service.webp"
+          alt="Employee Self Service Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Time Tracking",
+    description: "Track, approve, and sync hours to payroll.",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
+    color: {
+      bg: "bg-green-100",
+      border: "border-green-200",
+      raw: "#dcfce7",
+      stroke: "#dcfce7",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Get time back with built-in time tracking.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Cut down on manual data entry and errors with fast time card entry,
+            review, and approval—synced automatically to payroll.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e2b51dfb00d11fe21ace11_feat-image-time-tracking.webp"
+          alt="Time Tracking Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Integrations",
+    description: "Connect Payroll to your favorite third-party apps.",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
+    color: {
+      bg: "bg-purple-100",
+      border: "border-purple-200",
+      raw: "#f3e8ff",
+      stroke: "#f3e8ff",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Ensure every system works together seamlessly.
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Lattice Payroll integrates with your preferred third-party apps,
+            like benefits, 401(k), and more.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc42fb273047112e42863a_cc3ed45b7dc81f77e5b48e5f03f5f3e1_feat-image-payroll-integrations.webp"
+          alt="Integrations Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+];
+
+export const epfoCards = [
+  {
+    title: "Seamless Employee Lifecycle Management",
+    description: "Pay employees and contractors in a few clicks.",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
+    color: {
+      bg: "bg-rose-100",
+      border: "border-rose-200",
+      raw: "#ffe4e6",
+      stroke: "#ffe4e6",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Seamless Employee Lifecycle Management
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Streamline onboarding, exits, and EPF compliance with automated UAN
+            generation, real-time roster updates, verified member records, and
+            expert handling of exit formalities — ensuring smooth transitions
+            and regulatory alignment throughout the employee journey.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67db49b01109f51c7bb212c2_a9ba4cd2bfdef51480350a75b0569f4e_feat-image-payroll-unified-data.webp"
+          alt="Unified Data Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Automated EPF Challan Generation & Error-Free Payments",
+    description: "Auto-calculate & file all payroll taxes.",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
+    color: {
+      bg: "bg-yellow-100",
+      border: "border-yellow-200",
+      raw: "#fef9c3",
+      stroke: "#fef9c3",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Automated EPF Challan Generation & Error-Free Payments
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Ensure accurate, compliant EPF challan creation with automated
+            wage-based calculations, real-time validation checks, and timely
+            reminders — eliminating filing errors, ensuring on-time payments,
+            and protecting you from penalties and interest charges.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc43c71f563ef421a38eaa_a44c8c1ae5b22c26ebccb00e1b2b04f0_feat-image-payroll-tax-compliance.webp"
+          alt="Tax Compliance Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Expert EPF Filings, Approvals & Compliance Assurance",
+    description: "Reduce HR admin burden.",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
+    color: {
+      bg: "bg-blue-100",
+      border: "border-blue-200",
+      raw: "#dbeafe",
+      stroke: "#dbeafe",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Expert EPF Filings, Approvals & Compliance Assurance
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            We handle all your monthly ECR filings, declarations, and approvals
+            with precision—backed by secure digital records, audit-ready
+            documentation, and proactive error correction—to ensure full EPFO
+            compliance and peace of mind during audits or inspections.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e5669a66ad33bbfbabf4a3_feat-image-employee-self-service.webp"
+          alt="Employee Self Service Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Proactive EPF Regulatory Updates & Strategic Advisory",
+    description: "Track, approve, and sync hours to payroll.",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
+    color: {
+      bg: "bg-green-100",
+      border: "border-green-200",
+      raw: "#dcfce7",
+      stroke: "#dcfce7",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Proactive EPF Regulatory Updates & Strategic Advisory
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            Stay ahead of compliance with real-time EPFO updates, personalized
+            impact analysis, strategic policy guidance, and advance
+            alerts—empowering your organization to adapt seamlessly to evolving
+            EPF regulations and avoid last-minute surprises.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e2b51dfb00d11fe21ace11_feat-image-time-tracking.webp"
+          alt="Time Tracking Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Stay Compliant with Confidence",
+    description: "Connect Payroll to your favorite third-party apps.",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
+    color: {
+      bg: "bg-purple-100",
+      border: "border-purple-200",
+      raw: "#f3e8ff",
+      stroke: "#f3e8ff",
+    },
+    content: (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Stay Compliant with Confidence
+          </h3>
+          <p className="text-gray-700 text-base md:text-lg">
+            We decode every EPFO circular and regulatory change for you—offering
+            tailored guidance, compliance checklists, and strategic insights—so
+            your organization is always prepared, always compliant, and never
+            caught off-guard.
+          </p>
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc42fb273047112e42863a_cc3ed45b7dc81f77e5b48e5f03f5f3e1_feat-image-payroll-integrations.webp"
+          alt="Integrations Visual"
+          className="w-full h-auto rounded-xl shadow-md"
+        />
+      </div>
+    ),
+  },
+];
+
+export const slides = [
+  {
+    sectionTitle: "Complete Employee EPF Support Platform",
+    sectionSubtitle: "Secure & Intuitive Employee Access (24/7)",
+    items: [
+      {
+        title: "Dedicated Member Login Portal",
+        desc: "Provides secure, personalized employee access to the EPFDesk platform, making it their central hub for all EPF matters.",
+        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a5a96b10c0ffd35b7a_ui-ai-performance-summaries.webp",
+        alt: "UI of AI Performance Summaries",
+      },
+      {
+        title: "User-Friendly Interface",
+        desc: "Designed for clarity and ease of use, ensuring all employees, regardless of technical skill, can effortlessly navigate and find solutions.",
+        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a04e4e2f6b5e249476_ui-ai-calibration.webp",
+        alt: "UI of AI calibration",
+      },
+      {
+        title: "Mobile-Responsive Design",
+        desc: "Guarantees seamless support availability on any device – desktop, tablet, or smartphone – for ultimate convenience.",
+        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a1658dd9bc56ab8ab6_ui-ai-writing-assist.webp",
+        alt: "UI of AI writing assistant",
+      },
+      {
+        title: "Instant Expert Access",
+        desc: "Employees get immediate access to EPF expertise without needing HR intervention, streamlining their journey from query to resolution.",
+        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a0062e7b6225cc312a_ui-ai-team-trends.webp",
+        alt: "UI of AI team trends",
+      },
+      {
+        title: "Coaching for when HR can’t be everywhere",
+        desc: "71% of HR leaders don’t think they are effectively developing midlevel leaders.",
+        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a02bef6737c0c60f26_ui-ai-agent-context-2.webp",
+        alt: "UI of AI agent context",
+      },
+    ],
+  },
+];
+
+
+export const slidesEpfo = {
+  sectionTitle: "Why Companies Trust EPFDesk.com",
+  sectionSubtitle: "Unmatched Expertise & Zero-Error Accuracy",
+  items: [
+    {
+      title: "Consistently high accuracy rate in EPF filings (e.g., 99.9%)",
+      desc: `Our multi-layered validation and expert review process minimizes discrepancies, significantly reducing "interest on delayed EPF contributions" for your business`,
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a5a96b10c0ffd35b7a_ui-ai-performance-summaries.webp",
+      alt: "UI of AI Performance Summaries",
+    },
+    {
+      title: "Zero audit failures across our client portfolio for 5+ years",
+      desc: "A testament to our robust processes and unwavering commitment to compliance integrity, offering true peace of mind.",
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a04e4e2f6b5e249476_ui-ai-calibration.webp",
+      alt: "UI of AI calibration",
+    },
+    {
+      title: "Rapid average response time (e.g., 2-4 hours) for client queries",
+      desc: "Ensuring your concerns are addressed promptly by dedicated specialists, improving your operational efficiency.",
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a1658dd9bc56ab8ab6_ui-ai-writing-assist.webp",
+      alt: "UI of AI writing assistant",
+    },
+    {
+      title: "100% deadline adherence for all submissions",
+      desc: `Protecting you from "legal consequences of EPF non-compliance" and preserving your organization's reputation.`,
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a0062e7b6225cc312a_ui-ai-team-trends.webp",
+      alt: "UI of AI team trends",
+    },
+  ],
+};
+

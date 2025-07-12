@@ -6,7 +6,9 @@ import {
   CalendarDaysIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import { epfServices,whyEpfDesk } from "../../utils/data";
+import { epfServices,slidesEpfo,whyEpfDesk } from "../../utils/data";
+import LatticeSlider from "./latticeSlider";
+import ResourcesGrid from "./resourceGridEpfo";
 
 
 
@@ -96,16 +98,16 @@ function EPFAccordion({epfServices}) {
 
 export default function EPFServicesSection() {
   return (
-    <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
+    <section className="py-16 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">
+        {/* <h2 className="text-3xl font-bold text-center mb-10">
         Complete EPF Services We Provide
       </h2>
-        <EPFAccordion epfServices={epfServices}/>
-        <h2 className="text-3xl font-bold text-center mb-10">
-        Why Companies Trust EPFDesk.com
-      </h2>
-      <EPFAccordion epfServices={whyEpfDesk}/>
+        <EPFAccordion epfServices={epfServices}/> */}
+       
+      <LatticeSlider slides={slidesEpfo}/>
+      <ResourcesGrid />
+      {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
       </div>
 
       {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">

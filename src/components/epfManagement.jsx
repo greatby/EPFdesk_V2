@@ -4,7 +4,9 @@ import EPFServicesSection from "./epfServicesSection";
 import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
-import { epfManagementFaq } from "../../utils/data";
+import { dummyCards, epfManagementFaq, epfoCards } from "../../utils/data";
+import LatticeTabs from "./latticeTabs";
+import ResourcesGrid from './resourceGridEpfo'
 
 function Hero() {
   return (
@@ -37,7 +39,16 @@ const EPFManagement = () => {
         <EPFManagementCarousel />
       </FadeInWhenVisible> */}
       <FadeInWhenVisible>
-        <EPFServicesSection/>
+        <div>
+          <h2 className="text-3xl font-bold text-center">
+            Complete EPF Services We Provide
+          </h2>
+          <LatticeTabs cards={epfoCards} />
+        </div>
+      </FadeInWhenVisible>
+     
+      <FadeInWhenVisible>
+        <EPFServicesSection />
       </FadeInWhenVisible>
       {/* <FadeInWhenVisible>
         <EPFComplianceROI />

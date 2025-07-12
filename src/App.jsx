@@ -18,6 +18,7 @@ import LimitedCapacitySection from "./components/limitedCapacitySection";
 import EPFDesk from "./components/epfDesk";
 import VerticalCarousel from "./components/verticalCarousel";
 import LatticeTabs from "./components/latticeTabs";
+import { dummyCards } from "../utils/data";
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
             <StackedCards />
             <CustomerCarousel />
             <LimitedCapacitySection />
-            <LatticeTabs />
+            <LatticeTabs cards={dummyCards}/>
           </Layout>
         }
       />
