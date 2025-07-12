@@ -7,7 +7,11 @@ import FaqAccordion from "./faqAccordian";
 import { epfManagementFaq } from "../../utils/data";
 import EPFdeskServices from "./epfDeskServices";
 import ESCIServicesSection from "./esciServicesSection";
-import { plansEpfDesk,epfDeskFaq } from "../../utils/data";
+import { plansEpfDesk, epfDeskFaq } from "../../utils/data";
+import LatticeSlider from "./latticeSlider";
+import ResourcesGrid from "./resourceGrid";
+import PlusTabsSection from "./plusTabsSection";
+import MiddlePanelTabs from "./middlePanelTabs";
 
 function Hero() {
   return (
@@ -33,6 +37,18 @@ const EPFDesk = () => {
     <>
       <FadeInWhenVisible>
         <Hero />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <LatticeSlider />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <ResourcesGrid />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <PlusTabsSection />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <MiddlePanelTabs />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <EPFdeskServices plans={plansEpfDesk} />

@@ -13,12 +13,116 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import VerticalCarousel from "./verticalCarousel";
 
-const EPFSlider = ({ epfServices }) => {
+// const EPFSlider = ({ epfServices }) => {
+//   const sliderRef = useRef(null);
+
+//   const scroll = (direction) => {
+//     const container = sliderRef.current;
+//     const scrollAmount = 300;
+//     if (container) {
+//       container.scrollBy({
+//         left: direction === "left" ? -scrollAmount : scrollAmount,
+//         behavior: "smooth",
+//       });
+//     }
+//   };
+
+//   const allItems = epfDeskStatergy.flatMap((section) =>
+//     section.items.map((item) => ({
+//       title: section.title,
+//       icon: section.icon,
+//       content: item,
+//     }))
+//   );
+
+//   return (
+//     <section className="relative bg-white py-16 px-4 sm:px-6 lg:px-12">
+//       <div className="max-w-7xl mx-auto">
+//         {/* Section Heading */}
+//         <div className="text-center mb-10">
+//           <h2 className="text-3xl font-bold text-gray-900">
+//             Unlock the Strategic Value of Your HR Team
+//           </h2>
+//           <p className="text-lg text-gray-600 mt-2">
+//             Our EPFDesk services ensure employee support is handled with care—so
+//             HR can focus on what matters.
+//           </p>
+//         </div>
+
+//         {/* Navigation Buttons */}
+//         <div className="flex justify-end gap-2 mb-4">
+//           <button
+//             onClick={() => scroll("left")}
+//             className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
+//           >
+//             <ChevronLeftIcon className="w-5 h-5 text-gray-600" />
+//           </button>
+//           <button
+//             onClick={() => scroll("right")}
+//             className="p-2 rounded-full bg-gray-100 hover:bg-gray-200"
+//           >
+//             <ChevronRightIcon className="w-5 h-5 text-gray-600" />
+//           </button>
+//         </div>
+
+//         {/* Slider */}
+//         <div
+//           ref={sliderRef}
+//           className="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+//         >
+//           {allItems.map((item, index) => {
+//             const Icon = item.icon;
+//             return (
+//               <motion.div
+//                 key={index}
+//                 id={`card-${index}`}
+//                 className="min-w-[280px] max-w-xs flex-shrink-0 snap-start rounded-xl bg-white shadow-md hover:shadow-xl transition cursor-pointer"
+//                 onClick={() => {
+//                   const container = sliderRef.current;
+//                   const cardEl = document.getElementById(`card-${index}`);
+//                   if (container && cardEl) {
+//                     const left = cardEl.offsetLeft - 16;
+//                     container.scrollTo({ left, behavior: "smooth" });
+//                   }
+//                 }}
+//                 initial={{ opacity: 0, y: 20 }}
+//                 animate={{ opacity: 1, y: 0 }}
+//                 transition={{ duration: 0.3, delay: index * 0.05 }}
+//               >
+//                 {/* Image Placeholder */}
+//                 <div className="aspect-[4/3] bg-gradient-to-tr from-blue-400 via-cyan-300 to-teal-300 rounded-t-xl flex items-center justify-center text-white text-sm font-semibold p-4">
+//                   <div className="text-white text-xl">
+//                     <Icon className="w-8 h-8 mb-2" />
+//                     <p>{item.title}</p>
+//                   </div>
+//                 </div>
+
+//                 {/* Text content */}
+//                 <div className="p-4 text-sm text-gray-700 leading-relaxed">
+//                   {item.content.includes(":") ? (
+//                     <>
+//                       <strong>{item.content.split(":")[0]}:</strong>
+//                       {item.content.split(":").slice(1).join(":")}
+//                     </>
+//                   ) : (
+//                     item.content
+//                   )}
+//                 </div>
+//               </motion.div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+const EPFSlider = () => {
   const sliderRef = useRef(null);
+  const [activeCard, setActiveCard] = useState(null);
 
   const scroll = (direction) => {
     const container = sliderRef.current;
-    const scrollAmount = 300;
+    const scrollAmount = 320;
     if (container) {
       container.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
@@ -27,12 +131,13 @@ const EPFSlider = ({ epfServices }) => {
     }
   };
 
-  // Flatten all items into one array with title & icon
-  const allItems = epfServices.flatMap((section) =>
-    section.items.map((item) => ({
+  // Flatten items with title and icon
+  const allItems = epfDeskStatergy.flatMap((section) =>
+    section.items.map((item, index) => ({
       title: section.title,
       icon: section.icon,
       content: item,
+      id: `${section.title}-${index}`,
     }))
   );
 
@@ -66,23 +171,26 @@ const EPFSlider = ({ epfServices }) => {
           </button>
         </div>
 
-        {/* Slider */}
+        {/* Card Slider */}
         <div
           ref={sliderRef}
-          className="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+          className="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory px-1"
         >
           {allItems.map((item, index) => {
             const Icon = item.icon;
             return (
               <motion.div
-                key={index}
+                key={item.id}
                 id={`card-${index}`}
-                className="min-w-[280px] max-w-xs flex-shrink-0 snap-start border rounded-lg bg-gray-50 hover:bg-white hover:shadow-md transition p-6 cursor-pointer"
+                className={`min-w-[280px] max-w-xs flex-shrink-0 snap-start border rounded-2xl bg-white hover:shadow-md transition p-0 cursor-pointer ${
+                  activeCard === index ? "ring-2 ring-cyan-400" : ""
+                }`}
                 onClick={() => {
                   const container = sliderRef.current;
                   const cardEl = document.getElementById(`card-${index}`);
+                  setActiveCard(index);
                   if (container && cardEl) {
-                    const left = cardEl.offsetLeft - 16; // adjust this if you use padding/gap
+                    const left = cardEl.offsetLeft - 16;
                     container.scrollTo({ left, behavior: "smooth" });
                   }
                 }}
@@ -90,16 +198,31 @@ const EPFSlider = ({ epfServices }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
               >
-                <p className="text-sm text-gray-700 mt-2 leading-relaxed">
-                  {item.content.includes(":") ? (
-                    <>
-                      <strong>{item.content.split(":")[0]}:</strong>
-                      {item.content.split(":").slice(1).join(":")}
-                    </>
-                  ) : (
-                    item.content
-                  )}
-                </p>
+                <div className="flex flex-col h-full rounded-2xl overflow-hidden">
+                  {/* Gradient Header with Icon + Title */}
+                  <div className="bg-gradient-to-tr from-blue-400 via-cyan-300 to-teal-300 h-32 flex items-center justify-center px-4 text-center">
+                    <div>
+                      <Icon className="w-8 h-8 text-white mx-auto mb-2" />
+                      {/* <h4 className="text-white font-semibold text-sm leading-snug">
+                        {item.title}
+                      </h4> */}
+                    </div>
+                  </div>
+
+                  {/* Body Content */}
+                  <div className="p-5">
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      {item.content.includes(":") ? (
+                        <>
+                          <strong>{item.content.split(":")[0]}:</strong>{" "}
+                          {item.content.split(":").slice(1).join(":")}
+                        </>
+                      ) : (
+                        item.content
+                      )}
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             );
           })}
@@ -108,7 +231,6 @@ const EPFSlider = ({ epfServices }) => {
     </section>
   );
 };
-
 const EPFStackTabs = ({ epfServices }) => {
   const [active, setActive] = useState(0);
 
@@ -258,33 +380,8 @@ export default function EPFdeskServices({ plans }) {
   return (
     <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
       <div className="space-y-4 mx-auto">
-        <h2 className="text-3xl font-bold text-center">
-          Complete Employee EPF Support Platform
-        </h2>
-
-        <EPFStackTabs epfServices={epfDeskServices} />
-
-        {/* <EPFAccordion epfServices={epfDeskStatergy} /> */}
         <EPFSlider epfServices={epfDeskStatergy} />
       </div>
-      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
-        {plans.mainTitle}
-      </h2>
-
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {plans?.cards?.map((plan, idx) => (
-          <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
-            <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
-            <ul className="text-sm space-y-2 mb-4 list-disc list-inside">
-              {plan.features.map((f, i) => (
-                <li key={i}>{f}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div> */}
-      {/* <AlternatingFeatureCards cards={plans.cards} /> */}
-      {/* <VerticalCarousel cards={plans.cards}/> */}
     </section>
   );
 }
