@@ -17,13 +17,15 @@ const StackedCards = () => {
             unparalleled knowledge of our teams, our expansive reach, and a
             client-first approach designed for your ultimate peace of mind.
           </p>
-          <p className="text-lg md:text-xl mt-6 text-gray-600">Unmatched Compliance Expertise & Strategic Insights.</p>
+          <p className="text-lg md:text-xl mt-6 text-gray-600">
+            Unmatched Compliance Expertise & Strategic Insights.
+          </p>
         </div>
       </section>
       <section className="wrapper w-full md:w-[80%] lg:w-[80%]">
         <div className="slp-container">
           <ul className="cards-container">
-            <li className="card card-1 gitlab-duo">
+            <li className="card card-1 gitlab-duo" style={{background:'#fffae6'}}>
               <div className="left-side gitlab-duo">
                 <div className="pill">Expertise</div>
                 <h4 className="text-xl font-semibold mt-4 text-gray-800">
@@ -37,9 +39,16 @@ const StackedCards = () => {
                   have mastered every aspect of statutory compliance.
                 </p>
               </div>
+              <div className=" gitlab-duo">
+                <img
+                  src="https://about.gitlab.com/images/homepage/card-flip-duo-chat.svg"
+                  alt="dummy"
+                  srcset=""
+                />
+              </div>
             </li>
 
-            <li className="card card-2 platform">
+            <li className="card card-2 platform" style={{background:'#f8f0ff'}}>
               <div className="left-side platform">
                 <div className="pill">Presence</div>
 
@@ -52,6 +61,13 @@ const StackedCards = () => {
                   your business operates. Your employees can access social
                   security benefits without geographical barriers.
                 </p>
+              </div>
+              <div className=" gitlab-duo">
+                <img
+                  src="https://about.gitlab.com/images/homepage/card-flip-code-review.svg"
+                  alt="dummy"
+                  srcset=""
+                />
               </div>
             </li>
 
@@ -68,9 +84,16 @@ const StackedCards = () => {
                   take effect—no surprises, no gaps.
                 </p>
               </div>
+              <div className=" gitlab-duo">
+                <img
+                  src="https://about.gitlab.com/images/homepage/card-flip-security.svg"
+                  alt="dummy"
+                  srcset=""
+                />
+              </div>
             </li>
 
-            <li className="card card-4 devsecops">
+            <li className="card card-4 devsecops" style={{background:'#eafce9'}}>
               <div className="left-side devsecops">
                 <div className="pill">Support</div>
 
@@ -83,6 +106,13 @@ const StackedCards = () => {
                   focus on growth. No missed deadlines, no stress—just total
                   confidence.
                 </p>
+              </div>
+              <div className=" gitlab-duo">
+                <img
+                  src="https://about.gitlab.com/images/homepage/card-flip-devsecops.svg"
+                  alt="dummy"
+                  srcset=""
+                />
               </div>
             </li>
 

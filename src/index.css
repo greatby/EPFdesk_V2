@@ -64,7 +64,7 @@ body {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 -8px 20px #0000001a;
-  /* display: flex; */
+  display: flex;
   height: 340px;
   overflow: hidden;
   position: sticky;
@@ -206,7 +206,7 @@ body {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 -8px 20px #0000001a;
-  /* display: flex; */
+  display: flex;
   height: 340px;
   overflow: hidden;
   position: sticky;
@@ -346,7 +346,7 @@ body {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 -8px 20px #0000001a;
-  /* display: flex; */
+  display: flex;
   height: 340px;
   overflow: hidden;
   position: sticky;
@@ -481,7 +481,7 @@ body {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: 0 -8px 20px #0000001a;
-  /* display: flex */
+  display: flex;
 
   height: 340px;
   overflow: hidden;

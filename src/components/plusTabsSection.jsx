@@ -16,8 +16,8 @@ export default function ProductTabs({tabsData}) {
 
   return (
     <>
-      <div class="mb-8 pt-16">
-        <h2 class="max-w-7xl mx-auto px-4 text-3xl font-bold">
+      <div className="mb-8 pt-16">
+        <h2 className="max-w-7xl mx-auto px-4 text-3xl font-bold">
           {title}
         </h2>
       </div>

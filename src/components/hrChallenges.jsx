@@ -70,32 +70,22 @@ const challenges = [
 // };
 
 const FlipCard = ({ item }) => {
-  const [flipped, setFlipped] = useState(false);
-
   return (
-    <div className="[perspective:1000px] cursor-pointer" onClick={() => setFlipped((prev) => !prev)}>
-      <div
-        className={`relative h-64 w-full transition-transform duration-500 [transform-style:preserve-3d] rounded-2xl ${
-          flipped ? "rotate-y-180" : ""
-        }`}
-      >
-        {/* Front Side */}
+    <div className="">
+      <div className="bg-white rounded-[1.2rem] p-2 border shadow-md border-[#37415124] flex items-center justify-center h-full">
         <div
-          className="absolute inset-0 backface-hidden rounded-2xl p-6 shadow-sm"
+          className="rounded-[1.2rem] p-3 flex flex-col justify-start min-h-[300px] w-full"
           style={{ backgroundColor: item.bgColor }}
         >
-          <div className="mb-4">{item.icon}</div>
-          <h3 className="text-[2rem] leading-tight font-bold text-gray-800">
+          {/* Optional Icon */}
+          <div className="mb-4 text-4xl">{item.icon}</div>
+
+          <h3 className="text-xl md:text-4xl font-bold text-gray-800 mb-3 leading-tight">
             {item.title}
           </h3>
-        </div>
-
-        {/* Back Side */}
-        <div
-          className="absolute inset-0 backface-hidden rotate-y-180 rounded-2xl p-6 shadow-md"
-          style={{ backgroundColor: item.bgColor }}
-        >
-          <p className="text-gray-700 text-[17px]">{item.description}</p>
+          <p className="text-gray-700 text-sm md:text-xl leading-relaxed">
+            {item.description}
+          </p>
         </div>
       </div>
     </div>
@@ -104,8 +94,8 @@ const FlipCard = ({ item }) => {
 const HrChallenges = () => {
   return (
     <section className={`bg-white px-6 md:px-12`}>
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-[2.5rem] font-bold text-gray-900 text-center">
           Stuck in the Maze, We’ll guide you out.
         </h2>
         <p className="text-gray-600 text-lg text-center mt-4 max-w-2xl mx-auto">
@@ -113,7 +103,7 @@ const HrChallenges = () => {
           alone.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {challenges.map((item, index) => (
             <FlipCard key={index} item={item} />
           ))}

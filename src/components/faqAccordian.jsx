@@ -10,7 +10,7 @@ const FaqAccordion = ({ faqs, title = 'Frequently Asked Questions' }) => {
   return (
     <section className="w-full max-w-4xl mx-auto px-4 py-12">
       <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">{title}</h2>
-      <div className="space-y-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {faqs.map((faq, index) => (
           <div
             key={index}

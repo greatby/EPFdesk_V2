@@ -15,8 +15,8 @@ const MiddlePanelTabs = ({tabsData}) => {
 
   return (
     <>
-      <div class="mb-6 pt-16">
-        <h2 class="max-w-7xl mx-auto px-4 text-3xl font-bold">
+      <div className="mb-6 pt-16">
+        <h2 className="max-w-7xl mx-auto px-4 text-3xl font-bold">
         {title}
         </h2>
       </div>
