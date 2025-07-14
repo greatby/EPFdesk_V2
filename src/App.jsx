@@ -18,7 +18,8 @@ import LimitedCapacitySection from "./components/limitedCapacitySection";
 import EPFDesk from "./components/epfDesk";
 import VerticalCarousel from "./components/verticalCarousel";
 import LatticeTabs from "./components/latticeTabs";
-import { dummyCards } from "../utils/data";
+import { dummyCards, slidesLanding } from "../utils/data";
+import LatticeSlider from "./components/latticeSlider";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
               <TrustIndicators />
             </FadeInWhenVisible> */}
             <FadeInWhenVisible>
-              <HrChallenges />
+              {/* <HrChallenges /> */}
+              <LatticeSlider slides={slidesLanding} />
             </FadeInWhenVisible>
             {/* <div>
 

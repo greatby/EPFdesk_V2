@@ -80,7 +80,7 @@ const FlipCard = ({ item }) => {
           {/* Optional Icon */}
           <div className="mb-4 text-4xl">{item.icon}</div>
 
-          <h3 className="text-xl md:text-4xl font-bold text-gray-800 mb-3 leading-tight">
+          <h3 className="text-xl md:text-[2rem] font-bold text-gray-800 mb-3 leading-tight">
             {item.title}
           </h3>
           <p className="text-gray-700 text-sm md:text-xl leading-relaxed">

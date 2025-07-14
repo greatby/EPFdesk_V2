@@ -2406,3 +2406,34 @@ export const ptMiddletabsData = {
     },
   ],
 };
+
+export const slidesLanding = {
+  // sectionTitle: "Why Companies Trust EPFDesk.com",
+  // sectionSubtitle: "Unmatched Expertise & Zero-Error Accuracy",
+  items: [
+    {
+      title: "Monthly Compliance Panic",
+      desc: `You're racing against monthly EPFO & ESIC deadlines, juggling multiple state-wise portals for EPF, ESIC, PT, and LWF instead of growing your business – turning you into a full-time compliance officer rather than the innovator you set out to be.`,
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a5a96b10c0ffd35b7a_ui-ai-performance-summaries.webp",
+      alt: "UI of AI Performance Summaries",
+    },
+    {
+      title: "Employee Frustration & HR Burnout",
+      desc: "Unresolved EPF & ESIC Issues impact employee morale and productivit y, leading to increased HR Workload from queries.",
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a04e4e2f6b5e249476_ui-ai-calibration.webp",
+      alt: "UI of AI calibration",
+    },
+    {
+      title: "Statutory penalties and audit risk.",
+      desc: "Non-compliance with EPFO, ESIC, and other statutory requirements can trigger penalties up to 100% of dues, plus interest and potential audit risks that could cripple your business finances.",
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a1658dd9bc56ab8ab6_ui-ai-writing-assist.webp",
+      alt: "UI of AI writing assistant",
+    },
+    {
+      title: "The Cost of Lost Productivity and Focus.",
+      desc: `HR and Finance teams spend hours on employee linking, KYC approvals, and portal data entry instead of focusing on talent development, financial strategy, and business growth that actually drives revenue.`,
+      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a0062e7b6225cc312a_ui-ai-team-trends.webp",
+      alt: "UI of AI team trends",
+    },
+  ],
+};

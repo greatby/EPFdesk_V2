@@ -55,7 +55,7 @@ export default function Hero({ setShowFloating }) {
         </div>
       </div>
     </section> */}
-      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-20 lg:pb-20 px-6 md:px-12">
+      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
         <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-6">
           {/* Left Text Content */}
           <div className="w-full md:w-1/2 text-center">
@@ -80,6 +80,13 @@ export default function Hero({ setShowFloating }) {
               className="w-full h-auto object-contain"
             />
           </div>
+            <h2 className="text-3xl sm:text-[2.5rem] font-bold text-gray-900 text-center">
+          Stuck in the Maze, We’ll guide you out.
+        </h2>
+        <p className="text-gray-600 text-lg text-center mt-4 max-w-2xl mx-auto">
+          Every HR department faces these compliance nightmares. You're not
+          alone.
+        </p>
         </div>
       </section>
     </div>
