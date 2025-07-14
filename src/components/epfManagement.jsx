@@ -4,7 +4,7 @@ import EPFServicesSection from "./epfServicesSection";
 import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
-import { dummyCards, epfManagementFaq, epfoCards } from "../../utils/data";
+import { dummyCards, epfManagementFaq, epfoCards, epfServices, plans } from "../../utils/data";
 import LatticeTabs from "./latticeTabs";
 
 
@@ -48,7 +48,7 @@ const EPFManagement = () => {
       </FadeInWhenVisible>
      
       <FadeInWhenVisible>
-        <EPFServicesSection />
+        <EPFServicesSection/>
       </FadeInWhenVisible>
       {/* <FadeInWhenVisible>
         <EPFComplianceROI />

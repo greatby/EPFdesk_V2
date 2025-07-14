@@ -210,12 +210,12 @@ export default function ESCIServicesSection({ plans }) {
           <MiddlePanelTabs tabsData={esicMiddletabsData} />
         </FadeInWhenVisible>
        
-        {/* <EPFAccordion /> */}
+        <EPFAccordion />
       </div>
 
       {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
-      </h2>
+      </h2> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans?.cards?.map((plan, idx) => (
@@ -229,7 +229,7 @@ export default function ESCIServicesSection({ plans }) {
           
           </div>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 }

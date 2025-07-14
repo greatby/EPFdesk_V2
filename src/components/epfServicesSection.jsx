@@ -124,7 +124,7 @@ export default function EPFServicesSection() {
         <FadeInWhenVisible>
           <PlusTabsSection tabsData={epfoPlustabs} />
         </FadeInWhenVisible>
-        {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
+        <EPFAccordion epfServices={whyEpfDesk}/>
       </div>
 
       {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
