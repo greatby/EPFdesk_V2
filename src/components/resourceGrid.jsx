@@ -1,38 +1,13 @@
-const largeCard = {
-  title: "Guided Ticket Creation",
-  desc: `Employees can easily log tickets for virtually all EPF issues. This includes common queries like "How to check EPF balance online," "How to activate UAN," "How to update EPF KYC," and "EPF withdrawal process."`,
-  img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/64c253608b4895d67133ff5f_resource-ebook-how-to-build-hr-tech-stack.webp",
-  tag: "ebook",
-};
 
-const sideCards = [
-  {
-    title:
-      "Each submitted ticket comes with a clear, live progress bar, transparent status updates, and estimated resolution timelines.",
-    img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/655563b2ae20072b28778fee_65368988612a3c87e7bdae3e_360-review-questions.webp",
-    tag: "Real-time Progress Tracking",
-  },
-  {
-    title:
-      "Employees receive proactive updates via email or SMS as their ticket progresses through the resolution stages",
-    img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/64c27b7d012add414872b674_resource-ebook-hr-guide-performance-management.webp",
-    tag: "Automated Notifications",
-  },
-  {
-    title: `Our system handles a vast range of concerns, from simple queries (e.g.,"How to download EPF passbook") to more complex EPF transfer cases and pension-related inquiries."`,
-    img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/6839cdc7a0b99ab1240490f2_article-why-talent-reviews-are-important.jpg",
-    tag: "Comprehensive Issue Coverage",
-  },
-];
-
-const ResourcesGrid = () => {
+const ResourcesGrid = ({data}) => {
+  const { title, largeCard, sideCards } = data;
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold">
-            Streamlined Query Management System
+           {title}
           </h2>
         </div>
 

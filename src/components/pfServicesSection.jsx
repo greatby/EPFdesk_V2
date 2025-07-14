@@ -6,6 +6,13 @@ import {
   CalendarDaysIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import FadeInWhenVisible from "./fadeInWhenVisible";
+import LatticeTabs from "./latticeTabs";
+import { pfCards, ptGridData, ptMiddletabsData, ptPlustabs, slidesPt } from "../../utils/data";
+import PlusTabsSection from "./plusTabsSection";
+import LatticeSlider from "./latticeSlider";
+import ResourcesGrid from "./resourceGrid";
+import MiddlePanelTabs from "./middlePanelTabs";
 
 const epfServices = [
   {
@@ -155,7 +162,9 @@ function EPFAccordion() {
               {/* Title Section */}
               <div className="flex items-center space-x-3">
                 <Icon className="w-6 h-6 text-indigo-600" />
-                <h3 className="text-2xl font-semibold text-gray-900">{section.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {section.title}
+                </h3>
               </div>
 
               {/* Cards for each item */}
@@ -270,16 +279,30 @@ India."`,
 
 export default function PFServicesSection() {
   return (
-    <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <EPFAccordion />
+        <h2 className="text-3xl font-bold my-8 text-center">
+          Why Companies Trust Professional Tax Compliance with EPFDesk.com
+        </h2>
+        <FadeInWhenVisible>
+          <LatticeTabs cards={pfCards} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <LatticeSlider slides={slidesPt} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <PlusTabsSection tabsData={ptPlustabs} />
+        </FadeInWhenVisible>
+         <FadeInWhenVisible>
+          <ResourcesGrid data={ptGridData}/>
+        </FadeInWhenVisible>
+         <FadeInWhenVisible>
+          <MiddlePanelTabs tabsData={ptMiddletabsData}/>
+        </FadeInWhenVisible>
+        {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
-        Why Companies Trust Professional Tax Compliance with EPFDesk.com
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 w-full mx-auto gap-6">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 w-full mx-auto gap-6">
         {plans.map((plan, idx) => (
           <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
             <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
@@ -288,10 +311,10 @@ export default function PFServicesSection() {
                 <li key={i}>{f}</li>
               ))}
             </ul>
-            {/* <p className="font-bold text-indigo-600">{plan.price}</p> */}
+          
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

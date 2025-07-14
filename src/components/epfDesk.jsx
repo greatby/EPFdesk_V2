@@ -4,10 +4,10 @@ import EPFServicesSection from "./epfServicesSection";
 import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
-import { epfManagementFaq, slides } from "../../utils/data";
+import { epfManagementFaq, slides, epfDeskData, epfDeskMiddletabsData } from "../../utils/data";
 import EPFdeskServices from "./epfDeskServices";
 import ESCIServicesSection from "./esciServicesSection";
-import { plansEpfDesk, epfDeskFaq } from "../../utils/data";
+import { plansEpfDesk, epfDeskFaq,epfDeskPlustabs } from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import PlusTabsSection from "./plusTabsSection";
@@ -42,13 +42,13 @@ const EPFDesk = () => {
         <LatticeSlider slides={slides[0]}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <ResourcesGrid />
+        <ResourcesGrid data={epfDeskData}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <PlusTabsSection />
+        <PlusTabsSection tabsData={epfDeskPlustabs}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <MiddlePanelTabs />
+        <MiddlePanelTabs tabsData={epfDeskMiddletabsData}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <EPFdeskServices plans={plansEpfDesk} />

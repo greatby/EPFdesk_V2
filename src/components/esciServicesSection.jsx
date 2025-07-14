@@ -7,6 +7,21 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
 
+import {
+  esicPlustabs,
+  slidesEpfo,
+  slidesEsic,
+  esicGridData,
+  esicMiddletabsData,
+  esciCards,
+} from "../../utils/data";
+import LatticeSlider from "./latticeSlider";
+import PlusTabsSection from "./plusTabsSection";
+import ResourcesGrid from "./resourceGrid";
+import MiddlePanelTabs from "./middlePanelTabs";
+import LatticeTabs from "./latticeTabs";
+import FadeInWhenVisible from "./fadeInWhenVisible";
+
 const epfServices = [
   {
     title: "ESIC Registration & Applicability Management",
@@ -148,7 +163,9 @@ function EPFAccordion() {
               {/* Title Section */}
               <div className="flex items-center space-x-3">
                 <Icon className="w-6 h-6 text-indigo-600" />
-                <h3 className="text-2xl font-semibold text-gray-900">{section.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {section.title}
+                </h3>
               </div>
 
               {/* Cards for each item */}
@@ -170,18 +187,34 @@ function EPFAccordion() {
   );
 }
 
-
-
-export default function ESCIServicesSection({plans}) {
+export default function ESCIServicesSection({ plans }) {
   return (
-    <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <EPFAccordion />
+         <FadeInWhenVisible>
+          <h2 className="text-3xl font-bold my-8 text-center">
+            {plans.mainTitle}
+          </h2>
+          <LatticeTabs cards={esciCards} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <LatticeSlider slides={slidesEsic} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <PlusTabsSection tabsData={esicPlustabs} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <ResourcesGrid data={esicGridData} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <MiddlePanelTabs tabsData={esicMiddletabsData} />
+        </FadeInWhenVisible>
+       
+        {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
-       
-       {plans.mainTitle}
+      {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
+        {plans.mainTitle}
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -193,10 +226,10 @@ export default function ESCIServicesSection({plans}) {
                 <li key={i}>{f}</li>
               ))}
             </ul>
-            {/* <p className="font-bold text-indigo-600">{plan.price}</p> */}
+          
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

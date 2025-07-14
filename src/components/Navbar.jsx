@@ -8,10 +8,11 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { PlusGrid, PlusGridItem, PlusGridRow } from "./plus-grid";
+import { useLocation } from "react-router-dom";
 
 const links = [
+  { href: "/epf", label: "EPFO" },
   { href: "/epfDesk", label: "EPFdesk" },
-   { href: "/epf", label: "EPFO" },
   { href: "/esic", label: "ESIC" },
   { href: "/lwf", label: "LWF" },
   { href: "/pt", label: "PT" },
@@ -35,6 +36,7 @@ const links = [
 export default function Navbar({ banner }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+   const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,6 +46,12 @@ export default function Navbar({ banner }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+   useEffect(() => {
+     window.scrollTo(0, 0);
+  }, [pathname]);
+
+ 
 
   return (
     <header

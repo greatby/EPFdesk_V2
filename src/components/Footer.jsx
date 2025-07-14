@@ -13,16 +13,16 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-    const handleScrollToTop = (link) => {
+  const handleScrollToTop = (link) => {
     // Scroll to top before navigating
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     // If it's an internal link, navigate to that page
-    if (link.startsWith('/')) {
+    if (link.startsWith("/")) {
       navigate(link);
     } else {
       // Otherwise, for external links, just open the link in a new tab
-      window.open(link, '_blank');
+      window.open(link, "_blank");
     }
   };
 
@@ -51,38 +51,60 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2">
               <li>
-                <Link to="/epfDesk" onClick={() => handleScrollToTop('/epfDesk')}>EPFDesk</Link>
+                <Link to="/epf" onClick={() => handleScrollToTop("/epf")}>
+                  EPFO
+                </Link>
               </li>
               <li>
-                <Link to="/epf" onClick={() => handleScrollToTop('/epf')}>EPFO</Link>
+                <Link
+                  to="/epfDesk"
+                  onClick={() => handleScrollToTop("/epfDesk")}
+                >
+                  EPFDesk
+                </Link>
               </li>
               <li>
-                <Link to="/esic" onClick={() => handleScrollToTop('/esic')}>ESIC</Link>
+                <Link to="/esic" onClick={() => handleScrollToTop("/esic")}>
+                  ESIC
+                </Link>
               </li>
               <li>
-                <Link to="/pt" onClick={() => handleScrollToTop('/pt')}>PT</Link>
+                <Link to="/pt" onClick={() => handleScrollToTop("/pt")}>
+                  PT
+                </Link>
               </li>
               <li>
-                <Link to="/lwf" onClick={() => handleScrollToTop('/lwf')}>LWF</Link>
+                <Link to="/lwf" onClick={() => handleScrollToTop("/lwf")}>
+                  LWF
+                </Link>
               </li>
               <li>
-                <a href="https://about-us-flame.vercel.app/" onClick={() => handleScrollToTop('https://about-us-flame.vercel.app/')}>About Us</a>
+                <a
+                  href="https://about-us-flame.vercel.app/"
+                  onClick={() =>
+                    handleScrollToTop("https://about-us-flame.vercel.app/")
+                  }
+                >
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="https://jobs-zeta-two.vercel.app/" onClick={() => handleScrollToTop('https://jobs-zeta-two.vercel.app/')}>Jobs</a>
+                <a
+                  href="https://jobs-zeta-two.vercel.app/"
+                  onClick={() =>
+                    handleScrollToTop("https://jobs-zeta-two.vercel.app/")
+                  }
+                >
+                  Jobs
+                </a>
               </li>
             </ul>
           </div>
-
-          
         </div>
 
         {/* Trust Signals (visible on all pages) */}
         <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
-          <p>
-            Workforce Limited C 2025.
-          </p>
-          
+          <p>Workforce Limited C 2025.</p>
         </div>
 
         {/* Scroll To Top */}

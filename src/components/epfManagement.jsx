@@ -6,7 +6,7 @@ import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
 import { dummyCards, epfManagementFaq, epfoCards } from "../../utils/data";
 import LatticeTabs from "./latticeTabs";
-import ResourcesGrid from './resourceGridEpfo'
+
 
 function Hero() {
   return (

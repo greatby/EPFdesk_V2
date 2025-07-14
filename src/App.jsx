@@ -49,7 +49,7 @@ function App() {
             <StackedCards />
             <CustomerCarousel />
             <LimitedCapacitySection />
-            <LatticeTabs cards={dummyCards}/>
+            {/* <LatticeTabs cards={dummyCards}/> */}
           </Layout>
         }
       />

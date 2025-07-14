@@ -6,6 +6,13 @@ import {
   CalendarDaysIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import FadeInWhenVisible from "./fadeInWhenVisible";
+import LatticeTabs from "./latticeTabs";
+import { lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, slideLWF } from "../../utils/data";
+import LatticeSlider from "./latticeSlider";
+import ResourcesGrid from "./resourceGrid";
+import PlusTabsSection from './plusTabsSection'
+import MiddlePanelTabs from "./middlePanelTabs";
 
 const epfServices = [
   {
@@ -150,7 +157,9 @@ function EPFAccordion() {
               {/* Title Section */}
               <div className="flex items-center space-x-3">
                 <Icon className="w-6 h-6 text-indigo-600" />
-                <h3 className="text-2xl font-semibold text-gray-900">{section.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {section.title}
+                </h3>
               </div>
 
               {/* Cards for each item */}
@@ -265,7 +274,8 @@ states, understanding the nuances of "LWF Act states India."`,
     ],
   },
   {
-    title: "Employee LWF Benefits Support We Ensure (by facilitating eligibility):",
+    title:
+      "Employee LWF Benefits Support We Ensure (by facilitating eligibility):",
     features: [
       `Medical & Health: Eligibility for medical facilities, including dental care.`,
       `Education: Access to scholarships and financial aid for children's education.`,
@@ -273,23 +283,36 @@ states, understanding the nuances of "LWF Act states India."`,
 benefits.`,
       `Skill Development & Recreation: Eligibility for vocational training and access to
 recreational facilities where provided by the LWF Board.7`,
-   
     ],
   },
 ];
 
 export default function LWFServicesSection() {
   return (
-    <section className="py-16 px-4 md:px-12 bg-[#f8f7ff]">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <EPFAccordion />
+        <h2 className="text-3xl font-bold my-8 text-center">
+          Ensuring Employee Well-being: Comprehensive LWF Benefits Management
+        </h2>
+        <FadeInWhenVisible>
+          <LatticeTabs cards={lwfCards} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <LatticeSlider slides={slideLWF} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <ResourcesGrid data={lwfGridData} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <PlusTabsSection tabsData={lwfPlustabs}/>
+        </FadeInWhenVisible>
+         <FadeInWhenVisible>
+          <MiddlePanelTabs tabsData={lwfMiddletabsData}/>
+        </FadeInWhenVisible>
+        {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="text-3xl font-bold mt-20 mb-8 text-center">
-        Ensuring Employee Well-being: Comprehensive LWF Benefits Management
-      </h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans.map((plan, idx) => (
           <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
             <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
@@ -298,10 +321,9 @@ export default function LWFServicesSection() {
                 <li key={i}>{f}</li>
               ))}
             </ul>
-            {/* <p className="font-bold text-indigo-600">{plan.price}</p> */}
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

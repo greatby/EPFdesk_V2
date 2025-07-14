@@ -6,13 +6,21 @@ import {
   CalendarDaysIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import { epfServices,slidesEpfo,whyEpfDesk } from "../../utils/data";
+import {
+  epfoGridData,
+  epfoMiddletabsData,
+  epfoPlustabs,
+  epfServices,
+  slidesEpfo,
+  whyEpfDesk,
+} from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
-import ResourcesGrid from "./resourceGridEpfo";
+import ResourcesGrid from "./resourceGrid";
+import MiddlePanelTabs from "./middlePanelTabs";
+import PlusTabsSection from "./plusTabsSection";
+import FadeInWhenVisible from "./fadeInWhenVisible";
 
-
-
-function EPFAccordion({epfServices}) {
+function EPFAccordion({ epfServices }) {
   // const [openIndex, setOpenIndex] = useState(null);
 
   // const toggle = (index) => {
@@ -21,7 +29,7 @@ function EPFAccordion({epfServices}) {
 
   return (
     // <section className="max-w-4xl mx-auto px-4 py-12">
-      
+
     //   <div className="space-y-4">
     //     {epfServices?.map((section, i) => {
     //       const Icon = section.icon;
@@ -72,7 +80,9 @@ function EPFAccordion({epfServices}) {
               {/* Title Section */}
               <div className="flex items-center space-x-3">
                 <Icon className="w-6 h-6 text-indigo-600" />
-                <h3 className="text-2xl font-semibold text-gray-900">{section.title}</h3>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {section.title}
+                </h3>
               </div>
 
               {/* Cards for each item */}
@@ -94,20 +104,27 @@ function EPFAccordion({epfServices}) {
   );
 }
 
-
-
 export default function EPFServicesSection() {
   return (
-    <section className="py-16 px-4 md:px-12">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
         {/* <h2 className="text-3xl font-bold text-center mb-10">
         Complete EPF Services We Provide
       </h2>
         <EPFAccordion epfServices={epfServices}/> */}
-       
-      <LatticeSlider slides={slidesEpfo}/>
-      <ResourcesGrid />
-      {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
+        <FadeInWhenVisible>
+          <LatticeSlider slides={slidesEpfo} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <ResourcesGrid data={epfoGridData} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <MiddlePanelTabs tabsData={epfoMiddletabsData} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <PlusTabsSection tabsData={epfoPlustabs} />
+        </FadeInWhenVisible>
+        {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
       </div>
 
       {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">

@@ -6,34 +6,10 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 
-const tabs = [
-  {
-    id: "library",
-    title: "Local Teams Across Major Metros",
-    desc: "Unlike purely online services, our on-ground teams in key Indian cities (including Delhi NCR, Mumbai, Bengaluru, Chennai, and Hyderabad, Pune) provide invaluable physical support where it matters most.",
-    icon: <FaBook />,
-  },
-  {
-    id: "university",
-    title: "In-Person EPFO Office Representation",
-    desc: `For complex or unresolved cases that mandate direct interaction, submission of physical documents, or follow-ups at regional EPFO offices, our local teams ensure swift and effective resolution. This addresses queries related to "EPFO portal usage" and "employer's guide to EPFiGMS."`,
-    icon: <FaGraduationCap />,
-  },
-  {
-    id: "resources",
-    title: "Physical Verification Assistance",
-    desc: " When required by EPFO processes (e.g., for certain withdrawal claims or death claim processing), our teams provide on-ground assistance for physical verification, bridging any logistical gaps.",
-    icon: <FaUsers />,
-  },
-  {
-    id: "events",
-    title: "Guaranteed Case Closure",
-    desc: "This unique capability ensures even the most challenging or bureaucratic EPF issues are resolved efficiently, guaranteeing 100% issue resolution regardless of geographical or administrative complexities.",
-    icon: <FaCalendarAlt />,
-  },
-];
 
-const MiddlePanelTabs = () => {
+
+const MiddlePanelTabs = ({tabsData}) => {
+  const { title, tabs } = tabsData;
   const [activeTab, setActiveTab] = useState("library");
   const activeData = tabs.find((tab) => tab.id === activeTab);
 
@@ -41,7 +17,7 @@ const MiddlePanelTabs = () => {
     <>
       <div class="mb-6 pt-16">
         <h2 class="max-w-7xl mx-auto px-4 text-3xl font-bold">
-          Nationwide On-Ground Support for Unresolved Cases
+        {title}
         </h2>
       </div>
       <div className="max-w-7xl mx-auto px-4 py-12">
