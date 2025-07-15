@@ -185,7 +185,7 @@ const TestimonialSlider = () => {
               <SwiperSlide key={index} className="!h-auto flex">
                 <div className="flex flex-col justify-between h-full w-full bg-white rounded-xl p-2 shadow hover:shadow-lg transition min-h-[320px]">
                   <p
-                    className="text-gray-700 text-base rounded-xl min-h-[300px] p-4 leading-relaxed mb-4"
+                    className="text-gray-700 text-lg rounded-xl min-h-[320px] p-4 leading-relaxed mb-4"
                     style={{ backgroundColor: slide.bgColor }}
                   >
                     "{slide.message}"

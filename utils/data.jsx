@@ -2414,13 +2414,13 @@ export const slidesLanding = {
     {
       title: "Monthly Compliance Panic",
       desc: `You're racing against monthly EPFO & ESIC deadlines, juggling multiple state-wise portals for EPF, ESIC, PT, and LWF instead of growing your business – turning you into a full-time compliance officer rather than the innovator you set out to be.`,
-      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a5a96b10c0ffd35b7a_ui-ai-performance-summaries.webp",
+      img: "/images/Test_Compliance.png",
       alt: "UI of AI Performance Summaries",
     },
     {
       title: "Employee Frustration & HR Burnout",
       desc: "Unresolved EPF & ESIC Issues impact employee morale and productivit y, leading to increased HR Workload from queries.",
-      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a04e4e2f6b5e249476_ui-ai-calibration.webp",
+      img: "/images/Audit_Ready.png",
       alt: "UI of AI calibration",
     },
     {
