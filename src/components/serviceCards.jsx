@@ -13,49 +13,54 @@ import { useState } from "react";
 
 const services = [
   {
-    title: "EPFO",
+    title: "EPF Management",
     description:
       "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
     icon: <BriefcaseIcon className="w-8 h-8 text-indigo-600" />,
     link: "/epf",
     bgColor: "#eafce9",
+    textClr: "#0b5d32",
   },
   {
-    title: "EPFdesk",
+    title: "EPFdesk Platform",
     description:
       "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
     icon: <BriefcaseIcon className="w-8 h-8 text-indigo-600" />,
     link: "/epfDesk",
     bgColor: "#fffae6",
+    textClr: "#fca326bd",
   },
   {
-    title: "ESIC",
+    title: "ESIC Management",
     description:
       "Navigate the complexities of Employee State Insurance with ease. We meticulously handle all monthly ESIC contributions, filings, and regulatory updates, ensuring your complete adherence and freeing your team from this critical statutory burden.",
     icon: <UserGroupIcon className="w-8 h-8 text-teal-600" />,
     link: "/esic",
     bgColor: "#f8f0ff",
+    textClr: "#0b5cad",
   },
   {
-    title: "PT",
+    title: "PT Solutions",
     description:
       "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
     icon: <DocumentTextIcon className="w-8 h-8 text-rose-600" />,
     link: "/pt",
     bgColor: "#fff",
+    textClr: "#000",
   },
   {
-    title: "LWF",
+    title: "LWF Management",
     description:
       "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
     icon: <BuildingOffice2Icon className="w-8 h-8 text-amber-600" />,
     link: "/lwf",
     bgColor: "#f8f0ff",
+    textClr: "#5943b6",
   },
 ];
 
 const ServiceCards = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const navigate = useNavigate();
   const handleNavigation = (link) => {
     // Scroll to the top of the page before navigating
@@ -108,17 +113,24 @@ const ServiceCards = () => {
             </div>
           ))}
         </div> */}
-        <div className="max-w-4xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Left Tabs */}
-          <div className="flex flex-row md:flex-col lg:flex-col gap-2 md:col-span-1 justify-between">
+          <div className="flex overflow-x-auto flex-row md:flex-col lg:flex-col gap-2 md:col-span-1 justify-between">
             {services.map((slide, index) => (
+              
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`text-center px-4 py-3 text-lg font-semibold rounded-xl border transition-colors duration-300 ${
+                style={
                   index === activeIndex
-                    ? `bg-[${services[activeIndex].bgColor}] text-black`
-                    : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                    ? {
+                        backgroundColor: services[activeIndex].bgColor,
+                        color: services[activeIndex].textClr,
+                      }
+                    : {}
+                }
+                className={`text-center px-4 py-3 text-lg font-semibold rounded-xl border transition-colors duration-300 ${
+                  index === activeIndex ? "" : "bg-white text-gray-800"
                 }`}
               >
                 {slide.title}

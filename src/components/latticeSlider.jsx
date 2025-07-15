@@ -84,7 +84,7 @@ const LatticeSlider = ({ slides }) => {
 
   return (
     <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 overflow-hidden">
+      <div className="max-w-7xl md:max-w-[110rem] lg:max-w-[110rem] mx-auto px-4 overflow-hidden">
         <h2 className="text-3xl font-bold text-center mb-16">{sectionTitle}</h2>
         <h3 className="text-2xl font-bold mb-8 text-center md:text-left">
           {sectionSubtitle}
@@ -105,12 +105,14 @@ const LatticeSlider = ({ slides }) => {
               640: { slidesPerView: 1.4 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
+              1326:{ slidesPerView: 3 },
+              1400:{slidesPerView: items.length}
             }}
             className="!overflow-visible"
           >
             {items.map((slide, index) => (
               <SwiperSlide key={index} className="!h-auto">
-                <div className="w-full sm:w-[320px] md:w-[360px] lg:w-[386px] mx-auto bg-gray-50 rounded-xl overflow-hidden shadow-md h-full flex flex-col">
+                <div className="w-full sm:w-[320px] md:w-[360px] lg:w-[410px] mx-auto bg-gray-50 rounded-xl overflow-hidden shadow-md h-full flex flex-col">
                   <div className="aspect-square w-full bg-gray-100 overflow-hidden">
                     <img
                       src={slide.img}

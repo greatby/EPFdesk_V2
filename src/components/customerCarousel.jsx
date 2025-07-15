@@ -38,6 +38,7 @@ const slides = [
       "With our teams spread across India handling large contracts subject to strict audits, EPFDesk.com has been instrumental in maintaining our 100% audit success rate. As we scale nationwide, they seamlessly handle new state registrations, employee linking, and all statutory compliance requirements.",
     bgColor: "#fceff1",
   },
+  
 ];
 
 const TestimonialSlider = () => {
@@ -115,7 +116,7 @@ const TestimonialSlider = () => {
           <FaChevronRight className="size-5 text-gray-600" />
         </button>
       </div> */}
-      <div className="max-w-7xl mx-auto px-4 py-4 overflow-hidden">
+      <div className="max-w-7xl md:max-w-[105rem] lg:max-w-[105rem] mx-auto px-4 py-4 overflow-hidden">
         {/* {isReady && (
           <Swiper
             modules={[Pagination]}
@@ -178,6 +179,8 @@ const TestimonialSlider = () => {
               640: { slidesPerView: 1.4 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
+              1326:{ slidesPerView: 3 },
+              1400:{slidesPerView: slides.length}
             }}
             className="!overflow-visible"
           >

@@ -52,7 +52,7 @@ const LimitedCapacitySection = () => {
           {/* Left Big Card */}
           <div className="bg-[#eafce9] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col md:flex-row items-center gap-6">
             {/* <img
-              src="https://via.placeholder.com/300x180.png?text=Reviews+and+Feedback"
+              src="/images/bj7.png"
               alt="Main Banner"
               className="rounded-xl w-full md:w-1/2 object-cover"
             /> */}

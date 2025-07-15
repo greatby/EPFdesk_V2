@@ -20,6 +20,7 @@ import VerticalCarousel from "./components/verticalCarousel";
 import LatticeTabs from "./components/latticeTabs";
 import { dummyCards, slidesLanding } from "../utils/data";
 import LatticeSlider from "./components/latticeSlider";
+import ScrollSyncComponent from "./components/scrollSyncComponent";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <CustomerCarousel />
             <LimitedCapacitySection />
             {/* <LatticeTabs cards={dummyCards}/> */}
+            {/* <ScrollSyncComponent /> */}
           </Layout>
         }
       />
