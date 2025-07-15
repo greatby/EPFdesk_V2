@@ -21,6 +21,8 @@ import ResourcesGrid from "./resourceGrid";
 import MiddlePanelTabs from "./middlePanelTabs";
 import LatticeTabs from "./latticeTabs";
 import FadeInWhenVisible from "./fadeInWhenVisible";
+import LocationCards from "./locationCards";
+import TestimonialAndCards from "./testimonialAndCards";
 
 const epfServices = [
   {
@@ -201,13 +203,15 @@ export default function ESCIServicesSection({ plans }) {
           <LatticeSlider slides={slidesEsic} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <PlusTabsSection tabsData={esicPlustabs} />
+          {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
+          <LocationCards />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           <ResourcesGrid data={esicGridData} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <MiddlePanelTabs tabsData={esicMiddletabsData} />
+          {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
+          <TestimonialAndCards />
         </FadeInWhenVisible>
        
         {/* <EPFAccordion /> */}
