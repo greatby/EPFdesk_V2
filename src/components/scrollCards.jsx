@@ -1,17 +1,19 @@
 import React from "react";
+import LatticeSlider from "./latticeSlider";
+import { slidesStacking } from "../../utils/data";
 
 const StackedCards = () => {
   return (
     <>
-      <section className="w-full bg-white pt-8 md:pt-8">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col items-center sm:items-start text-center sm:text-left">
+      <section className="text-center mb-12 w-full md:w-[75%] lg:w-[75%] mx-auto">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col items-center  text-center">
           {/* Heading */}
           <h2 className="text-4xl md:text-4xl font-bold tracking-tight leading-tight text-gray-900">
             The EPFDesk.com Advantage: Authority, Expertise, Trust
           </h2>
 
           {/* Subtext */}
-          <p className="text-lg md:text-xl mt-6 text-gray-600">
+          <p className="text-lg md:text-xl lg:text-xl mt-6 text-gray-600">
             When you partner with EPFDesk.com, you gain more than a service
             provider; you gain a strategic ally. Our advantage is defined by the
             unparalleled knowledge of our teams, our expansive reach, and a
@@ -22,7 +24,7 @@ const StackedCards = () => {
           </p>
         </div>
       </section>
-      <section className="wrapper w-full md:w-[80%] lg:w-[80%]">
+      {/* <section className="wrapper w-full md:w-[80%] lg:w-[80%]">
         <div className="slp-container">
           <ul className="cards-container">
             <li className="card card-1 gitlab-duo" style={{background:'#fffae6'}}>
@@ -97,7 +99,7 @@ const StackedCards = () => {
               <div className="left-side devsecops">
                 <div className="pill">Support</div>
 
-                <h4 className="text-base font-semibold mt-4 text-gray-800">
+                <h4 className="text-xl  font-semibold mt-4 text-gray-800">
                   Dedicated Client Managers
                 </h4>
                 <p className="slp-text-body1 mt-2 text-gray-600">
@@ -119,7 +121,8 @@ const StackedCards = () => {
             <div className="buffer" data-v-c1476a23=""></div>
           </ul>
         </div>
-      </section>
+      </section> */}
+      <LatticeSlider slides={slidesStacking} />
     </>
   );
 };

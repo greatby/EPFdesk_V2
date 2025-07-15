@@ -2426,15 +2426,45 @@ export const slidesLanding = {
     {
       title: "Statutory penalties and audit risk.",
       desc: "Non-compliance with EPFO, ESIC, and other statutory requirements can trigger penalties up to 100% of dues, plus interest and potential audit risks that could cripple your business finances.",
-      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a1658dd9bc56ab8ab6_ui-ai-writing-assist.webp",
+      img: "/images/Audit_Ready.png",
       alt: "UI of AI writing assistant",
     },
     {
       title: "The Cost of Lost Productivity and Focus.",
       desc: `HR and Finance teams spend hours on employee linking, KYC approvals, and portal data entry instead of focusing on talent development, financial strategy, and business growth that actually drives revenue.`,
-      img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a0062e7b6225cc312a_ui-ai-team-trends.webp",
+      img: "/images/Audit_Ready.png",
       alt: "UI of AI team trends",
     },
   ],
 };
 
+export const slidesStacking = {
+  // sectionTitle: "Why Companies Trust EPFDesk.com",
+  // sectionSubtitle: "Unmatched Expertise & Zero-Error Accuracy",
+  items: [
+    {
+      title: "Hands-on Government Expertise",
+      desc: `Our team combines deep portal expertise with on-ground EPFO office experience, legal knowledge, and proven audit handling capabilities. From complex registrations and deregistrations to navigating ever-changing compliance procedures, our experts have mastered every aspect of statutory compliance.`,
+      img: "/images/Audit_Ready.png",
+      alt: "UI of AI Performance Summaries",
+    },
+    {
+      title: "Nationwide Operational Footprint",
+      desc: "Our offices across major metros and presence in almost all states ensure seamless statutory compliance support wherever your business operates. Your employees can access social security benefits without geographical barriers.",
+      img: "/images/Audit_Ready.png",
+      alt: "UI of AI calibration",
+    },
+    {
+      title: "Proactive Regulatory Guidance",
+      desc: "We monitor every update in EPFO, ESIC, PT, and LWF laws. Our team ensures your company is compliant before new mandates take effect—no surprises, no gaps.",
+      img: "/images/Audit_Ready.png",
+      alt: "UI of AI writing assistant",
+    },
+    {
+      title: "Dedicated Client Managers",
+      desc: `Your assigned manager becomes an extension of your team, managing all compliance obligations proactively so you can focus on growth. No missed deadlines, no stress—just total confidence.`,
+      img: "/images/Audit_Ready.png",
+      alt: "UI of AI team trends",
+    },
+  ],
+};

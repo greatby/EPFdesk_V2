@@ -1,87 +1,75 @@
-import React, { useState, useRef, useEffect } from "react";
-const data = [
-  {
-    title: "Expertise",
-    description:
-      "Our team combines deep portal expertise with on-ground EPFO office experience and proven audit handling capabilities.",
-  },
-  {
-    title: "Compliance",
-    description:
-      "We track and implement regulatory changes in real time to ensure you’re always compliant without lifting a finger.",
-  },
-  {
-    title: "Automation",
-    description:
-      "Our platform automates all filings, follow-ups, and escalations, reducing delays and manual dependencies.",
-  },
-  {
-    title: "Support",
-    description:
-      "Get expert human support when automation isn't enough — we handle edge cases and exceptions manually.",
-  },
-];
+import React, { useEffect, useRef, useState } from "react";
+import { HiCheck } from "react-icons/hi";
 
-const StickyScrollSections = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRefs = useRef([]);
+const StickyStackedSections = ({ items }) => {
+  const refs = useRef([]);
+  const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-            const index = parseInt(entry.target.dataset.index);
-            setActiveIndex(index);
+          const idx = parseInt(entry.target.dataset.idx);
+          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+            setActiveIdx(idx);
           }
         });
       },
-      {
-        threshold: 0.5,
-      }
+      { threshold: 0.5 }
     );
 
-    sectionRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
+    refs.current.forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="flex max-w-6xl mx-auto px-4 md:px-10 py-16 h-full">
-      {/* Left Column (Sticky Title) */}
-      <div className="w-1/3 hidden md:block">
-        <div className="sticky top-32">
-          <h2 className="text-3xl font-bold text-gray-800">
-            {data[activeIndex].title}
-          </h2>
-        </div>
-      </div>
+    <div className="max-w-6xl mx-auto px-4 md:px-10 py-20 space-y-40">
+      {items.cards.map((card, i) => (
+        <div
+          key={i}
+          data-idx={i}
+          ref={(el) => (refs.current[i] = el)}
+          className="h-[100vh] flex flex-col md:flex-row items-start gap-10"
+        >
+          {/* Sticky Left Title inside this section */}
+          <div className="w-full md:w-1/2 sticky top-32 h-fit">
+            <h2
+              className={`text-5xl font-bold text-gray-900 transition-all duration-700 ease-in-out ${
+                i === activeIdx
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-0"
+              }`}
+            >
+              {card.title}
+            </h2>
+          </div>
 
-      {/* Right Column (Scrollable Content) */}
-      <div className="w-full md:w-2/3 flex flex-col gap-40">
-        {data.map((item, index) => (
-          <section
-            key={index}
-            data-index={index}
-            ref={(el) => (sectionRefs.current[index] = el)}
-            className="min-h-screen flex items-center"
-          >
-            <div>
-              {/* Mobile title */}
-              <h3 className="text-2xl font-semibold text-gray-800 md:hidden mb-2">
-                {item.title}
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {item.description}
-              </p>
+          {/* Scrollable Right Content */}
+          <div className="w-full md:w-1/2">
+            <div className=" p-6">
+              <ul className="space-y-4">
+                {card.features.map((feature, j) => {
+                  const [boldPart, ...rest] = feature.split(":");
+                  return (
+                    <li
+                      key={j}
+                      className="flex items-start gap-3 text-gray-800 text-base leading-relaxed"
+                    >
+                      <HiCheck className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                      <span>
+                        <strong>{boldPart}:</strong>
+                        {rest.length > 0 && <span>{rest.join(":")}</span>}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-          </section>
-        ))}
-      </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default StickyScrollSections;
+export default StickyStackedSections;

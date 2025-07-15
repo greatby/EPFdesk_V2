@@ -4,6 +4,7 @@ import ESICComplianceCarousel from "./esicCompaliancecarousel";
 import ESCIServicesSection from "./esciServicesSection";
 import { plans,esicFaq } from "../../utils/data";
 import FaqAccordion from "./faqAccordian";
+import StickyScrollSections from "./scrollSyncComponent";
 
 function Hero() {
   return (
@@ -38,6 +39,7 @@ const ESICCompliance = () => {
       <FadeInWhenVisible>
         <ESCIServicesSection plans={plans} />
       </FadeInWhenVisible>
+      <StickyScrollSections items={plans}/>
       <FadeInWhenVisible>
         <FaqAccordion faqs={esicFaq} />
       </FadeInWhenVisible>

@@ -51,11 +51,11 @@ const LimitedCapacitySection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto p-6">
           {/* Left Big Card */}
           <div className="bg-[#eafce9] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col md:flex-row items-center gap-6">
-            {/* <img
+            <img
               src="/images/bj7.png"
               alt="Main Banner"
               className="rounded-xl w-full md:w-1/2 object-cover"
-            /> */}
+            />
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
                 The True Cost of Waiting{" "}

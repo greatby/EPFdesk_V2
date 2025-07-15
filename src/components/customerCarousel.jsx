@@ -38,12 +38,12 @@ const slides = [
       "With our teams spread across India handling large contracts subject to strict audits, EPFDesk.com has been instrumental in maintaining our 100% audit success rate. As we scale nationwide, they seamlessly handle new state registrations, employee linking, and all statutory compliance requirements.",
     bgColor: "#fceff1",
   },
-  
 ];
 
 const TestimonialSlider = () => {
   const [isReady, setIsReady] = useState(false);
   const paginationRef = useRef(null);
+  const containerRef = useRef(null)
 
   useEffect(() => {
     // Wait for pagination div to be in the DOM
@@ -117,54 +117,6 @@ const TestimonialSlider = () => {
         </button>
       </div> */}
       <div className="max-w-7xl md:max-w-[105rem] lg:max-w-[105rem] mx-auto px-4 py-4 overflow-hidden">
-        {/* {isReady && (
-          <Swiper
-            modules={[Pagination]}
-            spaceBetween={16}
-            slidesPerView={1}
-            pagination={{
-              clickable: true,
-              el: ".custom-swiper-pagination",
-            }}
-            breakpoints={{
-              480: { slidesPerView: 1.2 },
-              640: { slidesPerView: 1.4 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            className="!overflow-visible"
-          >
-            {slides.map((slide, index) => (
-              <SwiperSlide key={index} className="!h-auto flex">
-                <div className="flex flex-col justify-between h-full w-full bg-white rounded-xl p-3 shadow hover:shadow-lg transition min-h-[320px]">
-                  <p
-                    className="text-gray-700 text-base rounded-xl p-4 leading-relaxed mb-4"
-                    style={{ backgroundColor: slide.bgColor }}
-                  >
-                    "{slide.message}"
-                  </p>
-                  <div className="mt-auto">
-                    <p className="text-lg font-semibold text-gray-900">
-                      {slide.name}
-                    </p>
-                    {slide.title && (
-                      <p className="text-sm text-gray-600">{slide.title}</p>
-                    )}
-                    <p className="text-sm font-medium text-blue-600">
-                      {slide.org}
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          
-        )}
-         <div
-          ref={paginationRef}
-          className="custom-swiper-pagination mt-6 flex justify-center gap-2"
-        />
-      </div> */}
         {isReady && (
           <Swiper
             modules={[Pagination]}
@@ -179,21 +131,21 @@ const TestimonialSlider = () => {
               640: { slidesPerView: 1.4 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-              1326:{ slidesPerView: 3 },
-              1400:{slidesPerView: slides.length}
+              1326: { slidesPerView: 3 },
+              1400: { slidesPerView: slides.length },
             }}
             className="!overflow-visible"
           >
-           {slides.map((slide, index) => (
+            {slides.map((slide, index) => (
               <SwiperSlide key={index} className="!h-auto flex">
-                <div className="flex flex-col justify-between h-full w-full bg-white rounded-xl p-2 shadow hover:shadow-lg transition min-h-[320px]">
+                <div className="flex flex-col justify-between h-full w-full bg-white rounded-xl p-3 shadow hover:shadow-lg transition min-h-[320px]">
                   <p
                     className="text-gray-700 text-lg rounded-xl min-h-[320px] p-4 leading-relaxed mb-4"
                     style={{ backgroundColor: slide.bgColor }}
                   >
                     "{slide.message}"
                   </p>
-                  <div className="mt-auto">
+                  <div className="mt-auto px-1">
                     <p className="text-xl font-semibold text-gray-900">
                       {slide.name}
                     </p>
@@ -210,7 +162,6 @@ const TestimonialSlider = () => {
           </Swiper>
         )}
 
-        {/* Ref for pagination bullets */}
         <div
           ref={paginationRef}
           className="custom-swiper-pagination mt-6 flex justify-center gap-2"

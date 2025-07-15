@@ -13,46 +13,51 @@ import { useState } from "react";
 
 const services = [
   {
-    title: "EPF Management",
+    title: "EPF",
     description:
       "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
     icon: <BriefcaseIcon className="w-8 h-8 text-indigo-600" />,
+    img: "/images/Horizontal.png",
     link: "/epf",
     bgColor: "#eafce9",
     textClr: "#0b5d32",
   },
   {
-    title: "EPFdesk Platform",
+    title: "EPFdesk",
     description:
       "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
     icon: <BriefcaseIcon className="w-8 h-8 text-indigo-600" />,
+    img: "/images/Horizontal.png",
     link: "/epfDesk",
     bgColor: "#fffae6",
     textClr: "#fca326bd",
   },
   {
-    title: "ESIC Management",
+    title: "ESIC",
     description:
       "Navigate the complexities of Employee State Insurance with ease. We meticulously handle all monthly ESIC contributions, filings, and regulatory updates, ensuring your complete adherence and freeing your team from this critical statutory burden.",
     icon: <UserGroupIcon className="w-8 h-8 text-teal-600" />,
+    img: "/images/Horizontal.png",
     link: "/esic",
     bgColor: "#f8f0ff",
     textClr: "#0b5cad",
   },
   {
-    title: "PT Solutions",
+    title: "PT",
     description:
       "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
     icon: <DocumentTextIcon className="w-8 h-8 text-rose-600" />,
+    img: "/images/Horizontal.png",
     link: "/pt",
     bgColor: "#fff",
     textClr: "#000",
   },
   {
-    title: "LWF Management",
+    title: "LWF",
     description:
       "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
     icon: <BuildingOffice2Icon className="w-8 h-8 text-amber-600" />,
+    img: "/images/Horizontal.png",
     link: "/lwf",
     bgColor: "#f8f0ff",
     textClr: "#5943b6",
@@ -113,52 +118,46 @@ const ServiceCards = () => {
             </div>
           ))}
         </div> */}
-        <div className="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
-          {/* Left Tabs */}
-          <div className="flex overflow-x-auto flex-row md:flex-col lg:flex-col gap-2 md:col-span-1 justify-between">
-            {services.map((slide, index) => (
-              
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                style={
-                  index === activeIndex
-                    ? {
-                        backgroundColor: services[activeIndex].bgColor,
-                        color: services[activeIndex].textClr,
-                      }
-                    : {}
-                }
-                className={`text-center px-4 py-3 text-lg font-semibold rounded-xl border transition-colors duration-300 ${
-                  index === activeIndex ? "" : "bg-white text-gray-800"
-                }`}
-              >
-                {slide.title}
-              </button>
-            ))}
-          </div>
-
-          {/* Right Content Box */}
-          <div
-            className="bg-white p-6 rounded-xl shadow-md md:col-span-3"
-            style={{ backgroundColor: services[activeIndex].bgColor }}
-          >
-            <div className="flex items-center justify-start mb-4 w-12 h-12 rounded-lg">
-              {services[activeIndex].icon}
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">
-              {services[activeIndex].title}
-            </h3>
-            <p className="text-gray-600 mb-6 text-xl">
-              {services[activeIndex].description}
-            </p>
-            <button
-              onClick={() => handleNavigation(services[activeIndex].link)}
-              className="px-5 py-2 text-sm bg-[#c4f5db] text-[#007a7a] rounded-[23px]"
+        <div className="max-w-6xl mx-auto px-4 py-16 flex flex-col gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-md p-6 flex flex-col lg:flex-row items-center gap-8"
             >
-              Learn more...
-            </button>
-          </div>
+              {/* Left Image / Illustration */}
+              <div className="w-full lg:w-1/2 bg-white p-2 rounded-2xl flex justify-center">
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full max-w-md rounded-2xl object-contain"
+                />
+              </div>
+
+              {/* Right Content */}
+              <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                  {service.title}
+                </h2>
+                <p className="text-lg font-semibold text-gray-500 mb-5">
+                  {service.description}
+                </p>
+                <div className="w-full md:w-[60%] lg:w-[60%] mx-auto">
+                  <button
+                    onClick={() => handleNavigation(service.link)}
+                    style={{
+                      backgroundColor: "#ccffe4",
+                      backgroundImage:
+                        "linear-gradient(180deg, #e6f9ee, #c4f5db)",
+                      color: "#007a7a",
+                    }}
+                    className="px-6 py-3 text-base font-medium rounded-xl transition w-fit"
+                  >
+                    Learn more about {service.title}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
