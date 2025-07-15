@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Manrope", "sans-serif"],
-        roboto: ["Roboto", "san-serif"],
+        matter:['Matter','sans-serif']
+        // roboto: ["Roboto", "san-serif"],
       },
       transform: ["group-hover"],
     },

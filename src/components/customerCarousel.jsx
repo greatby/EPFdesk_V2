@@ -45,7 +45,10 @@ const TestimonialSlider = () => {
   const paginationRef = useRef(null);
 
   useEffect(() => {
-    setIsReady(true);
+    // Wait for pagination div to be in the DOM
+    if (paginationRef.current) {
+      setIsReady(true);
+    }
   }, []);
   // const cardRefs = useRef([]);
 
@@ -113,12 +116,7 @@ const TestimonialSlider = () => {
         </button>
       </div> */}
       <div className="max-w-7xl mx-auto px-4 py-4 overflow-hidden">
-        <div
-          ref={paginationRef}
-          className="custom-swiper-pagination mt-6 flex justify-center gap-2"
-        />
-
-        {isReady && (
+        {/* {isReady && (
           <Swiper
             modules={[Pagination]}
             spaceBetween={16}
@@ -159,7 +157,61 @@ const TestimonialSlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          
         )}
+         <div
+          ref={paginationRef}
+          className="custom-swiper-pagination mt-6 flex justify-center gap-2"
+        />
+      </div> */}
+        {isReady && (
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={16}
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+              el: paginationRef.current,
+            }}
+            breakpoints={{
+              480: { slidesPerView: 1.2 },
+              640: { slidesPerView: 1.4 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="!overflow-visible"
+          >
+           {slides.map((slide, index) => (
+              <SwiperSlide key={index} className="!h-auto flex">
+                <div className="flex flex-col justify-between h-full w-full bg-white rounded-xl p-2 shadow hover:shadow-lg transition min-h-[320px]">
+                  <p
+                    className="text-gray-700 text-base rounded-xl min-h-[300px] p-4 leading-relaxed mb-4"
+                    style={{ backgroundColor: slide.bgColor }}
+                  >
+                    "{slide.message}"
+                  </p>
+                  <div className="mt-auto">
+                    <p className="text-xl font-semibold text-gray-900">
+                      {slide.name}
+                    </p>
+                    {slide.title && (
+                      <p className="text-md text-gray-600">{slide.title}</p>
+                    )}
+                    <p className="text-md font-medium text-blue-600">
+                      {slide.org}
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )}
+
+        {/* Ref for pagination bullets */}
+        <div
+          ref={paginationRef}
+          className="custom-swiper-pagination mt-6 flex justify-center gap-2"
+        />
       </div>
     </section>
   );

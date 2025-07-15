@@ -37,26 +37,8 @@ export default function Hero({ setShowFloating }) {
   }, [setShowFloating]);
   return (
     <div className="relative">
-      {/* <section className="bg-[#1d3d3c] py-20 px-6 md:px-12">
-      <div className=" w-full md:max-w-2xl lg:max-w-2xl text-left">
-        <h1 className="text-4xl sm:text-5xl font-bold text-[#f8f7ff] mb-10">
-          Complete EPFO Compliance Made Simple
-        </h1>
-        <p className="text-lg sm:text-xl text-[#f8f7ff] mb-10">
-          Stop struggling with monthly EPF filings. Let our expert team handle all your EPFO, ESIC, PT & LWF compliance while you focus on growing your business.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button className="px-6 py-3 bg-[#beb4fd] text-[#1d3d3c] rounded-[4rem] text-base font-semibold hover:bg-[#beb4fd] transition">
-            Start Free Consultation
-          </button>
-          <button className="px-6 py-3 bg-[#46c9c900] border border-gray-300 text-[#f8f7ff] rounded-[4rem] text-base font-semibold hover:bg-gray-100 hover:text-gray-500 transition">
-            Explore Services
-          </button>
-        </div>
-      </div>
-    </section> */}
       <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
-        <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-6">
+        <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-4">
           {/* Left Text Content */}
           <div className="w-full md:w-1/2 text-center">
             <h1 className="text-4xl sm:text-4xl font-bold text-black mb-8">
@@ -69,7 +51,9 @@ export default function Hero({ setShowFloating }) {
             <div className="flex flex-col gap-4 mb-2">
               <LinkButtons />
             </div>
-            <p className="text-lg sm:text-xl text-black">Go Live in 24 Hours – We Handle Complete EPFO, ESIC & PT Setup</p>
+            <p className="text-lg sm:text-xl text-black">
+              Go Live in 24 Hours – We Handle Complete EPFO, ESIC & PT Setup
+            </p>
           </div>
 
           {/* Right Image */}
@@ -80,13 +64,13 @@ export default function Hero({ setShowFloating }) {
               className="w-full h-auto object-contain"
             />
           </div>
-            <h2 className="text-3xl sm:text-[2.5rem] font-bold text-gray-900 text-center">
-          Stuck in the Maze, We’ll guide you out.
-        </h2>
-        <p className="text-gray-600 text-lg text-center mt-4 max-w-2xl mx-auto">
-          Every HR department faces these compliance nightmares. You're not
-          alone.
-        </p>
+          <h2 className="text-3xl sm:text-[2.5rem] font-bold text-gray-900 text-center">
+            Stuck in the Maze, We’ll guide you out.
+          </h2>
+          <p className="text-gray-600 text-[1.2rem] text-center mt-4 max-w-2xl mx-auto">
+            Every HR department faces these compliance nightmares. You're not
+            alone.
+          </p>
         </div>
       </section>
     </div>

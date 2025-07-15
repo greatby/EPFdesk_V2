@@ -119,10 +119,10 @@ const LatticeSlider = ({ slides }) => {
                     />
                   </div>
                   <div className="p-4 flex-1">
-                    <h3 className="text-lg font-semibold mb-2">
+                    <h3 className="text-[1.5rem] font-semibold mb-2">
                       {slide.title}
                     </h3>
-                    <p className="text-sm text-gray-600">{slide.desc}</p>
+                    <p className="text-[1.1rem] text-gray-600">{slide.desc}</p>
                   </div>
                 </div>
               </SwiperSlide>
