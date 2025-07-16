@@ -193,7 +193,7 @@ function EPFAccordion() {
 
 export default function ESCIServicesSection({ plans }) {
   return (
-    <section className="py-8 px-4 md:px-6">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
          <FadeInWhenVisible>
           <h2 className="text-3xl font-bold my-8 text-center">

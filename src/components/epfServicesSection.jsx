@@ -106,7 +106,7 @@ function EPFAccordion({ epfServices }) {
 
 export default function EPFServicesSection() {
   return (
-    <section className="py-8 px-4 md:px-6">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
         {/* <h2 className="text-3xl font-bold text-center mb-10">
         Complete EPF Services We Provide

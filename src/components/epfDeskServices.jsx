@@ -378,7 +378,7 @@ const AlternatingFeatureCards = ({ cards }) => {
 
 export default function EPFdeskServices({ plans }) {
   return (
-    <section className="py-8 px-4 md:px-6 bg-[#f8f7ff]">
+    <section className="py-8 px-4 md:px-12 bg-[#f8f7ff]">
       <div className="space-y-4 mx-auto">
         <EPFSlider epfServices={epfDeskStatergy} />
       </div>
