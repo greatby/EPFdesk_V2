@@ -23,6 +23,8 @@ import LatticeTabs from "./latticeTabs";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LocationCards from "./locationCards";
 import TestimonialAndCards from "./testimonialAndCards";
+import Roadmap from "./roadmap";
+import FeatureCardGrid from "./featureCardGrid";
 
 const epfServices = [
   {
@@ -213,13 +215,15 @@ export default function ESCIServicesSection({ plans }) {
           {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
           <TestimonialAndCards />
         </FadeInWhenVisible>
+        <Roadmap />
+        <FeatureCardGrid/>
        
         {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="text-4xl font-bold mt-20 mb-8 text-center">
+      {/* <h2 className="text-4xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
-      </h2>
+      </h2> */}
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans?.cards?.map((plan, idx) => (
