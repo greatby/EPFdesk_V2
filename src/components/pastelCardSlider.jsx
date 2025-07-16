@@ -45,7 +45,7 @@ const PastelCardSlider = () => {
 
   return (
     <section className="min-h-screen px-6 py-12">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto overflow-hidden">
         {isReady && (
           <Swiper
             modules={[Pagination]}

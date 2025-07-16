@@ -27,6 +27,7 @@ import Roadmap from "./roadmap";
 import FeatureCardGrid from "./featureCardGrid";
 import PastelCards from "./pastelCards";
 import PastelCardSlider from "./pastelCardSlider";
+import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
 
 const epfServices = [
   {
@@ -214,6 +215,7 @@ export default function ESCIServicesSection({ plans }) {
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           <ResourcesGrid data={esicGridData} />
+          <VerticalAndHorizontalCards />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
