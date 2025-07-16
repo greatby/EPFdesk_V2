@@ -112,7 +112,7 @@ const LatticeSlider = ({ slides }) => {
           >
             {items.map((slide, index) => (
               <SwiperSlide key={index} className="!h-auto">
-                <div className="w-full sm:w-[320px] md:w-[360px] lg:w-[410px] mx-auto rounded-xl overflow-hidden shadow-md h-full flex flex-col">
+                <div className="w-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4 rounded-xl shadow-md h-full">
                   <div className="aspect-square w-full overflow-hidden p-3 ">
                     <img
                       src={slide.img}

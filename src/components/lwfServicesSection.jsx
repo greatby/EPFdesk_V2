@@ -13,6 +13,7 @@ import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import PlusTabsSection from './plusTabsSection'
 import MiddlePanelTabs from "./middlePanelTabs";
+import StickyStackedSections from "./scrollSyncComponent";
 
 const epfServices = [
   {
@@ -181,7 +182,10 @@ function EPFAccordion() {
   );
 }
 
-const plans = [
+const plans = {
+  mainTitle:
+    "Ensuring Employee Well-being: Comprehensive LWF Benefits Management",
+    cards:[
   {
     title: "Facilitating Employee Access to LWF Welfare Schemes",
     features: [
@@ -285,7 +289,11 @@ benefits.`,
 recreational facilities where provided by the LWF Board.7`,
     ],
   },
-];
+]
+}
+
+
+
 
 export default function LWFServicesSection() {
   return (
@@ -309,10 +317,10 @@ export default function LWFServicesSection() {
          <FadeInWhenVisible>
           <MiddlePanelTabs tabsData={lwfMiddletabsData}/>
         </FadeInWhenVisible>
-        <EPFAccordion />
+      <StickyStackedSections items={plans} />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans.map((plan, idx) => (
           <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
             <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
@@ -323,7 +331,7 @@ export default function LWFServicesSection() {
             </ul>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

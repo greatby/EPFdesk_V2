@@ -13,6 +13,7 @@ import PlusTabsSection from "./plusTabsSection";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import MiddlePanelTabs from "./middlePanelTabs";
+import StickyStackedSections from "./scrollSyncComponent";
 
 const epfServices = [
   {
@@ -186,7 +187,10 @@ function EPFAccordion() {
   );
 }
 
-const plans = [
+const plans = {
+ mainTitle:
+    "Ensuring Employee Well-being: Comprehensive PT solutions",
+cards:[
   {
     title: "Unmatched PT Expertise & Zero-Risk Compliance Across States",
     features: [
@@ -275,7 +279,11 @@ India."`,
       `Ensuring transparent reporting of PT deductions on payslips.`,
     ],
   },
-];
+]
+}
+
+
+
 
 export default function PFServicesSection() {
   return (
@@ -299,10 +307,11 @@ export default function PFServicesSection() {
          <FadeInWhenVisible>
           <MiddlePanelTabs tabsData={ptMiddletabsData}/>
         </FadeInWhenVisible>
-        <EPFAccordion />
+        {/* <EPFAccordion /> */}
+        <StickyStackedSections items={plans}/>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 w-full mx-auto gap-6">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-4 w-full mx-auto gap-6">
         {plans.map((plan, idx) => (
           <div key={idx} className="border p-6 rounded-xl shadow-sm bg-gray-50">
             <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
@@ -314,7 +323,7 @@ export default function PFServicesSection() {
           
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

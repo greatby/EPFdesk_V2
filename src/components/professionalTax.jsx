@@ -7,6 +7,7 @@ import PFCarousel from "./pfcarousel";
 import PFServicesSection from "./pfServicesSection";
 import FaqAccordion from "./faqAccordian";
 import { ptFaq } from "../../utils/data";
+import PastelCards from "./pastelCards";
 
 function Hero() {
   return (
@@ -40,6 +41,7 @@ const ProfessionalTax = () => {
       <FadeInWhenVisible>
         <PFServicesSection />
       </FadeInWhenVisible>
+      <PastelCards />
       <FadeInWhenVisible>
         <FaqAccordion faqs={ptFaq} />
       </FadeInWhenVisible>
