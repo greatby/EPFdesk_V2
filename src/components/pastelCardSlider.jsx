@@ -73,7 +73,7 @@ const PastelCardSlider = () => {
             {pastelCards.map((card, i) => (
               <SwiperSlide key={i} className="!h-auto flex">
                 <div
-                  className={`flex flex-col justify-between w-full h-full bg-gradient-to-br ${card.bg} p-10 rounded-3xl shadow-xl transform transition hover:-translate-y-2 hover:shadow-2xl`}
+                  className={`flex flex-col w-full h-full bg-gradient-to-br ${card.bg} p-10 rounded-3xl shadow-xl transform transition hover:-translate-y-2 hover:shadow-2xl`}
                 >
                   {/* Floating bubbles */}
                   <div className="absolute inset-0 overflow-hidden pointer-events-none">

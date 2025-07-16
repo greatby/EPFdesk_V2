@@ -208,8 +208,8 @@ export default function ESCIServicesSection({ plans }) {
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
-          <LocationCards />
-          <PastelCards />
+          {/* <LocationCards /> */}
+          {/* <PastelCards /> */}
           <PastelCardSlider />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
