@@ -803,3 +803,29 @@ body {
   @apply bg-green-300 w-6 rounded-full;
 }
 
+/* global.css or index.css */
+@scroll-timeline body-scroll {
+  source: auto;
+  orientation: block;
+  scroll-offsets: start 0%, end 100%;
+}
+
+
+.card-animate {
+  animation-name: slide-in;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

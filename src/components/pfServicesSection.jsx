@@ -279,7 +279,7 @@ India."`,
 
 export default function PFServicesSection() {
   return (
-    <section className="py-8 px-4 md:px-12">
+    <section className="py-8 px-4 md:px-6">
       <div className="space-y-4 mx-auto">
         <h2 className="text-3xl font-bold my-8 text-center">
           Why Companies Trust Professional Tax Compliance with EPFDesk.com

@@ -6,7 +6,7 @@ const ResourcesGrid = ({data}) => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="mb-8">
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-3xl text-center font-bold">
            {title}
           </h2>
         </div>

@@ -39,7 +39,7 @@ const ESICCompliance = () => {
       <FadeInWhenVisible>
         <ESCIServicesSection plans={plans} />
       </FadeInWhenVisible>
-      {/* <StickyScrollSections items={plans}/> */}
+      <StickyScrollSections items={plans}/>
       <FadeInWhenVisible>
         <FaqAccordion faqs={esicFaq} />
       </FadeInWhenVisible>

@@ -193,7 +193,7 @@ function EPFAccordion() {
 
 export default function ESCIServicesSection({ plans }) {
   return (
-    <section className="py-8 px-4 md:px-12">
+    <section className="py-8 px-4 md:px-6">
       <div className="space-y-4 mx-auto">
          <FadeInWhenVisible>
           <h2 className="text-3xl font-bold my-8 text-center">
@@ -215,15 +215,15 @@ export default function ESCIServicesSection({ plans }) {
           {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
           <TestimonialAndCards />
         </FadeInWhenVisible>
-        <Roadmap />
-        <FeatureCardGrid/>
+        {/* <Roadmap />
+        <FeatureCardGrid/> */}
        
         {/* <EPFAccordion /> */}
       </div>
 
-      {/* <h2 className="text-4xl font-bold mt-20 mb-8 text-center">
+      <h2 className="text-4xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
-      </h2> */}
+      </h2>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans?.cards?.map((plan, idx) => (

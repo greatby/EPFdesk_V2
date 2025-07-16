@@ -184,27 +184,19 @@ facilitating their access to benefits.`,
     {
       title: "Proven ESIC Expertise & Zero-Risk Compliance",
       features: [
-        `Consistent 99.9% accuracy rate in all ESIC filings and contribution calculations,
-rigorously minimizing financial discrepancies and audit risks.`,
-        `Zero audit failures across our client portfolio for 5+ years, a testament to our
-robust control environment and unwavering commitment to compliance integrity.`,
-        `Rapid average response times (e.g., 2-4 hours) for all client queries and urgent
-matters, ensuring your concerns are addressed promptly by dedicated specialists.`,
-        `100% deadline adherence for all ESIC submissions, completely eliminating
-interest charges and "legal consequences of ESIC non-compliance."`,
+        "99.9% Accuracy in ESIC Filings: Consistent 99.9% accuracy rate in all ESIC filings and contribution calculations, rigorously minimizing financial discrepancies and audit risks.",
+        "Zero Audit Failures in 5+ Years: Zero audit failures across our client portfolio for 5+ years, a testament to our robust control environment and unwavering commitment to compliance integrity.",
+        "Rapid Query Resolution (2–4 hrs): Rapid average response times (e.g., 2-4 hours) for all client queries and urgent matters, ensuring your concerns are addressed promptly by dedicated specialists.",
+        "100% Deadline Adherence: 100% deadline adherence for all ESIC submissions, completely eliminating interest charges and 'legal consequences of ESIC non-compliance.'",
       ],
     },
     {
       title: "Complete HR & Finance Team Liberation",
       features: [
-        `Up to 80% reduction in administrative time typically spent on ESIC registration,
-calculation, and filing processes, directly enhancing operational efficiency.`,
-        `100% elimination of penalty and interest risks, leading to direct financial savings
-and complete protection from unforeseen costs.`,
-        `Complete protection from non-compliance legal consequences and reputational
-damage, ensuring your business's integrity.`,
-        `Strategic resource redirection toward talent development, advanced financial
-planning, and core business growth, maximizing your organization's potential.`,
+        "80% Reduction in ESIC Admin Time: Up to 80% reduction in administrative time typically spent on ESIC registration, calculation, and filing processes, directly enhancing operational efficiency.",
+        "Elimination of ESIC Penalty Risks: 100% elimination of penalty and interest risks, leading to direct financial savings and complete protection from unforeseen costs.",
+        "Protection from Legal & Reputational Risks: Complete protection from non-compliance legal consequences and reputational damage, ensuring your business's integrity.",
+        "Strategic Resource Redirection: Strategic resource redirection toward talent development, advanced financial planning, and core business growth, maximizing your organization's potential.",
       ],
     },
     {
