@@ -221,7 +221,7 @@ export default function ESCIServicesSection({ plans }) {
         {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="text-4xl font-bold mt-20 mb-8 text-center">
+      <h2 className="max-w-5xl mx-auto text-4xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
       </h2>
 
