@@ -48,7 +48,7 @@ const pastelCards = [
 const PastelCards = () => {
   return (
     <div className="min-h-screen px-6 py-12">
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
         {pastelCards.map((card, i) => (
           <div
             key={i}

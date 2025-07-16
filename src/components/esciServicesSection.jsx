@@ -26,6 +26,7 @@ import TestimonialAndCards from "./testimonialAndCards";
 import Roadmap from "./roadmap";
 import FeatureCardGrid from "./featureCardGrid";
 import PastelCards from "./pastelCards";
+import PastelCardSlider from "./pastelCardSlider";
 
 const epfServices = [
   {
@@ -209,6 +210,7 @@ export default function ESCIServicesSection({ plans }) {
           {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
           <LocationCards />
           <PastelCards />
+          <PastelCardSlider />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           <ResourcesGrid data={esicGridData} />
