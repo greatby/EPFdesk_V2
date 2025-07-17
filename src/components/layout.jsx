@@ -15,7 +15,7 @@ export default function Layout({ children }) {
    const location = useLocation()
   const isHome = location.pathname === '/'
   return (
-    <div className={isHome ? 'font-roboto' : 'font-sans'}>
+    <div className=''>
       <Navbar />
       <div className="">{children}</div>
       {/* <StackedCardsSection /> */}
