@@ -2460,3 +2460,62 @@ export const slidesStacking = {
     },
   ],
 };
+
+export const heroSlides = [
+ 
+  {
+    id: 1,
+    gradientClass:
+      "linear-gradient(to bottom right, #818cf8, #a855f7, #6b21a8)",
+    icon: "🚀",
+    title:
+      "ESIC Compliance: Effortless Management for Employee Well-being & Business Protection",
+    subtitle:
+      "Master ESIC compliance with EPFDesk.com. We handle registration, accurate contributions, monthly filings & ensure all employee benefits. Avoid penalties, achieve 99.9% accuracy, and empower your HR.",
+  },
+  {
+    id: 2,
+    gradientClass:
+      "linear-gradient(to bottom right, #f472b6, #ec4899, #ef4444)",
+    icon: "🎯",
+    title: "EPFDesk: Your Direct Line to Effortless EPF Solutions & Support",
+    subtitle:
+      "EPFDesk empowers your employees with instant EPF query resolution. Check balance, track claims, update KYC & more – all issues handled by our experts. Free your HR team from daily EPF queries.",
+  },
+  {
+    id: 3,
+    gradientClass:
+      "linear-gradient(to bottom right, #60a5fa, #38bdf8, #22d3ee)",
+    icon: "⚡",
+    title: "Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for Flawless Adherence",
+    subtitle:
+      "Master LWF compliance across India with EPFDesk.com. We handle state-specific calculations, filings & ensure timely adherence. Avoid penalties, achieve 100% accuracy for LWF.",
+  },
+  {
+    id: 4,
+    gradientClass:
+      "linear-gradient(to bottom right, #4ade80, #2dd4bf, #34d399)",
+    icon: "🌟",
+    title: "Professional Tax Compliance: Master Multi-State Nuances, Ensure Flawless Adherence",
+    subtitle:
+      "Master Professional Tax compliance across India with EPFDesk.com. We handle state-specific calculations, precise filings, and ensure timely adherence. Avoid penalties, achieve 100% accuracy for PT.",
+  },
+  {
+    id: 5,
+    gradientClass:
+      "linear-gradient(to bottom right, #fb7185, #f9a8d4, #facc15)",
+    icon: "🤝",
+    title: "Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential",
+    subtitle:
+      "Master employer EPF compliance with EPFDesk.com. We automate challans, manage filings & mitigate risks, freeing your HR & Finance teams for strategic growth. Expert-led solutions for Indian businesses.",
+  },
+  {
+    id: 6,
+    gradientClass:
+      "linear-gradient(to bottom right, #a5f3fc, #f9a8d4, #fda4af)",
+    icon: "👁️",
+    title: "ENVISION",
+    subtitle:
+      "See the bigger picture and create solutions that make a meaningful impact on the world",
+  },
+];

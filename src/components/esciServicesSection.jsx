@@ -28,6 +28,8 @@ import FeatureCardGrid from "./featureCardGrid";
 import PastelCards from "./pastelCards";
 import PastelCardSlider from "./pastelCardSlider";
 import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
+import VerticalCard from "./largeCards";
+
 
 const epfServices = [
   {
@@ -204,22 +206,25 @@ export default function ESCIServicesSection({ plans }) {
           </h2>
           <LatticeTabs cards={esciCards} />
         </FadeInWhenVisible>
-        <FadeInWhenVisible>
-          <LatticeSlider slides={slidesEsic} />
+         <FadeInWhenVisible>
+          {/* <ResourcesGrid data={esicGridData} /> */}
+          <VerticalAndHorizontalCards />
         </FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
+          <LatticeSlider slides={slidesEsic} />
+        </FadeInWhenVisible> */}
+       
+       
         <FadeInWhenVisible>
+          {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
+          <VerticalCard />
+          {/* <TestimonialAndCards /> */}
+        </FadeInWhenVisible>
+         <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
           {/* <LocationCards /> */}
           {/* <PastelCards /> */}
           <PastelCardSlider />
-        </FadeInWhenVisible>
-        <FadeInWhenVisible>
-          <ResourcesGrid data={esicGridData} />
-          <VerticalAndHorizontalCards />
-        </FadeInWhenVisible>
-        <FadeInWhenVisible>
-          {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
-          <TestimonialAndCards />
         </FadeInWhenVisible>
         {/* <Roadmap />
         <FeatureCardGrid/> */}

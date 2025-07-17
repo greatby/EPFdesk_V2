@@ -44,7 +44,12 @@ const PastelCardSlider = () => {
   }, []);
 
   return (
-    <section className="min-h-screen px-6 py-12">
+    <>
+     <div className="mb-8 pt-16">
+        <h2 className="max-w-7xl mx-auto text-center px-4 text-3xl font-bold">
+       Accurate ESIC Contribution Calculation & Payment
+        </h2>
+         <section className=" px-6 py-12">
       <div className="max-w-7xl mx-auto overflow-hidden">
         {isReady && (
           <Swiper
@@ -120,6 +125,9 @@ const PastelCardSlider = () => {
         />
       </div>
     </section>
+      </div>
+    </>
+   
   );
 };
 

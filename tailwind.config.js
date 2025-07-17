@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
   theme: {
     extend: {
       fontFamily: {
@@ -10,6 +10,9 @@ module.exports = {
       animation: {
         float: "float 6s ease-in-out infinite",
         progress: "progress 3s ease-in-out infinite",
+        gradientShift: "gradientShift 6s ease infinite",
+          blob: "blob 7s infinite",
+      progress: "progress 3s ease-in-out infinite",
       },
       keyframes: {
         float: {
@@ -21,9 +24,39 @@ module.exports = {
           "50%": { width: "80%" },
           "100%": { width: "100%" },
         },
+        gradientShift: {
+          // ✅ add keyframes
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0% 50%",
+          },
+        },
+         blob: {
+        "0%": { transform: "translate(0px, 0px) scale(1)" },
+        "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+        "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+        "100%": { transform: "translate(0px, 0px) scale(1)" },
+      },
+      progress: {
+        "0%, 100%": { width: "0%" },
+        "50%": { width: "100%" },
+      },
+      },
+      backgroundSize: {
+        "200%": "200% 200%",
+      },
+      backgroundPosition: {
+        "0-center": "0% 50%",
+        "100-center": "100% 50%",
       },
     },
     safelist: [
+       "bg-gradient-to-br",
       "bg-rose-100",
       "bg-yellow-100",
       "bg-blue-100",
@@ -34,6 +67,24 @@ module.exports = {
       "border-blue-200",
       "border-green-200",
       "border-purple-200",
+      "from-indigo-400",
+      "via-purple-500",
+      "to-purple-700",
+      "from-pink-400",
+      "via-pink-500",
+      "to-red-500",
+      "from-blue-400",
+      "via-sky-400",
+      "to-cyan-400",
+      "from-green-400",
+      "via-teal-300",
+      "to-emerald-400",
+      "from-rose-400",
+      "via-pink-300",
+      "to-yellow-300",
+      "from-cyan-200",
+      "via-pink-200",
+      "to-pink-300",
     ],
   },
   plugins: [],
