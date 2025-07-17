@@ -2466,8 +2466,14 @@ export const heroSlides = [
   {
     id: 1,
     gradientClass:
-      "linear-gradient(to bottom right, #818cf8, #a855f7, #6b21a8)",
-    icon: "🚀",
+`linear-gradient(
+  to bottom,
+  rgba(129, 140, 248, 1),       /* #818cf8 */
+  rgba(168, 85, 247, 1),        /* #a855f7 */
+  rgba(107, 33, 168, 1),        /* #6b21a8 */
+  rgba(255, 255, 255, 0.1),     /* Faded smoke */
+  rgba(255, 255, 255, 0)        /* Transparent */
+)`,    icon: "🚀",
     title:
       "ESIC Compliance: Effortless Management for Employee Well-being & Business Protection",
     subtitle:

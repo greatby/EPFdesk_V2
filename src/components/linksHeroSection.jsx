@@ -92,8 +92,6 @@ const HeroSection = ({ slide }) => {
         <h1 className="hero-title-massive">{title}</h1>
         <p className="hero-subtitle-massive mb-8">{subtitle}</p>
       </div>
-      {/* Smoke-like fade overlay at the bottom */}
-      <div className="pointer-events-none absolute bottom-[-35px] left-0 w-full h-32 z-30 bg-gradient-to-t from-white/60 via-white/40 to-transparent backdrop-blur-lg" />
     </section>
   );
 };
