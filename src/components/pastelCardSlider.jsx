@@ -50,7 +50,7 @@ const PastelCardSlider = () => {
        Accurate ESIC Contribution Calculation & Payment
         </h2>
          <section className=" px-6 py-12">
-      <div className="max-w-7xl mx-auto overflow-hidden">
+      <div className="max-w-7xl py-4 mx-auto overflow-hidden">
         {isReady && (
           <Swiper
             modules={[Pagination]}

@@ -24,6 +24,7 @@ body {
   scroll-timeline: --cards-scroll vertical;
   /* @apply font-inter; */
   font-family: "Matter", sans-serif;
+  position: relative;
   /* overflow-x: hidden; */
 }
 
