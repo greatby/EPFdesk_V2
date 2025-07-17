@@ -64,6 +64,9 @@ const StickyStackedSections = ({ items }) => {
           key={sectionIdx}
           className="flex flex-col md:flex-row items-start gap-10 relative mb-40"
         >
+          <div className="absolute m-[_0_145px_] top-0 left-0 w-full h-full  z-[-1] pointer-events-none">
+            <img src="/images/64bee5cd4f7b4b3d35218864_gradient-anchor-subproduct-purple.svg" alt=""  className="w-full h-full object-cover"/>
+          </div>
           {/* Left sticky title */}
           <div className="w-full md:w-1/2 sticky top-32 h-fit pr-8">
             <h2 className="text-5xl font-bold text-gray-900">{card.title}</h2>
@@ -135,13 +138,7 @@ const StickyStackedSections = ({ items }) => {
                         {flatCards[globalIdx].desc}
                       </p>
                     </div> */}
-                    <div
-                      className="rounded-2xl border card-animate border-gray-100 bg-[#ffffffa3] md:bg-white lg:bg-white backdrop-blur-[3px] p-8 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out group ml-3"
-                      style={{
-                        background:
-                          "linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%)",
-                      }}
-                    >
+                    <div className="rounded-2xl border card-animate border-gray-100 bg-[#ffffffa3] md:bg-white lg:bg-white backdrop-blur-[3px] p-8 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out group ml-3">
                       <h4 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-teal-600 transition-colors duration-300">
                         {flatCards[globalIdx].title}
                       </h4>

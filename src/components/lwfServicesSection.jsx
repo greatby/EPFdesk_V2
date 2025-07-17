@@ -8,12 +8,13 @@ import {
 } from "@heroicons/react/24/outline";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LatticeTabs from "./latticeTabs";
-import { lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, slideLWF } from "../../utils/data";
+import {  lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, slideLWF } from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import PlusTabsSection from './plusTabsSection'
 import MiddlePanelTabs from "./middlePanelTabs";
 import StickyStackedSections from "./scrollSyncComponent";
+import VerticalAndHorizontalCards from './verticalAndHorizontalCards'
 
 const epfServices = [
   {
@@ -307,6 +308,7 @@ export default function LWFServicesSection() {
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           <LatticeSlider slides={slideLWF} />
+          {/* <VerticalAndHorizontalCards verticalCards={verticalCardsLwf} horizontalCards={horizontalCardsLwf}/> */}
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           <ResourcesGrid data={lwfGridData} />

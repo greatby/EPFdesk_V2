@@ -853,7 +853,7 @@ export const epfoCards = [
   {
     title: "Seamless Employee Lifecycle Management",
     description: "Pay employees and contractors in a few clicks.",
-    image: "🔨",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
     color: {
       bg: "bg-rose-100",
       border: "border-rose-200",
@@ -884,7 +884,7 @@ export const epfoCards = [
   {
     title: "Automated EPF Challan Generation & Error-Free Payments",
     description: "Auto-calculate & file all payroll taxes.",
-    image: "🎯",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
     color: {
       bg: "bg-yellow-100",
       border: "border-yellow-200",
@@ -915,7 +915,7 @@ export const epfoCards = [
   {
     title: "Expert EPF Filings, Approvals & Compliance Assurance",
     description: "Reduce HR admin burden.",
-    image: "💡",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -946,7 +946,7 @@ export const epfoCards = [
   {
     title: "Proactive EPF Regulatory Updates & Strategic Advisory",
     description: "Track, approve, and sync hours to payroll.",
-    image: "⚡",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
     color: {
       bg: "bg-green-100",
       border: "border-green-200",
@@ -977,7 +977,7 @@ export const epfoCards = [
   {
     title: "Stay Compliant with Confidence",
     description: "Connect Payroll to your favorite third-party apps.",
-    image: "🌟",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
     color: {
       bg: "bg-purple-100",
       border: "border-purple-200",
@@ -1561,7 +1561,7 @@ export const esciCards = [
   {
     title: "Guaranteeing ESIC Benefits Access for Your Workforce",
     description: "Pay employees and contractors in a few clicks.",
-    image: "🔨",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
     color: {
       bg: "bg-rose-100",
       border: "border-rose-200",
@@ -1594,7 +1594,7 @@ export const esciCards = [
   {
     title: "Proven ESIC Expertise & Zero-Risk Compliance",
     description: "Auto-calculate & file all payroll taxes.",
-    image: "🌟",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
     color: {
       bg: "bg-yellow-100",
       border: "border-yellow-200",
@@ -1625,7 +1625,7 @@ export const esciCards = [
   {
     title: "Complete HR & Finance Team Liberation",
     description: "Reduce HR admin burden.",
-    image: "💡",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -1656,7 +1656,7 @@ export const esciCards = [
   {
     title: "Rapid Implementation & Ongoing Support",
     description: "Track, approve, and sync hours to payroll.",
-    image: "⚡",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
     color: {
       bg: "bg-green-100",
       border: "border-green-200",
@@ -1686,7 +1686,7 @@ export const esciCards = [
   {
     title: "End-to-End ESIC Compliance, Accuracy & Employee Empowerment",
     description: "Connect Payroll to your favorite third-party apps.",
-    image: "🎯",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
     color: {
       bg: "bg-purple-100",
       border: "border-purple-200",
@@ -1724,7 +1724,7 @@ export const lwfCards = [
   {
     title: "Facilitating Employee Access to LWF Welfare Schemes",
     description: "Pay employees and contractors in a few clicks.",
-    image: "⚡",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
     color: {
       bg: "bg-rose-100",
       border: "border-rose-200",
@@ -1756,7 +1756,7 @@ export const lwfCards = [
   {
     title: "Why Companies Trust LWF Compliance with EPFDesk.com",
     description: "Auto-calculate & file all payroll taxes.",
-    image: "🌟",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
     color: {
       bg: "bg-yellow-100",
       border: "border-yellow-200",
@@ -1787,7 +1787,7 @@ export const lwfCards = [
   {
     title: "Go Live with LWF Compliance in 24-48 Hours (Multi-State Ready)",
     description: "Reduce HR admin burden.",
-    image: "💡",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -1818,7 +1818,7 @@ export const lwfCards = [
   {
     title: "Key Employer LWF Concerns We Resolve:",
     description: "Track, approve, and sync hours to payroll.",
-    image: "🎯",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
     color: {
       bg: "bg-green-100",
       border: "border-green-200",
@@ -1851,7 +1851,7 @@ export const lwfCards = [
     title:
       "Employee LWF Benefits Support We Ensure (by facilitating eligibility)",
     description: "Connect Payroll to your favorite third-party apps.",
-    image: "🔨",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
     color: {
       bg: "bg-purple-100",
       border: "border-purple-200",
@@ -2063,7 +2063,7 @@ export const pfCards = [
   {
     title: "Unmatched PT Expertise & Zero-Risk Compliance Across States",
     description: "Pay employees and contractors in a few clicks.",
-    image: "🔨",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
     color: {
       bg: "bg-rose-100",
       border: "border-rose-200",
@@ -2094,7 +2094,7 @@ export const pfCards = [
   {
     title: "Complete HR & Finance Team Liberation",
     description: "Auto-calculate & file all payroll taxes.",
-    image: "💡",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
     color: {
       bg: "bg-yellow-100",
       border: "border-yellow-200",
@@ -2125,7 +2125,7 @@ export const pfCards = [
   {
     title: "Go Live with PT Compliance in 24-48 Hours (Multi-State Ready)",
     description: "Reduce HR admin burden.",
-    image: "🎯",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -2156,7 +2156,7 @@ export const pfCards = [
   {
     title: "Dedicated Ongoing Support for Continuous Multi-State Adherence",
     description: "Track, approve, and sync hours to payroll.",
-    image: "⚡",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
     color: {
       bg: "bg-green-100",
       border: "border-green-200",
@@ -2187,7 +2187,7 @@ export const pfCards = [
   {
     title: "Key Employer PT Concerns We Resolve",
     description: "Connect Payroll to your favorite third-party apps.",
-    image: "🌟",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
     color: {
       bg: "bg-purple-100",
       border: "border-purple-200",

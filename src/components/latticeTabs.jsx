@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 // import { image } from 'html2canvas/dist/types/css/types/image'
 import { useEffect, useState } from "react";
 
+
+
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(false);
 
@@ -19,7 +21,7 @@ function useMediaQuery(query) {
   return matches;
 }
 
-export default function FeatureTabs({ cards }) {
+export default function FeatureTabs({cards}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const isLargeScreen = useMediaQuery("(min-width: 1000px)");
   const activeColor =
@@ -54,23 +56,12 @@ export default function FeatureTabs({ cards }) {
                         : "bg-white hover:shadow"
                     }`}
                   >
-                    {/* <img
+                    <img
                       src={card.image}
                       alt="dummy"
                       srcSet=""
                       className="rounded-[20px]"
-                    /> */}
-                    <div className="relative w-20 h-20 mx-auto mb-3">
-                      {/* Background layers */}
-                      <div className="absolute w-16 h-16 rounded-full bg-rose-200 opacity-40 top-[-12%] right-[-20%]" />
-                      <div className="absolute w-14 h-14 rounded-full bg-lime-200 opacity-40 bottom-[-16%] left-[10%]" />
-                      <div className="absolute w-12 h-12 bg-cyan-200 opacity-40 rounded-[20px] top-[58%] left-[90%]" />
-                      {/* Icon Circle */}
-                      <div className="relative w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl z-10">
-                        {/* You can use card.icon as emoji or image */}
-                        {card.image}
-                      </div>
-                    </div>
+                    />
 
                     <h4 className="mt-1 text-[1rem] font-semibold">
                       {card.title}
@@ -152,22 +143,11 @@ export default function FeatureTabs({ cards }) {
                     onClick={() => setActiveIndex(isActive ? -1 : i)}
                   >
                     <div className="flex flex-col items-start justify-center gap-4 [@media(min-width:540px)]:flex-row">
-                      {/* <img
+                      <img
                         src={card.image}
                         alt="dummy"
                         className="h-48 flex-shrink-0 rounded-[20px] object-cover [@media(min-width:540px)]:h-36 [@media(min-width:540px)]:w-58"
-                      /> */}
-                      <div className="relative w-20 h-20 mx-auto mb-3">
-                        {/* Background layers */}
-                        <div className="absolute w-16 h-16 rounded-full bg-rose-200 opacity-40 top-[-12%] right-[-20%]" />
-                        <div className="absolute w-14 h-14 rounded-full bg-lime-200 opacity-40 bottom-[-16%] left-[10%]" />
-                        <div className="absolute w-12 h-12 bg-cyan-200 opacity-40 rounded-[20px] top-[58%] left-[90%]" />
-                        {/* Icon Circle */}
-                        <div className="relative w-20 h-20 rounded-full bg-white shadow-lg flex items-center justify-center text-3xl z-10">
-                          {/* You can use card.icon as emoji or image */}
-                          {card.image}
-                        </div>
-                      </div>
+                      />
                       <div className="flex-1">
                         <h4 className="mt-1 text-[1rem] font-semibold">
                           {card.title}
