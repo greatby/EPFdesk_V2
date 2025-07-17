@@ -64,9 +64,7 @@ const StickyStackedSections = ({ items }) => {
           key={sectionIdx}
           className="flex flex-col md:flex-row items-start gap-10 relative mb-40"
         >
-          <div className="absolute m-[_0_145px_] top-0 left-0 w-full h-full  z-[-1] pointer-events-none">
-            <img src="/images/64bee5cd4f7b4b3d35218864_gradient-anchor-subproduct-purple.svg" alt=""  className="w-full h-full object-cover"/>
-          </div>
+         
           {/* Left sticky title */}
           <div className="w-full md:w-1/2 sticky top-32 h-fit pr-8">
             <h2 className="text-5xl font-bold text-gray-900">{card.title}</h2>
