@@ -8,13 +8,15 @@ import {
 } from "@heroicons/react/24/outline";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LatticeTabs from "./latticeTabs";
-import {  lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, slideLWF } from "../../utils/data";
+import {  horizontalCardsLwf, largeCardsLwf, lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, pastelCardsLwf, slideLWF, verticalCardsLwf } from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import PlusTabsSection from './plusTabsSection'
 import MiddlePanelTabs from "./middlePanelTabs";
 import StickyStackedSections from "./scrollSyncComponent";
 import VerticalAndHorizontalCards from './verticalAndHorizontalCards'
+import LargeCardSlider from "./largeCards";
+import PastelCardSlider from "./pastelCardSlider";
 
 const epfServices = [
   {
@@ -307,17 +309,19 @@ export default function LWFServicesSection() {
           <LatticeTabs cards={lwfCards} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <LatticeSlider slides={slideLWF} />
-          {/* <VerticalAndHorizontalCards verticalCards={verticalCardsLwf} horizontalCards={horizontalCardsLwf}/> */}
+          {/* <LatticeSlider slides={slideLWF} /> */}
+          <VerticalAndHorizontalCards verticalCards={verticalCardsLwf} horizontalCards={horizontalCardsLwf}/>
         </FadeInWhenVisible>
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
           <ResourcesGrid data={lwfGridData} />
-        </FadeInWhenVisible>
+        </FadeInWhenVisible> */}
         <FadeInWhenVisible>
-          <PlusTabsSection tabsData={lwfPlustabs}/>
+          {/* <PlusTabsSection tabsData={lwfPlustabs}/> */}
+          <LargeCardSlider cardsData={largeCardsLwf}/>
         </FadeInWhenVisible>
          <FadeInWhenVisible>
-          <MiddlePanelTabs tabsData={lwfMiddletabsData}/>
+          {/* <MiddlePanelTabs tabsData={lwfMiddletabsData}/> */}
+          <PastelCardSlider cardsData={pastelCardsLwf}/>
         </FadeInWhenVisible>
       <StickyStackedSections items={plans} />
       </div>

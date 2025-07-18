@@ -43,7 +43,7 @@ const ProfessionalTax = () => {
       <FadeInWhenVisible>
         <PFServicesSection />
       </FadeInWhenVisible>
-      <PastelCards />
+      {/* <PastelCards /> */}
       <FadeInWhenVisible>
         <FaqAccordion faqs={ptFaq} />
       </FadeInWhenVisible>

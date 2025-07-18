@@ -8,12 +8,15 @@ import {
 } from "@heroicons/react/24/outline";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LatticeTabs from "./latticeTabs";
-import { pfCards, ptGridData, ptMiddletabsData, ptPlustabs, slidesPt } from "../../utils/data";
+import { horizontalCardsPf, largeCardsPf, pastelCardsPf, pfCards, ptGridData, ptMiddletabsData, ptPlustabs, slidesPt, verticalCardsPf } from "../../utils/data";
 import PlusTabsSection from "./plusTabsSection";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
 import MiddlePanelTabs from "./middlePanelTabs";
 import StickyStackedSections from "./scrollSyncComponent";
+import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
+import LargeCardSlider from "./largeCards";
+import PastelCardSlider from "./pastelCardSlider";
 
 const epfServices = [
   {
@@ -296,16 +299,19 @@ export default function PFServicesSection() {
           <LatticeTabs cards={pfCards} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <LatticeSlider slides={slidesPt} />
+          {/* <LatticeSlider slides={slidesPt} /> */}
+          <VerticalAndHorizontalCards horizontalCards={horizontalCardsPf} verticalCards={verticalCardsPf} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <PlusTabsSection tabsData={ptPlustabs} />
+          {/* <PlusTabsSection tabsData={ptPlustabs} /> */}
+          <LargeCardSlider cardsData={largeCardsPf}/>
         </FadeInWhenVisible>
-         <FadeInWhenVisible>
+         {/* <FadeInWhenVisible>
           <ResourcesGrid data={ptGridData}/>
-        </FadeInWhenVisible>
+        </FadeInWhenVisible> */}
          <FadeInWhenVisible>
-          <MiddlePanelTabs tabsData={ptMiddletabsData}/>
+          {/* <MiddlePanelTabs tabsData={ptMiddletabsData}/> */}
+          <PastelCardSlider cardsData={pastelCardsPf}/>
         </FadeInWhenVisible>
         {/* <EPFAccordion /> */}
         <StickyStackedSections items={plans}/>

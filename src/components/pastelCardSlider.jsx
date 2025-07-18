@@ -4,38 +4,10 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const pastelCards = [
- {
-    title: "Precision contribution calculation",
-    subtitle: `We perform accurate "ESIC calculation on salary" using the "current ESIC contribution rate employer and employee" (e.g., Employer: 3.25%, Employee: 0.75%) and the "ESIC wage ceiling current" (₹21,000 for general employees, ₹25,000 for persons with disabilities).`,
-    icon: "🎨",
-    bubble: "Create!",
-    bg: "from-[#a8e6cf] to-[#dcedc1]",
-  },
-  {
-    title: "Correct wage component inclusion",
-    subtitle: `We meticulously identify and include all applicable "salary components for ESIC wages" (Basic, DA, HRA, CCA, production incentive, night shift, meal/food allowance), ensuring "ESIC is deducted on gross salary, not just basic."`,
-    icon: "🌱",
-    bubble: "Grow!",
-    bg: "from-[#ffd3a5] to-[#fd9853]",
-  },
-  {
-    title: "Exemption management",
-    subtitle: `We accurately identify and manage "exemptions from ESIC contributions for low-wage employees" (e.g., daily wage up to ₹176), optimizing your deductions while remaining compliant.`,
-    icon: "🤝",
-    bubble: "Connect!",
-    bg: "from-[#a8edea] to-[#fed6e3]",
-  },
-  {
-    title: "Timely payment facilitation",
-    subtitle: `We generate accurate "ESIC challan online" and support "how to pay ESIC contribution online," guaranteeing deposits are made well before the "Monthly ESIC return filing deadline"`,
-    icon: "✨",
-    bubble: "Dream!",
-    bg: "from-[#d299c2] to-[#fef9d7]",
-  },
-];
 
-const PastelCardSlider = () => {
+
+const PastelCardSlider = ({cardsData}) => {
+  const {subTitle, cards} = cardsData;
   const paginationRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
 
@@ -47,7 +19,7 @@ const PastelCardSlider = () => {
     <>
      <div className="mb-8 pt-16">
         <h2 className="max-w-7xl mx-auto text-center px-4 text-3xl font-bold">
-       Accurate ESIC Contribution Calculation & Payment
+      {subTitle}
         </h2>
          <section className=" px-6 py-12">
       <div className="max-w-7xl py-4 mx-auto overflow-hidden">
@@ -75,7 +47,7 @@ const PastelCardSlider = () => {
               }, 100);
             }}
           >
-            {pastelCards.map((card, i) => (
+            {cards.map((card, i) => (
               <SwiperSlide key={i} className="!h-auto flex">
                 <div
                   className={`flex flex-col w-full h-full bg-gradient-to-br ${card.bg} p-10 rounded-3xl shadow-xl transform transition hover:-translate-y-2 hover:shadow-2xl`}

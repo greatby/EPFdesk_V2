@@ -2462,18 +2462,11 @@ export const slidesStacking = {
 };
 
 export const heroSlides = [
- 
   {
     id: 1,
     gradientClass:
-`linear-gradient(
-  to bottom,
-  rgba(129, 140, 248, 1),       /* #818cf8 */
-  rgba(168, 85, 247, 1),        /* #a855f7 */
-  rgba(107, 33, 168, 1),        /* #6b21a8 */
-  rgba(255, 255, 255, 0.1),     /* Faded smoke */
-  rgba(255, 255, 255, 0)        /* Transparent */
-)`,    icon: "🚀",
+      "linear-gradient(to bottom right, #818cf8, #a855f7, #6b21a8)",
+    icon: "🚀",
     title:
       "ESIC Compliance: Effortless Management for Employee Well-being & Business Protection",
     subtitle:
@@ -2493,7 +2486,8 @@ export const heroSlides = [
     gradientClass:
       "linear-gradient(to bottom right, #60a5fa, #38bdf8, #22d3ee)",
     icon: "⚡",
-    title: "Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for Flawless Adherence",
+    title:
+      "Labour Welfare Fund (LWF) Compliance: Navigating State Nuances for Flawless Adherence",
     subtitle:
       "Master LWF compliance across India with EPFDesk.com. We handle state-specific calculations, filings & ensure timely adherence. Avoid penalties, achieve 100% accuracy for LWF.",
   },
@@ -2502,7 +2496,8 @@ export const heroSlides = [
     gradientClass:
       "linear-gradient(to bottom right, #4ade80, #2dd4bf, #34d399)",
     icon: "🌟",
-    title: "Professional Tax Compliance: Master Multi-State Nuances, Ensure Flawless Adherence",
+    title:
+      "Professional Tax Compliance: Master Multi-State Nuances, Ensure Flawless Adherence",
     subtitle:
       "Master Professional Tax compliance across India with EPFDesk.com. We handle state-specific calculations, precise filings, and ensure timely adherence. Avoid penalties, achieve 100% accuracy for PT.",
   },
@@ -2511,7 +2506,8 @@ export const heroSlides = [
     gradientClass:
       "linear-gradient(to bottom right, #fb7185, #f9a8d4, #facc15)",
     icon: "🤝",
-    title: "Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential",
+    title:
+      "Employer EPF Management: Streamline Your Compliance & Unleash HR's Potential",
     subtitle:
       "Master employer EPF compliance with EPFDesk.com. We automate challans, manage filings & mitigate risks, freeing your HR & Finance teams for strategic growth. Expert-led solutions for Indian businesses.",
   },
@@ -2525,3 +2521,428 @@ export const heroSlides = [
       "See the bigger picture and create solutions that make a meaningful impact on the world",
   },
 ];
+
+export const verticalCardsEsic = {
+  mainTitle: "Comprehensive ESIC Compliance Management Services",
+  mainSubtitleVer: "ESIC Registration & Applicability Management",
+  cardsVer: [
+    {
+      title: "Monthly ESIC return filing",
+      subtitle: `We manage the entire \"ESIC return filing process\" with 100% accuracy and punctuality before the 15th of the following month deadline.`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Employee data updates & IP Management",
+      subtitle: `We handle \"how to update employee details in ESIC portal by employer,\" ensuring accurate records for your workforce, including \"generating ESIC Code number\" (17-digit ID) and managing \"ESIC login for insured person\" access.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Employer Portal Navigation",
+      subtitle: `We expertly manage all interactions on the \"ESIC employer login portal,\" ensuring accurate data reflection, complete submissions, and efficient grievance management (like EPFiGMS)`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Contribution Period Tracking",
+      subtitle: `We meticulously track \"ESIC Contribution Period vs. Cash Benefit Period\" to maintain continuous coverage for your employees, even if salaries briefly exceed the ceiling.`,
+      icon: "🦋",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const horizontalCardsEsic = {
+  mainSubtitleHor: "Seamless Monthly Filings & Employee Data Management",
+  cardsHor: [
+    {
+      title: "Complete ESIC registration process",
+      subtitle: `We guide you through and meticulously handle all steps for \"ESIC registration process online India,\" including online application, documentation, and swift ESIC code allocation.`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Precise applicability assessment",
+      subtitle: `We accurately determine \"Who is eligible for ESIC registration?\" based on employee count (e.g., 10+ or 20+ depending on state) and wage limits, ensuring correct and ongoing coverage without a hitch.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Rapid average response time (e.g., 2-4 hours) for client queries",
+      subtitle:
+        "Ensuring your concerns are addressed promptly by dedicated specialists, improving your operational efficiency.",
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Required documentation compilation",
+      subtitle: `We assist in gathering and submitting all \"documents required for ESIC registration,\" streamlining the initial setup within statutory time limits.`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+    {
+      title: "Coverage continuity management",
+      subtitle: `We advise on crucial aspects like the \"once covered, always covered\" rule, ensuring compliance even if the number of employees temporarily goes below the minimum limit.`,
+      icon: "⚡",
+      bubble: "Empower!",
+      bg: "bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]",
+    },
+  ],
+};
+
+export const largeCardsEsic = {
+  subTitle: "Proactive Regulatory Updates & Risk Management",
+  cards: [
+    {
+      title: "Continuous regulatory monitoring",
+      subtitle:
+        'Our dedicated experts meticulously monitor the latest "ESIC Act amendments," "ESIC circulars," and "ESIC contribution rate changes."',
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Impact analysis & strategic advice",
+      subtitle:
+        'We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the "consequences of ESIC non-compliance."',
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Penalty prevention strategies",
+      subtitle:
+        'We implement proactive measures to safeguard against "what happens if employer does not pay ESIC contribution?" and other common non-compliance scenarios.',
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Audit readiness support",
+      subtitle:
+        "We provide complete assistance for any ESIC inspections or audits, ensuring you are fully prepared with complete documentation and expert representation",
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+export const pastelCardsEsic = {
+  subTitle: "Accurate ESIC Contribution Calculation & Payment",
+  cards: [
+    {
+      title: "Precision contribution calculation",
+      subtitle: `We perform accurate "ESIC calculation on salary" using the "current ESIC contribution rate employer and employee" (e.g., Employer: 3.25%, Employee: 0.75%) and the "ESIC wage ceiling current" (₹21,000 for general employees, ₹25,000 for persons with disabilities).`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Correct wage component inclusion",
+      subtitle: `We meticulously identify and include all applicable "salary components for ESIC wages" (Basic, DA, HRA, CCA, production incentive, night shift, meal/food allowance), ensuring "ESIC is deducted on gross salary, not just basic."`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Exemption management",
+      subtitle: `We accurately identify and manage "exemptions from ESIC contributions for low-wage employees" (e.g., daily wage up to ₹176), optimizing your deductions while remaining compliant.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Timely payment facilitation",
+      subtitle: `We generate accurate "ESIC challan online" and support "how to pay ESIC contribution online," guaranteeing deposits are made well before the "Monthly ESIC return filing deadline"`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const verticalCardsLwf = {
+  mainTitle: "Comprehensive Labour Welfare Fund Compliance Services",
+  mainSubtitleVer: "LWF Applicability & Registration Across India",
+  cardsVer: [
+    {
+      title: "Precise applicability assessment",
+      subtitle: ` We accurately determine "LWF applicability rules India" for your establishment in each state, considering factors like employee thresholds (which vary significantly by state) and industry type`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "State-specific registration management",
+      subtitle: `We guide you through and handle all steps for LWF registration with the respective State Labour Welfare Boards, ensuring timely and correct setup.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Multi-state coverage analysis",
+      subtitle: `We manage the complexities for companies with branches in various states, ensuring compliance where "LWF is mandatory" and where it is "not applicable" (e.g., states like Uttar Pradesh, Bihar which may not have LWF)`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Required documentation compilation",
+      subtitle: `We assist in gathering and submitting all necessary documents for LWF registration and ongoing compliance in each state.`,
+      icon: "🦋",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const horizontalCardsLwf = {
+  mainSubtitleHor: "Accurate LWF Contribution Calculation & Payment",
+  cardsHor: [
+    {
+      title: "Precision Contribution Calculation",
+      subtitle: `We accurately determine "how much is the LWF contribution" for both employer and employee shares, navigating varying "LWF contribution rates by state" (e.g., Maharashtra, Karnataka, Delhi)`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "State-specific Wage Inclusion",
+      subtitle: `We precisely identify "what salary components are included in LWF wages" and whether "LWF deduction is on gross salary or basic," aligning with each state's specific LWF Act.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Deduction Frequency Management",
+      subtitle: `We track and ensure correct deduction based on the state's mandate – whether monthly, half-yearly, or annually, clarifying queries like "What is the frequency of LWF deduction?"`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Timely Payment Facilitation",
+      subtitle: ` We generate accurate LWF challans and support "online LWF payments" where available, ensuring deposits are made well before the varied "LWF due dates" for each state.`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+export const largeCardsLwf = {
+  subTitle: "Seamless LWF Returns & Data Management",
+  cards: [
+    {
+      title: "State-Specific Return Filing",
+      subtitle: `We manage the entire "LWF return filing process" using the correct "LWF forms" (e.g., Form A, Form F, Form A-1, which vary by state) with accuracy and punctuality as per each state's deadline.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Employee Data Management",
+      subtitle: `We ensure all employee data relevant for LWF contributions is accurately maintained and updated, handling nuances like wage thresholds and employee categories for applicability in each state.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Digital Record Keeping",
+      subtitle: `We maintain meticulous digital records of all LWF challans, payment receipts, and filed returns, creating a robust audit trail for future reference.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Online Portal Navigation",
+      subtitle: `We expertly manage interactions with various State Labour Welfare Board online portals, ensuring accurate data reflection and complete submissions across diverse systems.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+
+export const pastelCardsLwf = {
+  subTitle: "Proactive LWF Regulatory Advisory & Risk Mitigation",
+  cards: [
+    {
+      title: "Continuous Regulatory Monitoring",
+      subtitle: `Our dedicated experts continuously monitor the highly fragmented "LWF Act states India" for any new amendments, circulars, or rate changes from each respective State Labour Welfare Board.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Impact Analysis & Strategic Advice",
+      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and "penalties for noncompliance with LWF.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Penalty Prevention Strategies",
+      subtitle: `We implement proactive measures to safeguard against "what happens if employer does not pay ESIC contribution?" and other common non-compliance scenarios.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Audit Readiness Support",
+      subtitle: `We provide complete assistance for any LWF inspections or audits, ensuring you are fully prepared with complete documentation and expert guidance.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const verticalCardsPf = {
+  mainTitle: "Comprehensive Professional Tax Compliance Services",
+  mainSubtitleVer: "Accurate PT Contribution Calculation & Payment",
+  cardsVer: [
+    {
+      title: "Precision Contribution Calculation",
+      subtitle: `We accurately determine "how to calculate professional tax on salary" for both employer and employee shares, meticulously applying varying "Professional tax slab rates by state" (e.g., "Maharashtra professional tax slab," "Karnataka PT slab rates").`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Correct Wage Component Inclusion",
+      subtitle: `We precisely identify whether "professional tax is deducted from gross salary or basic salary," aligning with each state's specific PT Act and ensuring accurate calculation against the "professional tax exemption limit" (minimum salary threshold).`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Deduction Frequency Management",
+      subtitle: `We track and ensure correct deduction based on the state's mandate, whether monthly, half-yearly, or annually, clarifying complex scenarios like higher February deductions in Maharashtra.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Timely Payment Facilitation",
+      subtitle: ` We generate accurate PT challans and support "how to pay professional tax online," ensuring deposits are made well before the varied "Professional tax due dates by state" (e.g., 20th of succeeding month in Karnataka, 15th in Gujarat)`,
+      icon: "🦋",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const horizontalCardsPf = {
+  mainSubtitleHor: "PT Applicability & Registration Across India",
+  cardsHor: [
+    {
+      title: "Precise applicability assessment",
+      subtitle: `We accurately determine "Is professional tax mandatory in all states in India?" and identify "Which states have professional tax in India" relevant to your business operations. We assess applicability based on employee count, income thresholds, and specific state laws (e.g., in Maharashtra, Karnataka, West Bengal, Gujarat, Tamil Nadu, Telangana, Kerala)`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "State-specific registration management",
+      subtitle: `We guide you through and handle all steps for the "Professional tax registration online process," ensuring you obtain the correct Professional Tax Registration Certificate (PTRC) for employers or Professional Tax Enrollment Certificate (PTEC)for the establishment, within statutory timelines.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Required documentation compilation",
+      subtitle: `We assist in gathering and submitting all necessary "documents required for professional tax registration," streamlining the initial setup for each applicable state.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Coverage analysis for evolving operations",
+      subtitle: ` We provide insights into "Professional tax enrollment certificate (PTEC) vs registration certificate (PTRC)" and manage compliance as your workforce or business locations change.`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+export const largeCardsPf = {
+  subTitle: "Seamless PT Returns & Data Management",
+  cards: [
+    {
+      title: "State-Specific Return Filing",
+      subtitle: `We manage the entire "Professional tax return filing online"process, using the correct "PT return forms by state" (e.g., Form III for Maharashtra) with 100% accuracy and punctuality as per each state's varied deadlines.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Employee Data Management",
+      subtitle: `We ensure all employee data relevant for PT contributions is accurately maintained and updated, handling nuances like wage thresholds and employee categories for applicability in each state.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Digital Record Keeping",
+      subtitle: `We maintain meticulous digital records of all PT challans, payment receipts, and filed returns, creating a robust audit trail for future reference and addressing queries about "Professional tax challan download.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Online Portal Navigation",
+      subtitle: `We expertly manage interactions with various State Tax Department online portals (the "professional tax login portal state wise"), ensuring accurate data reflection and complete submissions across diverse systems.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+
+export const pastelCardsPf = {
+  subTitle: "Proactive PT Regulatory Advisory & Risk Mitigation",
+  cards: [
+    {
+      title: "Continuous Regulatory Monitoring",
+      subtitle: `Our dedicated experts continuously monitor the highly fragmented Professional Tax Acts for any new amendments, circulars, or rate changes from each respective state.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Impact Analysis & Strategic Advice",
+      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and "consequences of not paying professional tax`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Penalty Prevention Strategies",
+      subtitle: `We implement proactive measures to safeguard against "penalty for late professional tax payment" (which can be daily fines or percentage of tax due) and other forms of "legal action for PT non-compliance.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Audit Readiness Support",
+      subtitle: `We provide complete assistance for any Professional Tax inspections or audits, ensuring you are fully prepared with complete documentation and expert guidance.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};

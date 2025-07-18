@@ -4,40 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const largeCards = [
-  {
-    title: "Continuous regulatory monitoring",
-    subtitle:
-      'Our dedicated experts meticulously monitor the latest "ESIC Act amendments," "ESIC circulars," and "ESIC contribution rate changes."',
-    icon: "🛡️",
-    bubble: "Protect!",
-    bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
-  },
-  {
-    title: "Impact analysis & strategic advice",
-    subtitle:
-      'We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the "consequences of ESIC non-compliance."',
-    icon: "🔗",
-    bubble: "Integrate!",
-    bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
-  },
-  {
-    title: "Penalty prevention strategies",
-    subtitle:
-      'We implement proactive measures to safeguard against "what happens if employer does not pay ESIC contribution?" and other common non-compliance scenarios.',
-    icon: "💼",
-    bubble: "Consult!",
-    bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
-  },
-  {
-    title: "Audit readiness support",
-    subtitle:
-      "We provide complete assistance for any ESIC inspections or audits, ensuring you are fully prepared with complete documentation and expert representation",
-    icon: "🤖",
-    bubble: "Automate!",
-    bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
-  },
-];
+
 
 const FloatingCircles = () => (
   <>
@@ -47,7 +14,8 @@ const FloatingCircles = () => (
   </>
 );
 
-const LargeCardSlider = () => {
+const LargeCardSlider = ({cardsData}) => {
+  const {subTitle,cards} = cardsData
   const paginationRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
 
@@ -58,7 +26,7 @@ const LargeCardSlider = () => {
   return (
     <>
       <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">
-        Proactive Regulatory Updates & Risk Management
+        {subTitle}
       </h2>
       <div className="px-4 sm:px-6 lg:px-8 relative">
         <FloatingCircles />
@@ -87,7 +55,7 @@ const LargeCardSlider = () => {
                 }, 100);
               }}
             >
-              {largeCards.map(
+              {cards.map(
                 ({ title, subtitle, icon, bubble, bg }, index) => (
                   <SwiperSlide key={index}>
                     <div

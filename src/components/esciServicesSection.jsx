@@ -14,6 +14,10 @@ import {
   esicGridData,
   esicMiddletabsData,
   esciCards,
+  horizontalCardsEsic,
+  verticalCardsEsic,
+  largeCardsEsic,
+  pastelCardsEsic,
 } from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
 import PlusTabsSection from "./plusTabsSection";
@@ -208,7 +212,7 @@ export default function ESCIServicesSection({ plans }) {
         </FadeInWhenVisible>
          <FadeInWhenVisible>
           {/* <ResourcesGrid data={esicGridData} /> */}
-          <VerticalAndHorizontalCards />
+          <VerticalAndHorizontalCards horizontalCards={horizontalCardsEsic} verticalCards={verticalCardsEsic} />
         </FadeInWhenVisible>
         {/* <FadeInWhenVisible>
           <LatticeSlider slides={slidesEsic} />
@@ -217,14 +221,14 @@ export default function ESCIServicesSection({ plans }) {
        
         <FadeInWhenVisible>
           {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
-          <VerticalCard />
+          <VerticalCard cardsData={largeCardsEsic}/>
           {/* <TestimonialAndCards /> */}
         </FadeInWhenVisible>
          <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
           {/* <LocationCards /> */}
           {/* <PastelCards /> */}
-          <PastelCardSlider />
+          <PastelCardSlider cardsData={pastelCardsEsic}/>
         </FadeInWhenVisible>
         {/* <Roadmap />
         <FeatureCardGrid/> */}
