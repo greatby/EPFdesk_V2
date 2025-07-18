@@ -211,7 +211,7 @@ const EPFSlider = () => {
 
                   {/* Body Content */}
                   <div className="p-5">
-                    <p className="text-sm text-gray-700 leading-relaxed">
+                    <p className="text-lg text-gray-700 leading-relaxed">
                       {item.content.includes(":") ? (
                         <>
                           <strong>{item.content.split(":")[0]}:</strong>{" "}

@@ -59,7 +59,7 @@ const LargeCardSlider = ({cardsData}) => {
                 ({ title, subtitle, icon, bubble, bg }, index) => (
                   <SwiperSlide key={index}>
                     <div
-                      className={`relative ${bg} min-h-[380px] h-full p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
+                      className={`relative ${bg} h-[440px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
                     >
                       <div className="absolute inset-0 pointer-events-none">
                         <FloatingCircles />

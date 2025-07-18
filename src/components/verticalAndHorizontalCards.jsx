@@ -116,32 +116,38 @@ const CardSlider = ({ cards, paginationRef }) => {
               }, 100);
             }}
           >
-            {cards.map(({ title, subtitle, icon, bubble, bg }, index) => (
-              console.log("Card:", title, "BG:", bg),
-              
-              <SwiperSlide key={index}>
-                <div
-                  className={`relative ${bg} min-h-[380px] h-full p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
-                >
-                  <div className="absolute inset-0 pointer-events-none">
-                    <FloatingCircles />
-                  </div>
-                  <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
-                    {bubble}
-                  </div>
-                  <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md z-10 mb-4">
-                    {icon}
-                  </div>
-                  <div className="text-center text-gray-800">
-                    <h3 className="text-xl font-bold mb-1">{title}</h3>
-                    <p className="text-sm opacity-80">{subtitle}</p>
-                    <div className="mt-4 h-2 w-16 bg-white/30 rounded-full mx-auto overflow-hidden">
-                      <div className="h-full bg-white/80 rounded-full animate-progress" />
+            {cards.map(
+              ({ title, subtitle, icon, bubble, bg }, index) => (
+                console.log("Card:", title, "BG:", bg),
+                (
+                  <SwiperSlide key={index}>
+                    {/* <div className="bg-gradient-to-br from-[#ff9a9e] to-[#fecfef] min-h-[380px] ...">
+                      Test gradient
+                    </div> */}
+                    <div
+                      className={`relative ${bg}  h-[420px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
+                    >
+                      <div className="absolute inset-0 pointer-events-none">
+                        <FloatingCircles />
+                      </div>
+                      <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
+                        {bubble}
+                      </div>
+                      <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md z-10 mb-4">
+                        {icon}
+                      </div>
+                      <div className="text-center text-gray-800">
+                        <h3 className="text-xl font-bold mb-1">{title}</h3>
+                        <p className="text-sm opacity-80">{subtitle}</p>
+                        <div className="mt-4 h-2 w-16 bg-white/30 rounded-full mx-auto overflow-hidden">
+                          <div className="h-full bg-white/80 rounded-full animate-progress" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                  </SwiperSlide>
+                )
+              )
+            )}
           </Swiper>
         )}
         <div
@@ -188,7 +194,7 @@ const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
   return (
     <div className="min-h-screen px-4">
       <div className="max-w-[1400px] mx-auto">
-        <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-12">
+        <h1 className="text-4xl mt-8 font-extrabold text-center text-gray-800 mb-12">
           {mainTitle}
         </h1>
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">

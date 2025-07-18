@@ -1,5 +1,7 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx,html}"],
+  content: [
+    './src/**/*.{js,ts,jsx,tsx,html}',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -96,6 +98,18 @@ module.exports = {
       "to-[#96e6a1]",
       "from-[#84fab0]",
       "to-[#8fd3f4]",
+      "from-[#ffd3a5]",
+      "to-[#fd9853]",
+      "from-[#84fab0]",
+      "to-[#8fd3f4]",
+      "from-[#a18cd1]",
+      "to-[#fbc2eb]",
+      "from-[#ffecd2]",
+      "to-[#fcb69f]",
+      "from-[#d4fc79]",
+      "to-[#96e6a1]",
+      "from-[#ff9a9e]",
+      "to-[#fecfef]",
     ],
   },
   plugins: [],

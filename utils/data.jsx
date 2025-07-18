@@ -1007,44 +1007,7 @@ export const epfoCards = [
   },
 ];
 
-export const slides = [
-  {
-    sectionTitle: "Complete Employee EPF Support Platform",
-    sectionSubtitle: "Secure & Intuitive Employee Access (24/7)",
-    items: [
-      {
-        title: "Dedicated Member Login Portal",
-        desc: "Provides secure, personalized employee access to the EPFDesk platform, making it their central hub for all EPF matters.",
-        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a5a96b10c0ffd35b7a_ui-ai-performance-summaries.webp",
-        alt: "UI of AI Performance Summaries",
-      },
-      {
-        title: "User-Friendly Interface",
-        desc: "Designed for clarity and ease of use, ensuring all employees, regardless of technical skill, can effortlessly navigate and find solutions.",
-        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a04e4e2f6b5e249476_ui-ai-calibration.webp",
-        alt: "UI of AI calibration",
-      },
-      {
-        title: "Mobile-Responsive Design",
-        desc: "Guarantees seamless support availability on any device – desktop, tablet, or smartphone – for ultimate convenience.",
-        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a1658dd9bc56ab8ab6_ui-ai-writing-assist.webp",
-        alt: "UI of AI writing assistant",
-      },
-      {
-        title: "Instant Expert Access",
-        desc: "Employees get immediate access to EPF expertise without needing HR intervention, streamlining their journey from query to resolution.",
-        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a0062e7b6225cc312a_ui-ai-team-trends.webp",
-        alt: "UI of AI team trends",
-      },
-      {
-        title: "Coaching for when HR can’t be everywhere",
-        desc: "71% of HR leaders don’t think they are effectively developing midlevel leaders.",
-        img: "https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/681e27a02bef6737c0c60f26_ui-ai-agent-context-2.webp",
-        alt: "UI of AI agent context",
-      },
-    ],
-  },
-];
+
 
 export const slidesEpfo = {
   sectionTitle: "Why Companies Trust EPFDesk.com",
@@ -2940,6 +2903,152 @@ export const pastelCardsPf = {
     {
       title: "Audit Readiness Support",
       subtitle: `We provide complete assistance for any Professional Tax inspections or audits, ensuring you are fully prepared with complete documentation and expert guidance.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+
+export const verticalCardsDesk =  {
+    mainTitle: "Complete Employee EPF Support Platform",
+    mainSubtitleVer: "Secure & Intuitive Employee Access (24/7)",
+    cardsVer: [
+    
+       {
+      title: "Dedicated Member Login Portal",
+      subtitle: `Provides secure, personalized employee access to the EPFDesk platform, making it their central hub for all EPF matters.`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "User-Friendly Interface",
+      subtitle: `Designed for clarity and ease of use, ensuring all employees, regardless of technical skill, can effortlessly navigate and find solutions.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Mobile-Responsive Design",
+      subtitle: `Guarantees seamless support availability on any device – desktop, tablet, or smartphone – for ultimate convenience.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Instant Expert Access",
+      subtitle: `Employees get immediate access to EPF expertise without needing HR intervention, streamlining their journey from query to resolution.`,
+      icon: "🦋",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
+     {
+      title: "Coaching for when HR can’t be everywhere",
+      subtitle: `71% of HR leaders don’t think they are effectively developing midlevel leaders.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    ],
+  }
+
+export const horizontalCardsDesk = {
+  mainSubtitleHor: "Streamlined Query Management System",
+  cardsHor: [
+    {
+      title: "Guided Ticket Creation",
+      subtitle: `Employees can easily log tickets for virtually all EPF issues. This includes common queries like "How to check EPF balance online," "How to activate UAN," "How to update EPF KYC," and "EPF withdrawal process."`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Automated Notifications",
+      subtitle: `Employees receive proactive updates via email or SMS as their ticket progresses through the resolution stages`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Real-time Progress Tracking",
+      subtitle: `Each submitted ticket comes with a clear, live progress bar, transparent status updates, and estimated resolution timelines.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Comprehensive Issue Coverage",
+      subtitle: `Our system handles a vast range of concerns, from simple queries (e.g.,"How to download EPF passbook") to more complex EPF transfer cases and pension-related inquiries."`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+export const largeCardsDesk = {
+  subTitle: "Expert-Led Resolution & Direct EPFO Liaison",
+  cards: [
+    {
+      title: "Dedicated EPF Specialists",
+      subtitle: `Our team comprises seasoned professionals who take full ownership of each employee query, specializing in accurate resolutions for issues like "Why is my EPF passbook not updated?" or "What to do if employer is not depositing PF?"`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Direct EPFO Communication Channels",
+      subtitle: `We ensure all employee data relevant for PT contributions is accurately maintained and updated, handling nuances like wage thresholds and employee categories for applicability in each state.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Complex Case Management",
+      subtitle: `Our expertise extends to intricate cases such as inter-company EPF transfers, legacy account merging, pension payment processing, and resolving discrepancies in contribution claims.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Complete Resolution Lifecycle",
+      subtitle: `We manage the entire resolution journey, from the initial query submission to final settlement or problem closure, including necessary employer attestation for EPF transfer claims and approval of online EPF claims from an employer's perspective.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+export const pastelCardsDesk = {
+  subTitle: "Nationwide On-Ground Support for Unresolved Cases",
+  cards: [
+    {
+      title: "Local Teams Across Major Metros",
+      subtitle: `Unlike purely online services, our on-ground teams in key Indian cities (including Delhi NCR, Mumbai, Bengaluru, Chennai, and Hyderabad, Pune) provide invaluable physical support where it matters most.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "In-Person EPFO Office Representation",
+      subtitle: `For complex or unresolved cases that mandate direct interaction, submission of physical documents, or follow-ups at regional EPFO offices, our local teams ensure swift and effective resolution. This addresses queries related to "EPFO portal usage" and "employer's guide to EPFiGMS."`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Physical Verification Assistance",
+      subtitle: `When required by EPFO processes (e.g., for certain withdrawal claims or death claim processing), our teams provide on-ground assistance for physical verification, bridging any logistical gaps.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Guaranteed Case Closure",
+      subtitle: `This unique capability ensures even the most challenging or bureaucratic EPF issues are resolved efficiently, guaranteeing 100% issue resolution regardless of geographical or administrative complexities.`,
       icon: "✨",
       bubble: "Dream!",
       bg: "from-[#d299c2] to-[#fef9d7]",

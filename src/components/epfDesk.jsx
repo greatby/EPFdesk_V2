@@ -4,7 +4,7 @@ import EPFServicesSection from "./epfServicesSection";
 import EPFComplianceROI from "./epfComplianceROI";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import FaqAccordion from "./faqAccordian";
-import { epfManagementFaq, slides, epfDeskData, epfDeskMiddletabsData, heroSlides } from "../../utils/data";
+import { epfManagementFaq, epfDeskData, epfDeskMiddletabsData, heroSlides, horizontalCardsDesk, verticalCardsDesk, largeCardsDesk, pastelCardsDesk } from "../../utils/data";
 import EPFdeskServices from "./epfDeskServices";
 import ESCIServicesSection from "./esciServicesSection";
 import { plansEpfDesk, epfDeskFaq,epfDeskPlustabs } from "../../utils/data";
@@ -13,6 +13,9 @@ import ResourcesGrid from "./resourceGrid";
 import PlusTabsSection from "./plusTabsSection";
 import MiddlePanelTabs from "./middlePanelTabs";
 import HeroSection from "./linksHeroSection";
+import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
+import LargeCardSlider from "./largeCards";
+import PastelCardSlider from "./pastelCardSlider";
 
 function Hero() {
   return (
@@ -27,16 +30,19 @@ const EPFDesk = () => {
         <Hero />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <LatticeSlider slides={slides[0]}/>
+        {/* <LatticeSlider slides={slides[0]}/> */}
+        <VerticalAndHorizontalCards horizontalCards={horizontalCardsDesk} verticalCards={verticalCardsDesk}/>
       </FadeInWhenVisible>
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <ResourcesGrid data={epfDeskData}/>
+      </FadeInWhenVisible> */}
+      <FadeInWhenVisible>
+        {/* <PlusTabsSection tabsData={epfDeskPlustabs}/> */}
+        <LargeCardSlider cardsData={largeCardsDesk}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <PlusTabsSection tabsData={epfDeskPlustabs}/>
-      </FadeInWhenVisible>
-      <FadeInWhenVisible>
-        <MiddlePanelTabs tabsData={epfDeskMiddletabsData}/>
+        {/* <MiddlePanelTabs tabsData={epfDeskMiddletabsData}/> */}
+        <PastelCardSlider cardsData={pastelCardsDesk}/>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <EPFdeskServices plans={plansEpfDesk} />
