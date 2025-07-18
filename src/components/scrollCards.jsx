@@ -1,6 +1,7 @@
 import React from "react";
 import LatticeSlider from "./latticeSlider";
-import { slidesStacking } from "../../utils/data";
+import { pastelCardsLanding, slidesStacking } from "../../utils/data";
+import PastelCardSlider from "./pastelCardSlider";
 
 const StackedCards = () => {
   return (
@@ -122,7 +123,8 @@ const StackedCards = () => {
           </ul>
         </div>
       </section> */}
-      <LatticeSlider slides={slidesStacking} />
+      {/* <LatticeSlider slides={slidesStacking} /> */}
+      <PastelCardSlider cardsData={pastelCardsLanding}/>
     </>
   );
 };

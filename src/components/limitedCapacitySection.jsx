@@ -1,3 +1,31 @@
+const strategicCards = [
+  {
+    title: "The True Cost of Waiting",
+    description:
+      "Every day spent managing EPF, ESIC, PT, or LWF manually drains strategic resources, increases audit risk, and delays business growth.",
+    icon: "⏳",
+    image: "/images/bj7.png",
+    gradient: "from-[#d4fc79] to-[#96e6a1]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+  },
+  {
+    title: "Expert-Led Capacity",
+    description:
+      "Our specialized legal, process, and field teams are finite resources. We allocate them carefully to uphold our gold-standard compliance services.",
+    icon: "👩‍⚖️",
+    gradient: "from-[#ffecd2] to-[#fcb69f]",
+    bgs: ["bg-[#ffe66d]", "bg-[#4ecdc4]"],
+  },
+  {
+    title: "Your Strategic Advantage Awaits",
+    description:
+      "EPFDesk isn’t just a vendor — we’re a partner. Secure your onboarding slot now to turn compliance into a strategic edge.",
+    icon: "🚀",
+    gradient: "from-[#84fab0] to-[#8fd3f4]",
+    bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
+  },
+];
+
 const LimitedCapacitySection = () => {
   return (
     <section className=" py-16 px-4 sm:px-6 lg:px-20">
@@ -48,8 +76,8 @@ const LimitedCapacitySection = () => {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto p-6">
-          {/* Left Big Card */}
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto p-6">
+          
           <div className="bg-[#eafce9] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex flex-col md:flex-row items-center gap-6">
             <img
               src="/images/bj7.png"
@@ -59,7 +87,7 @@ const LimitedCapacitySection = () => {
             <div className="flex-1">
               <h3 className="text-xl font-semibold text-gray-900 mb-1">
                 The True Cost of Waiting{" "}
-                {/* <span className="text-gray-400 ml-1">›</span> */}
+              
               </h3>
               <p className="text-md text-gray-600">
                 Every day spent managing EPF, ESIC, PT, or LWF manually drains
@@ -69,9 +97,9 @@ const LimitedCapacitySection = () => {
             </div>
           </div>
 
-          {/* Right Two Small Cards */}
+         
           <div className="flex flex-col gap-6">
-            {/* Top Right Card */}
+         
             <div className="bg-[#fffae6] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex items-center gap-4">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">
@@ -83,31 +111,102 @@ const LimitedCapacitySection = () => {
                   gold-standard compliance services.
                 </p>
               </div>
-              {/* <img
-                src="https://via.placeholder.com/80x80.png?text=Templates"
-                alt="Toolkit"
-                className="rounded-xl w-16 h-16 object-cover"
-              /> */}
+              
             </div>
 
-            {/* Bottom Right Card */}
+           
             <div className="bg-[#f8f0ff] rounded-2xl shadow-md hover:shadow-lg transition p-6 flex items-center gap-4">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-gray-900">
                   Your Strategic Advantage Awaits{" "}
-                  {/* <span className="text-gray-400">›</span> */}
+                
                 </h3>
                 <p className="text-md text-gray-600">
                   EPFDesk isn’t just a vendor — we’re a partner. Secure your
                   onboarding slot now to turn compliance into a strategic edge.
                 </p>
               </div>
-              {/* <img
-                src="https://via.placeholder.com/80x80.png?text=Partners"
-                alt="Partners"
-                className="rounded-xl w-16 h-16 object-cover"
-              /> */}
+             
             </div>
+          </div>
+        </div> */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto p-6">
+          {/* Left Big Card */}
+          <div
+            className={`relative flex flex-col md:flex-row items-center gap-6 p-6 rounded-3xl shadow-xl transition-all hover:-translate-y-1 hover:shadow-2xl bg-gradient-to-br ${strategicCards[0].gradient}`}
+          >
+            {/* Animated bubbles */}
+            <div className="absolute inset-0 pointer-events-none">
+              {strategicCards[0].bgs.map((bg, i) => (
+                <div
+                  key={i}
+                  className={`absolute rounded-full opacity-20 ${bg} animate-bounce ${
+                    i === 0
+                      ? "w-5 h-5 top-[20%] left-[20%]"
+                      : "w-6 h-6 bottom-[30%] right-[30%]"
+                  }`}
+                ></div>
+              ))}
+            </div>
+
+            {/* Image */}
+            <img
+              src={strategicCards[0].image}
+              alt="Main Visual"
+              className="rounded-xl w-full md:w-1/2 object-cover z-10"
+            />
+
+            {/* Text */}
+            <div className="flex-1 z-10">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="flex items-center justify-center text-2xl w-12 h-12 rounded-full bg-white shadow">
+                  {strategicCards[0].icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white">
+                  {strategicCards[0].title}
+                </h3>
+              </div>
+              <p className="text-white/90 text-md">
+                {strategicCards[0].description}
+              </p>
+            </div>
+          </div>
+
+          {/* Right Two Small Cards */}
+          <div className="flex flex-col gap-6">
+            {strategicCards.slice(1).map((card, idx) => (
+              <div
+                key={idx}
+                className={`relative flex items-center gap-4 p-6 rounded-3xl shadow-xl transition-all hover:-translate-y-1 hover:shadow-2xl bg-gradient-to-br ${card.gradient}`}
+              >
+                {/* Animated bubbles */}
+                <div className="absolute inset-0 pointer-events-none">
+                  {card.bgs.map((bg, i) => (
+                    <div
+                      key={i}
+                      className={`absolute rounded-full opacity-20 ${bg} animate-bounce ${
+                        i === 0
+                          ? "w-4 h-4 top-[25%] left-[25%]"
+                          : "w-6 h-6 bottom-[20%] right-[20%]"
+                      }`}
+                    ></div>
+                  ))}
+                </div>
+
+                {/* Icon */}
+                <div className="z-10 flex items-center justify-center text-2xl w-12 h-12 rounded-full bg-white shadow shrink-0">
+                  {card.icon}
+                </div>
+
+                {/* Text */}
+                <div className="flex-1 z-10">
+                  <h3 className="text-xl font-semibold text-white mb-1">
+                    {card.title}
+                  </h3>
+                  <p className="text-white/90 text-md">{card.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 

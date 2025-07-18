@@ -37,9 +37,9 @@ export default function Hero({ setShowFloating }) {
   }, [setShowFloating]);
   return (
     <div className="relative">
-      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
+      {/* <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
         <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-4">
-          {/* Left Text Content */}
+        
           <div className="w-full md:w-1/2 text-center">
             <h1 className="text-4xl sm:text-4xl font-bold text-black mb-8">
               Streamline EPFO, ESIC & PT Compliance Unlock HR potential
@@ -56,7 +56,7 @@ export default function Hero({ setShowFloating }) {
             </p>
           </div>
 
-          {/* Right Image */}
+       
           <div className="w-full md:w-3/4">
             <img
               src="/images/hero_maze_optimized.webp"
@@ -71,6 +71,107 @@ export default function Hero({ setShowFloating }) {
             Every HR department faces these compliance nightmares. You're not
             alone.
           </p>
+        </div>
+      </section> */}
+      <section className="relative min-h-screen flex items-center py-24 justify-center overflow-hidden bg-gradient-to-br from-indigo-400 to-purple-600 animate-[gradientShift_8s_ease_infinite]">
+        {/* Geometric Floating Shapes */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute w-20 h-20 bg-white/20 rounded-full top-[80%] left-[10%] animate-[floatShape_20s_linear_infinite]"></div>
+          <div className="absolute w-32 h-32 bg-white/20 rotate-45 top-[70%] left-[20%] animate-[floatShape_20s_linear_infinite_5s]"></div>
+          <div className="absolute w-16 h-16 bg-white/20 rounded-full top-[60%] left-[70%] animate-[floatShape_20s_linear_infinite_10s]"></div>
+          <div className="absolute w-24 h-24 bg-white/20 rotate-45 top-[50%] left-[80%] animate-[floatShape_20s_linear_infinite_15s]"></div>
+        </div>
+
+        {/* Particles */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          {Array.from({ length: 15 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-white/60 rounded-full animate-[particleFloat_8s_linear_infinite]"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${8 + Math.random() * 4}s`,
+              }}
+            ></div>
+          ))}
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 text-center max-w-4xl px-4 text-white">
+          {/* Glassy Icon Maze */}
+          <div className="w-72 h-72 mx-auto mb-10 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/20 shadow-xl animate-[iconPulse_3s_ease-in-out_infinite]">
+            <div className="grid grid-cols-4 gap-2 w-44 h-44">
+              {["🏢", "🏥", "💰", "⚖️", "📊", "🤝", "✅", "🚀"].map(
+                (emoji, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/20 rounded-lg text-xl flex items-center justify-center animate-[mazeGlow_4s_ease-in-out_infinite]"
+                    style={{ animationDelay: `${i * 0.5}s` }}
+                  >
+                    {emoji}
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Title & Subtitle */}
+          <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-black leading-tight tracking-tight bg-gradient-to-br from-white to-gray-200 bg-clip-text text-transparent animate-[titleGlow_2s_ease-in-out_infinite_alternate]">
+            STREAMLINE COMPLIANCE
+          </h1>
+          <p className="mt-4 text-lg sm:text-xl opacity-90 font-light">
+            Navigate the EPFO, ESIC & PT maze with confidence – We handle 90% of
+            your compliance nightmares
+          </p>
+
+          {/* Stats */}
+          <div className="mt-10 flex flex-wrap justify-center gap-6 text-center">
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+              <span className="text-4xl font-bold text-white block">90%</span>
+              <span className="text-sm text-white/80">Compliance Handled</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+              <span className="text-4xl font-bold text-white block">24H</span>
+              <span className="text-sm text-white/80">Setup Time</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+              <span className="text-4xl font-bold text-white block">0</span>
+              <span className="text-sm text-white/80">Penalties</span>
+            </div>
+          </div>
+
+          {/* Guarantee Badge */}
+           <div className="w-full md:w-3/4 mx-auto mt-10">
+            <img
+              src="/images/hero_maze_optimized.webp"
+              alt="EPFO Compliance Illustration"
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </div>
+          <div className="mt-10 inline-block bg-white/10 border border-white/20 backdrop-blur-lg px-6 py-3 rounded-full text-sm">
+            🛡️ Stuck in the Maze? We'll guide you out — 100% Compliance
+            Guaranteed
+          </div>
+
+          {/* CTA Buttons */}
+          {/* <div className="mt-8 flex flex-wrap gap-4 justify-center">
+            <button className="relative bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-semibold px-8 py-3 rounded-full uppercase text-sm hover:translate-y-[-3px] hover:bg-white/30 transition duration-300">
+              📱 WhatsApp Now
+            </button>
+            <button className="border-2 border-white/40 text-white font-medium px-8 py-3 rounded-full uppercase text-sm hover:bg-white/10 transition">
+              📧 Contact Sales
+            </button>
+          </div> */}
+          <LinkButtons/>
+
+          {/* Scroll Indicator */}
+          {/* <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-[scrollBounce_2s_ease-in-out_infinite] text-white/70">
+            <span className="text-sm uppercase tracking-widest">Explore</span>
+            <div className="w-0.5 h-8 bg-white/50 relative mt-1">
+              <div className="w-2.5 h-2.5 border-r border-b border-white/50 rotate-45 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
+            </div>
+          </div> */}
         </div>
       </section>
     </div>

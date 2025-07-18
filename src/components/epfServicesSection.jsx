@@ -11,7 +11,11 @@ import {
   epfoMiddletabsData,
   epfoPlustabs,
   epfServices,
+  horizontalCardsEpfo,
+  largeCardsEpfo,
+  pastelCardsEpfo,
   slidesEpfo,
+  verticalCardsEpfo,
   whyEpfDesk,
 } from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
@@ -19,6 +23,9 @@ import ResourcesGrid from "./resourceGrid";
 import MiddlePanelTabs from "./middlePanelTabs";
 import PlusTabsSection from "./plusTabsSection";
 import FadeInWhenVisible from "./fadeInWhenVisible";
+import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
+import LargeCardSlider from "./largeCards";
+import PastelCardSlider from "./pastelCardSlider";
 
 function EPFAccordion({ epfServices }) {
   // const [openIndex, setOpenIndex] = useState(null);
@@ -113,18 +120,21 @@ export default function EPFServicesSection() {
       </h2>
         <EPFAccordion epfServices={epfServices}/> */}
         <FadeInWhenVisible>
-          <LatticeSlider slides={slidesEpfo} />
+          {/* <LatticeSlider slides={slidesEpfo} /> */}
+          <VerticalAndHorizontalCards verticalCards={verticalCardsEpfo} horizontalCards={horizontalCardsEpfo} />
         </FadeInWhenVisible>
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible>
           <ResourcesGrid data={epfoGridData} />
+        </FadeInWhenVisible> */}
+        <FadeInWhenVisible>
+          {/* <MiddlePanelTabs tabsData={epfoMiddletabsData} /> */}
+          <LargeCardSlider cardsData={largeCardsEpfo}/>
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <MiddlePanelTabs tabsData={epfoMiddletabsData} />
+          {/* <PlusTabsSection tabsData={epfoPlustabs} /> */}
+          <PastelCardSlider cardsData={pastelCardsEpfo}/>
         </FadeInWhenVisible>
-        <FadeInWhenVisible>
-          <PlusTabsSection tabsData={epfoPlustabs} />
-        </FadeInWhenVisible>
-        <EPFAccordion epfServices={whyEpfDesk}/>
+        {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
       </div>
 
       {/* <h2 className="text-3xl font-bold mt-20 mb-8 text-center">

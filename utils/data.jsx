@@ -3055,3 +3055,278 @@ export const pastelCardsDesk = {
     },
   ],
 };
+
+
+export const verticalCardsEpfo =  {
+    mainTitle: "Why Companies Trust EPFDesk.com",
+    mainSubtitleVer: "Unmatched Expertise & Zero-Error Accuracy",
+    cardsVer: [
+    
+       {
+      title: "Consistently high accuracy rate in EPF filings (e.g., 99.9%)",
+      subtitle: `Our multi-layered validation and expert review process minimizes discrepancies, significantly reducing "interest on delayed EPF contributions" for your business`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Zero audit failures across our client portfolio for 5+ years",
+      subtitle: `A testament to our robust processes and unwavering commitment to compliance integrity, offering true peace of mind.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Rapid average response time (e.g., 2-4 hours) for client queries",
+      subtitle: `Ensuring your concerns are addressed promptly by dedicated specialists, improving your operational efficiency.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "100% deadline adherence for all submissions",
+      subtitle: `Protecting you from "legal consequences of EPF non-compliance" and preserving your organization's reputation.`,
+      icon: "🦋",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
+    
+    ],
+  }
+
+export const horizontalCardsEpfo = {
+  mainSubtitleHor: "Complete HR & Finance Team Liberation",
+  cardsHor: [
+    {
+      title: "Liberating HR & Finance Teams from Compliance Overload",
+      subtitle: `Our platform handles end-to-end compliance and employee support, enabling your internal teams to focus on strategic priorities instead of repetitive administrative tasks.`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Productivity Boost",
+      subtitle: `Up to 90% reduction in compliance-related admin tasks: freeing up hours spent on manual work, resulting in measurable productivity gains.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Fast Onboarding",
+      subtitle: `80% faster onboarding process: our team handles EPF complexities so HR can onboard new hires swiftly without delays.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Penalty-Free Compliance",
+      subtitle: `100% elimination of penalty & interest risks: Never worry about 'what if employer does not deposit PF' — we ensure flawless and timely compliance.`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+     {
+      title: "Query Deflection",
+      subtitle: `75% reduction in employee queries to HR: EPF Desk enables self-service, reducing the burden on HR teams.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+  ],
+};
+
+export const largeCardsEpfo = {
+  subTitle: "Dedicated Support Team",
+  cards: [
+    {
+      title: "Dedicated Client Manager",
+      subtitle: `A single point of contact who understands your specific account and compliance needs, ensuring personalized service.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Monthly Compliance Reports & Insights",
+      subtitle: `Regular updates on your compliance status and performance.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Immediate Resolution of EPF-related Queries",
+      subtitle: `Your dedicated manager ensures any questions or issues are addressed promptly.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Proactive Communication on Regulatory Changes",
+      subtitle: `You're informed of relevant updates, ensuring continuous compliance.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+
+export const pastelCardsEpfo = {
+  subTitle: "Implementation & Support",
+  cards: [
+    {
+      title: "Initial Consultation",
+      subtitle: `A brief session to understand your current EPF setup and specific needs.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Secure Portal Integration",
+      subtitle: `Our team manages the secure integration with relevant EPFO portals and gathers necessary access details.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Brief Team Orientation",
+      subtitle: `A quick, efficient orientation session with your relevant staff to ensure a smooth handover.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Full Service Activation",
+      subtitle: `
+Your EPF compliance is fully operational, seamlessly managed by EPFDesk.com experts within 24 hours.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+export const largeCardsLanding = {
+  // subTitle: "Dedicated Support Team",
+  cards: [
+    {
+      title: "Monthly Compliance Panic",
+      subtitle: `You're racing against monthly EPFO & ESIC deadlines, juggling multiple state-wise portals for EPF, ESIC, PT, and LWF instead of growing your business – turning you into a full-time compliance officer rather than the innovator you set out to be.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Employee Frustration & HR Burnout",
+      subtitle: `Unresolved EPF & ESIC Issues impact employee morale and productivit y, leading to increased HR Workload from queries.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Statutory penalties and audit risk.",
+      subtitle: `Non-compliance with EPFO, ESIC, and other statutory requirements can trigger penalties up to 100% of dues, plus interest and potential audit risks that could cripple your business finances.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Lost Productivity and Focus.",
+      subtitle: `HR and Finance teams spend hours on employee linking, KYC approvals, and portal data entry instead of focusing on talent development, financial strategy, and business growth that actually drives revenue.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+export const pastelCardsLanding = {
+  // subTitle: "Implementation & Support",
+  cards: [
+    {
+      title: "Hands-on Government Expertise",
+      subtitle: `Our team combines deep portal expertise with on-ground EPFO office experience, legal knowledge, and proven audit handling capabilities. From complex registrations and deregistrations to navigating ever-changing compliance procedures, our experts have mastered every aspect of statutory compliance.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Nationwide Operational Footprint",
+      subtitle: `Our offices across major metros and presence in almost all states ensure seamless statutory compliance support wherever your business operates. Your employees can access social security benefits without geographical barriers.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Proactive Regulatory Guidance",
+      subtitle: `We monitor every update in EPFO, ESIC, PT, and LWF laws. Our team ensures your company is compliant before new mandates take effect—no surprises, no gaps.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Dedicated Client Managers",
+      subtitle: `
+Your assigned manager becomes an extension of your team, managing all compliance obligations proactively so you can focus on growth. No missed deadlines, no stress—just total confidence.`,
+      icon: "✨",
+      bubble: "Dream!",
+      bg: "from-[#d299c2] to-[#fef9d7]",
+    },
+  ],
+};
+
+
+export const horizontalCardsLinks = [
+  {
+    title: "EPF",
+    subtitle: "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
+    icon: "🔍",
+    link: "/epf",
+    bubble: "Discover!",
+    gradient: "from-[#ff9a9e] to-[#fecfef]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+  },
+  {
+    title: "EPFdesk",
+    subtitle: "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
+    icon: "🎯",
+    link:'/epfDesk',
+    bubble: "Focus!",
+    gradient: "from-[#a18cd1] to-[#fbc2eb]",
+    bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
+  },
+  {
+    title: "ESIC",
+    subtitle: "Navigate the complexities of Employee State Insurance with ease. We meticulously handle all monthly ESIC contributions, filings, and regulatory updates, ensuring your complete adherence and freeing your team from this critical statutory burden.",
+    icon: "🤝",
+    link:'/esic',
+    bubble: "Collaborate!",
+    gradient: "from-[#ffecd2] to-[#fcb69f]",
+    bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
+  },
+  {
+    title: "PT",
+    subtitle: "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
+    icon: "💡",
+    link:'/pt',
+    bubble: "Innovate!",
+    gradient: "from-[#d4fc79] to-[#96e6a1]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+  },
+  {
+    title: "LWF",
+    subtitle: "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
+    icon: "⚡",
+    link:'/lwf',
+    bubble: "Empower!",
+    gradient: "from-[#84fab0] to-[#8fd3f4]",
+    bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
+  },
+  // {
+  //   title: "Impact",
+  //   subtitle: "Make a difference that matters in the world",
+  //   icon: "🌍",
+  //   bubble: "Impact!",
+  //   gradient: "from-[#f093fb] to-[#f5576c]",
+  //   bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
+  // },
+];

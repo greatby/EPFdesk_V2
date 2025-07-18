@@ -17,7 +17,7 @@ const PastelCardSlider = ({cardsData}) => {
 
   return (
     <>
-     <div className="mb-8 pt-16">
+     <div className="mb-8 pt-8">
         <h2 className="max-w-7xl mx-auto text-center px-4 text-3xl font-bold">
       {subTitle}
         </h2>

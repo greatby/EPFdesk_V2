@@ -18,9 +18,10 @@ import LimitedCapacitySection from "./components/limitedCapacitySection";
 import EPFDesk from "./components/epfDesk";
 import VerticalCarousel from "./components/verticalCarousel";
 import LatticeTabs from "./components/latticeTabs";
-import { dummyCards, slidesLanding } from "../utils/data";
+import { dummyCards, largeCardsLanding, slidesLanding } from "../utils/data";
 import LatticeSlider from "./components/latticeSlider";
 import ScrollSyncComponent from "./components/scrollSyncComponent";
+import LargeCardSlider from "./components/largeCards";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
             </FadeInWhenVisible> */}
             <FadeInWhenVisible>
               {/* <HrChallenges /> */}
-              <LatticeSlider slides={slidesLanding} />
+              {/* <LatticeSlider slides={slidesLanding} /> */}
+              <LargeCardSlider cardsData={largeCardsLanding} />
             </FadeInWhenVisible>
             {/* <div>
 
@@ -49,16 +51,22 @@ function App() {
             <FadeInWhenVisible>
               <ServiceCards />
             </FadeInWhenVisible>
-            <StackedCards />
-            <CustomerCarousel />
-            <LimitedCapacitySection />
+            <FadeInWhenVisible>
+              <StackedCards />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <CustomerCarousel />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible>
+              <LimitedCapacitySection />
+            </FadeInWhenVisible>
             {/* <LatticeTabs cards={dummyCards}/> */}
             {/* <ScrollSyncComponent /> */}
           </Layout>
         }
       />
 
-       <Route
+      <Route
         path="/epfDesk"
         element={
           <Layout>
