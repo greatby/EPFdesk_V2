@@ -121,9 +121,21 @@ const CardSlider = ({ cards, paginationRef }) => {
                 console.log("Card:", title, "BG:", bg),
                 (
                   <SwiperSlide key={index}>
-                    {/* <div className="bg-gradient-to-br from-[#ff9a9e] to-[#fecfef] min-h-[380px] ...">
-                      Test gradient
-                    </div> */}
+                    <div className="hidden">
+                      bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]
+                      bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]
+                      bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]
+                      bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]
+                      bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]
+                      bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]
+                      bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]
+                      bg-gradient-to-br from-[#a8edea] to-[#fed6e3]
+                      bg-gradient-to-br from-[#d299c2] to-[#fef9d7]
+                      bg-gradient-to-br from-[#f093fb] to-[#f5576c]
+                      bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]
+                      bg-gradient-to-br from-[#43e97b] to-[#38f9d7]
+                    </div>
+
                     <div
                       className={`relative ${bg}  h-[420px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
                     >
