@@ -1007,8 +1007,6 @@ export const epfoCards = [
   },
 ];
 
-
-
 export const slidesEpfo = {
   sectionTitle: "Why Companies Trust EPFDesk.com",
   sectionSubtitle: "Unmatched Expertise & Zero-Error Accuracy",
@@ -2737,7 +2735,6 @@ export const largeCardsLwf = {
   ],
 };
 
-
 export const pastelCardsLwf = {
   subTitle: "Proactive LWF Regulatory Advisory & Risk Mitigation",
   cards: [
@@ -2875,7 +2872,6 @@ export const largeCardsPf = {
   ],
 };
 
-
 export const pastelCardsPf = {
   subTitle: "Proactive PT Regulatory Advisory & Risk Mitigation",
   cards: [
@@ -2910,13 +2906,11 @@ export const pastelCardsPf = {
   ],
 };
 
-
-export const verticalCardsDesk =  {
-    mainTitle: "Complete Employee EPF Support Platform",
-    mainSubtitleVer: "Secure & Intuitive Employee Access (24/7)",
-    cardsVer: [
-    
-       {
+export const verticalCardsDesk = {
+  mainTitle: "Complete Employee EPF Support Platform",
+  mainSubtitleVer: "Secure & Intuitive Employee Access (24/7)",
+  cardsVer: [
+    {
       title: "Dedicated Member Login Portal",
       subtitle: `Provides secure, personalized employee access to the EPFDesk platform, making it their central hub for all EPF matters.`,
       icon: "📚",
@@ -2944,15 +2938,15 @@ export const verticalCardsDesk =  {
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
-     {
+    {
       title: "Coaching for when HR can’t be everywhere",
       subtitle: `71% of HR leaders don’t think they are effectively developing midlevel leaders.`,
       icon: "🌟",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
-    ],
-  }
+  ],
+};
 
 export const horizontalCardsDesk = {
   mainSubtitleHor: "Streamlined Query Management System",
@@ -3056,13 +3050,11 @@ export const pastelCardsDesk = {
   ],
 };
 
-
-export const verticalCardsEpfo =  {
-    mainTitle: "Why Companies Trust EPFDesk.com",
-    mainSubtitleVer: "Unmatched Expertise & Zero-Error Accuracy",
-    cardsVer: [
-    
-       {
+export const verticalCardsEpfo = {
+  mainTitle: "Why Companies Trust EPFDesk.com",
+  mainSubtitleVer: "Unmatched Expertise & Zero-Error Accuracy",
+  cardsVer: [
+    {
       title: "Consistently high accuracy rate in EPF filings (e.g., 99.9%)",
       subtitle: `Our multi-layered validation and expert review process minimizes discrepancies, significantly reducing "interest on delayed EPF contributions" for your business`,
       icon: "📚",
@@ -3090,9 +3082,8 @@ export const verticalCardsEpfo =  {
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
-    
-    ],
-  }
+  ],
+};
 
 export const horizontalCardsEpfo = {
   mainSubtitleHor: "Complete HR & Finance Team Liberation",
@@ -3125,7 +3116,7 @@ export const horizontalCardsEpfo = {
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
-     {
+    {
       title: "Query Deflection",
       subtitle: `75% reduction in employee queries to HR: EPF Desk enables self-service, reducing the burden on HR teams.`,
       icon: "🎯",
@@ -3168,7 +3159,6 @@ export const largeCardsEpfo = {
     },
   ],
 };
-
 
 export const pastelCardsEpfo = {
   subTitle: "Implementation & Support",
@@ -3274,11 +3264,11 @@ Your assigned manager becomes an extension of your team, managing all compliance
   ],
 };
 
-
 export const horizontalCardsLinks = [
   {
     title: "EPF",
-    subtitle: "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
+    subtitle:
+      "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
     icon: "🔍",
     link: "/epf",
     bubble: "Discover!",
@@ -3287,36 +3277,40 @@ export const horizontalCardsLinks = [
   },
   {
     title: "EPFdesk",
-    subtitle: "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
+    subtitle:
+      "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
     icon: "🎯",
-    link:'/epfDesk',
+    link: "/epfDesk",
     bubble: "Focus!",
     gradient: "from-[#a18cd1] to-[#fbc2eb]",
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
   },
   {
     title: "ESIC",
-    subtitle: "Navigate the complexities of Employee State Insurance with ease. We meticulously handle all monthly ESIC contributions, filings, and regulatory updates, ensuring your complete adherence and freeing your team from this critical statutory burden.",
+    subtitle:
+      "Navigate the complexities of Employee State Insurance with ease. We meticulously handle all monthly ESIC contributions, filings, and regulatory updates, ensuring your complete adherence and freeing your team from this critical statutory burden.",
     icon: "🤝",
-    link:'/esic',
+    link: "/esic",
     bubble: "Collaborate!",
     gradient: "from-[#ffecd2] to-[#fcb69f]",
     bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
   },
   {
     title: "PT",
-    subtitle: "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
+    subtitle:
+      "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
     icon: "💡",
-    link:'/pt',
+    link: "/pt",
     bubble: "Innovate!",
     gradient: "from-[#d4fc79] to-[#96e6a1]",
     bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
   },
   {
     title: "LWF",
-    subtitle: "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
+    subtitle:
+      "Ensure flawless adherence to Labour Welfare Fund obligations across all your locations. We manage the diverse state-specific rates and periodic filings for LWF, simplifying this often-overlooked statutory requirement for your business.",
     icon: "⚡",
-    link:'/lwf',
+    link: "/lwf",
     bubble: "Empower!",
     gradient: "from-[#84fab0] to-[#8fd3f4]",
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
@@ -3330,3 +3324,37 @@ export const horizontalCardsLinks = [
   //   bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
   // },
 ];
+
+export const plansEpfManagement = {
+  mainTitle: "Unlock the Strategic Value of Your HR Team",
+  cards: [
+    {
+      title: "Complete HR Team Liberation",
+      //  icon: ClipboardDocumentCheckIcon,
+      features: [
+        `Significant reduction (e.g., 80%) in daily EPF-related employee queries: Freeing up countless hours
+ previously spent on routine tasks.`,
+        `Valuable HR bandwidth reclaimed (e.g., 15-20 hours monthly): Allowing your HR team to focus on strategic
+ initiatives like talent acquisition, employee development programs, and fostering a vibrant workplace culture.`,
+        `Eliminated EPFO liaison requirement: Your HR team no longer needs to be the middleman for individual
+ employee EPF issues, reducing their administrative overhead.`,
+        `Shift to Strategic Focus: Empowering HR to lead retention strategies, succession planning, and workplace
+ culture building.`,
+      ],
+    },
+    {
+      title: "Enhanced Employee Experience & Satisfaction",
+      //  icon: UsersIcon,
+      features: [
+        `Instant expert access: Employees experience swift resolution, eliminating frustration associated with delayed
+ responses or unanswered questions.`,
+        `Transparent resolution process: Builds confidence in how their EPF matters are managed, as they can track
+ progress in real-time.`,
+        `Professional support quality: The consistent and expert support enhances the perception of employer care
+ and commitment to employee well-being.`,
+        `Empowered workforce: Employees feel more in control and informed about their provident fund matters,
+ leading to increased satisfaction and morale.`,
+      ],
+    },
+  ],
+};

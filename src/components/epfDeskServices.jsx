@@ -6,12 +6,13 @@ import {
   CalendarDaysIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import { epfServices, whyEpfDesk } from "../../utils/data";
+import { epfServices, plansEpfManagement, whyEpfDesk } from "../../utils/data";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { epfDeskServices, epfDeskStatergy } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import VerticalCarousel from "./verticalCarousel";
+import StickyScrollSections from './scrollSyncComponent'
 
 
 const EPFSlider = () => {
@@ -331,9 +332,17 @@ const AlternatingFeatureCards = ({ cards }) => {
 
 export default function EPFdeskServices({ plans }) {
   return (
-    <section className="py-8 px-4 md:px-12 bg-[#f8f7ff]">
+    <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <EPFSlider epfServices={epfDeskStatergy} />
+        {/* <EPFSlider epfServices={epfDeskStatergy} /> */}
+        <h2 className="text-3xl text-center font-bold text-gray-900">
+            Unlock the Strategic Value of Your HR Team
+          </h2>
+          <p className="text-lg text-center text-gray-600 mt-2">
+            Our EPFDesk services ensure employee support is handled with care—so
+            HR can focus on what matters.
+          </p>
+         <StickyScrollSections items={plansEpfManagement}/>
       </div>
     </section>
   );
