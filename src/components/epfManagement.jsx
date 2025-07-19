@@ -42,7 +42,7 @@ const EPFManagement = () => {
       </FadeInWhenVisible> */}
       <FadeInWhenVisible>
         <div>
-          <h2 className="text-3xl mt-8 font-bold text-center">
+          <h2 className="text-3xl sm:text-4xl mt-8 font-bold text-center">
             Complete EPF Services We Provide
           </h2>
           <LatticeTabs cards={epfoCards} />

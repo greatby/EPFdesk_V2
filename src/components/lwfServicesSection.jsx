@@ -302,7 +302,7 @@ export default function LWFServicesSection() {
   return (
     <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <h2 className="text-3xl font-bold my-8 text-center">
+        <h2 className="text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
           Ensuring Employee Well-being: Comprehensive LWF Benefits Management
         </h2>
         <FadeInWhenVisible>

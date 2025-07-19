@@ -234,7 +234,7 @@ const TestimonialSlider = () => {
 
   return (
     <section className="w-full py-12">
-      <h4 className="px-8 text-3xl text-center font-bold mb-4">
+      <h4 className="px-8 text-4xl text-center font-bold mb-4">
         Trusted by a growing number of HR departments in India
       </h4>
 
