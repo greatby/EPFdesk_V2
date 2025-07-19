@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Container } from "./container";
 import LinkButtons from "./whatsApp";
+import RawMazeGame from "./mazeHero";
 
 function ZendeskHeroStack() {
   return (
@@ -143,12 +144,14 @@ export default function Hero({ setShowFloating }) {
 
           {/* Guarantee Badge */}
            <div className="w-full md:w-3/4 mx-auto mt-10">
-            <img
+            {/* <img
               src="/images/hero_maze_optimized.webp"
               alt="EPFO Compliance Illustration"
               className="w-full h-auto object-contain rounded-xl"
-            />
+            /> */}
           </div>
+            <RawMazeGame />
+          
           <div className="mt-10 inline-block bg-white/10 border border-white/20 backdrop-blur-lg px-6 py-3 rounded-full text-sm">
             🛡️ Stuck in the Maze? We'll guide you out — 100% Compliance
             Guaranteed

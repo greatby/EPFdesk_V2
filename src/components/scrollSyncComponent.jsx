@@ -136,11 +136,11 @@ const StickyStackedSections = ({ items }) => {
                         {flatCards[globalIdx].desc}
                       </p>
                     </div> */}
-                    <div className="rounded-2xl border card-animate border-gray-100 bg-[#ffffffa3] md:bg-white lg:bg-white backdrop-blur-[3px] p-8 shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out group ml-3">
-                      <h4 className="text-2xl font-semibold text-gray-900 mb-4 group-hover:text-teal-600 transition-colors duration-300">
+                    <div className="rounded-[1.2rem] border card-animate border-gray-200 bg-[#ffffffa3] md:bg-[linear-gradient(#ffffff52,#ffffff52)] lg:bg-[linear-gradient(#ffffff52,#ffffff52)] backdrop-blur-[3px] p-8  transition-shadow duration-300 ease-in-out group ml-3">
+                      <h4 className="text-[1.2rem] font-semibold text-gray-900 mb-4 transition-colors duration-300">
                         {flatCards[globalIdx].title}
                       </h4>
-                      <p className="text-[1.1rem] font-semibold text-gray-500 leading-relaxed">
+                      <p className="text-[1rem] font-semibold text-gray-500 leading-relaxed">
                         {flatCards[globalIdx].desc}
                       </p>
                     </div>
