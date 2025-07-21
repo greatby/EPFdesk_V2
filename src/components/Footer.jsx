@@ -55,7 +55,7 @@ export default function Footer() {
             <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
               Quick Links
             </h5>
-            <ul className="space-y-2">
+            <ul className="space-y-2 columns-1 md:columns-2">
               <li>
                 <Link to="/epf">
                   EPFO

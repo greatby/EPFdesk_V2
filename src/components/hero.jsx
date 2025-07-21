@@ -21,6 +21,7 @@ function ZendeskHeroStack() {
 
 export default function Hero({ setShowFloating }) {
   const heroRef = useRef(null);
+  const isMobile = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,9 +39,8 @@ export default function Hero({ setShowFloating }) {
   }, [setShowFloating]);
   return (
     <div className="relative">
-      {/* <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
+      <section className="bg-white pt-28 md:pt-32 lg:pt-32 pb-12 md:pb-10 lg:pb-10 px-6 md:px-12">
         <div className="flex flex-col md:flex-col lg:flex-col justify-center items-center max-w-7xl mx-auto gap-4">
-        
           <div className="w-full md:w-1/2 text-center">
             <h1 className="text-4xl sm:text-4xl font-bold text-black mb-8">
               Streamline EPFO, ESIC & PT Compliance Unlock HR potential
@@ -52,20 +52,36 @@ export default function Hero({ setShowFloating }) {
             <div className="flex flex-col gap-4 mb-2">
               <LinkButtons />
             </div>
-            <p className="text-lg sm:text-xl text-black">
+            <p className="text-lg sm:text-xl mb-5 text-black">
               Go Live in 24 Hours – We Handle Complete EPFO, ESIC & PT Setup
             </p>
           </div>
 
-       
-          <div className="w-full md:w-3/4">
+          {/* <div className="w-full md:w-3/4">
             <img
               src="/images/hero_maze_optimized.webp"
               alt="EPFO Compliance Illustration"
               className="w-full h-auto object-contain"
             />
+            <RawMazeGame/>
+          </div> */}
+          <div className="w-full md:w-3/4">
+            {/* Show on desktop only */}
+            <div className="hidden md:block">
+              <RawMazeGame />
+            </div>
+
+            {/* Show on mobile/tablet only */}
+            <div className="block md:hidden">
+              <img
+                src="/images/hero_maze_optimized.webp"
+                alt="EPFO Compliance Illustration"
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
-          <h2 className="text-3xl sm:text-[2.5rem] font-bold text-gray-900 text-center">
+
+          <h2 className="text-3xl sm:text-[2.5rem] mt-5 font-bold text-gray-900 text-center">
             Stuck in the Maze, We’ll guide you out.
           </h2>
           <p className="text-gray-600 text-[1.2rem] text-center mt-4 max-w-2xl mx-auto">
@@ -73,9 +89,9 @@ export default function Hero({ setShowFloating }) {
             alone.
           </p>
         </div>
-      </section> */}
-      <section className="relative min-h-screen flex items-center py-24 justify-center overflow-hidden bg-gradient-to-br from-indigo-400 to-purple-600 animate-[gradientShift_8s_ease_infinite]">
-        {/* Geometric Floating Shapes */}
+      </section>
+      {/* <section className="relative min-h-screen flex items-center py-24 justify-center overflow-hidden bg-gradient-to-br from-indigo-400 to-purple-600 animate-[gradientShift_8s_ease_infinite]">
+       
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute w-20 h-20 bg-white/20 rounded-full top-[80%] left-[10%] animate-[floatShape_20s_linear_infinite]"></div>
           <div className="absolute w-32 h-32 bg-white/20 rotate-45 top-[70%] left-[20%] animate-[floatShape_20s_linear_infinite_5s]"></div>
@@ -83,7 +99,7 @@ export default function Hero({ setShowFloating }) {
           <div className="absolute w-24 h-24 bg-white/20 rotate-45 top-[50%] left-[80%] animate-[floatShape_20s_linear_infinite_15s]"></div>
         </div>
 
-        {/* Particles */}
+       
         <div className="absolute inset-0 z-0 pointer-events-none">
           {Array.from({ length: 15 }).map((_, i) => (
             <div
@@ -98,9 +114,9 @@ export default function Hero({ setShowFloating }) {
           ))}
         </div>
 
-        {/* Hero Content */}
+ 
         <div className="relative z-10 text-center max-w-4xl px-4 text-white">
-          {/* Glassy Icon Maze */}
+       
           <div className="w-72 h-72 mx-auto mb-10 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/20 shadow-xl animate-[iconPulse_3s_ease-in-out_infinite]">
             <div className="grid grid-cols-4 gap-2 w-44 h-44">
               {["🏢", "🏥", "💰", "⚖️", "📊", "🤝", "✅", "🚀"].map(
@@ -117,7 +133,7 @@ export default function Hero({ setShowFloating }) {
             </div>
           </div>
 
-          {/* Title & Subtitle */}
+         
           <h1 className="text-[clamp(2.5rem,8vw,6rem)] font-black leading-tight tracking-tight bg-gradient-to-br from-white to-gray-200 bg-clip-text text-transparent animate-[titleGlow_2s_ease-in-out_infinite_alternate]">
             STREAMLINE COMPLIANCE
           </h1>
@@ -126,7 +142,7 @@ export default function Hero({ setShowFloating }) {
             your compliance nightmares
           </p>
 
-          {/* Stats */}
+   
           <div className="mt-10 flex flex-wrap justify-center gap-6 text-center">
             <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
               <span className="text-4xl font-bold text-white block">90%</span>
@@ -142,13 +158,9 @@ export default function Hero({ setShowFloating }) {
             </div>
           </div>
 
-          {/* Guarantee Badge */}
+    
            <div className="w-full md:w-3/4 mx-auto mt-10">
-            {/* <img
-              src="/images/hero_maze_optimized.webp"
-              alt="EPFO Compliance Illustration"
-              className="w-full h-auto object-contain rounded-xl"
-            /> */}
+           
           </div>
             <RawMazeGame />
           
@@ -157,26 +169,12 @@ export default function Hero({ setShowFloating }) {
             Guaranteed
           </div>
 
-          {/* CTA Buttons */}
-          {/* <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <button className="relative bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-semibold px-8 py-3 rounded-full uppercase text-sm hover:translate-y-[-3px] hover:bg-white/30 transition duration-300">
-              📱 WhatsApp Now
-            </button>
-            <button className="border-2 border-white/40 text-white font-medium px-8 py-3 rounded-full uppercase text-sm hover:bg-white/10 transition">
-              📧 Contact Sales
-            </button>
-          </div> */}
+         
           <LinkButtons/>
 
-          {/* Scroll Indicator */}
-          {/* <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-[scrollBounce_2s_ease-in-out_infinite] text-white/70">
-            <span className="text-sm uppercase tracking-widest">Explore</span>
-            <div className="w-0.5 h-8 bg-white/50 relative mt-1">
-              <div className="w-2.5 h-2.5 border-r border-b border-white/50 rotate-45 absolute -bottom-1 left-1/2 -translate-x-1/2"></div>
-            </div>
-          </div> */}
+         
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

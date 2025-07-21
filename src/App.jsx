@@ -62,6 +62,15 @@ function App() {
             </FadeInWhenVisible>
             {/* <LatticeTabs cards={dummyCards}/> */}
             {/* <ScrollSyncComponent /> */}
+            <FadeInWhenVisible>
+              <div className="flex justify-center items-center">
+                <img
+                  src="/images/Fotter-removebg-preview.png"
+                  alt="fotter"
+                  loading="lazy"
+                />
+              </div>
+            </FadeInWhenVisible>
           </Layout>
         }
       />

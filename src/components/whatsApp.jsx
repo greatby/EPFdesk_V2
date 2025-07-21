@@ -128,7 +128,7 @@ const LinkButtons = () => {
   return (
     <>
       <div className="my-5 flex flex-row lg:items-center justify-center gap-2 md:flex-row">
-        {/* <button
+        <button
           onClick={() => {
             const phone = "919591773588";
             const text = encodeURIComponent("Hi, I need help with EPFdesk.");
@@ -144,9 +144,9 @@ const LinkButtons = () => {
           className="flex h-[50px] w-[155px] cursor-pointer items-center justify-center gap-2 rounded-[16px] bg-[rgb(209,244,112)] p-3 text-black shadow-lg transition hover:bg-[rgb(209,244,112)]"
         >
           <FaRegEnvelope size={22} /> Contact Sales
-        </button> */}
+        </button>
 
-        <div className="mt-8 flex flex-wrap gap-4 justify-center">
+        {/* <div className="mt-8 flex flex-wrap gap-4 justify-center">
           <button
             className="relative bg-white/20 backdrop-blur-lg border-2 border-white/30 text-white font-semibold px-8 py-3 rounded-full uppercase text-sm hover:translate-y-[-3px] hover:bg-white/30 transition duration-300"
             onClick={() => {
@@ -163,7 +163,7 @@ const LinkButtons = () => {
           >
             📧 Contact Sales
           </button>
-        </div>
+        </div> */}
       </div>
       {/* <div className="my-2 text-center text-[20px] font-bold text-black">
         <p>Get started in 24 hours</p>
