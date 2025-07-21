@@ -314,6 +314,9 @@ export default function PFServicesSection() {
           <PastelCardSlider cardsData={pastelCardsPf}/>
         </FadeInWhenVisible>
         {/* <EPFAccordion /> */}
+         <h2 className="text-3xl sm:text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
+          Why Companies Trust Professional Tax Compliance with EPFDesk.com
+        </h2>
         <StickyStackedSections items={plans}/>
       </div>
 

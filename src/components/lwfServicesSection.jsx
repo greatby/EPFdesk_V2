@@ -323,6 +323,9 @@ export default function LWFServicesSection() {
           {/* <MiddlePanelTabs tabsData={lwfMiddletabsData}/> */}
           <PastelCardSlider cardsData={pastelCardsLwf}/>
         </FadeInWhenVisible>
+         <h2 className="text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
+          Ensuring Employee Well-being: Comprehensive LWF Benefits Management
+        </h2>
       <StickyStackedSections items={plans} />
       </div>
 

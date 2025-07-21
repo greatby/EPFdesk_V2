@@ -45,7 +45,7 @@ const LargeCardSlider = ({ cardsData }) => {
               // pagination={{ clickable: true }}
               breakpoints={{
                 480: { slidesPerView: 1.2 },
-                640: { slidesPerView: 2 },
+                640: { slidesPerView: 1.4 },
                 1024: { slidesPerView: 3 },
                 1280: { slidesPerView: 3 },
               }}

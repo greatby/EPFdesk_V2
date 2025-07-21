@@ -55,7 +55,7 @@ export default function Navbar({ banner }) {
 
   return (
     <header
-      className={`fixed z-50 w-full border-b pl-5 pr-12 backdrop-blur-md transition-colors duration-300 `}
+      className={`fixed z-50 w-full border-b pl-5 pr-10 backdrop-blur-md transition-colors duration-300 `}
     >
       <PlusGrid>
         <PlusGridRow className="relative flex items-center justify-between h-[72px]">
