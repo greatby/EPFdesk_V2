@@ -1,9 +1,11 @@
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {useNavigate, Link ,useLocation} from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
   const [showScroll, setShowScroll] = useState(false);
+   const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,18 +15,22 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleScrollToTop = (link) => {
-    // Scroll to top before navigating
-    window.scrollTo({ top: 0, behavior: "smooth" });
+   useEffect(() => {
+       window.scrollTo(0, 0);
+    }, [pathname]);
 
-    // If it's an internal link, navigate to that page
-    if (link.startsWith("/")) {
-      navigate(link);
-    } else {
-      // Otherwise, for external links, just open the link in a new tab
-      window.open(link, "_blank");
-    }
-  };
+  // const handleScrollToTop = (link) => {
+  //   // Scroll to top before navigating
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+
+  //   // If it's an internal link, navigate to that page
+  //   if (link.startsWith("/")) {
+  //     navigate(link);
+  //   } else {
+  //     // Otherwise, for external links, just open the link in a new tab
+  //     window.open(link, "_blank");
+  //   }
+  // };
 
   return (
     <footer
@@ -51,44 +57,42 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2">
               <li>
-                <Link to="/epf" onClick={() => handleScrollToTop("/epf")}>
+                <Link to="/epf">
                   EPFO
                 </Link>
               </li>
               <li>
                 <Link
                   to="/epfDesk"
-                  onClick={() => handleScrollToTop("/epfDesk")}
+                 
                 >
                   EPFDesk
                 </Link>
               </li>
               <li>
-                <Link to="/esic" onClick={() => handleScrollToTop("/esic")}>
+                <Link to="/esic" >
                   ESIC
                 </Link>
               </li>
               <li>
-                <Link to="/pt" onClick={() => handleScrollToTop("/pt")}>
+                <Link to="/pt" >
                   PT
                 </Link>
               </li>
               <li>
-                <Link to="/lwf" onClick={() => handleScrollToTop("/lwf")}>
+                <Link to="/lwf" >
                   LWF
                 </Link>
               </li>
               <li>
                 <a
                   href="https://about-us-flame.vercel.app/"
-                  onClick={() =>
-                    handleScrollToTop("https://about-us-flame.vercel.app/")
-                  }
+                 
                 >
                   About Us
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://jobs-zeta-two.vercel.app/"
                   onClick={() =>
@@ -97,7 +101,7 @@ export default function Footer() {
                 >
                   Jobs
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

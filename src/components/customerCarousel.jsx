@@ -101,7 +101,6 @@
 //           ))}
 //         </div>
 
-      
 //         <button
 //           onClick={() => scroll("left")}
 //           className="absolute left-2 md:left-12 lg:left-20 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full p-2 z-10"
@@ -244,6 +243,9 @@ const TestimonialSlider = () => {
             modules={[Pagination]}
             spaceBetween={24}
             slidesPerView={1}
+            grabCursor={true}
+            touchRatio={1}
+            touchStartPreventDefault={false}
             pagination={{
               clickable: true,
               el: paginationRef.current,
@@ -256,12 +258,24 @@ const TestimonialSlider = () => {
               1400: { slidesPerView: slides.length },
             }}
             className="!overflow-visible"
+             onSwiper={(swiper) => (paginationRef.current = swiper)}
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div
                   className={`relative h-full min-h-[320px] p-6 rounded-3xl shadow-xl bg-gradient-to-br ${slide.gradient} flex flex-col justify-between`}
-                >
+                 onClick={(e) => {
+                      const card = e.currentTarget;
+                      const clickX = e.clientX;
+                      const { left, width } = card.getBoundingClientRect();
+                      const relativeX = clickX - left;
+
+                      if (relativeX < width / 2) {
+                        paginationRef.current?.slidePrev(); // Clicked left
+                      } else {
+                        paginationRef.current?.slideNext(); // Clicked right
+                      }
+                    }}>
                   {/* Floating bubbles */}
                   <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute w-5 h-5 rounded-full opacity-20 bg-[#ff6b6b] top-[20%] left-[20%] animate-bounce" />
@@ -310,4 +324,3 @@ const TestimonialSlider = () => {
 };
 
 export default TestimonialSlider;
-

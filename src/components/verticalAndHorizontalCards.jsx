@@ -97,6 +97,9 @@ const CardSlider = ({ cards, paginationRef }) => {
             modules={[Pagination]}
             spaceBetween={24}
             slidesPerView={1}
+            grabCursor={true}
+            touchRatio={1}
+            touchStartPreventDefault={false}
             pagination={{
               clickable: true,
               el: paginationRef?.current || undefined,
@@ -108,13 +111,14 @@ const CardSlider = ({ cards, paginationRef }) => {
               1280: { slidesPerView: 3 },
             }}
             className="!overflow-visible"
-            onSwiper={() => {
-              setTimeout(() => {
-                if (paginationRef?.current) {
-                  paginationRef.current.classList.remove("hidden");
-                }
-              }, 100);
-            }}
+            // onSwiper={() => {
+            //   setTimeout(() => {
+            //     if (paginationRef?.current) {
+            //       paginationRef.current.classList.remove("hidden");
+            //     }
+            //   }, 100);
+            // }}
+            onSwiper={(swiper) => (paginationRef.current = swiper)}
           >
             {cards.map(
               ({ title, subtitle, icon, bubble, bg }, index) => (
@@ -138,6 +142,18 @@ const CardSlider = ({ cards, paginationRef }) => {
 
                     <div
                       className={`relative ${bg}  h-[420px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
+                      onClick={(e) => {
+                        const card = e.currentTarget;
+                        const clickX = e.clientX;
+                        const { left, width } = card.getBoundingClientRect();
+                        const relativeX = clickX - left;
+
+                        if (relativeX < width / 2) {
+                          paginationRef.current?.slidePrev(); // Clicked left
+                        } else {
+                          paginationRef.current?.slideNext(); // Clicked right
+                        }
+                      }}
                     >
                       <div className="absolute inset-0 pointer-events-none">
                         <FloatingCircles />

@@ -73,38 +73,6 @@ export default function Navbar({ banner }) {
             </PlusGridItem>
           </div>
 
-          {/* Center: Services Dropdown - Desktop */}
-          {/* <div className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative group">
-              <button
-                className={`flex items-center gap-1 text-xl font-semibold ${
-                  scrolled ? "text-gray-800" : "text-white"
-                } p-2 hover:bg-transparent text-black rounded-md`}
-              >
-                Services
-                <ChevronDownIcon className="w-6 h-6 mt-1 transition-transform group-hover:rotate-180" />
-              </button>
-              <div className="absolute left-1/2 top-full z-50 mt-3 w-[300px] -translate-x-1/2 rounded-[20px] border border-gray-200 bg-white shadow-[_0px_10px_50px_10px_#0000004d] opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
-                <div className="grid grid-cols-1 ">
-                  <div className="p-6 space-y-3">
-                    <p className="text-xl font-semibold text-gray-500 uppercase tracking-wide">
-                      Schemes
-                    </p>
-                    {services.slice(0, 4).map(({ href, label }) => (
-                      <Link
-                        key={href}
-                        to={href}
-                        className="block text-[18px] font-semibold rounded-md p-2 text-gray-700 hover:bg-gray-200"
-                      >
-                        {label}
-                      </Link>
-                    ))}
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           {/* Right: Nav Links - Desktop */}
 
