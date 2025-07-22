@@ -77,9 +77,9 @@ const HeroCarousel = () => {
   const data = heroData[current];
 
   return (
-    <section className="min-h-screen  flex items-center justify-center relative px-4 py-6 sm:py-24">
+    <section className="min-h-screen w-full flex items-center justify-center relative px-0 py-0 sm:py-24">
       <div
-        className={`relative w-full max-w-5xl h-full sm:min-h-screen p-10 rounded-[40px] shadow-2xl transition-all duration-500 bg-gradient-to-br ${data.gradient}`}
+        className={`relative w-full h-screen mt-[70px] md:mt-0 bottom-0 md:top-0 sm:h-[90vh] sm:max-w-5xl p-6 sm:p-10 rounded-none sm:rounded-[40px] shadow-2xl transition-all duration-500 bg-gradient-to-br ${data.gradient}`}
       >
         {/* Floating Circles */}
         <div className="absolute inset-0 pointer-events-none">
