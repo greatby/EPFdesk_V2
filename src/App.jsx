@@ -22,6 +22,7 @@ import { dummyCards, largeCardsLanding, slidesLanding } from "../utils/data";
 import LatticeSlider from "./components/latticeSlider";
 import ScrollSyncComponent from "./components/scrollSyncComponent";
 import LargeCardSlider from "./components/largeCards";
+import MazeEscapeSection from "./components/mazeEscapeSection";
 
 function App() {
   return (
@@ -63,13 +64,7 @@ function App() {
             {/* <LatticeTabs cards={dummyCards}/> */}
             {/* <ScrollSyncComponent /> */}
             <FadeInWhenVisible>
-              <div className="flex justify-center items-center">
-                <img
-                  src="/images/Fotter-removebg-preview.png"
-                  alt="fotter"
-                  loading="lazy"
-                />
-              </div>
+              <MazeEscapeSection />
             </FadeInWhenVisible>
           </Layout>
         }

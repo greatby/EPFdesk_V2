@@ -3358,3 +3358,83 @@ export const plansEpfManagement = {
     },
   ],
 };
+
+export const epfManagementPlans = {
+  mainTitle: "Comprehensive Employer EPF Compliance Services",
+  cards: [
+    {
+      title: "Seamless Employee Lifecycle Management",
+      //  icon: ClipboardDocumentCheckIcon,
+      features: [
+        `Monthly employee additions and deletions with immediate EPFO reflection: We precisely
+manage your roster updates, ensuring compliance from day one for new hires and seamless
+processing for exits. This addresses common employer queries about "How to add new
+employee in EPF" and "deletion of member."`,
+        `Automated UAN generation and linking for all new hires within 24 hours: Swift UAN allocation
+and linking to Aadhaar streamline onboarding and prevent delays. This directly answers "How
+to generate UAN for new employees" and "Linking Aadhaar with UAN by employer."`,
+        `Complete employee data management and ongoing verification: We maintain pristine member
+records, proactively correcting discrepancies and managing updates like name, DOB, and KYC
+to mitigate future issues.`,
+        `Expert coordination for exit formalities and final settlement processes: Ensuring smooth,
+compliant EPF exits and seamless transfers for outgoing employees, simplifying the employer's
+role in these crucial moments.`,
+      ],
+    },
+    {
+      title: "Automated Challan Generation & Payment Facilitation",
+      //  icon: UsersIcon,
+      features: [
+        `Precision EPF challan creation validated against latest EPFO norms: Our system guarantees
+accurate calculations for all employees, including complex scenarios like "EPF calculation for
+salary above ₹15,000," and ensures correct "EPF contribution breakdown for employer and
+employee."`,
+        `Automated contribution calculation based on "basic wages" as per EPF Act: We accurately
+determine taxable components and ensure correct inclusion of salary components (like
+Dearness Allowance) for EPF, clarifying "What components of salary are included in EPF basic
+wages?"`,
+        `Pre-submission validation to catch errors before filing: Our multi-layered checks identify
+discrepancies before your "monthly EPF ECR online" filing, preventing costly mistakes and
+addressing "errors in ECR filing and how to correct them."`,
+        `Payment timeline management with timely reminders and alerts: We ensure your contributions
+are remitted well before the "Monthly EPF return filing deadline" (15th of every month),
+completely protecting you from "penalties for late EPF payment" and interest charges.`,
+      ],
+    },
+    {
+      title: "Expert Regulatory Filings & Approvals",
+      //  icon: UsersIcon,
+      features: [
+        `Accurate and timely monthly ECR (Electronic Challan-cum-Return) filing: We manage your core
+monthly submission with utmost precision, streamlining "How to file monthly EPF ECR online"
+for your team.`,
+        `Comprehensive handling of all employer approvals, declarations, and annexures: Ensuring
+every required document, including "Nomination Form" and other necessary declarations, is
+properly processed and uploaded.`,
+        `Secure digital document management with ironclad audit trails: All filed records are securely
+managed and easily retrievable, providing crucial support during any "EPFO audit process for
+employers" and helping you "prepare for an EPF inspection" with confidence.`,
+        `Proactive error detection and swift resubmission when needed: We identify and correct "errors
+in ECR filing" promptly, ensuring continuous compliance and mitigating "legal consequences of
+EPF non-compliance."`,
+      ],
+    },
+    {
+      title: "Proactive Regulatory Updates & Advisory",
+      //  icon: UsersIcon,
+      features: [
+        `Continuous monitoring of all EPFO circulars, notifications, and "EPF & MP Act 1952 latest
+amendments": Our experts are constantly updating their knowledge base, providing you with
+real-time insights.`,
+        `Impact analysis of new regulations on your specific business operations: We translate complex
+legal jargon into actionable insights tailored to your organizational structure and workforce,
+including the "New Social Security Code impact on EPF for employers."`,
+        `Strategic recommendations for policy adaptations: We advise on necessary internal
+adjustments to ensure seamless compliance with evolving laws, allowing you to strategically
+adapt your HR and payroll policies ahead of time.`,
+        `Advance notice of upcoming compliance requirements and deadlines: You're always prepared,
+eliminating last-minute rushes and ensuring "best practices for EPF compliance in India."`,
+      ],
+    },
+  ],
+};

@@ -7,6 +7,7 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
 import {
+  epfManagementPlans,
   epfoGridData,
   epfoMiddletabsData,
   epfoPlustabs,
@@ -26,6 +27,7 @@ import FadeInWhenVisible from "./fadeInWhenVisible";
 import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
 import LargeCardSlider from "./largeCards";
 import PastelCardSlider from "./pastelCardSlider";
+import StickyScrollSections from "./scrollSyncComponent";
 
 function EPFAccordion({ epfServices }) {
   // const [openIndex, setOpenIndex] = useState(null);
@@ -121,18 +123,27 @@ export default function EPFServicesSection() {
         <EPFAccordion epfServices={epfServices}/> */}
         <FadeInWhenVisible>
           {/* <LatticeSlider slides={slidesEpfo} /> */}
-          <VerticalAndHorizontalCards verticalCards={verticalCardsEpfo} horizontalCards={horizontalCardsEpfo} />
+          <VerticalAndHorizontalCards
+            verticalCards={verticalCardsEpfo}
+            horizontalCards={horizontalCardsEpfo}
+          />
         </FadeInWhenVisible>
         {/* <FadeInWhenVisible>
           <ResourcesGrid data={epfoGridData} />
         </FadeInWhenVisible> */}
         <FadeInWhenVisible>
           {/* <MiddlePanelTabs tabsData={epfoMiddletabsData} /> */}
-          <LargeCardSlider cardsData={largeCardsEpfo}/>
+          <LargeCardSlider cardsData={largeCardsEpfo} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={epfoPlustabs} /> */}
-          <PastelCardSlider cardsData={pastelCardsEpfo}/>
+          <PastelCardSlider cardsData={pastelCardsEpfo} />
+        </FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <h2 className="text-3xl text-center font-bold text-gray-900">
+            Comprehensive Employer EPF Compliance Services
+          </h2>
+          <StickyScrollSections items={epfManagementPlans} />
         </FadeInWhenVisible>
         {/* <EPFAccordion epfServices={whyEpfDesk}/> */}
       </div>
