@@ -23,6 +23,7 @@ import LatticeSlider from "./components/latticeSlider";
 import ScrollSyncComponent from "./components/scrollSyncComponent";
 import LargeCardSlider from "./components/largeCards";
 import MazeEscapeSection from "./components/mazeEscapeSection";
+import AboutUs from "./components/aboutUs";
 
 function App() {
   return (
@@ -108,6 +109,14 @@ function App() {
         element={
           <Layout>
             <LabourWelfareFund />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <AboutUs />
           </Layout>
         }
       />

@@ -13,6 +13,7 @@ module.exports = {
         gradientShift: "gradientShift 6s ease infinite",
         blob: "blob 7s infinite",
         progress: "progress 3s ease-in-out infinite",
+        pingSlow: 'ping 4s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
       keyframes: {
         float: {

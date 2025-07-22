@@ -16,7 +16,7 @@ const links = [
   { href: "/esic", label: "ESIC" },
   { href: "/lwf", label: "LWF" },
   { href: "/pt", label: "PT" },
-  { href: "https://about-us-flame.vercel.app/", label: "About Us" },
+  { href: "/about", label: "About Us" },
   // { href: "https://jobs-zeta-two.vercel.app/", label: "Join" },
   // { href: "/res", label: "Resources" },
   { href: "https://sign-up-two-sandy.vercel.app", label: "Sign In" },

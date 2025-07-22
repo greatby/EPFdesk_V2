@@ -85,12 +85,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://about-us-flame.vercel.app/"
-                 
-                >
+               <Link to="/about" >
                   About Us
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <a
