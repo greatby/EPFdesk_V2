@@ -205,7 +205,7 @@ export default function ESCIServicesSection({ plans }) {
     <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
          <FadeInWhenVisible>
-          <h2 className="text-3xl sm:text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
+          <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
             {plans.mainTitle}
           </h2>
           <LatticeTabs cards={esciCards} />
@@ -236,7 +236,7 @@ export default function ESCIServicesSection({ plans }) {
         {/* <EPFAccordion /> */}
       </div>
 
-      <h2 className="max-w-5xl mx-auto text-4xl font-bold mt-20 mb-8 text-center">
+      <h2 className="max-w-5xl mx-auto text-5xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
       </h2>
 

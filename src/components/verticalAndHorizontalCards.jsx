@@ -165,8 +165,8 @@ const CardSlider = ({ cards, paginationRef }) => {
                         {icon}
                       </div>
                       <div className="text-center text-gray-800">
-                        <h3 className="text-xl font-bold mb-1">{title}</h3>
-                        <p className="text-sm opacity-80">{subtitle}</p>
+                        <h3 className="text-2xl font-bold mb-1">{title}</h3>
+                        <p className="text-lg text-gray-600 line-clamp-6">{subtitle}</p>
                         <div className="mt-4 h-2 w-16 bg-white/30 rounded-full mx-auto overflow-hidden">
                           <div className="h-full bg-white/80 rounded-full animate-progress" />
                         </div>
@@ -222,7 +222,7 @@ const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
   return (
     <div className="min-h-screen px-4">
       <div className="max-w-[1400px] mx-auto">
-        <h1 className="text-4xl mt-8 font-extrabold text-center text-gray-800 mb-12">
+        <h1 className="text-4xl sm:text-5xl mt-8 font-extrabold text-center text-gray-800 mb-12">
           {mainTitle}
         </h1>
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">

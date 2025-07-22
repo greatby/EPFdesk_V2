@@ -15,11 +15,11 @@ const PastelCardSlider = ({ cardsData }) => {
 
   return (
     <>
-      <div className="mb-8 pt-8">
+      <div className="mb-8 pt-8 sm:pt-12">
         <h2 className="max-w-7xl mx-auto text-center px-4 text-3xl font-bold">
           {subTitle}
         </h2>
-        <section className=" px-6 py-12">
+        <section className=" px-6 py-12 sm:py-16">
           <div className="max-w-7xl py-4 mx-auto overflow-hidden">
             {isReady && (
               <Swiper
@@ -89,10 +89,10 @@ const PastelCardSlider = ({ cardsData }) => {
 
                       {/* Text */}
                       <div className="text-center">
-                        <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                        <h3 className="text-3xl font-bold text-gray-800 mb-2">
                           {card.title}
                         </h3>
-                        <p className="text-sm text-gray-700 opacity-80">
+                        <p className="text-lg text-gray-700 opacity-80">
                           {card.subtitle}
                         </p>
 

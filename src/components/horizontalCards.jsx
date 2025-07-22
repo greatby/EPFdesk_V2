@@ -57,7 +57,7 @@ const HorizontalCards = ({cardsData,link}) => {
       {cardsData.map((card, index) => (
         <div
           key={index}
-          className={`relative rounded-2xl  shadow-md p-6 flex flex-col lg:flex-row items-center gap-8 bg-gradient-to-br ${card.gradient}`}
+          className={`relative rounded-2xl h-auto md:h-[440px] shadow-md p-6 flex flex-col lg:flex-row items-center gap-8 bg-gradient-to-br ${card.gradient}`}
         >
           {/* Animated BG bubbles */}
           <div className="absolute inset-0 pointer-events-none z-0">
@@ -85,10 +85,10 @@ const HorizontalCards = ({cardsData,link}) => {
 
           {/* Content */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center z-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            <h2 className="text-4xl font-bold text-gray-900 mb-3">
               {card.title}
             </h2>
-            <p className="text-lg font-semibold text-gray-700 mb-5">
+            <p className="text-[1.3rem] font-semibold text-gray-700 mb-5">
               {card.subtitle}
             </p>
             <div className="w-full md:w-[60%]">
@@ -98,7 +98,7 @@ const HorizontalCards = ({cardsData,link}) => {
                   backgroundImage: "linear-gradient(180deg, #e6f9ee, #c4f5db)",
                   color: "#007a7a",
                 }}
-                className="px-6 py-3 text-base font-medium rounded-xl transition w-fit"
+                className="px-6 py-3 text-[1.2rem] font-semibold rounded-xl transition w-fit"
               onClick={() => link(card.link)}>
                 Learn more about {card.title}
               </button>

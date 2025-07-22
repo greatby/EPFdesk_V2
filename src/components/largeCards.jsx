@@ -24,7 +24,7 @@ const LargeCardSlider = ({ cardsData }) => {
 
   return (
     <>
-      <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">
+      <h2 className="text-3xl font-extrabold text-center text-gray-800 my-16">
         {subTitle}
       </h2>
       <div className="px-4 sm:px-6 lg:px-8 relative">
@@ -98,7 +98,7 @@ const LargeCardSlider = ({ cardsData }) => {
                   
                     <div className="text-center max-w-xs">
                       <h3 className="text-2xl font-bold mb-2">{title}</h3>
-                      <p className="text-base opacity-70 leading-relaxed">
+                      <p className="text-[1rem] text-gray-600 leading-relaxed">
                         {subtitle}
                       </p>
                       <div className="mt-6 w-20 h-2 rounded-full bg-white/30 mx-auto overflow-hidden">

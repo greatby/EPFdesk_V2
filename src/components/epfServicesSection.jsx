@@ -140,7 +140,7 @@ export default function EPFServicesSection() {
           <PastelCardSlider cardsData={pastelCardsEpfo} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <h2 className="text-3xl text-center font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-5xl text-center font-bold text-gray-900">
             Comprehensive Employer EPF Compliance Services
           </h2>
           <StickyScrollSections items={epfManagementPlans} />

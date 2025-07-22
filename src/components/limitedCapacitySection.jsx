@@ -34,7 +34,7 @@ const LimitedCapacitySection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
             Secure Your Spot for Uncompromising Quality
           </h2>
-          <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-xl sm:text-[1.4rem] text-gray-600 max-w-3xl mx-auto">
             At EPFDesk.com, our dedication to unparalleled service quality and
             meticulous compliance is non-negotiable. We limit onboarding
             capacity to ensure every client receives expert attention and
@@ -212,7 +212,7 @@ const LimitedCapacitySection = () => {
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-6">
+          <p className="text-xl sm:text-[1.4rem] text-gray-600 max-w-3xl mx-auto mb-6">
             If you're ready to unlock HR efficiency and transform compliance
             chaos into a competitive edge, act now. We prioritize depth over
             volume — and capacity is limited.

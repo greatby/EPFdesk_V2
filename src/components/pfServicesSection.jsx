@@ -292,7 +292,7 @@ export default function PFServicesSection() {
   return (
     <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-        <h2 className="text-3xl sm:text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
+        <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
           Why Companies Trust Professional Tax Compliance with EPFDesk.com
         </h2>
         <FadeInWhenVisible>
@@ -314,7 +314,7 @@ export default function PFServicesSection() {
           <PastelCardSlider cardsData={pastelCardsPf}/>
         </FadeInWhenVisible>
         {/* <EPFAccordion /> */}
-         <h2 className="text-3xl sm:text-4xl max-w-5xl mx-auto font-bold my-8 text-center">
+         <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
           Why Companies Trust Professional Tax Compliance with EPFDesk.com
         </h2>
         <StickyStackedSections items={plans}/>

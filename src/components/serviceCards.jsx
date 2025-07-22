@@ -25,13 +25,13 @@ const ServiceCards = () => {
     navigate(link);
   };
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-white py-16 sm:py-20 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 w-full md:w-[75%] lg:w-[75%] mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Transform Compliance Chaos Into Strategic Advantage
           </h2>
-          <p className="text-gray-600 mt-3 text-xl">
+          <p className="text-gray-600 mt-3 text-[1.5rem] w-full md:w-[65%] lg:w-[65%] mx-auto">
             EPFDesk.com frees your HR and Finance teams to focus on what they do
             best: driving growth, developing talent, and building the future of
             your organization.

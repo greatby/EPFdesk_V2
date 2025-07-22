@@ -335,10 +335,10 @@ export default function EPFdeskServices({ plans }) {
     <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
         {/* <EPFSlider epfServices={epfDeskStatergy} /> */}
-        <h2 className="text-3xl text-center font-bold text-gray-900">
+        <h2 className="text-3xl sm:text-5xl text-center font-bold text-gray-900">
             Unlock the Strategic Value of Your HR Team
           </h2>
-          <p className="text-lg text-center text-gray-600 mt-2">
+          <p className="text-[1.4rem] text-center text-gray-600 mt-2">
             Our EPFDesk services ensure employee support is handled with care—so
             HR can focus on what matters.
           </p>
