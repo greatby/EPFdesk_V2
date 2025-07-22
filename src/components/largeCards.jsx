@@ -70,9 +70,9 @@ const LargeCardSlider = ({ cardsData }) => {
                       const relativeX = clickX - left;
 
                       if (relativeX < width / 2) {
-                        swiperRef.current?.slidePrev(); // Clicked left
+                        swiperRef.current?.slidePrev(); 
                       } else {
-                        swiperRef.current?.slideNext(); // Clicked right
+                        swiperRef.current?.slideNext(); 
                       }
                     }}
                   >
@@ -80,13 +80,13 @@ const LargeCardSlider = ({ cardsData }) => {
                       <FloatingCircles />
                     </div>
 
-                    {/* Speech Bubble */}
+                  
                     <div className="absolute top-4 right-4 bg-white/90 text-gray-800 rounded-xl px-3 py-1 text-xs font-semibold shadow-md opacity-0 scale-95 transition-all hover:opacity-100 hover:scale-100">
                       {bubble}
                     </div>
 
-                    {/* Icon */}
-                    <div className="relative w-40 h-40 mb-4">
+                    
+                    <div className="relative mb-4">
                       <div className="absolute top-[-12px] right-[-12px] w-20 h-20 rounded-full bg-[#ff6b6b] opacity-30" />
                       <div className="absolute bottom-[-8px] left-[-8px] w-16 h-16 rounded-full bg-[#4ecdc4] opacity-30" />
                       <div className="absolute top-[30px] left-[30px] w-24 h-24 rounded-[25px] bg-[#ffe66d] opacity-30 rotate-45" />
@@ -95,10 +95,10 @@ const LargeCardSlider = ({ cardsData }) => {
                       </div>
                     </div>
 
-                    {/* Content */}
+                  
                     <div className="text-center max-w-xs">
-                      <h3 className="text-3xl font-bold mb-2">{title}</h3>
-                      <p className="text-base opacity-90 leading-relaxed">
+                      <h3 className="text-2xl font-bold mb-2">{title}</h3>
+                      <p className="text-base opacity-70 leading-relaxed">
                         {subtitle}
                       </p>
                       <div className="mt-6 w-20 h-2 rounded-full bg-white/30 mx-auto overflow-hidden">
