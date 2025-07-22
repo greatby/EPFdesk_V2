@@ -215,6 +215,54 @@ of our processes.`,
 managed by EPFDesk.com experts within 24-48 hours of successful onboarding.`,
       ],
     },
+     {
+      title: "Dedicated Ongoing Support for Continuous Compliance",
+      features: [
+        `Dedicated Client Manager: You'll have a single point of contact who possesses
+deep knowledge of your specific account and compliance needs, ensuring
+personalized and consistent service.`,
+        `Monthly Compliance Reports: Receive regular, clear updates on your ESIC status,
+contributions, key metrics, and any emerging trends relevant to your workforce.`,
+        `Immediate Query Resolution: Our team is committed to prompt responses,
+ensuring any questions or issues related to your ESIC compliance are addressed
+swiftly.`,
+        `Proactive Regulatory Updates: You'll receive timely notifications and expert
+advice on new ESIC rules, rates, benefit changes, or specific directives, ensuring
+you are always informed and compliant.`,
+        
+      ],
+    },
+     {
+      title: "Key Employer ESIC Concerns We Resolve",
+      features: [
+        `Registration & Setup: Navigating the "ESIC registration process," assessing "ESIC
+Act applicability," compiling "required documentation," and managing "ESIC code
+allocation."`,
+        `Ongoing Compliance: Ensuring accurate "monthly contribution calculations and
+payments,"managing "ESIC return filing" and "deadlines," and handling "wage
+ceiling and exemption"compliance.`,
+        `Risk & Audit Management: Addressing "penalties for late ESIC payments,"
+understanding "consequences of non-compliance," and providing "ESIC audit
+support."`,
+        `Portal & Data Management: Assisting with "ESIC employer portal login," "employee
+data updates,"and "generating ESIC ID."`,
+        
+      ],
+    },
+      {
+      title: "Employee ESIC Benefits Support We Ensure",
+      features: [
+        `Medical Benefit Access: Seamless access to "ESIC medical care" including
+dispensaries and hospital networks for employees and their families.`,
+        `Cash Benefits Eligibility: Ensuring eligibility for "sickness benefit," "maternity
+benefit," "disablement benefit," and "unemployment allowance (ABVKY)."`,
+        `Other Benefits: Facilitating access to "dependent benefits," "funeral expenses," and
+"vocational rehabilitation."`,
+        `Access Tools: Support for "E-Pehchan card generation" and checking "ESIC
+registration status of an employee online."`,
+        
+      ],
+    },
   ],
 };
 
@@ -3354,6 +3402,56 @@ export const plansEpfManagement = {
  and commitment to employee well-being.`,
         `Empowered workforce: Employees feel more in control and informed about their provident fund matters,
  leading to increased satisfaction and morale.`,
+      ],
+    },
+     {
+      title: "24-Hour Platform Activation",
+      //  icon: UsersIcon,
+      features: [
+        `Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal,
+customizing access configuration as needed.`,
+        `Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials
+or guide your employees through a simple self-registration process.`,
+        `Comprehensive Employee Onboarding Kit Delivery: We provide easy-to-understand usage guides, FAQs, and
+tutorials to ensure your employees can quickly adopt and benefit from the platform.`,
+        `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
+within 24 hours of onboarding completion, experiencing instant value.`,
+      ],
+    },
+     {
+      title: "Seamless Integration & Proactive Management",
+      //  icon: UsersIcon,
+      features: [
+        `Optional HR Dashboard: While we handle direct employee resolution, your HR team can access an optional
+dashboard to monitor common query trends (anonymized), view overall ticket resolution rates, and identify areas for
+internal communication.`,
+        `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
+organizational-level support, reporting needs, and any high-level strategic consultations.`,
+        `Continuous Platform Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
+EPFO processes, and emerging employee needs, ensuring your employees always have access to the best support.`,
+        `Scalable Solution: Our platform and expert teams are built to handle ever-increasing query volumes, seamlessly
+growing with your workforce from mid-sized companies to large enterprises.`,
+      ],
+    },
+      {
+      title: "Common Employee Issues We Resolve:",
+      //  icon: UsersIcon,
+      features: [
+        `EPF balance checking and passbook updates: Including "How to check EPF balance online" and resolving "Why is
+my EPF passbook not updated?"`,
+        `UAN activation, linking, and Aadhaar integration: Expert assistance with "How to activate UAN," "How to know
+your UAN," and managing "Common UAN login issues and solutions."`,
+        `KYC document updates and verification: Guidance and processing for "How to update EPF KYC"and other member
+profile corrections.`,
+        `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
+to withdraw EPF online" and required documents.`,
+`EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
+continuity of funds.`,
+`Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
+to get EPS Scheme Certificate."`,
+`EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
+`Name, date of birth, and contact detail corrections: Efficiently handling "Name mismatch in EPF account" and
+"Changing mobile number/email in EPF."`
       ],
     },
   ],
