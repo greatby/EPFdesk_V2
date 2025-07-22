@@ -157,6 +157,13 @@ export default function Footer() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto bg-white rounded-3xl shadow-xl p-8 sm:p-12 lg:p-16">
+        <div className="absolute inset-0 pointer-events-none z-0">
+          <div className="absolute top-10 left-16 w-4 h-4 bg-[#ff6b6b] rounded-full opacity-20 animate-float-slow" />
+          <div className="absolute top-[60%] right-10 w-5 h-5 bg-[#4ecdc4] rounded-full opacity-20 animate-float delay-2000" />
+          <div className="absolute bottom-12 left-24 w-6 h-6 bg-[#ffe66d] rounded-full opacity-10 animate-float-slow delay-3000" />
+          <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-[#a8e6cf] rounded-full opacity-20 animate-float delay-1000" />
+          <div className="absolute bottom-6 right-1/4 w-5 h-5 bg-[#ffd3a5] rounded-full opacity-10 animate-float-slow delay-4000" />
+        </div>
         {/* Logo Section */}
         <div className="text-center mb-12">
           <div className="relative mx-auto w-24 h-24 mb-4">
