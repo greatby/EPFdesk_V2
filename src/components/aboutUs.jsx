@@ -5,9 +5,9 @@ const heroData = [
   {
     gradient: "from-green-200 to-green-100",
     icon: "🎨",
-    title: "Create",
+    title: "Our Vision & Mission",
     subtitle:
-      "Turn your ideas into reality with our powerful creative tools and inspiring community",
+      "Redefining Compliance: Simplicity, Security, Success for Every Business",
     speech: "Create!",
     cta1: "Start Creating",
     cta2: "Learn More",
@@ -15,9 +15,9 @@ const heroData = [
   {
     gradient: "from-orange-200 to-orange-300",
     icon: "🌱",
-    title: "Grow",
+    title: "The EPFDesk Story",
     subtitle:
-      "Evolve beyond your limits and develop skills that will transform your future",
+      "Pioneering Compliance Solutions, Built on Decades of Real-World Experience.",
     speech: "Grow!",
     cta1: "Begin Growth",
     cta2: "Explore Path",
@@ -25,9 +25,9 @@ const heroData = [
   {
     gradient: "from-teal-200 to-pink-200",
     icon: "🤝",
-    title: "Connect",
+    title: "Our Unmatched Expertise",
     subtitle:
-      "Build meaningful relationships and collaborate with amazing people worldwide",
+      "Beyond Regulations: Deep Industry Insight, Proactive Strategies, Flawless Execution.",
     speech: "Connect!",
     cta1: "Join Community",
     cta2: "Meet People",
@@ -35,9 +35,9 @@ const heroData = [
   {
     gradient: "from-pink-300 to-yellow-100",
     icon: "✨",
-    title: "Dream",
+    title: "The Team Behind the Trust",
     subtitle:
-      "Imagine the impossible and make your wildest dreams come true with our platform",
+      "Meet the Architects of Compliance Excellence: Dedicated Professionals, Driven by Your Success",
     speech: "Dream!",
     cta1: "Start Dreaming",
     cta2: "Get Inspired",
@@ -45,9 +45,9 @@ const heroData = [
   {
     gradient: "from-cyan-200 to-blue-400",
     icon: "🚀",
-    title: "Explore",
+    title: "Why EPFDesk?",
     subtitle:
-      "Discover new horizons and embark on adventures that will change your perspective",
+      "Your Peace of Mind, Our Relentless Pursuit: Partnering for a Compliant and Prosperous Future.",
     speech: "Explore!",
     cta1: "Start Adventure",
     cta2: "See Features",
@@ -55,9 +55,9 @@ const heroData = [
   {
     gradient: "from-yellow-300 to-cyan-400",
     icon: "💡",
-    title: "Inspire",
+    title: "Our Commitment to You",
     subtitle:
-      "Light up the world with your unique vision and motivate others to achieve greatness",
+      "Building Long-Term Relationships Through Transparency, Innovation, and Client-Centric Service.",
     speech: "Inspire!",
     cta1: "Share Vision",
     cta2: "Learn How",
@@ -176,23 +176,23 @@ const heroData = [
 // };
 
 const HeroCarousel = () => {
-  const [current, setCurrent] = useState(0);
+  // const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % heroData.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrent((prev) => (prev + 1) % heroData.length);
+  //   }, 6000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   return (
-    <section className="min-h-screen w-full px-0 py-0 md:py-24">
+    <section className="w-full px-0 py-0">
       {/* Desktop Carousel */}
-      <div className="hidden md:flex  items-center justify-center relative min-h-screen">
+      {/* <div className="hidden md:flex  items-center justify-center relative min-h-screen">
         <div
           className={`relative w-full h-[90vh]  max-w-5xl p-6 rounded-[40px] shadow-2xl transition-all duration-500 bg-gradient-to-br ${heroData[current].gradient}`}
         >
-          {/* Floating Bubbles */}
+       
           <div className="absolute inset-0 pointer-events-none">
             {[...Array(5)].map((_, i) => (
               <div
@@ -215,7 +215,7 @@ const HeroCarousel = () => {
             ))}
           </div>
 
-          {/* Icon */}
+        
           <div className="relative w-48 h-48 mx-auto mb-6">
             <div className="absolute w-20 h-20 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
             <div className="absolute w-16 h-16 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
@@ -232,13 +232,13 @@ const HeroCarousel = () => {
             {heroData[current].subtitle}
           </p>
 
-          {/* Progress bar */}
+         
           <div className="w-32 h-2 bg-white/30 rounded-full mx-auto mb-4 overflow-hidden">
             <div className="h-full bg-white/90 rounded-full animate-progress" />
           </div>
         </div>
 
-        {/* Navigation dots */}
+      
         <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-50">
           {heroData.map((_, idx) => (
             <div
@@ -252,60 +252,77 @@ const HeroCarousel = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Mobile stacked cards */}
-      <div className="flex flex-col md:hidden">
+      <div className="flex flex-col">
         <div className="mt-[4rem]">
+          {heroData.map((data, index) => (
+            <div
+              key={index}
+              className={`relative w-full h-[90vh] sm:h-[90vh] md:h-screen px-4 py-10 transition-all duration-500 bg-gradient-to-br ${data.gradient}`}
+            >
+              <div className="absolute inset-0 pointer-events-none">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`absolute rounded-full opacity-20 animate-float${
+                      i + 1
+                    }`}
+                    style={{
+                      width: `${20 + i * 10}px`,
+                      height: `${20 + i * 10}px`,
+                      top: `${20 * i + 10}px`,
+                      left: `${15 * i + 10}px`,
+                      backgroundColor: [
+                        "#ff6b6b",
+                        "#4ecdc4",
+                        "#ffe66d",
+                        "#a8e6cf",
+                        "#ffd3a5",
+                      ][i],
+                    }}
+                  />
+                ))}
+              </div>
 
-        {heroData.map((data, index) => (
-          <div
-            key={index}
-            className={`relative w-full px-4 py-10 transition-all duration-500 bg-gradient-to-br ${data.gradient}`}
-          >
-            <div className="absolute inset-0 pointer-events-none">
-              {[...Array(5)].map((_, i) => (
-                <div
-                  key={i}
-                  className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
-                  style={{
-                    width: `${20 + i * 10}px`,
-                    height: `${20 + i * 10}px`,
-                    top: `${20 * i + 10}px`,
-                    left: `${15 * i + 10}px`,
-                    backgroundColor: [
-                      "#ff6b6b",
-                      "#4ecdc4",
-                      "#ffe66d",
-                      "#a8e6cf",
-                      "#ffd3a5",
-                    ][i],
-                  }}
-                />
-              ))}
-            </div>
+              {/* <div className="relative w-36 h-36 mx-auto mb-4">
+                <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+                <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+                <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+                <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
+                  {data.icon}
+                </div>
+              </div> */}
 
-            <div className="relative w-36 h-36 mx-auto mb-4">
-              <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
-              <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
-              <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
-              <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
-                {data.icon}
+              {/* <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
+                {data.title}
+              </h1>
+              <p className="text-base text-center text-gray-700 opacity-80 max-w-md mx-auto mb-4">
+                {data.subtitle}
+              </p> */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center sm:gap-6 gap-2 px-2">
+                <div className="relative w-36 h-36 mb-6">
+                  <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+                  <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+                  <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+                  <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
+                    {data.icon}
+                  </div>
+                </div>
+
+                <h1 className="text-3xl text-center sm:text-5xl font-bold text-gray-800 mb-4">
+                  {data.title}
+                </h1>
+                <p className="text-base text-center sm:text-[1.3rem] text-gray-600 opacity-80 max-w-md">
+                  {data.subtitle}
+                </p>
+                <div className="w-24 h-2 my-6 bg-white/30 rounded-full mx-auto mb-2 overflow-hidden">
+                  <div className="h-full bg-white/90 rounded-full animate-progress" />
+                </div>
               </div>
             </div>
-
-            <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
-              {data.title}
-            </h1>
-            <p className="text-base text-center text-gray-700 opacity-80 max-w-md mx-auto mb-4">
-              {data.subtitle}
-            </p>
-
-            <div className="w-24 h-2 bg-white/30 rounded-full mx-auto mb-2 overflow-hidden">
-              <div className="h-full bg-white/90 rounded-full animate-progress" />
-            </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
     </section>
