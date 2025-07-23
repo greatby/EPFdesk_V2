@@ -56,12 +56,15 @@ export default function FeatureTabs({cards}) {
                         : "bg-white hover:shadow"
                     }`}
                   >
+                    <div>
                     <img
                       src={card.image}
                       alt="dummy"
                       srcSet=""
                       className="rounded-[20px]"
                     />
+
+                    </div>
 
                     <h4 className="mt-1 text-[1rem] font-semibold">
                       {card.title}

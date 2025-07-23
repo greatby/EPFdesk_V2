@@ -255,7 +255,7 @@ const TestimonialSlider = () => {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
               1326: { slidesPerView: 3.2 },
-              1400: { slidesPerView: slides.length },
+              1400: { slidesPerView: 3.5 },
             }}
             className="!overflow-visible"
              onSwiper={(swiper) => (paginationRef.current = swiper)}
@@ -263,7 +263,7 @@ const TestimonialSlider = () => {
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`relative h-full min-h-[320px] p-6 rounded-3xl shadow-xl bg-gradient-to-br ${slide.gradient} flex flex-col justify-between`}
+                  className={`relative h-full min-h-[320px]  p-6 rounded-3xl shadow-xl bg-gradient-to-br ${slide.gradient} flex flex-col justify-between`}
                  onClick={(e) => {
                       const card = e.currentTarget;
                       const clickX = e.clientX;
@@ -271,24 +271,24 @@ const TestimonialSlider = () => {
                       const relativeX = clickX - left;
 
                       if (relativeX < width / 2) {
-                        paginationRef.current?.slidePrev(); // Clicked left
+                        paginationRef.current?.slidePrev(); 
                       } else {
-                        paginationRef.current?.slideNext(); // Clicked right
+                        paginationRef.current?.slideNext(); 
                       }
                     }}>
-                  {/* Floating bubbles */}
+                
                   <div className="absolute inset-0 pointer-events-none">
                     <div className="absolute w-5 h-5 rounded-full opacity-20 bg-[#ff6b6b] top-[20%] left-[20%] animate-bounce" />
                     <div className="absolute w-4 h-4 rounded-full opacity-20 bg-[#4ecdc4] bottom-[20%] right-[20%] animate-bounce delay-200" />
                     <div className="absolute w-6 h-6 rounded-full opacity-20 bg-[#ffe66d] bottom-[30%] left-[30%] animate-bounce delay-300" />
                   </div>
 
-                  {/* Content */}
+               
                   <p className="text-gray-800 text-lg leading-relaxed z-10 relative">
                     “{slide.message}”
                   </p>
 
-                  {/* User Info */}
+                  
                   <div className="z-10 relative mt-6">
                     <p className="text-lg font-semibold text-gray-900">
                       {slide.name}
@@ -301,12 +301,7 @@ const TestimonialSlider = () => {
                     </p>
                   </div>
 
-                  {/* Bubble Tag */}
-                  {/* {slide.bubble && (
-                    <div className="absolute right-4 top-4 rounded-xl bg-white/80 px-3 py-1 text-xs font-semibold text-gray-800">
-                      {slide.bubble}
-                    </div>
-                  )} */}
+                 
                 </div>
               </SwiperSlide>
             ))}

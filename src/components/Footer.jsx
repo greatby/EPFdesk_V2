@@ -42,7 +42,7 @@ export default function Footer() {
           {/* Company Description */}
           <div>
             <h4 className="text-lg font-semibold mb-3 text-gray-900">
-              EPFdesk
+              EPFdesk.com
             </h4>
             {/* <p className="text-sm text-gray-600">
               India's most trusted EPFO compliance partner. Serving 5000+
@@ -52,10 +52,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h5 className="text-sm font-semibold text-gray-500 uppercase mb-2">
+            <h5 className="text-lg font-semibold text-gray-500 uppercase mb-2">
               Quick Links
             </h5>
-            <ul className="space-y-2 columns-1 md:columns-2">
+            <ul className="space-y-3 text-[1rem] columns-1 md:columns-2">
               <li>
                 <Link to="/epf">
                   EPFO
