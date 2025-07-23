@@ -67,35 +67,35 @@ const LinkButtons = () => {
       return;
     }
 
-    // try {
-    //   const res = await axios.post(
-    //     "http://localhost:5000/api/contact",
-    //     formData
-    //   );
-    //   alert("✅ Form submitted successfully!");
-    //   setFormData({
-    //     fullName: "",
-    //     email: "",
-    //     company: "",
-    //     employees: "",
-    //     message: "",
-    //     findUs: "",
-    //   });
-    //   setErrors({});
-    // } catch (err) {
-    //   alert("❌ Something went wrong.");
-    // }
-    // setFormData({});
-    //setIsOpen(false);
     try {
-      const res = await axios.post(`/api/contact`, formData);
-      alert("✅ Your message was sent successfully!");
-      console.log(res.data);
+      const res = await axios.post(
+        "http://localhost:5000/api/contact",
+        formData
+      );
+      alert("✅ Form submitted successfully!");
+      setFormData({
+        fullName: "",
+        email: "",
+        company: "",
+        employees: "",
+        message: "",
+        findUs: "",
+      });
+      setErrors({});
     } catch (err) {
-      console.error(err);
+      alert("❌ Something went wrong.");
     }
     setFormData({});
     setIsOpen(false);
+    // try {
+    //   const res = await axios.post(`/api/contact`, formData);
+    //   alert("✅ Your message was sent successfully!");
+    //   console.log(res.data);
+    // } catch (err) {
+    //   console.error(err);
+    // }
+    // setFormData({});
+    // setIsOpen(false);
   };
 
   useEffect(() => {

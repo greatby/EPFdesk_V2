@@ -2134,7 +2134,7 @@ export const pfCards = [
   {
     title: "Go Live with PT Compliance in 24-48 Hours (Multi-State Ready)",
     description: "Reduce HR admin burden.",
-    image: "/images/lwf-goLive.png",
+    image: "/images/rapid-implementation.png",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -2155,7 +2155,7 @@ export const pfCards = [
           </p>
         </div>
         <img
-          src="/images/lwf-goLive.png"
+          src="/images/rapid-implementation.png"
           alt="Employee Self Service Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
