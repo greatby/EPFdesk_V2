@@ -901,7 +901,7 @@ export const epfoCards = [
   {
     title: "Seamless Employee Lifecycle Management",
     description: "Pay employees and contractors in a few clicks.",
-    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
+    image: "/images/seamless.png",
     color: {
       bg: "bg-rose-100",
       border: "border-rose-200",
@@ -922,7 +922,7 @@ export const epfoCards = [
           </p>
         </div>
         <img
-          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67db49b01109f51c7bb212c2_a9ba4cd2bfdef51480350a75b0569f4e_feat-image-payroll-unified-data.webp"
+          src="/images/seamless.png"
           alt="Unified Data Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
@@ -932,7 +932,7 @@ export const epfoCards = [
   {
     title: "Automated EPF Challan Generation & Error-Free Payments",
     description: "Auto-calculate & file all payroll taxes.",
-    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
+    image: "/images/automated-epf.png",
     color: {
       bg: "bg-yellow-100",
       border: "border-yellow-200",
@@ -953,7 +953,7 @@ export const epfoCards = [
           </p>
         </div>
         <img
-          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc43c71f563ef421a38eaa_a44c8c1ae5b22c26ebccb00e1b2b04f0_feat-image-payroll-tax-compliance.webp"
+          src="/images/automated-epf.png"
           alt="Tax Compliance Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
@@ -963,7 +963,7 @@ export const epfoCards = [
   {
     title: "Expert EPF Filings, Approvals & Compliance Assurance",
     description: "Reduce HR admin burden.",
-    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
+    image: "/images/epf-filings.png",
     color: {
       bg: "bg-blue-100",
       border: "border-blue-200",
@@ -984,7 +984,7 @@ export const epfoCards = [
           </p>
         </div>
         <img
-          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e5669a66ad33bbfbabf4a3_feat-image-employee-self-service.webp"
+          src="/images/epf-filings.png"
           alt="Employee Self Service Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
@@ -994,7 +994,7 @@ export const epfoCards = [
   {
     title: "Proactive EPF Regulatory Updates & Strategic Advisory",
     description: "Track, approve, and sync hours to payroll.",
-    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
+    image: "/images/epf-regulatory.png",
     color: {
       bg: "bg-green-100",
       border: "border-green-200",
@@ -1015,7 +1015,7 @@ export const epfoCards = [
           </p>
         </div>
         <img
-          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67e2b51dfb00d11fe21ace11_feat-image-time-tracking.webp"
+          src="/images/epf-regulatory.png"
           alt="Time Tracking Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
@@ -1025,7 +1025,7 @@ export const epfoCards = [
   {
     title: "Stay Compliant with Confidence",
     description: "Connect Payroll to your favorite third-party apps.",
-    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
+    image: "/images/compliance.png",
     color: {
       bg: "bg-purple-100",
       border: "border-purple-200",
@@ -1046,7 +1046,7 @@ export const epfoCards = [
           </p>
         </div>
         <img
-          src="https://cdn.prod.website-files.com/64ad6f1aef87635bd23449f1/67dc42fb273047112e42863a_cc3ed45b7dc81f77e5b48e5f03f5f3e1_feat-image-payroll-integrations.webp"
+          src="/images/compliance.png"
           alt="Integrations Visual"
           className="w-full h-auto rounded-xl shadow-md"
         />
