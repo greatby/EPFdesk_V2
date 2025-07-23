@@ -1,11 +1,11 @@
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import {useNavigate, Link ,useLocation} from "react-router-dom";
+import { useNavigate, Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
   const [showScroll, setShowScroll] = useState(false);
-   const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,9 +15,9 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-   useEffect(() => {
-       window.scrollTo(0, 0);
-    }, [pathname]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   // const handleScrollToTop = (link) => {
   //   // Scroll to top before navigating
@@ -41,8 +41,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* Company Description */}
           <div>
-            <h4 className="text-lg font-semibold mb-3 text-gray-900">
+            <h4 className="text-lg flex flex-col font-semibold mb-3 text-gray-900">
               EPFdesk.com
+              <a
+                href="mailto:hello@epfdesk.com"
+                className="text-[1rem] font-medium hover:underline"
+              >
+                hello@epfdesk.com
+              </a>
+             
             </h4>
             {/* <p className="text-sm text-gray-600">
               India's most trusted EPFO compliance partner. Serving 5000+
@@ -57,37 +64,22 @@ export default function Footer() {
             </h5>
             <ul className="space-y-3 text-[1rem] columns-1 md:columns-2">
               <li>
-                <Link to="/epf">
-                  EPFO
-                </Link>
+                <Link to="/epf">EPFO</Link>
               </li>
               <li>
-                <Link
-                  to="/epfDesk"
-                 
-                >
-                  EPFDesk
-                </Link>
+                <Link to="/epfDesk">EPFDesk</Link>
               </li>
               <li>
-                <Link to="/esic" >
-                  ESIC
-                </Link>
+                <Link to="/esic">ESIC</Link>
               </li>
               <li>
-                <Link to="/pt" >
-                  PT
-                </Link>
+                <Link to="/pt">PT</Link>
               </li>
               <li>
-                <Link to="/lwf" >
-                  LWF
-                </Link>
+                <Link to="/lwf">LWF</Link>
               </li>
               <li>
-               <Link to="/about" >
-                  About Us
-                </Link>
+                <Link to="/about">About Us</Link>
               </li>
               {/* <li>
                 <a
@@ -202,7 +194,6 @@ export default function Footer() {
 //             </ul>
 //           </div>
 
-       
 //           {/* <div>
 //             <h3 className="text-lg font-bold text-gray-800 mb-4">🎧 Support</h3>
 //             <ul className="space-y-2 text-sm text-gray-600">
@@ -213,7 +204,6 @@ export default function Footer() {
 //             </ul>
 //           </div>
 
-         
 //           <div>
 //             <h3 className="text-lg font-bold text-gray-800 mb-4">🔒 Legal</h3>
 //             <ul className="space-y-2 text-sm text-gray-600">
