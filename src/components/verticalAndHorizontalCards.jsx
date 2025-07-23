@@ -158,9 +158,9 @@ const CardSlider = ({ cards, paginationRef }) => {
                       <div className="absolute inset-0 pointer-events-none">
                         <FloatingCircles />
                       </div>
-                      <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
+                      {/* <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
                         {bubble}
-                      </div>
+                      </div> */}
                       <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md z-10 mb-4">
                         {icon}
                       </div>

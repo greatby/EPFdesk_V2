@@ -81,9 +81,9 @@ const LargeCardSlider = ({ cardsData }) => {
                     </div>
 
                   
-                    <div className="absolute top-4 right-4 bg-white/90 text-gray-800 rounded-xl px-3 py-1 text-xs font-semibold shadow-md opacity-0 scale-95 transition-all hover:opacity-100 hover:scale-100">
+                    {/* <div className="absolute top-4 right-4 bg-white/90 text-gray-800 rounded-xl px-3 py-1 text-xs font-semibold shadow-md opacity-0 scale-95 transition-all hover:opacity-100 hover:scale-100">
                       {bubble}
-                    </div>
+                    </div> */}
 
                     
                     <div className="relative mb-4">

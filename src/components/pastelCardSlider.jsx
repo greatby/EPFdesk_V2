@@ -74,9 +74,9 @@ const PastelCardSlider = ({ cardsData }) => {
                       </div>
 
                       {/* Speech bubble */}
-                      <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-medium text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
+                      {/* <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-medium text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
                         {card.bubble}
-                      </div>
+                      </div> */}
 
                       {/* Icon */}
                       <div className="relative w-24 h-24 mx-auto mb-6">
