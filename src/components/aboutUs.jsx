@@ -34,16 +34,6 @@ At EPFDesk, our expertise transcends mere legal interpretation. We don't just re
     cta1: "Join Community",
     cta2: "Meet People",
   },
-  // {
-  //   gradient: "from-pink-300 to-yellow-100",
-  //   icon: "✨",
-  //   title: "The Team Behind the Trust",
-  //   subtitle:
-  //     "Meet the Architects of Compliance Excellence: Dedicated Professionals, Driven by Your Success",
-  //   speech: "Dream!",
-  //   cta1: "Start Dreaming",
-  //   cta2: "Get Inspired",
-  // },
   {
     gradient: "from-cyan-200 to-blue-400",
     icon: "🚀",
@@ -64,11 +54,33 @@ Our relationship with you extends far beyond transactional compliance. We are de
     cta1: "Share Vision",
     cta2: "Learn How",
   },
+//   {
+//     gradient: "from-pink-300 to-yellow-100",
+//     icon: "✨",
+//     title: "Connect With Us: Your Journey to Effortless Compliance Starts Here",
+//     subtitle: `Have questions about EPF or any other HR & Labour compliance? Ready to transform your business's approach to regulations? EPFDesk is strategically located to serve you across India. Reach out to us today, and let our experts guide you toward peace of mind and enhanced productivity, no matter where your business operates.
+// Get in Touch
+// Mobile: [Insert Mobile Number Here]
+// Email: help@epfdesk.com
+// Our Offices & Pan-India Network
+// EPFDesk is proud to serve businesses across all states of India, supported by our robust network and strategically located offices in major metropolitan hubs. Our key office locations include:
+// Bengaluru, Karnataka, India:
+// [Insert Full Bengaluru Address Here]
+// (e.g., Door No. 123, 4th Floor, ABC Building, Koramangala, Bengaluru - 560034)
+// Mumbai, Maharashtra, India
+// New Delhi, Delhi, India
+// Chennai, Tamil Nadu, India
+// Hyderabad, Telangana, India
+// We look forward to partnering with you!
+// Digital Colony Private Limited, 62/63 Church Street, Karnataka, 560001`,
+//     speech: "Dream!",
+//     cta1: "Start Dreaming",
+//     cta2: "Get Inspired",
+//   },
 ];
 
 const HeroCarousel = () => {
   return (
-    
     // <section className="w-full px-0 py-0">
     //   <div className="flex flex-col">
     //     <div className="mt-[4rem]">
@@ -135,120 +147,120 @@ const HeroCarousel = () => {
     //   </div>
     // </section>
     <section className="w-full px-0 py-0">
-  <div className="flex flex-col">
-    <div className="mt-[4rem]">
-      {heroData.map((data, index) => (
-        // <div
-        //   key={index}
-        //   className={`relative w-full min-h-[90vh] px-4 py-10 bg-gradient-to-br ${data.gradient}`}
-        // >
-        //   {/* Floating bubbles */}
-        //   <div className="absolute inset-0 pointer-events-none">
-        //     {[...Array(5)].map((_, i) => (
-        //       <div
-        //         key={i}
-        //         className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
-        //         style={{
-        //           width: `${20 + i * 10}px`,
-        //           height: `${20 + i * 10}px`,
-        //           top: `${20 * i + 10}px`,
-        //           left: `${15 * i + 10}px`,
-        //           backgroundColor: [
-        //             "#ff6b6b",
-        //             "#4ecdc4",
-        //             "#ffe66d",
-        //             "#a8e6cf",
-        //             "#ffd3a5",
-        //           ][i],
-        //         }}
-        //       />
-        //     ))}
-        //   </div>
+      <div className="flex flex-col">
+        <div className="mt-[4rem]">
+          {heroData.map((data, index) => (
+            // <div
+            //   key={index}
+            //   className={`relative w-full min-h-[90vh] px-4 py-10 bg-gradient-to-br ${data.gradient}`}
+            // >
+            //   {/* Floating bubbles */}
+            //   <div className="absolute inset-0 pointer-events-none">
+            //     {[...Array(5)].map((_, i) => (
+            //       <div
+            //         key={i}
+            //         className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
+            //         style={{
+            //           width: `${20 + i * 10}px`,
+            //           height: `${20 + i * 10}px`,
+            //           top: `${20 * i + 10}px`,
+            //           left: `${15 * i + 10}px`,
+            //           backgroundColor: [
+            //             "#ff6b6b",
+            //             "#4ecdc4",
+            //             "#ffe66d",
+            //             "#a8e6cf",
+            //             "#ffd3a5",
+            //           ][i],
+            //         }}
+            //       />
+            //     ))}
+            //   </div>
 
-        //   {/* Content centered both ways */}
-        //   <div className="relative z-10 flex items-center justify-center h-full">
-        //     <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto px-4">
-        //       {/* Icon with decorative shapes */}
-        //       <div className="relative w-36 h-36 mb-6">
-        //         <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
-        //         <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
-        //         <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
-        //         <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
-        //           {data.icon}
-        //         </div>
-        //       </div>
+            //   {/* Content centered both ways */}
+            //   <div className="relative z-10 flex items-center justify-center h-full">
+            //     <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto px-4">
+            //       {/* Icon with decorative shapes */}
+            //       <div className="relative w-36 h-36 mb-6">
+            //         <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+            //         <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+            //         <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+            //         <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
+            //           {data.icon}
+            //         </div>
+            //       </div>
 
-        //       <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-6">
-        //         {data.title}
-        //       </h1>
+            //       <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-6">
+            //         {data.title}
+            //       </h1>
 
-        //       <p className="text-base sm:text-[1.3rem] text-gray-700 opacity-80 whitespace-pre-line leading-relaxed">
-        //         {data.subtitle}
-        //       </p>
+            //       <p className="text-base sm:text-[1.3rem] text-gray-700 opacity-80 whitespace-pre-line leading-relaxed">
+            //         {data.subtitle}
+            //       </p>
 
-        //       <div className="w-24 h-2 my-8 bg-white/30 rounded-full overflow-hidden">
-        //         <div className="h-full bg-white/90 rounded-full animate-progress" />
-        //       </div>
-        //     </div>
-        //   </div>
-        // </div>
-        <div
-  key={index}
-  className={`relative w-full min-h-[90vh] px-4 py-10 bg-gradient-to-br ${data.gradient} flex items-center justify-center`}
->
-  {/* Floating bubbles */}
-  <div className="absolute inset-0 pointer-events-none">
-    {[...Array(5)].map((_, i) => (
-      <div
-        key={i}
-        className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
-        style={{
-          width: `${20 + i * 10}px`,
-          height: `${20 + i * 10}px`,
-          top: `${20 * i + 10}px`,
-          left: `${15 * i + 10}px`,
-          backgroundColor: [
-            "#ff6b6b",
-            "#4ecdc4",
-            "#ffe66d",
-            "#a8e6cf",
-            "#ffd3a5",
-          ][i],
-        }}
-      />
-    ))}
-  </div>
+            //       <div className="w-24 h-2 my-8 bg-white/30 rounded-full overflow-hidden">
+            //         <div className="h-full bg-white/90 rounded-full animate-progress" />
+            //       </div>
+            //     </div>
+            //   </div>
+            // </div>
+            <div
+              key={index}
+              className={`relative w-full min-h-[90vh] px-4 py-10 bg-gradient-to-br ${data.gradient} flex items-center justify-center`}
+            >
+              {/* Floating bubbles */}
+              <div className="absolute inset-0 pointer-events-none">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className={`absolute rounded-full opacity-20 animate-float${
+                      i + 1
+                    }`}
+                    style={{
+                      width: `${20 + i * 10}px`,
+                      height: `${20 + i * 10}px`,
+                      top: `${20 * i + 10}px`,
+                      left: `${15 * i + 10}px`,
+                      backgroundColor: [
+                        "#ff6b6b",
+                        "#4ecdc4",
+                        "#ffe66d",
+                        "#a8e6cf",
+                        "#ffd3a5",
+                      ][i],
+                    }}
+                  />
+                ))}
+              </div>
 
-  {/* ✅ Centered Content */}
-  <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-5xl">
-    <div className="relative w-36 h-36 mb-6">
-      <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
-      <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
-      <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
-      <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
-        {data.icon}
+              {/* ✅ Centered Content */}
+              <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-5xl">
+                <div className="relative w-36 h-36 mb-6">
+                  <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+                  <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+                  <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+                  <div className="relative w-28 h-28 bg-white rounded-full flex items-center justify-center text-[2.5rem] shadow-xl z-10">
+                    {data.icon}
+                  </div>
+                </div>
+
+                <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-6">
+                  {data.title}
+                </h1>
+
+                <p className="text-base sm:text-[1.3rem] text-gray-700 opacity-80 whitespace-pre-line leading-relaxed px-4">
+                  {data.subtitle}
+                </p>
+
+                <div className="w-24 h-2 my-8 bg-white/30 rounded-full overflow-hidden">
+                  <div className="h-full bg-white/90 rounded-full animate-progress" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-
-    <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-6">
-      {data.title}
-    </h1>
-
-    <p className="text-base sm:text-[1.3rem] text-gray-700 opacity-80 whitespace-pre-line leading-relaxed px-4">
-      {data.subtitle}
-    </p>
-
-    <div className="w-24 h-2 my-8 bg-white/30 rounded-full overflow-hidden">
-      <div className="h-full bg-white/90 rounded-full animate-progress" />
-    </div>
-  </div>
-</div>
-
-      ))}
-    </div>
-  </div>
-</section>
-
+    </section>
   );
 };
 

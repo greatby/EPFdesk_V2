@@ -6,7 +6,7 @@ import axios from 'axios';
 dotenv.config(); // Load .env variables
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json()); // For parsing JSON bodies
