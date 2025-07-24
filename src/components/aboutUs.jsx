@@ -58,40 +58,35 @@ Our relationship with you extends far beyond transactional compliance. We are de
     gradient: "from-pink-300 to-yellow-100",
     icon: "✨",
     title: "Connect With Us: Your Journey to Effortless Compliance Starts Here",
-    subtitle: <div className="p-6 md:p-10 max-w-4xl mx-auto space-y-6">
-  <h2 className="text-2xl font-semibold text-gray-800">
+    subtitle: <div className="p-6 md:p-10 max-w-5xl mx-auto space-y-6">
+  <h2 className="text-3xl font-semibold text-gray-800">
     Have questions about EPF or any other HR & Labour compliance?
   </h2>
-  <p className="text-gray-700">
+  <p className="text-gray-600">
     Ready to transform your business's approach to regulations? EPFDesk is strategically located to serve you across India.
     Reach out to us today, and let our experts guide you toward peace of mind and enhanced productivity, no matter where your business operates.
   </p>
 
   <div className="border-t text-left border-gray-200 pt-4">
-    <h3 className="text-lg font-semibold text-gray-900">Get in Touch</h3>
-    <p className="text-gray-700">Mobile: <span className="font-medium">[Insert Mobile Number Here]</span></p>
-    <p className="text-gray-700">Email: <a href="mailto:help@epfdesk.com" className="hover:underline">help@epfdesk.com</a></p>
+    <h3 className="text-2xl font-semibold text-gray-900">Get in Touch</h3>
+    <p className="text-gray-600">Mobile: <span className="font-medium">+919243188888</span></p>
+    <p className="text-gray-600">Email: <a href="mailto:hello@epfdesk.com" className="hover:underline">hello@epfdesk.com</a></p>
   </div>
 
   <div className="border-t text-left border-gray-200 pt-4">
-    <h3 className="text-lg font-semibold text-gray-900">Our Offices & Pan-India Network</h3>
-    <p className="text-gray-700">EPFDesk is proud to serve businesses across all states of India, supported by our robust network and strategically located offices in major metropolitan hubs.</p>
+    <h3 className="text-2xl font-semibold text-gray-900">Our Offices & Pan-India Network</h3>
+    <p className="text-gray-600">EPFDesk is proud to serve businesses across all states of India, supported by our robust network and strategically located offices in major metropolitan hubs.</p>
 
     <ul className="list-disc pl-6 mt-2 text-gray-700 space-y-1">
       <li>
         <strong>Bengaluru, Karnataka, India:</strong><br />
-        [Insert Full Bengaluru Address Here]<br />
-        <span className="text-sm italic">(e.g., Door No. 123, 4th Floor, ABC Building, Koramangala, Bengaluru - 560034)</span>
+         Digital Colony Private Limited, 62/63 Church Street, Karnataka, 560001<br />
       </li>
       <li><strong>Mumbai, Maharashtra, India</strong></li>
       <li><strong>New Delhi, Delhi, India</strong></li>
       <li><strong>Chennai, Tamil Nadu, India</strong></li>
       <li><strong>Hyderabad, Telangana, India</strong></li>
     </ul>
-  </div>
-
-  <div className="border-t border-gray-200 pt-4 text-lg text-gray-600">
-    <p><strong>Registered Office:</strong> Digital Colony Private Limited, 62/63 Church Street, Karnataka, 560001</p>
   </div>
 </div>
 ,
