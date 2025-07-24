@@ -24,7 +24,7 @@ export default function FloatingFormToggle({ animate = true }) {
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email) || /@gmail\.com$/i.test(formData.email)
     ) {
       newErrors.email = "Invalid email format.";
     }
