@@ -47,7 +47,7 @@ const SignUp = () => {
   const API_BASE =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://sign-up-two-sandy.vercel.app";
+      : "https://ep-fdesk-v2.vercel.app";
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("");
