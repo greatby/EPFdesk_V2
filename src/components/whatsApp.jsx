@@ -15,6 +15,11 @@ const LinkButtons = () => {
     message: "",
     findUs: "",
   });
+
+  const formDataWithType = {
+  ...formData,
+  formType: "contact",
+};
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -91,7 +96,7 @@ const LinkButtons = () => {
     // setFormData({});
     // setIsOpen(false);
     try {
-      const res = await axios.post(`${API_BASE}/api/contact`, formData);
+      const res = await axios.post(`${API_BASE}/api/contact`, formDataWithType);
       alert("✅ Your message was sent successfully!");
       console.log(res.data);
     } catch (err) {

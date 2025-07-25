@@ -24,9 +24,14 @@ import ScrollSyncComponent from "./components/scrollSyncComponent";
 import LargeCardSlider from "./components/largeCards";
 import MazeEscapeSection from "./components/mazeEscapeSection";
 import AboutUs from "./components/aboutUs";
+import Login from "./components/login";
+import SignUp from "./components/signIn";
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
+    <>
+      <Toaster position="top-center"/>
     <Routes>
       <Route
         path="/"
@@ -120,7 +125,22 @@ function App() {
           </Layout>
         }
       />
+      <Route
+        path="/login"
+        element={
+            <Login />
+        }
+      />
+       <Route
+        path="/signin"
+        element={
+          <Layout>
+            <SignUp />
+          </Layout>
+        }
+      />
     </Routes>
+    </>
   );
 }
 
