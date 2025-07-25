@@ -56,14 +56,23 @@
 //   }
 // }
 
-
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  // res.setHeader('Access-Control-Allow-Origin', '*');
+  // res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  // res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
-  if (req.method === 'OPTIONS') return res.status(200).end();
-  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+  // if (req.method === "OPTIONS") return res.status(200).end();
+  if (req.method === 'OPTIONS') {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  return res.status(200).end();
+}
+  if (req.method !== "POST")
+    return res.status(405).json({ error: "Method not allowed" });
 
   const {
     formType,
@@ -82,7 +91,9 @@ export default async function handler(req, res) {
   const ZENDESK_EMAIL = process.env.ZENDESK_EMAIL;
   const ZENDESK_TOKEN = process.env.ZENDESK_TOKEN;
 
-  const auth = Buffer.from(`${ZENDESK_EMAIL}/token:${ZENDESK_TOKEN}`).toString('base64');
+  const auth = Buffer.from(`${ZENDESK_EMAIL}/token:${ZENDESK_TOKEN}`).toString(
+    "base64"
+  );
 
   let composedMessage = "";
   let ticketSubject = subject || "New Submission";
@@ -119,23 +130,26 @@ ${message}
   }
 
   try {
-    const response = await fetch(`https://${ZENDESK_DOMAIN}.zendesk.com/api/v2/tickets.json`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Basic ${auth}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ticket: {
-          subject: ticketSubject,
-          comment: { body: composedMessage },
-          requester: {
-            name: fullName || email,
-            email,
-          },
+    const response = await fetch(
+      `https://${ZENDESK_DOMAIN}.zendesk.com/api/v2/tickets.json`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Basic ${auth}`,
+          "Content-Type": "application/json",
         },
-      }),
-    });
+        body: JSON.stringify({
+          ticket: {
+            subject: ticketSubject,
+            comment: { body: composedMessage },
+            requester: {
+              name: fullName || email,
+              email,
+            },
+          },
+        }),
+      }
+    );
 
     const data = await response.json();
     if (!response.ok) return res.status(response.status).json({ error: data });
@@ -143,7 +157,6 @@ ${message}
     return res.status(200).json({ success: true, ticket: data.ticket });
   } catch (err) {
     console.error("Zendesk Ticket Error:", err);
-    return res.status(500).json({ error: 'Internal Server Error' });
+    return res.status(500).json({ error: "Internal Server Error" });
   }
 }
-
