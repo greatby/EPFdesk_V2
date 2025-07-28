@@ -18,79 +18,106 @@ const Login = () => {
       toast.error("Login failed: " + error.message);
     }
   };
-
+  const FloatingCircles = () => (
+    <>
+      <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
+      <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
+      <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
+    </>
+  );
   return (
-    // <div
-    //   className="min-h-screen flex items-center justify-center px-4"
-    //   style={{
-    //     backgroundImage: "url('/images/bg-1.png')",
-    //     backgroundRepeat: "no-repeat",
-    //     backgroundSize: "cover",
-    //     backgroundPosition: "center",
-    //   }}
-    // >
-    //   <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center">
-    //     <h2 className="text-3xl font-bold text-gray-800 mb-6">
-    //       Sign up with your account
-    //     </h2>
+    // <div className="relative w-full h-screen bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb] overflow-hidden">
+    //   {/* Bubbles Layer */}
+    //   <FloatingCircles />
+    //   <div className="absolute inset-0 pointer-events-none">
+    //     {[...Array(5)].map((_, i) => (
+    //       <div
+    //         key={i}
+    //         className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
+    //         style={{
+    //           width: `${20 + i * 10}px`,
+    //           height: `${20 + i * 10}px`,
+    //           top: `${20 * i + 10}px`,
+    //           left: `${15 * i + 10}px`,
+    //           backgroundColor: [
+    //             "#ff6b6b",
+    //             "#4ecdc4",
+    //             "#ffe66d",
+    //             "#a8e6cf",
+    //             "#ffd3a5",
+    //           ][i],
+    //         }}
+    //       />
+    //     ))}
+    //   </div>
+    //   <div className="absolute w-36 h-36 top-20 left-1/2 -translate-x-1/2">
+    //     <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+    //     <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+    //     <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+    //   </div>
 
-    //     <div className="flex flex-col space-y-4">
-    //       <button
-    //         onClick={() => handleProviderLogin(googleProvider)}
-    //         className="flex items-center justify-center gap-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-100 transition-colors"
-    //       >
-    //         <FcGoogle className="w-5 h-5" />
-    //         <span className="text-sm font-semibold text-gray-700">
-    //           Continue with Google
-    //         </span>
+    //   {/* Content in the center */}
+    //   <div className="absolute inset-0 flex items-center justify-center z-10">
+    //     <div className="bg-white/80 backdrop-blur-md p-6 rounded-xl shadow-xl max-w-md text-center">
+    //       <h2 className="text-2xl font-semibold mb-4">
+    //         Sign up with your account
+    //       </h2>
+    //       <button className="w-full flex items-center text-lg font-semibold py-2 px-4 bg-gray-100 rounded-md shadow-sm hover:bg-gray-200"  onClick={() => handleProviderLogin(googleProvider)}>
+    //        <FcGoogle className="mr-2" /> Continue with Google
     //       </button>
-
-    //       {/* <button
-    //         onClick={() => handleProviderLogin(microsoftProvider)}
-    //         className="flex items-center justify-center gap-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-100 transition-colors"
-    //       >
-    //         <FaMicrosoft className="w-5 h-5 text-blue-600" />
-    //         <span className="text-sm font-medium text-gray-700">
-    //           Continue with Microsoft
-    //         </span>
-    //       </button> */}
     //     </div>
     //   </div>
     // </div>
-    <div className="relative w-full h-screen md:grid md:grid-cols-2">
-      {/* Background image for tablet and below */}
-      <div className="absolute inset-0 md:hidden">
-        <img
-          src="/images/bg-1.png"
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
+    <div className="relative w-full h-screen bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb] overflow-hidden grid md:grid-cols-2">
+  {/* Bubbles Layer */}
+  <FloatingCircles />
+  <div className="absolute inset-0 pointer-events-none">
+    {[...Array(5)].map((_, i) => (
+      <div
+        key={i}
+        className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
+        style={{
+          width: `${20 + i * 10}px`,
+          height: `${20 + i * 10}px`,
+          top: `${20 * i + 10}px`,
+          left: `${15 * i + 10}px`,
+          backgroundColor: [
+            "#ff6b6b",
+            "#4ecdc4",
+            "#ffe66d",
+            "#a8e6cf",
+            "#ffd3a5",
+          ][i],
+        }}
+      />
+    ))}
+  </div>
 
-      {/* Content Wrapper */}
-      <div className="relative z-10 flex items-center justify-center w-full h-full bg-white/80 md:bg-transparent">
-        <div className="bg-white rounded-xl shadow-lg p-6 w-11/12 max-w-md">
-          <h2 className="text-3xl font-semibold text-center mb-4">
-            Sign up with your account
-          </h2>
-          <button
-            className="w-full text-lg font-semibold py-2 px-4 bg-gray-100 rounded-md flex items-center justify-center shadow-sm hover:bg-gray-200"
-            onClick={() => handleProviderLogin(googleProvider)}
-          >
-            <FcGoogle className="mr-2" /> Continue with Google
-          </button>
-        </div>
-      </div>
+  {/* Decorative Shape Group (centered horizontally in the left column) */}
+  <div className="absolute w-36 h-36 top-20 left-1/2 -translate-x-1/2">
+  <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
+  <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
+  <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
+</div>
 
-      {/* Optional right-side image for desktop layout */}
-      <div className="hidden md:block">
-        <img
-          src="/images/bg-1.png"
-          alt="Right side illustration"
-          className="w-full h-full object-cover"
-        />
-      </div>
+
+  {/* Left Grid Column (empty, decorative background only) */}
+  <div className="relative flex items-center justify-center z-0"></div>
+
+  {/* Right Grid Column (Sign-up Form) */}
+  <div className="relative flex items-center justify-center z-10">
+    <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-xl w-auto text-center">
+      <h2 className="text-4xl font-semibold mb-5">Sign up with your account</h2>
+      <button
+        className="w-full flex items-center justify-center text-[1.3rem] font-semibold py-2 px-4 bg-gray-100 rounded-md shadow-sm hover:bg-gray-200"
+        onClick={() => handleProviderLogin(googleProvider)}
+      >
+        <FcGoogle className="mr-2" size={25}/> Continue with Google
+      </button>
     </div>
+  </div>
+</div>
+
   );
 };
 
