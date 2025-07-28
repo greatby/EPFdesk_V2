@@ -78,7 +78,6 @@ const Login = () => {
     //       </div>
     //     </div>
     <div className="min-h-screen w-full bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] flex items-center justify-center overflow-hidden relative">
-   
       <div className="absolute w-40 h-40 bg-pink-300 rounded-full top-10 left-10 opacity-70 blur-xl z-0" />
       <div className="absolute w-52 h-52 bg-yellow-300 rounded-full bottom-20 right-20 opacity-60 blur-xl z-0" />
       <div className="absolute w-32 h-32 bg-blue-300 rounded-full bottom-10 left-1/3 opacity-70 blur-xl z-0" />
@@ -89,12 +88,14 @@ const Login = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative z-10 bg-white/70 backdrop-blur-lg border border-white/40 rounded-2xl shadow-xl p-8 w-11/12 max-w-md text-center"
       >
+        <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
+        <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
+        <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Back</h1>
         <p className="text-gray-600 mb-8">
           Sign in using your Google account to continue
         </p>
 
-       
         <button
           onClick={() => handleProviderLogin(googleProvider)}
           className="w-full flex items-center justify-center gap-3 text-lg font-medium py-3 px-4 rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg transition"
