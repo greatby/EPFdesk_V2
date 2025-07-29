@@ -151,16 +151,34 @@ const Login = () => {
   };
 
   // Complete sign in
+  // const completeSignIn = async (emailInput) => {
+  //   try {
+  //     await signInWithEmailLink(auth, emailInput, window.location.href);
+  //     window.localStorage.removeItem("emailForSignIn");
+  //     toast.success("You are signed in!");
+  //     navigate("/signin",{ replace: true });
+  //   } catch (error) {
+  //     setMessage("Login failed: " + error.message);
+  //   }
+  // };
+
   const completeSignIn = async (emailInput) => {
-    try {
-      await signInWithEmailLink(auth, emailInput, window.location.href);
+  try {
+    const result = await signInWithEmailLink(auth, emailInput, window.location.href);
+    console.log("Sign-in Result:", result);
+    if (result?.user) {
       window.localStorage.removeItem("emailForSignIn");
-      toast.success("You are signed in!");
-      navigate("/signin",{ replace: true });
-    } catch (error) {
-      setMessage("Login failed: " + error.message);
+      toast.success(`Welcome ${result.user.email}!`);
+      navigate("/signin", { replace: true });
+    } else {
+      setMessage("No user returned. Please try again.");
     }
-  };
+  } catch (error) {
+    console.error("Login failed:", error);
+    setMessage("Login failed: " + error.message);
+  }
+};
+
 
   // Handle sign-in when user clicks email link
   useEffect(() => {
@@ -220,7 +238,7 @@ const Login = () => {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              className="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
 
             <button
