@@ -225,7 +225,7 @@ const Login = () => {
 
             <button
               onClick={sendEmailLink}
-              className="w-full bg-pink-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-pink-600 transition"
+              className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-blue-600 transition"
             >
               Continue with Email
             </button>
