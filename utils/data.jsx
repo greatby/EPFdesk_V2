@@ -2521,7 +2521,7 @@ export const heroSlides = [
     id: 6,
     gradientClass:
       "linear-gradient(to bottom right, #b19cd9, #c8a8e9, #8ec5d6, #7fb3d3)",
-    icon: "👁️",
+    icon: "🛡️",
     title: `POSH Act Compliance: Fostering Safe
 Workplaces, Ensuring Legal Integrity`,
     subtitle: `Workforce Limited offers expert POSH Act compliance services in
