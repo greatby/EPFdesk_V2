@@ -1,14 +1,179 @@
-// src/components/GoogleLogin.js
-import React from "react";
-import { signInWithPopup } from "firebase/auth";
-import { auth, googleProvider } from "../firebase";
-import { FcGoogle } from "react-icons/fc";
-import { useNavigate } from "react-router-dom";
-import toast from "react-hot-toast";
+// // src/components/GoogleLogin.js
+// import React, { useEffect, useState } from "react";
+// import { signInWithPopup } from "firebase/auth";
+// import { auth, googleProvider } from "../firebase";
+// import { sendSignInLinkToEmail, signInWithEmailLink } from "firebase/auth";
+// import { FcGoogle } from "react-icons/fc";
+// import { useNavigate } from "react-router-dom";
+// import toast from "react-hot-toast";
+// import { motion } from "framer-motion";
+
+// const Login = () => {
+//   const [email, setEmail] = useState("");
+//   const [message, setMessage] = useState("");
+//   const navigate = useNavigate();
+
+//   const sendEmailLink = async () => {
+//     const actionCodeSettings = {
+//       url: window.location.origin + "/finishSignIn",
+//       handleCodeInApp: true,
+//     };
+
+//     try {
+//       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
+//       window.localStorage.setItem("emailForSignIn", email);
+//       setMessage("Check your inbox! A sign-in link has been sent.");
+//     } catch (error) {
+//       setMessage("Error sending link: " + error.message);
+//     }
+//   };
+
+//   useEffect(() => {
+//     if (signInWithEmailLink && window.location.href.includes("signIn")) {
+//       const storedEmail = window.localStorage.getItem("emailForSignIn");
+//       if (storedEmail) {
+//         signInWithEmailLink(auth, storedEmail, window.location.href)
+//           .then(() => {
+//             window.localStorage.removeItem("emailForSignIn");
+//             setMessage("You are signed in!");
+//           })
+//           .catch((error) => setMessage("Login failed: " + error.message));
+//       }
+//     }
+//   }, []);
+
+//   const handleProviderLogin = async (provider) => {
+//     try {
+//       await signInWithPopup(auth, provider);
+//       toast.success("Logged in successfully!");
+//       navigate("/signin");
+//     } catch (error) {
+//       toast.error("Login failed: " + error.message);
+//     }
+//   };
+//   const FloatingCircles = () => (
+//     <>
+//       <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
+//       <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
+//       <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
+//     </>
+//   );
+//   return (
+//     <div className="min-h-screen w-full bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] flex items-center justify-center overflow-hidden relative">
+//       <div className="absolute w-40 h-40 bg-pink-300 rounded-full top-10 left-10 opacity-70 blur-xl z-0" />
+//       <div className="absolute w-52 h-52 bg-yellow-300 rounded-full bottom-20 right-20 opacity-60 blur-xl z-0" />
+//       <div className="absolute w-32 h-32 bg-blue-300 rounded-full bottom-10 left-1/3 opacity-70 blur-xl z-0" />
+
+//       <motion.div
+//         initial={{ opacity: 0, y: 40 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.7, ease: "easeOut" }}
+//         className="relative z-10 bg-white/70 backdrop-blur-lg border border-white/40 rounded-2xl shadow-xl p-8 w-11/12 max-w-md text-center"
+//       >
+//         <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
+//         <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
+//         <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
+//         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Back</h1>
+//         <p className="text-gray-600 mb-8">
+//           Sign in using your Google account to continue
+//         </p>
+
+//         <button
+//           onClick={() => handleProviderLogin(googleProvider)}
+//           className="w-full mb-3 flex items-center justify-center gap-3 text-lg font-medium py-3 px-4 rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg transition"
+//         >
+//           <FcGoogle className="text-2xl font-semibold" />
+//           Continue with Google
+//         </button>
+//         <input
+//           type="email"
+//           placeholder="Enter your email"
+//           value={email}
+//           onChange={(e) => setEmail(e.target.value)}
+//           className="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-400"
+//         />
+
+//         <button
+//           onClick={sendEmailLink}
+//           className="w-full bg-pink-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-pink-600 transition"
+//         >
+//           Continue with Email
+//         </button>
+
+//         {message && <p className="text-sm text-gray-700 mt-4">{message}</p>}
+//       </motion.div>
+//     </div>
+//   );
+// };
+
+// export default Login;
+
+
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FcGoogle } from "react-icons/fc";
+import {
+  sendSignInLinkToEmail,
+  signInWithEmailLink,
+  isSignInWithEmailLink,
+  signInWithPopup,
+} from "firebase/auth";
+import { auth } from "../firebase"; // adjust path
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-hot-toast";
+import { GoogleAuthProvider } from "firebase/auth";
+
+const googleProvider = new GoogleAuthProvider();
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [needsEmail, setNeedsEmail] = useState(false);
   const navigate = useNavigate();
+
+  // Send the magic link
+  const sendEmailLink = async () => {
+    const actionCodeSettings = {
+    url:
+      process.env.NODE_ENV === "production"
+        ? "https://ep-fdesk-v2.vercel.app/signin"
+        : "http://localhost:3000/signin",
+    handleCodeInApp: true,
+  };
+
+    try {
+      await sendSignInLinkToEmail(auth, email, actionCodeSettings);
+      window.localStorage.setItem("emailForSignIn", email);
+      setMessage("Check your inbox! A sign-in link has been sent.");
+    } catch (error) {
+      setMessage("Error sending link: " + error.message);
+    }
+  };
+
+  // Complete sign in
+  const completeSignIn = async (emailInput) => {
+    try {
+      await signInWithEmailLink(auth, emailInput, window.location.href);
+      window.localStorage.removeItem("emailForSignIn");
+      toast.success("You are signed in!");
+      navigate("/signin"); // redirect to dashboard
+    } catch (error) {
+      setMessage("Login failed: " + error.message);
+    }
+  };
+
+  // Handle sign-in when user clicks email link
+  useEffect(() => {
+    if (isSignInWithEmailLink(auth, window.location.href)) {
+      let storedEmail = window.localStorage.getItem("emailForSignIn");
+      if (storedEmail) {
+        completeSignIn(storedEmail);
+      } else {
+        // If no stored email, show input for user
+        setNeedsEmail(true);
+      }
+    }
+  }, []);
 
   const handleProviderLogin = async (provider) => {
     try {
@@ -19,65 +184,10 @@ const Login = () => {
       toast.error("Login failed: " + error.message);
     }
   };
-  const FloatingCircles = () => (
-    <>
-      <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
-      <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
-      <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
-    </>
-  );
+
   return (
-    //     <div
-    //       className="relative w-full h-screen bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]
-    //  overflow-hidden grid md:grid-cols-2"
-    //     >
-
-    //       <FloatingCircles />
-    //       <div className="absolute inset-0 pointer-events-none">
-    //         {[...Array(5)].map((_, i) => (
-    //           <div
-    //             key={i}
-    //             className={`absolute rounded-full opacity-20 animate-float${i + 1}`}
-    //             style={{
-    //               width: `${20 + i * 10}px`,
-    //               height: `${20 + i * 10}px`,
-    //               top: `${20 * i + 10}px`,
-    //               left: `${15 * i + 10}px`,
-    //               backgroundColor: [
-    //                 "#ff6b6b",
-    //                 "#4ecdc4",
-    //                 "#ffe66d",
-    //                 "#a8e6cf",
-    //                 "#ffd3a5",
-    //               ][i],
-    //             }}
-    //           />
-    //         ))}
-    //       </div>
-
-    //       <div className="absolute w-36 h-36 top-20 left-1/2 -translate-x-1/2">
-    //         <div className="absolute w-16 h-16 bg-red-300 rounded-full -top-4 -right-4 opacity-30" />
-    //         <div className="absolute w-12 h-12 bg-teal-300 rounded-full -bottom-4 -left-4 opacity-30" />
-    //         <div className="absolute w-24 h-24 bg-yellow-200 rounded-[35px] rotate-45 top-10 left-10 opacity-30" />
-    //       </div>
-
-    //       <div className="relative flex items-center justify-center z-0"></div>
-
-    //       <div className="relative flex items-center justify-center z-10">
-    //         <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-xl w-auto text-center">
-    //           <h2 className="text-4xl font-semibold mb-5">
-    //             Sign up with your account
-    //           </h2>
-    //           <button
-    //             className="w-full flex items-center justify-center text-[1.3rem] font-semibold py-2 px-4 bg-gray-100 rounded-md shadow-sm hover:bg-gray-200"
-    //             onClick={() => handleProviderLogin(googleProvider)}
-    //           >
-    //             <FcGoogle className="mr-2" size={25} /> Continue with Google
-    //           </button>
-    //         </div>
-    //       </div>
-    //     </div>
     <div className="min-h-screen w-full bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#ff9a9e] flex items-center justify-center overflow-hidden relative">
+      {/* Background circles */}
       <div className="absolute w-40 h-40 bg-pink-300 rounded-full top-10 left-10 opacity-70 blur-xl z-0" />
       <div className="absolute w-52 h-52 bg-yellow-300 rounded-full bottom-20 right-20 opacity-60 blur-xl z-0" />
       <div className="absolute w-32 h-32 bg-blue-300 rounded-full bottom-10 left-1/3 opacity-70 blur-xl z-0" />
@@ -88,21 +198,63 @@ const Login = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative z-10 bg-white/70 backdrop-blur-lg border border-white/40 rounded-2xl shadow-xl p-8 w-11/12 max-w-md text-center"
       >
-        <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
-        <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
-        <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Back</h1>
         <p className="text-gray-600 mb-8">
-          Sign in using your Google account to continue
+          Sign in with Google or your Email
         </p>
 
+        {/* Google Button */}
         <button
           onClick={() => handleProviderLogin(googleProvider)}
-          className="w-full flex items-center justify-center gap-3 text-lg font-medium py-3 px-4 rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg transition"
+          className="w-full mb-3 flex items-center justify-center gap-3 text-lg font-medium py-3 px-4 rounded-lg border border-gray-200 bg-white shadow-md hover:shadow-lg transition"
         >
           <FcGoogle className="text-2xl font-semibold" />
           Continue with Google
         </button>
+
+        {/* Email input for sending link */}
+        {!needsEmail && (
+          <>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+
+            <button
+              onClick={sendEmailLink}
+              className="w-full bg-pink-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-pink-600 transition"
+            >
+              Continue with Email
+            </button>
+          </>
+        )}
+
+        {/* Email input for completing sign-in (if opened on different device) */}
+        {needsEmail && (
+          <div className="mt-4">
+            <p className="text-gray-600 mb-3">
+              Please confirm your email to finish signing in
+            </p>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-3 border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-pink-400"
+            />
+            <button
+              onClick={() => completeSignIn(email)}
+              className="w-full bg-green-500 text-white py-3 px-4 rounded-lg shadow-md hover:bg-green-600 transition"
+            >
+              Confirm Email
+            </button>
+          </div>
+        )}
+
+        {message && <p className="text-sm text-gray-700 mt-4">{message}</p>}
       </motion.div>
     </div>
   );

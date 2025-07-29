@@ -78,14 +78,14 @@ Our relationship with you extends far beyond transactional compliance. We are de
     <p className="text-gray-600">EPFDesk is proud to serve businesses across all states of India, supported by our robust network and strategically located offices in major metropolitan hubs.</p>
 
     <ul className="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-      <li>
-        <strong>Bengaluru, Karnataka, India:</strong><br />
-         Digital Colony Private Limited, 62/63 Church Street, Karnataka, 560001<br />
-      </li>
-      <li><strong>Mumbai, Maharashtra, India</strong></li>
       <li><strong>New Delhi, Delhi, India</strong></li>
-      <li><strong>Chennai, Tamil Nadu, India</strong></li>
+      <li><strong>Mumbai, Maharashtra, India</strong></li>
       <li><strong>Hyderabad, Telangana, India</strong></li>
+      <li><strong>Chennai, Tamil Nadu, India</strong></li>
+      <li>
+        <strong>Bengaluru, Karnataka, India - </strong>
+         62/63 Church Street, Karnataka, 560001<br />
+      </li>
     </ul>
   </div>
 </div>
