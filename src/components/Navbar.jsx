@@ -17,6 +17,8 @@ const links = [
   { href: "/epf", label: "EPFO" },
   { href: "/epfDesk", label: "EPFdesk" },
   { href: "/esic", label: "ESIC" },
+   { href: "/posh", label: "POSH" },
+    { href: "/labour", label: "Labour & HR Reg." },
   { href: "/lwf", label: "LWF" },
   { href: "/pt", label: "PT" },
   { href: "/about", label: "About Us" },
@@ -195,7 +197,7 @@ export default function Navbar({ banner }) {
 
   return (
     <header
-      className={`fixed z-50 w-full border-b px-5 backdrop-blur-md transition-colors duration-300`}
+      className={`fixed z-50 w-full border-b pl-3 pr-10 backdrop-blur-md transition-colors duration-300`}
     >
       <PlusGrid>
         <PlusGridRow className="relative flex items-center justify-between h-[72px]">

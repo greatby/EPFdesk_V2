@@ -122,7 +122,6 @@ const CardSlider = ({ cards, paginationRef }) => {
           >
             {cards.map(
               ({ title, subtitle, icon, bubble, bg }, index) => (
-                console.log("Card:", title, "BG:", bg),
                 (
                   <SwiperSlide key={index}>
                     <div className="hidden">

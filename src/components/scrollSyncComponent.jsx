@@ -58,7 +58,7 @@ const StickyStackedSections = ({ items }) => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-10 py-20">
+    <div className="max-w-6xl mx-auto px-4 md:px-10 py-10">
       {items.cards.map((card, sectionIdx) => (
         <div
           key={sectionIdx}

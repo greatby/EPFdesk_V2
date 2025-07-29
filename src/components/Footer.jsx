@@ -75,6 +75,12 @@ export default function Footer() {
               <li>
                 <Link to="/pt">PT</Link>
               </li>
+               <li>
+                <Link to="/posh">POSH</Link>
+              </li>
+              <li>
+                <Link to="/labour">Labour & HR Reg.</Link>
+              </li>
               <li>
                 <Link to="/lwf">LWF</Link>
               </li>

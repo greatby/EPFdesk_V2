@@ -215,7 +215,7 @@ of our processes.`,
 managed by EPFDesk.com experts within 24-48 hours of successful onboarding.`,
       ],
     },
-     {
+    {
       title: "Dedicated Ongoing Support for Continuous Compliance",
       features: [
         `Dedicated Client Manager: You'll have a single point of contact who possesses
@@ -229,10 +229,9 @@ swiftly.`,
         `Proactive Regulatory Updates: You'll receive timely notifications and expert
 advice on new ESIC rules, rates, benefit changes, or specific directives, ensuring
 you are always informed and compliant.`,
-        
       ],
     },
-     {
+    {
       title: "Key Employer ESIC Concerns We Resolve",
       features: [
         `Registration & Setup: Navigating the "ESIC registration process," assessing "ESIC
@@ -246,10 +245,9 @@ understanding "consequences of non-compliance," and providing "ESIC audit
 support."`,
         `Portal & Data Management: Assisting with "ESIC employer portal login," "employee
 data updates,"and "generating ESIC ID."`,
-        
       ],
     },
-      {
+    {
       title: "Employee ESIC Benefits Support We Ensure",
       features: [
         `Medical Benefit Access: Seamless access to "ESIC medical care" including
@@ -260,7 +258,6 @@ benefit," "disablement benefit," and "unemployment allowance (ABVKY)."`,
 "vocational rehabilitation."`,
         `Access Tools: Support for "E-Pehchan card generation" and checking "ESIC
 registration status of an employee online."`,
-        
       ],
     },
   ],
@@ -2525,9 +2522,23 @@ export const heroSlides = [
     gradientClass:
       "linear-gradient(to bottom right, #a5f3fc, #f9a8d4, #fda4af)",
     icon: "👁️",
-    title: "ENVISION",
-    subtitle:
-      "See the bigger picture and create solutions that make a meaningful impact on the world",
+    title: `POSH Act Compliance: Fostering Safe
+Workplaces, Ensuring Legal Integrity`,
+    subtitle: `Workforce Limited offers expert POSH Act compliance services in
+India. Establish IC, conduct training, handle complaints & ensure 100% adherence to
+POSH Act 2013 for safe workplaces.`,
+  },
+   {
+    id: 7,
+    gradientClass:
+      "linear-gradient(to bottom right, #ddd6fe, #c4b5fd, #fbcfe8)",
+    icon: "👁️",
+    title: `Labour & HR Registrations & Licenses:
+Master Multi-State Compliance,
+Eliminate Risk`,
+    subtitle: `Workforce Limited offers expert Labour & HR Registrations &
+Licenses services in India. We handle Shop Act, CLRA, Factories Act, Contract Labour,
+BOCW, and all mandatory renewals. Ensure compliance, avoid penalties.`,
   },
 ];
 
@@ -3404,7 +3415,7 @@ export const plansEpfManagement = {
  leading to increased satisfaction and morale.`,
       ],
     },
-     {
+    {
       title: "24-Hour Platform Activation",
       //  icon: UsersIcon,
       features: [
@@ -3418,7 +3429,7 @@ tutorials to ensure your employees can quickly adopt and benefit from the platfo
 within 24 hours of onboarding completion, experiencing instant value.`,
       ],
     },
-     {
+    {
       title: "Seamless Integration & Proactive Management",
       //  icon: UsersIcon,
       features: [
@@ -3433,7 +3444,7 @@ EPFO processes, and emerging employee needs, ensuring your employees always have
 growing with your workforce from mid-sized companies to large enterprises.`,
       ],
     },
-      {
+    {
       title: "Common Employee Issues We Resolve:",
       //  icon: UsersIcon,
       features: [
@@ -3445,13 +3456,13 @@ your UAN," and managing "Common UAN login issues and solutions."`,
 profile corrections.`,
         `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
 to withdraw EPF online" and required documents.`,
-`EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
+        `EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
 continuity of funds.`,
-`Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
+        `Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
 to get EPS Scheme Certificate."`,
-`EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
-`Name, date of birth, and contact detail corrections: Efficiently handling "Name mismatch in EPF account" and
-"Changing mobile number/email in EPF."`
+        `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
+        `Name, date of birth, and contact detail corrections: Efficiently handling "Name mismatch in EPF account" and
+"Changing mobile number/email in EPF."`,
       ],
     },
   ],
@@ -3536,3 +3547,853 @@ eliminating last-minute rushes and ensuring "best practices for EPF compliance i
     },
   ],
 };
+
+export const verticalCardsPosh = {
+  mainTitle:
+    "The Critical Challenges of POSH Act Compliance for Indian Businesses",
+  mainSubtitleVer: "Operational Complexities & Administrative Burden",
+  cardsVer: [
+    {
+      title: "Internal Committee (IC) Formation & Training",
+      subtitle: `Difficulty in "forming a valid
+Internal Committee (IC) under POSH Act," ensuring diverse representation,
+and providing "mandatory POSH training for IC members."`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Awareness & Policy Dissemination",
+      subtitle: `Challenges in ensuring "POSH
+awareness training for all employees" (including contract staff) and effectively
+communicating the "POSH policy" across the organization, especially in multilocation
+or hybrid work setups.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Record-Keeping & Reporting",
+      subtitle: `Meticulous documentation of complaints,
+inquiries, IC proceedings, and annual reports (e.g., "POSH annual report
+filing") is administratively heavy and crucial for compliance.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const horizontalCardsPosh = {
+  mainSubtitleHor: "Sensitive Complaint Handling & Legal Risks",
+  cardsHor: [
+    {
+      title: "Fair & Timely Inquiry Process",
+      subtitle: `Ensuring "fair and impartial inquiry process
+under POSH Act" within the strict "POSH complaint timeline" (e.g., 90 days
+for inquiry) can be challenging, especially without specialized expertise.`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Preventing Victimization",
+      subtitle: `Protecting the complainant and witnesses from
+"victimization under POSH Act" during and after an inquiry requires careful
+procedural adherence and a sensitive approach.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Maintaining Confidentiality",
+      subtitle: `The utmost importance of "confidentiality in
+POSH complaints"throughout the inquiry process is often difficult to manage
+internally without robust protocols.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Legal Scrutiny & Penalties",
+      subtitle: `Mishandling a complaint, procedural lapses, or
+non-compliance can lead to severe "penalties for non-compliance with POSH
+Act" (e.g., fines up to ₹50,000, cancellation of business license) and "legal
+action against the employer."`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+export const largeCardsPosh = {
+  subTitle: "Building a Culture of Safety & Trust",
+  cards: [
+    {
+      title: "Shifting Workplace Culture",
+      subtitle: `Moving beyond mere compliance to foster a truly
+"safe and respectful workplace culture" where employees feel empowered to
+speak up requires continuous effort and expert guidance.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Employee Awareness & Trust",
+      subtitle: `Ensuring all employees (including those asking
+"what is sexual harassment at workplace" or "how to file POSH complaint")
+are adequately informed and trust the redressal mechanism.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Reputational Damage",
+      subtitle: `Even a single mishandled POSH complaint or public
+accusation can result in severe "reputational damage for companies" and loss
+of employee and public trust.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+  ],
+};
+
+export const pastelCardsPosh = {
+  subTitle: "Expert Internal Committee (IC) Formation & Training",
+  cards: [
+    {
+      title: "IC Constitution Guidance",
+      subtitle: `Expert assistance in "forming Internal
+Committee (IC) under POSH Act," ensuring it meets all statutory
+requirements regarding composition, gender balance, and external
+member inclusion.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Mandatory IC Training",
+      subtitle: `Comprehensive "POSH training for IC
+members," equipping them with the legal knowledge, procedural steps,
+and sensitivity required to conduct fair and impartial inquiries.`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "IC Policy & Charter Development",
+      subtitle: `Drafting or reviewing the IC's
+operational guidelines, roles, and responsibilities to ensure clarity and
+compliance.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const verticalCardsPoshOne = {
+  mainSubtitleVer: "Comprehensive Employee Awareness & Policy Implementation",
+  cardsVer: [
+    {
+      title: "POSH Policy Development & Review",
+      subtitle: `Drafting or updating your
+organization's "POSH policy India" to be clear, comprehensive, legally
+compliant, and reflective of your company's values.`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Mandatory Employee Training",
+      subtitle: `Conducting engaging and impactful
+"POSH awareness training for all employees" (including contract,
+temporary, and remote staff) through online modules or interactive
+workshops, explaining "what is sexual harassment at workplace" and
+"how to file POSH complaint."`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Policy Dissemination & Display",
+      subtitle: `Ensuring the POSH policy is effectively
+communicated, displayed (e.g., at workplaces, on intranets), and
+acknowledged by all employees as mandated by the Act.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const horizontalCardsPoshOne = {
+  mainSubtitleHor: "Meticulous Complaint Redressal & Inquiry Management",
+  cardsHor: [
+    {
+      title: "End-to-End Inquiry Support",
+      subtitle: `Providing expert guidance and support
+throughout the "POSH complaint inquiry process," from initial complaint
+receipt to final report submission within the "POSH complaint timeline"
+(90 days).`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Impartial Inquiry Conduct",
+      subtitle: `Assisting the IC in conducting fair, unbiased,
+and legally sound inquiries, including evidence gathering, witness
+interviews, and procedural adherence to ensure "fair inquiry process
+under POSH Act."`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Confidentiality & Victimization Prevention",
+      subtitle: `Implementing strict
+protocols to ensure "confidentiality in POSH complaints" and actively
+preventing "victimization under POSH Act" for complainants and
+witnesses.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Final Report & Recommendations",
+      subtitle: `Expert assistance in drafting
+comprehensive inquiry reports and recommendations for appropriate
+action, including "consequences of sexual harassment at workplace."`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+export const largeCardsPoshOne = {
+  subTitle: "Proactive Compliance Monitoring & Reporting",
+  cards: [
+    {
+      title: "Annual Report Filing",
+      subtitle: `Meticulous preparation and timely filing of your
+"POSH annual report to District Officer" (detailing complaints received,
+actions taken, training conducted) as mandated by the Act.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Continuous Regulatory Updates",
+      subtitle: `Monitoring "latest amendments to
+POSH Act 2013" and related guidelines, providing timely alerts and
+actionable insights for ongoing compliance.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Audit Readiness Support",
+      subtitle: `Providing comprehensive assistance during
+any "POSH compliance audits" or legal reviews, ensuring all
+documentation is organized and processes are defensible.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "POSH Act Compliance Checklist",
+      subtitle: `Development and implementation of
+internal checklists to ensure continuous adherence to all procedural and
+substantive requirements.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const plansPosh = {
+  mainTitle:
+    "Why Workforce Limited: Your Definitive Partner for POSH Act Compliance",
+  cards: [
+    {
+      title: "Unmatched Expertise & Unyielding Precision",
+      //  icon: ClipboardDocumentCheckIcon,
+      features: [
+        `Seasoned Legal & HR Professionals: Our team comprises highly experienced
+legal experts specializing in labor and corporate law, certified HR consultants,
+and trained POSH practitioners, bringing deep, updated knowledge of the POSH
+Act and its practical application.`,
+        `99.9% Procedural Accuracy: We implement multi-layered validation and
+stringent expert review processes, ensuring every step of POSH implementation,
+training, and complaint inquiry is legally sound and procedurally perfect.`,
+        `Proactive Regulatory Intelligence: Our experts provide continuous monitoring
+of POSH Act amendments, landmark judgments, and practical interpretations,
+ensuring your company remains ahead of compliance curves.`,
+        ,
+      ],
+    },
+    {
+      title: "Holistic Approach & Strategic Impact",
+      //  icon: UsersIcon,
+      features: [
+        `End-to-End POSH Coverage: From policy drafting and IC formation to
+comprehensive training, inquiry management, and annual reporting, we cover the
+full spectrum of POSH compliance.`,
+        `Protecting Your Reputation & Legal Standing: Our meticulous approach
+safeguards your business from severe "reputational damage," "legal action,"
+and "financial penalties" associated with POSH non-compliance.`,
+        `Cultivating a Positive Culture: By ensuring transparent processes and
+accessible support, we help build a workplace where employees feel safe,
+respected, and empowered, enhancing morale and productivity.`,
+      ],
+    },
+    {
+      title: "Rapid Implementation & Dedicated Partnership",
+      //  icon: UsersIcon,
+      features: [
+        `Streamlined Onboarding: Our dedicated team guides you through a rapid
+onboarding process, including initial compliance assessment and data
+integration.`,
+        `Dedicated Implementation Specialist: An assigned expert ensures a smooth
+transition and addresses all your setup queries promptly.`,
+        ,
+      ],
+    },
+    {
+      title: "Dedicated Ongoing Support for Continuous Compliance",
+      //  icon: UsersIcon,
+      features: [
+        `Assigned Client Manager: Your single point of contact provides personalized
+service and comprehensive support for all your POSH compliance needs.`,
+        `Regular Compliance Updates: Receive timely, clear updates on the latest
+POSH Act changes and best practices.`,
+        `Immediate Query Resolution: Our support team is available to promptly resolve
+any POSH-related questions from your HR or legal teams.`,
+      ],
+    },
+    {
+      title: "Key Employer POSH Concerns We Resolve",
+      //  icon: UsersIcon,
+      features: [
+        `Implementation & Policy: Guidance on "POSH Act applicability," drafting/
+reviewing "POSH policy India," and ensuring its proper dissemination.`,
+        `Internal Committee (IC): Assistance with "forming an Internal Committee (IC)
+under POSH Act,"ensuring "IC member training," and handling "IC
+composition requirements."`,
+        `Employee Training: Conducting "POSH awareness training for all
+employees," "mandatory POSH training requirements," and ensuring "POSH
+compliance for remote workers."`,
+        `Complaint Handling: Support for "POSH complaint inquiry process," "POSH
+complaint timeline," "confidentiality in POSH complaints," and preventing
+"victimization under POSH Act."`,
+        `Reporting & Audit: Preparing "POSH annual report to District Officer" and
+providing "POSH compliance audit" support.`,
+        `Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
+to get EPS Scheme Certificate."`,
+        `Penalties: Advising on "penalties for non-compliance with POSH Act" and
+"legal action against employer under POSH Act."`,
+      ],
+    },
+    {
+      title: "Advanced POSH Advisory & Training",
+      //  icon: UsersIcon,
+      features: [
+        `External Member Services: Providing experienced independent external
+members for your Internal Committee.`,
+        `Sensitive Case Advisory: Expert guidance on complex or high-profile cases,
+ensuring procedural integrity and fair outcomes.`,
+        `Leadership Workshops: Conducting specialized POSH workshops for senior
+management on their roles and responsibilities.`,
+        `Culture Building Initiatives: Strategic advice on integrating POSH compliance
+into broader diversity, equity, and inclusion (DEI) initiatives for a truly respectful
+culture.`,
+      ],
+    },
+  ],
+};
+
+
+export const poshFaq = [
+  {
+    question: "Is the POSH Act 2013 mandatory for all companies in India?",
+    answer: `Yes, the POSH Act 2013 is mandatory for every organization (public or private,
+organized or unorganized sector) in India with 10 or more employees, regardless of
+their type of employment (permanent, temporary, contractual, intern, domestic help).`,
+  },
+  {
+    question: "What are the key requirements for POSH Act compliance?",
+    answer: `Key requirements include: (1) Formulating and widely circulating a POSH policy, (2)
+Constituting an Internal Committee (IC) if 10+ employees (or Local Committee if less
+than 10), (3) Conducting regular awareness training for all employees, and (4) Filing an
+annual report with the District Officer.`,
+  },
+  {
+    question: "What is an Internal Committee (IC), and what is its role?",
+    answer: `The Internal Committee (IC) is a mandatory body formed within an organization (with
+10+ employees) to receive and inquire into complaints of sexual harassment. Its role is
+to conduct a fair, impartial, and confidential inquiry, and submit recommendations to the
+employer.`,
+  },
+  {
+    question:
+      "How often is POSH training required for employees and IC members?",
+    answer: `While the Act doesn't specify frequency, it mandates continuous awareness. Best
+practice recommends annual POSH awareness training for all employees and more
+intensive, specialized training for IC members at least once a year to keep them
+updated on legal nuances and inquiry procedures.`,
+  },
+  {
+    question: "What are the penalties for non-compliance with the POSH Act?",
+    answer: `Non-compliance can lead to severe penalties. The initial penalty for an employer is a
+fine of up to ₹50,000. Subsequent non-compliance can lead to higher fines, and even
+cancellation of the business license or withdrawal of registration. Directors may also
+face legal action.`,
+  },
+  {
+    question:
+      "How long does the POSH complaint inquiry process take?",
+    answer: `The Internal Committee (IC) is legally mandated to complete the inquiry and submit
+its report to the employer within 90 days from the date of receiving the complaint.`,
+  },
+  {
+    question:
+      "Can POSH Act compliance cover remote or hybrid work models?",
+    answer: `Yes, the POSH Act extends to the "workplace," which includes any place visited by
+the employee arising out of or during the course of employment, including transportation
+and virtual/remote working environments. Our services cover POSH compliance for all
+modern work models.`,
+  },
+];
+
+
+export const verticalCardsLabour = {
+  mainTitle:
+    "The Pervasive Challenges of Labor & HR Registrations in India",
+  mainSubtitleVer: "Navigating Fragmentation & Ambiguity",
+  cardsVer: [
+    {
+      title: "Diverse State-Specific Laws",
+      subtitle: `Laws like the "Shop and Establishment Act"
+vary significantly by state, leading to confusion regarding "Shop and
+Establishment Act registration process" in different jurisdictions (e.g.,
+Karnataka, Maharashtra, Delhi).`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Act-Specific Applicability",
+      subtitle: `Determining precise applicability for acts like "CLRA
+Act 1970" (for 20+ contract workers), "Factories Act 1948" (for manufacturing
+units), "Inter-State Migrant Workmen Act, 1979," and "Building and Other
+Construction Workers (BOCW) Act, 1996" requires deep legal interpretation.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Conflicting Information",
+      subtitle: `Sourcing accurate, up-to-date information on various
+registration requirements and forms can be challenging, leading to reliance on
+outdated guides or unofficial sources.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const horizontalCardsLabour = {
+  mainSubtitleHor: "Operational Burden & Renewal Headaches",
+  cardsHor: [
+    {
+      title: "Time-Consuming Registration Processes",
+      subtitle: `Manually filling out numerous
+forms, compiling vast documentation ("documents required for Shops and
+Establishment Act registration," "CLRA license documents"), and following
+up with various labor departments is highly inefficient.`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Managing Multiple Renewals",
+      subtitle: `Tracking and ensuring timely "annual renewals"
+for various licenses (e.g., "CLRA license renewal Maharashtra," "Factories
+Act license renewal," "Shop Act license renewal") across different states is a
+continuous administrative nightmare.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Lack of Centralized Oversight",
+      subtitle: `For multi-location businesses, maintaining a
+consolidated view of all required registrations and their renewal statuses across
+diverse units is a major operational challenge.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+  ],
+};
+
+export const largeCardsLabour = {
+  subTitle: "High Penalties & Legal Exposure",
+  cards: [
+    {
+      title: "Severe Financial Penalties",
+      subtitle: `Non-compliance or delayed registrations/renewals
+can lead to "penalties for not having Shop and Establishment license," hefty
+fines under CLRA Act, Factories Act, and other labor laws, often with daily
+penalties.`,
+      icon: "🛡️",
+      bubble: "Protect!",
+      bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
+    },
+    {
+      title: "Legal Action & Prosecution",
+      subtitle: `Failure to adhere to mandatory registrations can
+result in "legal action against employers," prosecution of directors, or even
+"business closure" in extreme cases.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Reputational Damage",
+      subtitle: `Non-compliance publicly signals a disregard for worker
+welfare and legal integrity, leading to "reputational damage" with employees,
+clients, and investors.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+     {
+      title: "Operational Disruption",
+      subtitle: `Business activities may be halted if required licenses
+are not in place, leading to direct financial losses.`,
+      icon: "🔗",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+  ],
+};
+
+export const pastelCardsLabour = {
+  subTitle: "Initial Registrations & Setup (Flawless First Steps)",
+  cards: [
+    {
+      title: "Shop & Establishment Act Registration",
+      subtitle: `Meticulous handling of "Shop
+and Establishment Act registration process" for every office, retail
+outlet, or commercial establishment, navigating state-specific rules and
+documentation.`,
+      icon: "🎨",
+      bubble: "Create!",
+      bg: "from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "CLRA (Contract Labour) Registrations",
+      subtitle: `Expert management of "CLRA
+license compliance" for principal employers and contractors (including
+"CLRA registration requirements" and "documents required for
+labour license").`,
+      icon: "🌱",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Factories Act Registration",
+      subtitle: `Comprehensive assistance for "Factories
+Act registration requirements," including plan approvals, safety permits,
+and obtaining factory licenses where manufacturing activities occur.`,
+      icon: "🤝",
+      bubble: "Connect!",
+      bg: "from-[#a8edea] to-[#fed6e3]",
+    },
+     {
+      title: "Specific Act Registrations",
+      subtitle: `Covering other niche acts like "Inter-State
+Migrant Workmen (Regulation of Employment and Conditions of
+Service) Act, 1979," and "Building and Other Construction Workers
+(BOCW) Act, 1996" as applicable.`,
+      icon: "💼",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
+    {
+      title: "Initial Core Statutory Registrations (as part of broader setup)",
+      subtitle: `While
+detailed on their own pages, we ensure initial "EPF ESIC registration for
+new company," "Professional Tax registration," and "Labour Welfare
+Fund registration" are seamlessly managed.`,
+      icon: "🤖",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
+    },
+  ],
+};
+
+
+export const verticalCardsLabourOne = {
+  mainSubtitleVer: "License Management & Recurring Renewals (Continuous Compliance)",
+  cardsVer: [
+    {
+      title: "Automated Renewal Tracking",
+      subtitle: `Proactive monitoring and alerts for
+"annual renewals" of all applicable labor and HR licenses across all your
+locations, including "CLRA license renewal Maharashtra," "Shop Act
+license renewal," and "factory license renewal."`,
+      icon: "📚",
+      bubble: "Learn!",
+      bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
+    },
+    {
+      title: "Seamless Renewal Process",
+      subtitle: `End-to-end management of the renewal
+application process, including documentation updates, fee payments, and
+liaising with relevant labor departments for timely approval.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+    {
+      title: "Multi-State Renewal Coordination",
+      subtitle: `Expert handling of varied renewal
+frequencies, forms, and fees across different states, simplifying
+compliance for businesses with a nationwide footprint.`,
+      icon: "🌟",
+      bubble: "Shine!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+     {
+      title: "Compliance Calendar Management",
+      subtitle: `Development and maintenance of
+a custom "HR statutory compliance calendar India" for your business,
+ensuring all recurring registration and renewal deadlines are met.`,
+      icon: "🔨",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
+  ],
+};
+
+export const horizontalCardsLabourOne = {
+  mainSubtitleHor: "Audit Preparedness & Advisory (Proactive Risk Mitigation)",
+  cardsHor: [
+    {
+      title: "Continuous Regulatory Monitoring",
+      subtitle: `Our experts constantly track
+"Indian labor law updates" and changes specific to various acts (e.g.,
+Minimum Wages Act, Payment of Wages Act, Contract Labour Act) and
+provide timely alerts and actionable insights.`,
+      icon: "🔍",
+      bubble: "Discover!",
+      bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
+    },
+    {
+      title: "Penalty Prevention Strategies",
+      subtitle: `We implement proactive measures to
+identify and rectify potential non-compliance issues (e.g., not maintaining
+"required registers under labor laws" like Muster Roll, Wage Register)
+before they escalate.`,
+      icon: "🎯",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
+    {
+      title: "Comprehensive Audit Support",
+      subtitle: `Provide complete assistance during
+"labour law audits,"inspections by authorities, including data compilation,
+documentation (e.g., "Form A, Form B registers maintenance"), and
+expert liaison to ensure smooth and successful outcomes.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
+      title: "Response to Notices",
+      subtitle: `Expert drafting and submission of timely replies to
+notices from labor departments or other statutory bodies.`,
+      icon: "💡",
+      bubble: "Innovate!",
+      bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
+    },
+  ],
+};
+
+
+export const plansLabour = {
+  mainTitle:
+    "Why Workforce Limited: Your Definitive Partner for POSH Act Compliance",
+  cards: [
+    {
+      title: "Unmatched Expertise & Unyielding Precision",
+      //  icon: ClipboardDocumentCheckIcon,
+      features: [
+        `Seasoned Labor Law Professionals: Our team comprises highly experienced
+labor law attorneys, compliance experts, and HR consultants with deep, updated
+knowledge of every central and state-specific labor act (e.g., CLRA, Factories
+Act, Shop & Establishment Acts).`,
+        `99.9% Procedural Accuracy: We implement multi-layered validation and
+stringent expert review processes, ensuring every registration, renewal, and
+documentation is legally sound and procedurally perfect, minimizing errors and
+rejections.`,
+        `Proactive Regulatory Intelligence: Our experts provide continuous monitoring
+of new acts (like upcoming Labour Codes), amendments, and local nuances,
+ensuring your company remains ahead of the compliance curve across all states.`,
+        ,
+      ],
+    },
+    {
+      title: "Comprehensive Scope & Strategic Advantage",
+      //  icon: UsersIcon,
+      features: [
+        `End-to-End Coverage: We manage the full spectrum of mandatory labor and
+HR registrations and licenses, from initial setup to ongoing renewals and
+comprehensive audit support.`,
+        `Multi-State Specialization: Our unique strength lies in expertly navigating the
+diverse requirements of different Indian states, providing a single point of contact
+for your nationwide registration needs.`,
+        `Protection for Leadership: Our meticulous processes reduce the risk of
+personal liabilities or legal actions against directors/management for noncompliance.`,
+      ],
+    },
+    {
+      title: "Rapid Implementation & Dedicated Partnership",
+      //  icon: UsersIcon,
+      features: [
+        `Streamlined Onboarding: Our dedicated team guides you through a rapid
+onboarding process, including initial compliance assessment and secure data
+integration for existing records.`,
+        `Dedicated Implementation Specialist: An assigned expert ensures a smooth
+transition and addresses all your setup queries promptly, integrating with your
+existing HR systems where required.`,
+        ,
+      ],
+    },
+    {
+      title: "Dedicated Ongoing Support for Continuous Multi-State Compliance",
+      //  icon: UsersIcon,
+      features: [
+        `Assigned Client Manager: Your single point of contact provides personalized
+service and comprehensive support for all your registration and licensing needs.`,
+        `Automated Renewal Alerts: Our system provides timely notifications for all
+upcoming license renewals, ensuring no deadline is missed.`,
+        `Immediate Query Resolution: Our support team is available to promptly resolve
+any queries related to your labor registrations from your HR or legal teams.`,
+      ],
+    },
+    {
+      title: "Key Initial Registrations & Setup",
+      //  icon: UsersIcon,
+      features: [
+        `Shop and Establishment Act: "Shop and Establishment Act registration
+process," "online Shop Act registration," and managing "penalties for not
+having Shop Act license."`,
+        `CLRA (Contract Labour): "CLRA registration for principal employer,"
+"CLRA license for contractors," and "documents required for CLRA
+registration."`,
+        `Factories Act: "Factories Act registration requirements," "factory license
+application process,"and related safety approvals.`,
+        `Other Labour Acts: Registrations under "Inter-State Migrant Workmen Act,
+1979," "Building and Other Construction Workers (BOCW) Act, 1996," and
+similar acts as applicable.`,
+        `Core Statutory Registrations (Initial): Assistance with "EPF ESIC registration
+for new company," "Professional Tax registration," and "Labour Welfare
+Fund registration."`,
+      ],
+    },
+    {
+      title: "Ongoing Management & Renewal Services",
+      //  icon: UsersIcon,
+      features: [
+        `License Renewals: End-to-end management of "CLRA license renewal
+Maharashtra," "factory license renewal," "Shop Act license renewal," and
+"professional tax registration renewal" across all states.`,
+        `Compliance Calendar: Creation and maintenance of a custom "HR statutory
+compliance calendar India" for your business, tracking all deadlines.`,
+        `Register Maintenance: Guidance on "maintenance of registers under labor
+laws" (e.g., Muster Roll, Wage Register, Overtime Register).`,
+        `Amendments: Managing amendments to existing registrations due to changes
+in address, business nature, or employee count.`,
+      ],
+    },
+     {
+      title: "Risk Mitigation & Audit Support",
+      //  icon: UsersIcon,
+      features: [
+        `Penalty Prevention: Strategies to avoid "penalties for labor law noncompliance"
+and "legal action against employer."`,
+        `Labor Law Audits: Comprehensive assistance for "labour law audits" and
+inspections by authorities.`,
+        `Regulatory Updates: Continuous monitoring of "Indian labor law updates"
+and specialized guidance on the "impact of new social security code" on
+various registrations.`,
+     
+      ],
+    },
+  ],
+};
+
+
+export const labourFaq = [
+  {
+    question: "Which are the most common labor law registrations required for businesses in India?",
+    answer: `The most common include the Shop and Establishment Act (state-specific), Contract
+Labour (Regulation & Abolition) Act (CLRA) license (if engaging 20+ contract workers),
+Factories Act registration (for manufacturing units), EPF, ESIC, Professional Tax, and
+Labour Welfare Fund registrations.`,
+  },
+  {
+    question: "Do these registrations need to be renewed, and how often?",
+    answer: `Yes, many labor licenses and registrations require periodic renewal. The frequency
+varies by act and state:
+* Shop Act: Often annual or biennial.
+* CLRA License: Annual.
+* Factories Act License: Typically 1 to 5 years, depending on the state.
+We manage all renewals proactively.`,
+  },
+  {
+    question: "How do you handle compliance for businesses operating in multiple states with varying laws?",
+    answer: `Our unique strength lies in our nationwide operational footprint and deep expertise in
+the nuances of each state's specific labor laws. We provide centralized management for
+all your multi-state registrations and renewals, ensuring seamless compliance across
+your entire Indian presence.`,
+  },
+  {
+    question:
+      "What are the risks of not having the correct labor registrations or licenses?",
+    answer: `Non-compliance can lead to severe financial penalties (often daily fines), legal action
+against the company and its directors, operational disruptions (e.g., closure orders), and
+significant reputational damage.`,
+  },
+  {
+    question: "Do you assist with both initial registrations and ongoing renewals?",
+    answer: `Yes, our service is end-to-end. We handle the entire process from assessing initial
+applicability and completing the first-time registration to continuously monitoring and
+managing all subsequent renewals, ensuring continuous compliance.`,
+  },
+  {
+    question:
+      "What kind of documentation is typically required for these registrations?",
+    answer: `Required documents vary by act and state but commonly include business
+incorporation certificates, PAN/Aadhaar of directors/proprietors, address proof of
+establishment, employee details, bank challans, and specific application forms. We
+guide you through the precise requirements for each.`,
+  },
+  {
+    question:
+      "Can you help with compliance under the Contract Labour (Regulation & Abolition) Act(CLRA)?",
+    answer: `Yes, we provide comprehensive CLRA compliance services, including assisting
+principal employers with obtaining their registration certificate and helping contractors
+secure their labor licenses, along with all ongoing compliances, ensuring full adherence
+to the Act.`,
+  },
+];

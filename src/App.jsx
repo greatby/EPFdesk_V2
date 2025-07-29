@@ -27,6 +27,8 @@ import AboutUs from "./components/aboutUs";
 import Login from "./components/login";
 import SignUp from "./components/signIn";
 import { Toaster } from 'react-hot-toast';
+import Posh from "./components/posh";
+import LabourAndHR from "./components/labourAndHR";
 
 function App() {
   return (
@@ -106,6 +108,22 @@ function App() {
         element={
           <Layout>
             <ProfessionalTax />
+          </Layout>
+        }
+      />
+       <Route
+        path="/posh"
+        element={
+          <Layout>
+            <Posh/>
+          </Layout>
+        }
+      />
+      <Route
+        path="/labour"
+        element={
+          <Layout>
+            <LabourAndHR/>
           </Layout>
         }
       />
