@@ -58,7 +58,7 @@ export default function Footer() {
             <h5 className="text-lg font-semibold text-gray-500 uppercase mb-2">
               Quick Links
             </h5>
-            <ul className="space-y-3 text-[1rem] w-[27vw] columns-1 md:columns-2">
+            <ul className="space-y-3 text-[1rem] columns-1 md:columns-2">
               <li>
                 <Link to="/epf">EPFO</Link>
               </li>
@@ -74,9 +74,9 @@ export default function Footer() {
                <li>
                 <Link to="/posh">POSH</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/labour">License & Registration</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/lwf">LWF</Link>
               </li>
