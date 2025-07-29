@@ -156,7 +156,7 @@ const Login = () => {
       await signInWithEmailLink(auth, emailInput, window.location.href);
       window.localStorage.removeItem("emailForSignIn");
       toast.success("You are signed in!");
-      navigate("/signin"); // redirect to dashboard
+      navigate("/signin",{ replace: true });
     } catch (error) {
       setMessage("Login failed: " + error.message);
     }
