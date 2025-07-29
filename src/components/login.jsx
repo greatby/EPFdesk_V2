@@ -108,7 +108,6 @@
 
 // export default Login;
 
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FcGoogle } from "react-icons/fc";
@@ -134,12 +133,12 @@ const Login = () => {
   // Send the magic link
   const sendEmailLink = async () => {
     const actionCodeSettings = {
-    url:
-      process.env.NODE_ENV === "production"
-        ? "https://ep-fdesk-v2.vercel.app/signin"
-        : "http://localhost:3000/signin",
-    handleCodeInApp: true,
-  };
+      url:
+        process.env.NODE_ENV === "production"
+          ? "https://ep-fdesk-v2.vercel.app/signin"
+          : "http://localhost:3000/signin",
+      handleCodeInApp: true,
+    };
 
     try {
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
@@ -163,22 +162,25 @@ const Login = () => {
   // };
 
   const completeSignIn = async (emailInput) => {
-  try {
-    const result = await signInWithEmailLink(auth, emailInput, window.location.href);
-    console.log("Sign-in Result:", result);
-    if (result?.user) {
-      window.localStorage.removeItem("emailForSignIn");
-      toast.success(`Welcome ${result.user.email}!`);
-      navigate("/signin", { replace: true });
-    } else {
-      setMessage("No user returned. Please try again.");
+    try {
+      const result = await signInWithEmailLink(
+        auth,
+        emailInput,
+        window.location.href
+      );
+      console.log("Sign-in Result:", result);
+      if (result?.user) {
+        window.localStorage.removeItem("emailForSignIn");
+        toast.success(`Welcome ${result.user.email}!`);
+        navigate("/signin", { replace: true });
+      } else {
+        setMessage("No user returned. Please try again.");
+      }
+    } catch (error) {
+      console.error("Login failed:", error);
+      setMessage("Login failed: " + error.message);
     }
-  } catch (error) {
-    console.error("Login failed:", error);
-    setMessage("Login failed: " + error.message);
-  }
-};
-
+  };
 
   // Handle sign-in when user clicks email link
   useEffect(() => {
@@ -216,10 +218,11 @@ const Login = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="relative z-10 bg-white/70 backdrop-blur-lg border border-white/40 rounded-2xl shadow-xl p-8 w-11/12 max-w-md text-center"
       >
+        <div className="absolute w-5 h-5 bg-[#ff6b6b] rounded-full top-[20%] left-[20%] opacity-20 animate-float" />
+        <div className="absolute w-4 h-4 bg-[#4ecdc4] rounded-full top-[70%] right-[20%] opacity-20 animate-float delay-2000" />
+        <div className="absolute w-6 h-6 bg-[#ffe66d] rounded-full bottom-[30%] left-[30%] opacity-20 animate-float delay-4000" />
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome Back</h1>
-        <p className="text-gray-600 mb-8">
-          Sign in with Google or your Email
-        </p>
+        <p className="text-gray-600 mb-8">Sign in with Google or your Email</p>
 
         {/* Google Button */}
         <button
