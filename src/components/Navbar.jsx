@@ -18,7 +18,7 @@ const links = [
   { href: "/epfDesk", label: "EPFdesk" },
   { href: "/esic", label: "ESIC" },
    { href: "/posh", label: "POSH" },
-    { href: "/labour", label: "Labour & HR Reg." },
+    { href: "/labour", label: "License & Registration" },
   { href: "/lwf", label: "LWF" },
   { href: "/pt", label: "PT" },
   { href: "/about", label: "About Us" },
