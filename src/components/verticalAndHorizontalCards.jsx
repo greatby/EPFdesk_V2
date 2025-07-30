@@ -221,7 +221,7 @@ const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
   return (
     <div className="min-h-screen px-4">
       <div className="max-w-[1400px] mx-auto">
-        <h1 className="text-4xl sm:text-5xl mt-8 font-extrabold text-center text-gray-800 mb-12">
+        <h1 className="text-4xl sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-12">
           {mainTitle}
         </h1>
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">

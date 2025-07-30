@@ -136,7 +136,7 @@ const Login = () => {
       url:
         process.env.NODE_ENV === "production"
           ? "https://ep-fdesk-v2.vercel.app/signin"
-          : "http://localhost:3000/signin",
+          : "http://localhost:5173/signin",
       handleCodeInApp: true,
     };
 
@@ -187,7 +187,7 @@ const Login = () => {
     if (isSignInWithEmailLink(auth, window.location.href)) {
       let storedEmail = window.localStorage.getItem("emailForSignIn");
       if (storedEmail) {
-        completeSignIn(storedEmail);
+       completeSignIn(storedEmail).then(() => navigate("/signin", { replace: true }));
       } else {
         // If no stored email, show input for user
         setNeedsEmail(true);
