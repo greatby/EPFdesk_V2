@@ -2524,11 +2524,11 @@ export const heroSlides = [
     icon: "🛡️",
     title: `POSH Act Compliance: Fostering Safe
 Workplaces, Ensuring Legal Integrity`,
-    subtitle: `Workforce Limited offers expert POSH Act compliance services in
-India. Establish IC, conduct training, handle complaints & ensure 100% adherence to
-POSH Act 2013 for safe workplaces.`,
+    subtitle: `EPFdesk.com offers expert POSH Act compliance in India, including
+a dedicated 3rd-party complaint hotline. Establish IC, conduct training, handle
+complaints & ensure 100% adherence to POSH Act 2013 for safe workplaces.`,
   },
-   {
+  {
     id: 7,
     gradientClass:
       "linear-gradient(to bottom right, #ddd6fe, #c4b5fd, #fbcfe8)",
@@ -3733,6 +3733,18 @@ export const horizontalCardsPoshOne = {
   mainSubtitleHor: "Meticulous Complaint Redressal & Inquiry Management",
   cardsHor: [
     {
+      title: "Dedicated & Impartial Complaint Hotline (3rd Party Service)",
+      subtitle: `Provide
+a secure, confidential, and independent 24/7 hotline for employees to
+report sexual harassment complaints directly to a neutral, third-party entity
+(EPFdesk.com). This service operates like a trusted third-party
+mechanism used in Europe, ensuring anonymity (if desired by the
+complainant) and impartiality, which significantly enhances employee trust.`,
+      icon: "🤝",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
+    {
       title: "End-to-End Inquiry Support",
       subtitle: `Providing expert guidance and support
 throughout the "POSH complaint inquiry process," from initial complaint
@@ -3893,8 +3905,6 @@ complaint timeline," "confidentiality in POSH complaints," and preventing
 "victimization under POSH Act."`,
         `Reporting & Audit: Preparing "POSH annual report to District Officer" and
 providing "POSH compliance audit" support.`,
-        `Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
-to get EPS Scheme Certificate."`,
         `Penalties: Advising on "penalties for non-compliance with POSH Act" and
 "legal action against employer under POSH Act."`,
       ],
@@ -3914,9 +3924,63 @@ into broader diversity, equity, and inclusion (DEI) initiatives for a truly resp
 culture.`,
       ],
     },
+    {
+      title: "Proactive IC Preparedness & Mock Inquiry Drills",
+      //  icon: UsersIcon,
+      features: [
+        `What We Offer: Go beyond standard training with "mock inquiry drills" and
+preparedness workshops for your Internal Committee. We simulate complaint
+scenarios, allowing your IC to practice their skills in a controlled environment and
+identify areas for improvement before a real case arises. This is a unique "IC
+readiness assessment."`,
+        `Your Benefit: An exceptionally prepared and confident IC, minimizing procedural
+errors in real-time sensitive situations, and significantly reducing legal risks by
+demonstrating proactive readiness.`,
+      ],
+    },
+    {
+      title: "Cultivating a Respectful Culture Beyond Policy",
+      //  icon: UsersIcon,
+      features: [
+        `What We Offer: Strategic advisory on integrating POSH principles into broader
+organizational values. This includes workshops on "bystander intervention
+training," "unconscious bias awareness," and "respectful communication"
+to build a truly inclusive environment where harassment is less likely to occur.`,
+        `Your Benefit: A genuinely safer, more inclusive, and psychologically secure
+workplace, leading to increased employee morale, reduced turnover, and a
+stronger employer brand, moving beyond mere legal compliance.`,
+      ],
+    },
+    {
+      title: "Post-Inquiry Support & Reintegration Advisory",
+      //  icon: UsersIcon,
+      features: [
+        `What We Offer: Provide expert advisory and support for post-inquiry phases,
+including guidance on "reintegration strategies" for involved parties (where
+appropriate and legally permissible) and support for "workplace rehabilitation"
+to ensure a harmonious environment after resolution. This may also include
+recommended professional counseling resources.`,
+        `Your Benefit: A holistic approach to workplace safety that extends beyond legal
+resolution, fostering a fair environment for all employees and protecting
+organizational well-being even after difficult situations.`,
+      ],
+    },
+    {
+      title: "Anonymized Trend Reporting & Strategic Insights",
+      //  icon: UsersIcon,
+      features: [
+        `What We Offer: Leveraging our experience (and with proper client data consent
+and anonymization), we can provide aggregate, anonymized reports on
+"common POSH complaint trends," "types of workplace harassment
+reported," and "training effectiveness metrics."`,
+        `Your Benefit: Data-driven insights to proactively identify and address systemic
+issues, measure the impact of your POSH initiatives, and continuously refine
+your workplace safety strategies, turning compliance data into actionable
+intelligence.`,
+      ],
+    },
   ],
 };
-
 
 export const poshFaq = [
   {
@@ -3931,13 +3995,6 @@ their type of employment (permanent, temporary, contractual, intern, domestic he
 Constituting an Internal Committee (IC) if 10+ employees (or Local Committee if less
 than 10), (3) Conducting regular awareness training for all employees, and (4) Filing an
 annual report with the District Officer.`,
-  },
-  {
-    question: "What is an Internal Committee (IC), and what is its role?",
-    answer: `The Internal Committee (IC) is a mandatory body formed within an organization (with
-10+ employees) to receive and inquire into complaints of sexual harassment. Its role is
-to conduct a fair, impartial, and confidential inquiry, and submit recommendations to the
-employer.`,
   },
   {
     question:
@@ -3955,25 +4012,45 @@ cancellation of the business license or withdrawal of registration. Directors ma
 face legal action.`,
   },
   {
-    question:
-      "How long does the POSH complaint inquiry process take?",
+    question: "How long does the POSH complaint inquiry process take?",
     answer: `The Internal Committee (IC) is legally mandated to complete the inquiry and submit
 its report to the employer within 90 days from the date of receiving the complaint.`,
   },
   {
-    question:
-      "Can POSH Act compliance cover remote or hybrid work models?",
+    question: "Can POSH Act compliance cover remote or hybrid work models?",
     answer: `Yes, the POSH Act extends to the "workplace," which includes any place visited by
 the employee arising out of or during the course of employment, including transportation
 and virtual/remote working environments. Our services cover POSH compliance for all
 modern work models.`,
   },
+  {
+    question:
+      "What is the benefit of using a third-party hotline for POSH complaints?",
+    answer: `A third-party hotline, like the one offered by EPFdesk.com, provides employees with
+an independent, secure, and confidential channel to report complaints. This enhances
+trust and impartiality, encourages reporting, and reduces the burden on internal HR for
+initial sensitive handling, safeguarding your organization's reputation.`,
+  },
+  {
+    question:
+      "How do you help our Internal Committee (IC) prepare for complex complaints?",
+    answer: `We offer specialized mock inquiry drills and preparedness workshops for your IC.
+This unique service simulates complaint scenarios, allowing your IC to practice their
+legal and procedural skills in a controlled environment, ensuring they are exceptionally
+prepared for real-time situations.`,
+  },
+  {
+    question:
+      "Do your services extend beyond legal compliance to foster a safer workplace culture?",
+    answer: `Absolutely. We provide strategic advisory and conduct workshops on topics like
+bystander intervention, unconscious bias, and respectful communication to proactively
+build a genuinely inclusive culture where harassment is actively prevented, going
+beyond mere policy adherence.`,
+  },
 ];
 
-
 export const verticalCardsLabour = {
-  mainTitle:
-    "The Pervasive Challenges of Labor & HR Registrations in India",
+  mainTitle: "The Pervasive Challenges of Labor & HR Registrations in India",
   mainSubtitleVer: "Navigating Fragmentation & Ambiguity",
   cardsVer: [
     {
@@ -4074,7 +4151,7 @@ clients, and investors.`,
       bubble: "Consult!",
       bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
     },
-     {
+    {
       title: "Operational Disruption",
       subtitle: `Business activities may be halted if required licenses
 are not in place, leading to direct financial losses.`,
@@ -4117,7 +4194,7 @@ and obtaining factory licenses where manufacturing activities occur.`,
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
-     {
+    {
       title: "Specific Act Registrations",
       subtitle: `Covering other niche acts like "Inter-State
 Migrant Workmen (Regulation of Employment and Conditions of
@@ -4140,9 +4217,9 @@ Fund registration" are seamlessly managed.`,
   ],
 };
 
-
 export const verticalCardsLabourOne = {
-  mainSubtitleVer: "License Management & Recurring Renewals (Continuous Compliance)",
+  mainSubtitleVer:
+    "License Management & Recurring Renewals (Continuous Compliance)",
   cardsVer: [
     {
       title: "Automated Renewal Tracking",
@@ -4172,7 +4249,7 @@ compliance for businesses with a nationwide footprint.`,
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
-     {
+    {
       title: "Compliance Calendar Management",
       subtitle: `Development and maintenance of
 a custom "HR statutory compliance calendar India" for your business,
@@ -4227,7 +4304,6 @@ notices from labor departments or other statutory bodies.`,
     },
   ],
 };
-
 
 export const plansLabour = {
   mainTitle:
@@ -4325,7 +4401,7 @@ laws" (e.g., Muster Roll, Wage Register, Overtime Register).`,
 in address, business nature, or employee count.`,
       ],
     },
-     {
+    {
       title: "Risk Mitigation & Audit Support",
       //  icon: UsersIcon,
       features: [
@@ -4336,16 +4412,15 @@ inspections by authorities.`,
         `Regulatory Updates: Continuous monitoring of "Indian labor law updates"
 and specialized guidance on the "impact of new social security code" on
 various registrations.`,
-     
       ],
     },
   ],
 };
 
-
 export const labourFaq = [
   {
-    question: "Which are the most common labor law registrations required for businesses in India?",
+    question:
+      "Which are the most common labor law registrations required for businesses in India?",
     answer: `The most common include the Shop and Establishment Act (state-specific), Contract
 Labour (Regulation & Abolition) Act (CLRA) license (if engaging 20+ contract workers),
 Factories Act registration (for manufacturing units), EPF, ESIC, Professional Tax, and
@@ -4361,7 +4436,8 @@ varies by act and state:
 We manage all renewals proactively.`,
   },
   {
-    question: "How do you handle compliance for businesses operating in multiple states with varying laws?",
+    question:
+      "How do you handle compliance for businesses operating in multiple states with varying laws?",
     answer: `Our unique strength lies in our nationwide operational footprint and deep expertise in
 the nuances of each state's specific labor laws. We provide centralized management for
 all your multi-state registrations and renewals, ensuring seamless compliance across
@@ -4375,7 +4451,8 @@ against the company and its directors, operational disruptions (e.g., closure or
 significant reputational damage.`,
   },
   {
-    question: "Do you assist with both initial registrations and ongoing renewals?",
+    question:
+      "Do you assist with both initial registrations and ongoing renewals?",
     answer: `Yes, our service is end-to-end. We handle the entire process from assessing initial
 applicability and completing the first-time registration to continuously monitoring and
 managing all subsequent renewals, ensuring continuous compliance.`,

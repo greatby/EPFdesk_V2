@@ -41,8 +41,7 @@ const Posh = () => {
       <FadeInWhenVisible>
         <div className="max-w-[1400px] mx-auto">
           <h1 className="text-4xl sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-10">
-            Your Definitive Solution: Workforce Limited's POSH Act Compliance
-            Services
+            Your Definitive Solution: EPFdesk.com’s POSH Act Compliance Services
           </h1>
         </div>
         <PastelCardSlider cardsData={pastelCardsPosh} />
@@ -58,7 +57,7 @@ const Posh = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold mt-16 mb-10 text-center">
-          Why Workforce Limited: Your Definitive Partner for POSH Act Compliance{" "}
+          Why EPFdesk.com: Your Definitive Partner for POSH Act Compliance{" "}
         </h2>
         <StickyScrollSections items={plansPosh} />
       </FadeInWhenVisible>
