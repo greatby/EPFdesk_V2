@@ -135,8 +135,8 @@ const Login = () => {
     const actionCodeSettings = {
       url:
         process.env.NODE_ENV === "production"
-          ? "https://ep-fdesk-v2.vercel.app/signin"
-          : "http://localhost:5173/signin",
+          ? "https://ep-fdesk-v2.vercel.app?redirect=/signin"
+          : "http://localhost:5173?redirect=/signin",
       handleCodeInApp: true,
     };
 
@@ -162,38 +162,41 @@ const Login = () => {
   // };
 
   const completeSignIn = async (emailInput) => {
-    try {
-      const result = await signInWithEmailLink(
-        auth,
-        emailInput,
-        window.location.href
-      );
-      console.log("Sign-in Result:", result);
-      if (result?.user) {
-        window.localStorage.removeItem("emailForSignIn");
-        toast.success(`Welcome ${result.user.email}!`);
-        navigate("/signin", { replace: true });
-      } else {
-        setMessage("No user returned. Please try again.");
-      }
-    } catch (error) {
-      console.error("Login failed:", error);
-      setMessage("Login failed: " + error.message);
+  try {
+    const result = await signInWithEmailLink(auth, emailInput, window.location.href);
+
+    if (result?.user) {
+      window.localStorage.removeItem("emailForSignIn");
+      toast.success(`Welcome ${result.user.email}!`);
+
+      const params = new URLSearchParams(window.location.search);
+      const redirectPath = params.get("redirect") || "/signin";
+
+      // remove Firebase junk from the URL
+      window.history.replaceState({}, document.title, redirectPath);
+
+      navigate(redirectPath, { replace: true });
     }
-  };
+  } catch (error) {
+    console.error("Login failed:", error);
+    setMessage("Login failed: " + error.message);
+  }
+};
+
 
   // Handle sign-in when user clicks email link
-  useEffect(() => {
-    if (isSignInWithEmailLink(auth, window.location.href)) {
-      let storedEmail = window.localStorage.getItem("emailForSignIn");
-      if (storedEmail) {
-       completeSignIn(storedEmail).then(() => navigate("/signin", { replace: true }));
-      } else {
-        // If no stored email, show input for user
-        setNeedsEmail(true);
-      }
+ useEffect(() => {
+  if (isSignInWithEmailLink(auth, window.location.href)) {
+    let storedEmail = window.localStorage.getItem("emailForSignIn");
+
+    if (storedEmail) {
+      completeSignIn(storedEmail);
+    } else {
+      // If no stored email, show input for user
+      setNeedsEmail(true);
     }
-  }, []);
+  }
+}, []);
 
   const handleProviderLogin = async (provider) => {
     try {

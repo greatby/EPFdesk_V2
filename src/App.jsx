@@ -26,138 +26,138 @@ import MazeEscapeSection from "./components/mazeEscapeSection";
 import AboutUs from "./components/aboutUs";
 import Login from "./components/login";
 import SignUp from "./components/signIn";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 import Posh from "./components/posh";
 import LabourAndHR from "./components/labourAndHR";
+import RedirectHandler from "./components/redirectHandler";
+import { AuthProvider } from './context/authProvider';
 
 function App() {
   return (
     <>
-      <Toaster position="top-center"/>
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <FadeInWhenVisible>
-              <Hero />
-            </FadeInWhenVisible>
-            {/* <FadeInWhenVisible>
+    <AuthProvider>
+      <Toaster position="top-center" />
+       <RedirectHandler />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <FadeInWhenVisible>
+                <Hero />
+              </FadeInWhenVisible>
+              {/* <FadeInWhenVisible>
               <TrustIndicators />
             </FadeInWhenVisible> */}
-            <FadeInWhenVisible>
-              {/* <HrChallenges /> */}
-              {/* <LatticeSlider slides={slidesLanding} /> */}
-              <LargeCardSlider cardsData={largeCardsLanding} />
-            </FadeInWhenVisible>
-            {/* <div>
+              <FadeInWhenVisible>
+                {/* <HrChallenges /> */}
+                {/* <LatticeSlider slides={slidesLanding} /> */}
+                <LargeCardSlider cardsData={largeCardsLanding} />
+              </FadeInWhenVisible>
+              {/* <div>
 
             <VerticalCarousel />
             </div> */}
-            {/* <FadeInWhenVisible>
+              {/* <FadeInWhenVisible>
               <ComplianceSolution />
             </FadeInWhenVisible> */}
-            <FadeInWhenVisible>
-              <ServiceCards />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <StackedCards />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <CustomerCarousel />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <LimitedCapacitySection />
-            </FadeInWhenVisible>
-            {/* <LatticeTabs cards={dummyCards}/> */}
-            {/* <ScrollSyncComponent /> */}
-            <FadeInWhenVisible>
-              <MazeEscapeSection />
-            </FadeInWhenVisible>
-          </Layout>
-        }
-      />
+              <FadeInWhenVisible>
+                <ServiceCards />
+              </FadeInWhenVisible>
+              <FadeInWhenVisible>
+                <StackedCards />
+              </FadeInWhenVisible>
+              <FadeInWhenVisible>
+                <CustomerCarousel />
+              </FadeInWhenVisible>
+              <FadeInWhenVisible>
+                <LimitedCapacitySection />
+              </FadeInWhenVisible>
+              {/* <LatticeTabs cards={dummyCards}/> */}
+              {/* <ScrollSyncComponent /> */}
+              <FadeInWhenVisible>
+                <MazeEscapeSection />
+              </FadeInWhenVisible>
+            </Layout>
+          }
+        />
 
-      <Route
-        path="/epfDesk"
-        element={
-          <Layout>
-            <EPFDesk />
-          </Layout>
-        }
-      />
+        <Route
+          path="/epfDesk"
+          element={
+            <Layout>
+              <EPFDesk />
+            </Layout>
+          }
+        />
 
-      <Route
-        path="/epf"
-        element={
-          <Layout>
-            <EPFManagement />
-          </Layout>
-        }
-      />
-      <Route
-        path="/esic"
-        element={
-          <Layout>
-            <ESICCompliance />
-          </Layout>
-        }
-      />
-      <Route
-        path="/pt"
-        element={
-          <Layout>
-            <ProfessionalTax />
-          </Layout>
-        }
-      />
-       <Route
-        path="/posh"
-        element={
-          <Layout>
-            <Posh/>
-          </Layout>
-        }
-      />
-      <Route
-        path="/labour"
-        element={
-          <Layout>
-            <LabourAndHR/>
-          </Layout>
-        }
-      />
-      <Route
-        path="/lwf"
-        element={
-          <Layout>
-            <LabourWelfareFund />
-          </Layout>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <Layout>
-            <AboutUs />
-          </Layout>
-        }
-      />
-      <Route
-        path="/login"
-        element={
-            <Login />
-        }
-      />
-       <Route
-        path="/signin"
-        element={
-          <Layout>
-            <SignUp />
-          </Layout>
-        }
-      />
-    </Routes>
+        <Route
+          path="/epf"
+          element={
+            <Layout>
+              <EPFManagement />
+            </Layout>
+          }
+        />
+        <Route
+          path="/esic"
+          element={
+            <Layout>
+              <ESICCompliance />
+            </Layout>
+          }
+        />
+        <Route
+          path="/pt"
+          element={
+            <Layout>
+              <ProfessionalTax />
+            </Layout>
+          }
+        />
+        <Route
+          path="/posh"
+          element={
+            <Layout>
+              <Posh />
+            </Layout>
+          }
+        />
+        <Route
+          path="/labour"
+          element={
+            <Layout>
+              <LabourAndHR />
+            </Layout>
+          }
+        />
+        <Route
+          path="/lwf"
+          element={
+            <Layout>
+              <LabourWelfareFund />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <AboutUs />
+            </Layout>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/signin"
+          element={
+            <Layout>
+              <SignUp />
+            </Layout>
+          }
+        />
+      </Routes>
+      </AuthProvider>
     </>
   );
 }
