@@ -179,6 +179,8 @@ rehabilitation.`,
         `Seamless Access Tools: We ensure accurate details for employees to "download
 ESIC E-Pehchan card" and "check ESI registration of an employee online,"
 facilitating their access to benefits.`,
+        `Your Benefit: A healthier, more secure workforce, reduced employee frustration related
+to ESIC benefits, and a stronger employer reputation that aids in talent retention.`,
       ],
     },
     {
@@ -2545,6 +2547,8 @@ BOCW, and all mandatory renewals. Ensure compliance, avoid penalties.`,
 export const verticalCardsEsic = {
   mainTitle: "Comprehensive ESIC Compliance Management Services",
   mainSubtitleVer: "ESIC Registration & Applicability Management",
+  subText:
+    "Ensure your establishment is correctly registered and continuously compliant with ESIC regulations from day one.",
   cardsVer: [
     {
       title: "Monthly ESIC return filing",
@@ -2574,11 +2578,21 @@ export const verticalCardsEsic = {
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Swift, accurate ESIC registration, guaranteed applicability compliance,
+and complete protection from non-registration penalties and legal repercussions.`,
+      icon: "❤️",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const horizontalCardsEsic = {
   mainSubtitleHor: "Seamless Monthly Filings & Employee Data Management",
+  subTextHor:
+    "Ensure flawless record-keeping, simplified portal interactions, and comprehensive employee data updates for continuous compliance.",
   cardsHor: [
     {
       title: "Complete ESIC registration process",
@@ -2616,11 +2630,21 @@ export const horizontalCardsEsic = {
       bubble: "Empower!",
       bg: "bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]",
     },
+    {
+      title: "Your Benefit",
+      subtitle:
+        "Effortless monthly compliance, accurate employee records for seamless benefit access, and eliminated administrative burden on your HR teams for ESIC data management.",
+      icon: "❤️",
+      bubble: "Collaborate!",
+      bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
+    },
   ],
 };
 
 export const largeCardsEsic = {
   subTitle: "Proactive Regulatory Updates & Risk Management",
+  subText:
+    "Stay ahead of ESIC law changes with expert guidance that prevents costly non-compliance and transforms risks into strategic advantages.",
   cards: [
     {
       title: "Continuous regulatory monitoring",
@@ -2654,11 +2678,22 @@ export const largeCardsEsic = {
       bubble: "Automate!",
       bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Perpetual compliance, complete penalty protection, and the strategic
+advantage of early adaptation to regulatory shifts, maintaining your business's integrity
+and reputation.`,
+      icon: "❤️",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
   ],
 };
 
 export const pastelCardsEsic = {
   subTitle: "Accurate ESIC Contribution Calculation & Payment",
+  subText:
+    "Eliminate calculation errors and ensure timely payments, rigorously protecting your business from penalties and interest.",
   cards: [
     {
       title: "Precision contribution calculation",
@@ -2688,12 +2723,22 @@ export const pastelCardsEsic = {
       bubble: "Dream!",
       bg: "from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Zero calculation errors, robust protection from "penalty for late ESIC
+payment" (including 12% interest and damages), optimized contribution accuracy, and
+guaranteed timely payments.`,
+      icon: "❤️",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const verticalCardsLwf = {
   mainTitle: "Comprehensive Labour Welfare Fund Compliance Services",
   mainSubtitleVer: "LWF Applicability & Registration Across India",
+  subText: `Ensure your establishment is correctly registered and always compliant with each state's LWF Act.`,
   cardsVer: [
     {
       title: "Precise applicability assessment",
@@ -2723,11 +2768,22 @@ export const verticalCardsLwf = {
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Guaranteed LWF applicability compliance across all your operational
+locations, seamless registration, and complete protection from non-registration
+penalties.`,
+      icon: "❤️",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const horizontalCardsLwf = {
   mainSubtitleHor: "Accurate LWF Contribution Calculation & Payment",
+  subTextHor:
+    "Eliminate calculation errors and ensure timely payments based on diverse state-specific rules.",
   cardsHor: [
     {
       title: "Precision Contribution Calculation",
@@ -2757,11 +2813,21 @@ export const horizontalCardsLwf = {
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Zero calculation errors, accurate contributions aligned with each
+state's unique rules, and robust protection from penalties for late LWF payments.`,
+      icon: "❤️",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
   ],
 };
 
 export const largeCardsLwf = {
   subTitle: "Seamless LWF Returns & Data Management",
+  subText:
+    "Ensure flawless record-keeping, simplified portal interactions, and comprehensive employee data updates for continuous compliance.",
   cards: [
     {
       title: "State-Specific Return Filing",
@@ -2791,11 +2857,22 @@ export const largeCardsLwf = {
       bubble: "Automate!",
       bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Effortless monthly/periodic compliance, accurate employee records
+for LWF benefits, and reduced administrative burden on your HR and Finance
+teams.`,
+      icon: "❤️",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
   ],
 };
 
 export const pastelCardsLwf = {
   subTitle: "Proactive LWF Regulatory Advisory & Risk Mitigation",
+  subText:
+    "Stay ahead of LWF law changes and safeguard your business from the costly consequences of non-compliance across multiple states.",
   cards: [
     {
       title: "Continuous Regulatory Monitoring",
@@ -2825,12 +2902,23 @@ export const pastelCardsLwf = {
       bubble: "Dream!",
       bg: "from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Perpetual compliance across all applicable states, complete
+protection from penalties and legal repercussions, and the strategic advantage of
+early adaptation to unique state-specific regulatory shifts.`,
+      icon: "❤️",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const verticalCardsPf = {
   mainTitle: "Comprehensive Professional Tax Compliance Services",
   mainSubtitleVer: "Accurate PT Contribution Calculation & Payment",
+  subText:
+    "Eliminate calculation errors and ensure timely payments based on diverse, statespecific slab rates and rules, protecting your business from costly penalties.",
   cardsVer: [
     {
       title: "Precision Contribution Calculation",
@@ -2860,11 +2948,22 @@ export const verticalCardsPf = {
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Zero calculation errors, accurate contributions aligned with each
+state's unique rules, and robust protection from "penalty for late professional tax
+payment" and associated interest.`,
+      icon: "❤️",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const horizontalCardsPf = {
   mainSubtitleHor: "PT Applicability & Registration Across India",
+  subTextHor:
+    "Ensure your establishment is correctly registered and continuously compliant with Professional Tax regulations in every applicable state.",
   cardsHor: [
     {
       title: "Precise applicability assessment",
@@ -2894,11 +2993,22 @@ export const horizontalCardsPf = {
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Swift, accurate Professional Tax registration across all applicable
+states, guaranteed applicability compliance, and complete protection from nonregistration
+penalties.`,
+      icon: "❤️",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
   ],
 };
 
 export const largeCardsPf = {
   subTitle: "Seamless PT Returns & Data Management",
+  subText:
+    "Ensure flawless record-keeping, simplified portal interactions, and comprehensive employee data updates for continuous compliance.",
   cards: [
     {
       title: "State-Specific Return Filing",
@@ -2928,11 +3038,21 @@ export const largeCardsPf = {
       bubble: "Automate!",
       bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Effortless monthly/periodic compliance, accurate employee records
+for PT purposes, and reduced administrative burden on your HR and Finance teams.`,
+      icon: "❤️",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
   ],
 };
 
 export const pastelCardsPf = {
   subTitle: "Proactive PT Regulatory Advisory & Risk Mitigation",
+  subText:
+    "Stay ahead of Professional Tax law changes and safeguard your business from the costly consequences of non-compliance across multiple states.",
   cards: [
     {
       title: "Continuous Regulatory Monitoring",
@@ -2962,12 +3082,23 @@ export const pastelCardsPf = {
       bubble: "Dream!",
       bg: "from-[#d299c2] to-[#fef9d7]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Perpetual compliance across all applicable states, complete
+protection from penalties and legal repercussions, and the strategic advantage of
+early adaptation to unique state-specific regulatory shifts.`,
+      icon: "❤️",
+      bubble: "Grow!",
+      bg: "from-[#ffd3a5] to-[#fd9853]",
+    },
   ],
 };
 
 export const verticalCardsDesk = {
   mainTitle: "Complete Employee EPF Support Platform",
   mainSubtitleVer: "Secure & Intuitive Employee Access (24/7)",
+  subText:
+    "Give your employees direct, secure access to EPF expertise anytime, anywhere, fostering self-service and reducing reliance on HR.",
   cardsVer: [
     {
       title: "Dedicated Member Login Portal",
@@ -3000,15 +3131,25 @@ export const verticalCardsDesk = {
     {
       title: "Coaching for when HR can’t be everywhere",
       subtitle: `71% of HR leaders don’t think they are effectively developing midlevel leaders.`,
-      icon: "🌟",
+      icon: "🧭",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Employee Benefits",
+      subtitle: `Round-the-clock EPF support, intuitive self-service options, secure data handling, and mobile
+convenience, enhancing their overall experience.`,
+      icon: "❤️",
+      bubble: "Build!",
+      bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
     },
   ],
 };
 
 export const horizontalCardsDesk = {
   mainSubtitleHor: "Streamlined Query Management System",
+  subTextHor:
+    "Employees can resolve any EPF issue with guided, transparent processes, ensuring they are always informed.",
   cardsHor: [
     {
       title: "Guided Ticket Creation",
@@ -3038,11 +3179,21 @@ export const horizontalCardsDesk = {
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
+    {
+      title: "Employee Benefits",
+      subtitle: `Clear process guidance, complete transparency, proactive updates, and expert resolution for any
+EPF complexity, from "UAN login issues" to "name mismatch in EPF account."`,
+      icon: "❤️",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
   ],
 };
 
 export const largeCardsDesk = {
   subTitle: "Expert-Led Resolution & Direct EPFO Liaison",
+  subText:
+    "Our specialized teams handle every complexity directly with EPFO, ensuring accurate resolutions and completely liberating your HR from individual employee EPF issues.",
   cards: [
     {
       title: "Dedicated EPF Specialists",
@@ -3072,11 +3223,22 @@ export const largeCardsDesk = {
       bubble: "Automate!",
       bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
     },
+    {
+      title: "Business Benefits",
+      subtitle: `Zero HR involvement required for individual EPF issues, access to expert problem-solving,
+efficient direct EPFO liaison, and comprehensive issue resolution that covers all angles, including potential "tax
+implications on EPF withdrawal."`,
+      icon: "❤️",
+      bubble: "Integrate!",
+      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
   ],
 };
 
 export const pastelCardsDesk = {
   subTitle: "Nationwide On-Ground Support for Unresolved Cases",
+  subText:
+    "For issues requiring physical interaction or specialized presence, our local teams are there to ensure complete resolution.",
   cards: [
     {
       title: "Local Teams Across Major Metros",
@@ -3112,6 +3274,8 @@ export const pastelCardsDesk = {
 export const verticalCardsEpfo = {
   mainTitle: "Why Companies Trust EPFDesk.com",
   mainSubtitleVer: "Unmatched Expertise & Zero-Error Accuracy",
+  subText:
+    "Our commitment to precision is foundational to your peace of mind and protection against non-compliance penalties.",
   cardsVer: [
     {
       title: "Consistently high accuracy rate in EPF filings (e.g., 99.9%)",
@@ -3146,6 +3310,9 @@ export const verticalCardsEpfo = {
 
 export const horizontalCardsEpfo = {
   mainSubtitleHor: "Complete HR & Finance Team Liberation",
+  subTextHor:
+    "Reclaim valuable HR and Finance bandwidth, redirecting it towards your organizational growth.",
+
   cardsHor: [
     {
       title: "Liberating HR & Finance Teams from Compliance Overload",
@@ -3187,6 +3354,9 @@ export const horizontalCardsEpfo = {
 
 export const largeCardsEpfo = {
   subTitle: "Dedicated Support Team",
+  subText:
+    "Your assigned client manager ensures seamless ongoing operations and proactive problem-solving.",
+
   cards: [
     {
       title: "Dedicated Client Manager",
@@ -3221,6 +3391,8 @@ export const largeCardsEpfo = {
 
 export const pastelCardsEpfo = {
   subTitle: "Implementation & Support",
+  subText:
+    "Our experts handle complete setup while you focus on your business.",
   cards: [
     {
       title: "Initial Consultation",
@@ -3413,6 +3585,8 @@ export const plansEpfManagement = {
  and commitment to employee well-being.`,
         `Empowered workforce: Employees feel more in control and informed about their provident fund matters,
  leading to increased satisfaction and morale.`,
+        `Business Impact: Higher employee satisfaction, increased trust in employer benefits, reduced workplace frustration,
+and a positive impact on overall employee retention.`,
       ],
     },
     {
@@ -3488,6 +3662,8 @@ to mitigate future issues.`,
         `Expert coordination for exit formalities and final settlement processes: Ensuring smooth,
 compliant EPF exits and seamless transfers for outgoing employees, simplifying the employer's
 role in these crucial moments.`,
+        `Your Benefit: Eliminate manual errors, significantly reduce HR workload, ensure day-one compliance
+for every employee, and simplify member profile corrections and updates.`,
       ],
     },
     {
@@ -3508,6 +3684,9 @@ addressing "errors in ECR filing and how to correct them."`,
         `Payment timeline management with timely reminders and alerts: We ensure your contributions
 are remitted well before the "Monthly EPF return filing deadline" (15th of every month),
 completely protecting you from "penalties for late EPF payment" and interest charges.`,
+        `Your Benefit: Near-zero calculation errors, guaranteed timely submissions, complete protection from
+late payment penalties, and a simplified "EPF challan generation process" that protects your bottom
+line.`,
       ],
     },
     {
@@ -3526,6 +3705,10 @@ employers" and helping you "prepare for an EPF inspection" with confidence.`,
         `Proactive error detection and swift resubmission when needed: We identify and correct "errors
 in ECR filing" promptly, ensuring continuous compliance and mitigating "legal consequences of
 EPF non-compliance."`,
+        `Your Benefit: Flawless compliance records, stress-free EPFO audits, immediate document retrieval for
+any inquiry, and unwavering adherence to "EPFO electronic submission guidelines."`,
+        `Your Benefit: Flawless compliance records, stress-free EPFO audits, immediate document retrieval for
+any inquiry, and unwavering adherence to "EPFO electronic submission guidelines."`,
       ],
     },
     {
@@ -3543,6 +3726,8 @@ adjustments to ensure seamless compliance with evolving laws, allowing you to st
 adapt your HR and payroll policies ahead of time.`,
         `Advance notice of upcoming compliance requirements and deadlines: You're always prepared,
 eliminating last-minute rushes and ensuring "best practices for EPF compliance in India."`,
+        `Your Benefit: Perpetual compliance, strategic advantage from early adaptation, complete elimination
+of compliance surprises, and expert navigation of the most recent "EPFO circulars and notifications."`,
       ],
     },
   ],
@@ -3662,6 +3847,8 @@ of employee and public trust.`,
 
 export const pastelCardsPosh = {
   subTitle: "Expert Internal Committee (IC) Formation & Training",
+  subText:
+    "Establish a legally sound and highly capable Internal Committee ready to address any complaint with fairness and precision.",
   cards: [
     {
       title: "IC Constitution Guidance",
@@ -3691,11 +3878,21 @@ compliance.`,
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `A legally compliant and competent Internal Committee, fully
+prepared to handle complaints effectively, minimizing legal risks from the outset.`,
+      icon: "❤️",
+      bubble: "Consult!",
+      bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
+    },
   ],
 };
 
 export const verticalCardsPoshOne = {
   mainSubtitleVer: "Comprehensive Employee Awareness & Policy Implementation",
+  subText:
+    "Cultivate a culture of respect and awareness, ensuring every employee understands their rights and responsibilities under the POSH Act.",
   cardsVer: [
     {
       title: "POSH Policy Development & Review",
@@ -3726,11 +3923,22 @@ acknowledged by all employees as mandated by the Act.`,
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `A fully aware and compliant workforce, a robust and accessible
+POSH policy, reduced instances of harassment, and a demonstrable commitment
+to a safe work environment.`,
+      icon: "❤️",
+      bubble: "Transform!",
+      bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
+    },
   ],
 };
 
 export const horizontalCardsPoshOne = {
   mainSubtitleHor: "Meticulous Complaint Redressal & Inquiry Management",
+  subTextHor:
+    "Navigate sensitive complaints with fairness, confidentiality, and legal precision, ensuring just outcomes and protecting all parties",
   cardsHor: [
     {
       title: "Dedicated & Impartial Complaint Hotline (3rd Party Service)",
@@ -3783,11 +3991,24 @@ action, including "consequences of sexual harassment at workplace."`,
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
+    {
+      title: "Your Benefit",
+      subtitle: `Enhanced employee trust and psychological safety, reduced
+internal HR burden for sensitive initial handling, guaranteed impartiality in
+complaint intake, legally sound and timely complaint resolution, and ultimate
+protection against procedural lapses, severe legal repercussions, and
+reputational damage.`,
+      icon: "❤️",
+      bubble: "Focus!",
+      bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
+    },
   ],
 };
 
 export const largeCardsPoshOne = {
   subTitle: "Proactive Compliance Monitoring & Reporting",
+  subText:
+    "Maintain continuous POSH Act adherence and fulfill all statutory reporting obligations with accuracy and foresight.",
   cards: [
     {
       title: "Annual Report Filing",
@@ -3824,6 +4045,15 @@ substantive requirements.`,
       icon: "🔗",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    },
+    {
+      title: "Your Benefit",
+      subtitle: `Guaranteed continuous POSH compliance, complete protection
+from "penalties for non-compliance with POSH Act," enhanced legal
+standing, and a demonstrable commitment to corporate social responsibility.`,
+      icon: "❤️",
+      bubble: "Automate!",
+      bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
     },
   ],
 };

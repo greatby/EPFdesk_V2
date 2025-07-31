@@ -34,7 +34,6 @@ import PastelCardSlider from "./pastelCardSlider";
 import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
 import VerticalCard from "./largeCards";
 
-
 const epfServices = [
   {
     title: "ESIC Registration & Applicability Management",
@@ -204,41 +203,49 @@ export default function ESCIServicesSection({ plans }) {
   return (
     <section className="py-8 px-4 md:px-12">
       <div className="space-y-4 mx-auto">
-         <FadeInWhenVisible>
+        <FadeInWhenVisible>
           <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
             {plans.mainTitle}
           </h2>
           <LatticeTabs cards={esciCards} />
         </FadeInWhenVisible>
-         <FadeInWhenVisible>
+        <FadeInWhenVisible>
           {/* <ResourcesGrid data={esicGridData} /> */}
-          <VerticalAndHorizontalCards horizontalCards={horizontalCardsEsic} verticalCards={verticalCardsEsic} />
+          <VerticalAndHorizontalCards
+            horizontalCards={horizontalCardsEsic}
+            verticalCards={verticalCardsEsic}
+          />
         </FadeInWhenVisible>
         {/* <FadeInWhenVisible>
           <LatticeSlider slides={slidesEsic} />
         </FadeInWhenVisible> */}
-       
-       
+
         <FadeInWhenVisible>
           {/* <MiddlePanelTabs tabsData={esicMiddletabsData} /> */}
-          <VerticalCard cardsData={largeCardsEsic}/>
+          <VerticalCard cardsData={largeCardsEsic} />
           {/* <TestimonialAndCards /> */}
         </FadeInWhenVisible>
-         <FadeInWhenVisible>
+        <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={esicPlustabs} /> */}
           {/* <LocationCards /> */}
           {/* <PastelCards /> */}
-          <PastelCardSlider cardsData={pastelCardsEsic}/>
+          <PastelCardSlider cardsData={pastelCardsEsic} />
         </FadeInWhenVisible>
         {/* <Roadmap />
         <FeatureCardGrid/> */}
-       
+
         {/* <EPFAccordion /> */}
       </div>
 
       <h2 className="max-w-5xl mx-auto text-5xl font-bold mt-20 mb-8 text-center">
         {plans.mainTitle}
       </h2>
+      {/* <p className="max-w-4xl mx-auto mt-6 text-center px-4 text-[1.2rem] mb-6 text-gray-600 font-bold">
+        While your employees can find detailed benefit information on our wiki
+        (EPFDesk.com/ knowledge-hub), our ESIC compliance service directly
+        ensures they receive their full social security entitlements seamlessly,
+        enhancing employee satisfaction.
+      </p> */}
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {plans?.cards?.map((plan, idx) => (

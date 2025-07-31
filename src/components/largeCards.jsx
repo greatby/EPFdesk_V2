@@ -13,7 +13,7 @@ const FloatingCircles = () => (
 );
 
 const LargeCardSlider = ({ cardsData }) => {
-  const { subTitle, cards } = cardsData;
+  const { subTitle, cards,subText } = cardsData;
   const paginationRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
   const swiperRef = useRef(null);
@@ -24,9 +24,12 @@ const LargeCardSlider = ({ cardsData }) => {
 
   return (
     <>
-      <h2 className="text-3xl font-extrabold text-center text-gray-800 my-16">
+      <h2 className="text-3xl font-extrabold text-center text-gray-800 my-6">
         {subTitle}
       </h2>
+       <p className="max-w-2xl mx-auto mt-6 text-center px-4 text-[1.2rem] mb-8 text-gray-600 font-bold">
+          {subText}
+        </p>
       <div className="px-4 sm:px-6 lg:px-8 relative">
         <FloatingCircles />
         <div className="relative z-10 max-w-7xl py-2 mx-auto overflow-hidden">

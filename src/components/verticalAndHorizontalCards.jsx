@@ -120,61 +120,59 @@ const CardSlider = ({ cards, paginationRef }) => {
             // }}
             onSwiper={(swiper) => (paginationRef.current = swiper)}
           >
-            {cards.map(
-              ({ title, subtitle, icon, bubble, bg }, index) => (
-                (
-                  <SwiperSlide key={index}>
-                    <div className="hidden">
-                      bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]
-                      bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]
-                      bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]
-                      bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]
-                      bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]
-                      bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]
-                      bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]
-                      bg-gradient-to-br from-[#a8edea] to-[#fed6e3]
-                      bg-gradient-to-br from-[#d299c2] to-[#fef9d7]
-                      bg-gradient-to-br from-[#f093fb] to-[#f5576c]
-                      bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]
-                      bg-gradient-to-br from-[#43e97b] to-[#38f9d7]
-                    </div>
+            {cards.map(({ title, subtitle, icon, bubble, bg }, index) => (
+              <SwiperSlide key={index}>
+                <div className="hidden">
+                  bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]
+                  bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]
+                  bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]
+                  bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]
+                  bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]
+                  bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]
+                  bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]
+                  bg-gradient-to-br from-[#a8edea] to-[#fed6e3]
+                  bg-gradient-to-br from-[#d299c2] to-[#fef9d7]
+                  bg-gradient-to-br from-[#f093fb] to-[#f5576c]
+                  bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]
+                  bg-gradient-to-br from-[#43e97b] to-[#38f9d7]
+                </div>
 
-                    <div
-                      className={`relative ${bg}  h-[420px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
-                      onClick={(e) => {
-                        const card = e.currentTarget;
-                        const clickX = e.clientX;
-                        const { left, width } = card.getBoundingClientRect();
-                        const relativeX = clickX - left;
+                <div
+                  className={`relative ${bg}  h-[420px] p-10 rounded-3xl shadow-xl transition hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center`}
+                  onClick={(e) => {
+                    const card = e.currentTarget;
+                    const clickX = e.clientX;
+                    const { left, width } = card.getBoundingClientRect();
+                    const relativeX = clickX - left;
 
-                        if (relativeX < width / 2) {
-                          paginationRef.current?.slidePrev(); // Clicked left
-                        } else {
-                          paginationRef.current?.slideNext(); // Clicked right
-                        }
-                      }}
-                    >
-                      <div className="absolute inset-0 pointer-events-none">
-                        <FloatingCircles />
-                      </div>
-                      {/* <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
+                    if (relativeX < width / 2) {
+                      paginationRef.current?.slidePrev(); // Clicked left
+                    } else {
+                      paginationRef.current?.slideNext(); // Clicked right
+                    }
+                  }}
+                >
+                  <div className="absolute inset-0 pointer-events-none">
+                    <FloatingCircles />
+                  </div>
+                  {/* <div className="absolute top-3 right-3 bg-white/90 rounded-xl px-3 py-1 text-xs font-semibold text-gray-700 shadow-md opacity-0 scale-95 transition hover:opacity-100 hover:scale-100">
                         {bubble}
                       </div> */}
-                      <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md z-10 mb-4">
-                        {icon}
-                      </div>
-                      <div className="text-center text-gray-800">
-                        <h3 className="text-2xl font-bold mb-1">{title}</h3>
-                        <p className="text-lg text-gray-600 line-clamp-6">{subtitle}</p>
-                        <div className="mt-4 h-2 w-16 bg-white/30 rounded-full mx-auto overflow-hidden">
-                          <div className="h-full bg-white/80 rounded-full animate-progress" />
-                        </div>
-                      </div>
+                  <div className="relative w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-md z-10 mb-4">
+                    {icon}
+                  </div>
+                  <div className="text-center text-gray-800">
+                    <h3 className="text-2xl font-bold mb-1">{title}</h3>
+                    <p className="text-lg text-gray-600 line-clamp-6">
+                      {subtitle}
+                    </p>
+                    <div className="mt-4 h-2 w-16 bg-white/30 rounded-full mx-auto overflow-hidden">
+                      <div className="h-full bg-white/80 rounded-full animate-progress" />
                     </div>
-                  </SwiperSlide>
-                )
-              )
-            )}
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         )}
         <div
@@ -215,8 +213,8 @@ const CardSlider = ({ cards, paginationRef }) => {
 const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
   const paginationRefVer = useRef(null);
   const paginationRefHor = useRef(null);
-  const { mainSubtitleHor, cardsHor } = horizontalCards;
-  const { mainTitle, mainSubtitleVer, cardsVer } = verticalCards;
+  const { mainSubtitleHor, cardsHor,subTextHor } = horizontalCards;
+  const { mainTitle, mainSubtitleVer, cardsVer, subText } = verticalCards;
 
   return (
     <div className="min-h-screen px-4">
@@ -224,14 +222,20 @@ const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
         <h1 className="text-4xl sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-12">
           {mainTitle}
         </h1>
-        <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-12">
+        <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-6">
           {mainSubtitleVer}
         </h2>
+        <p className="max-w-2xl mx-auto mt-6 text-center px-4 text-[1.2rem] mb-8 text-gray-600 font-bold">
+          {subText}
+        </p>
         <CardSlider cards={cardsVer} paginationRef={paginationRefVer} />
 
-        <h2 className="text-3xl pt-16 font-extrabold text-center text-gray-800 mb-12">
+        <h2 className="text-3xl pt-16 font-extrabold text-center text-gray-800 mb-6">
           {mainSubtitleHor}
         </h2>
+        <p className="max-w-2xl mx-auto mt-6 text-center px-4 text-[1.2rem] mb-8 text-gray-600 font-bold">
+          {subTextHor}
+        </p>
         <CardSlider cards={cardsHor} paginationRef={paginationRefHor} />
       </div>
     </div>

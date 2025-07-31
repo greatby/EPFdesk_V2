@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const PastelCardSlider = ({ cardsData }) => {
-  const { subTitle, cards } = cardsData;
+  const { subTitle, cards ,subText } = cardsData;
   const paginationRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
 
@@ -19,6 +19,7 @@ const PastelCardSlider = ({ cardsData }) => {
         <h2 className="max-w-7xl mx-auto text-center px-4 text-3xl font-bold">
           {subTitle}
         </h2>
+        <p className="max-w-2xl mx-auto mt-6 text-center px-4 text-[1.2rem] text-gray-600 font-bold">{subText}</p>
         <section className=" px-6 py-12 sm:py-16">
           <div className="max-w-7xl py-4 mx-auto overflow-hidden">
             {isReady && (

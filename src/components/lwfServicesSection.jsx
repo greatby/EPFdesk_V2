@@ -8,13 +8,23 @@ import {
 } from "@heroicons/react/24/outline";
 import FadeInWhenVisible from "./fadeInWhenVisible";
 import LatticeTabs from "./latticeTabs";
-import {  horizontalCardsLwf, largeCardsLwf, lwfCards, lwfGridData, lwfMiddletabsData, lwfPlustabs, pastelCardsLwf, slideLWF, verticalCardsLwf } from "../../utils/data";
+import {
+  horizontalCardsLwf,
+  largeCardsLwf,
+  lwfCards,
+  lwfGridData,
+  lwfMiddletabsData,
+  lwfPlustabs,
+  pastelCardsLwf,
+  slideLWF,
+  verticalCardsLwf,
+} from "../../utils/data";
 import LatticeSlider from "./latticeSlider";
 import ResourcesGrid from "./resourceGrid";
-import PlusTabsSection from './plusTabsSection'
+import PlusTabsSection from "./plusTabsSection";
 import MiddlePanelTabs from "./middlePanelTabs";
 import StickyStackedSections from "./scrollSyncComponent";
-import VerticalAndHorizontalCards from './verticalAndHorizontalCards'
+import VerticalAndHorizontalCards from "./verticalAndHorizontalCards";
 import LargeCardSlider from "./largeCards";
 import PastelCardSlider from "./pastelCardSlider";
 
@@ -188,115 +198,115 @@ function EPFAccordion() {
 const plans = {
   mainTitle:
     "Ensuring Employee Well-being: Comprehensive LWF Benefits Management",
-    cards:[
-  {
-    title: "Facilitating Employee Access to LWF Welfare Schemes",
-    features: [
-      `Medical & Healthcare Support: Ensuring access to medical facilities, dental
+  cards: [
+    {
+      title: "Facilitating Employee Access to LWF Welfare Schemes",
+      features: [
+        `Medical & Healthcare Support: Ensuring access to medical facilities, dental
 care, and assistance for workers and their dependents where provided by the
 state LWF board.`,
-      `Educational Assistance: Facilitating eligibility for scholarships and financial
+        `Educational Assistance: Facilitating eligibility for scholarships and financial
 aid for workers' children, and supporting adult education programs.`,
-      `Housing & Social Security: Ensuring access to housing schemes, financial
+        `Housing & Social Security: Ensuring access to housing schemes, financial
 aid during emergencies, and other social security measures (e.g., marriage
 assistance, funeral benefits, natural disaster relief).`,
-      `Skill Development & Recreation: Supporting eligibility for vocational training,
+        `Skill Development & Recreation: Supporting eligibility for vocational training,
 skill upgradation programs, and access to recreational facilities like sports
 clubs and cultural events.`,
-    ],
-  },
-  {
-    title: "Why Companies Trust LWF Compliance with EPFDesk.com",
-    features: [
-      `Consistent 99.9% accuracy rate in all LWF calculations and filings across
+`Your Benefit: A more secure and supported workforce, reduced employee
+frustration related to benefit access, a stronger employer reputation, and improved
+industrial relations by demonstrating commitment to employee welfare.`
+      ],
+    },
+    {
+      title: "Why Companies Trust LWF Compliance with EPFDesk.com",
+      features: [
+        `Consistent 99.9% accuracy rate in all LWF calculations and filings across
 diverse state requirements, minimizing financial discrepancies and audit risks.`,
-      `Zero audit failures across our client portfolio for LWF compliance over 5+
+        `Zero audit failures across our client portfolio for LWF compliance over 5+
 years, demonstrating our robust control environment and deep understanding
 of state-specific acts.`,
-      `Rapid average response times (e.g., 2-4 hours) for all client queries and
+        `Rapid average response times (e.g., 2-4 hours) for all client queries and
 urgent matters, ensuring prompt resolution by specialists.`,
-      `100% deadline adherence for all LWF submissions, completely eliminating
+        `100% deadline adherence for all LWF submissions, completely eliminating
 interest and penalties (which can vary, e.g., imprisonment in some states for
 willful default).`,
-    ],
-  },
-  {
-    title: "Complete HR & Finance Team Liberation",
-    features: [
-      `Significant reduction (e.g., 85%) in administrative time typically spent on
+      ],
+    },
+    {
+      title: "Complete HR & Finance Team Liberation",
+      features: [
+        `Significant reduction (e.g., 85%) in administrative time typically spent on
 understanding, calculating, and filing LWF returns for each applicable state.`,
-      `Complete elimination of penalty and interest risks across all operating
+        `Complete elimination of penalty and interest risks across all operating
 states, leading to direct financial savings and peace of mind.`,
-      `Protection from legal consequences and reputational damage related to
+        `Protection from legal consequences and reputational damage related to
 LWF non-compliance, ensuring business integrity.`,
-      `Strategic resource redirection: Your HR and Finance teams are empowered
+        `Strategic resource redirection: Your HR and Finance teams are empowered
 to focus on talent development, financial planning, and driving organizational
 growth, rather than navigating disparate state LWF portals and forms.`,
-    ],
-  },
-  {
-    title: "Go Live with LWF Compliance in 24-48 Hours (Multi-State Ready)",
-    features: [
-      `Initial Consultation: A quick session to assess your current LWF setup,
+      ],
+    },
+    {
+      title: "Go Live with LWF Compliance in 24-48 Hours (Multi-State Ready)",
+      features: [
+        `Initial Consultation: A quick session to assess your current LWF setup,
 employee count, and multi-state operational specifics.`,
-      `Secure Data Integration: Our team securely accesses necessary payroll and
+        `Secure Data Integration: Our team securely accesses necessary payroll and
 employee information via compliant channels for LWF processing.`,
-      `State Board Portal Setup & Linkage: We manage the efficient setup and
+        `State Board Portal Setup & Linkage: We manage the efficient setup and
 linkage with various State Labour Welfare Board online portals.`,
-      `Brief Team Orientation: A concise, practical orientation for your relevant HR/
+        `Brief Team Orientation: A concise, practical orientation for your relevant HR/
 Finance staff to ensure smooth operational handover.`,
-    ],
-  },
-  {
-    title: "Dedicated Ongoing Support for Continuous Multi-State Adherence",
-    features: [
-      `Dedicated Client Manager: Your single point of contact who understands
+      ],
+    },
+    {
+      title: "Dedicated Ongoing Support for Continuous Multi-State Adherence",
+      features: [
+        `Dedicated Client Manager: Your single point of contact who understands
 your specific account and multi-state compliance needs.`,
-      `Monthly/Periodic Compliance Reports: Receive regular, clear updates on
+        `Monthly/Periodic Compliance Reports: Receive regular, clear updates on
 your LWF status, contributions, and key metrics for each applicable state.`,
-      `Immediate Query Resolution: Our team is committed to prompt responses,
+        `Immediate Query Resolution: Our team is committed to prompt responses,
 ensuring any questions or issues related to your LWF compliance are
 addressed swiftly.`,
-      `Proactive Regulatory Updates: You'll receive timely notifications and expert
+        `Proactive Regulatory Updates: You'll receive timely notifications and expert
 advice on new LWF rules, rate changes, or specific directives from each state,
 ensuring you are always informed and compliant nationwide.`,
-    ],
-  },
-  {
-    title: "Key Employer LWF Concerns We Resolve:",
-    features: [
-      `Applicability & Registration: Determining "LWF applicability rules India" for your
+      ],
+    },
+    {
+      title: "Key Employer LWF Concerns We Resolve:",
+      features: [
+        `Applicability & Registration: Determining "LWF applicability rules India" for your
 establishment, "LWF registration process" with each State Labour Welfare Board,
 and managing "coverage continuity" for changing workforces.`,
-      `Contribution Management: Accurate "LWF contribution rates by state" (e.g.,
+        `Contribution Management: Accurate "LWF contribution rates by state" (e.g.,
 Maharashtra, Karnataka, Delhi), correct wage component inclusion, and handling
 "monthly, half-yearly, or annual deductions" as per state law.`,
-      `Filing & Remittance: Managing "LWF forms and deadlines India" (e.g., Form A,
+        `Filing & Remittance: Managing "LWF forms and deadlines India" (e.g., Form A,
 Form F, Form A-1), ensuring "online LWF payments" where available, and
 maintaining "digital record keeping.`,
-      `Risk & Audit: Addressing "Labour Welfare Fund penalties non-compliance
+        `Risk & Audit: Addressing "Labour Welfare Fund penalties non-compliance
 India" (fines, interest, imprisonment) and providing "audit readiness support."`,
-      `Multi-State Coordination: Seamlessly managing LWF compliance across multiple
+        `Multi-State Coordination: Seamlessly managing LWF compliance across multiple
 states, understanding the nuances of "LWF Act states India."`,
-    ],
-  },
-  {
-    title:
-      "Employee LWF Benefits Support We Ensure (by facilitating eligibility):",
-    features: [
-      `Medical & Health: Eligibility for medical facilities, including dental care.`,
-      `Education: Access to scholarships and financial aid for children's education.`,
-      `Financial Aid: Support during emergencies, marriage assistance, and funeral
+      ],
+    },
+    {
+      title:
+        "Employee LWF Benefits Support We Ensure (by facilitating eligibility):",
+      features: [
+        `Medical & Health: Eligibility for medical facilities, including dental care.`,
+        `Education: Access to scholarships and financial aid for children's education.`,
+        `Financial Aid: Support during emergencies, marriage assistance, and funeral
 benefits.`,
-      `Skill Development & Recreation: Eligibility for vocational training and access to
+        `Skill Development & Recreation: Eligibility for vocational training and access to
 recreational facilities where provided by the LWF Board.7`,
-    ],
-  },
-]
-}
-
-
-
+      ],
+    },
+  ],
+};
 
 export default function LWFServicesSection() {
   return (
@@ -310,23 +320,32 @@ export default function LWFServicesSection() {
         </FadeInWhenVisible>
         <FadeInWhenVisible>
           {/* <LatticeSlider slides={slideLWF} /> */}
-          <VerticalAndHorizontalCards verticalCards={verticalCardsLwf} horizontalCards={horizontalCardsLwf}/>
+          <VerticalAndHorizontalCards
+            verticalCards={verticalCardsLwf}
+            horizontalCards={horizontalCardsLwf}
+          />
         </FadeInWhenVisible>
         {/* <FadeInWhenVisible>
           <ResourcesGrid data={lwfGridData} />
         </FadeInWhenVisible> */}
         <FadeInWhenVisible>
           {/* <PlusTabsSection tabsData={lwfPlustabs}/> */}
-          <LargeCardSlider cardsData={largeCardsLwf}/>
+          <LargeCardSlider cardsData={largeCardsLwf} />
         </FadeInWhenVisible>
-         <FadeInWhenVisible>
+        <FadeInWhenVisible>
           {/* <MiddlePanelTabs tabsData={lwfMiddletabsData}/> */}
-          <PastelCardSlider cardsData={pastelCardsLwf}/>
+          <PastelCardSlider cardsData={pastelCardsLwf} />
         </FadeInWhenVisible>
-         <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
+        <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
           Ensuring Employee Well-being: Comprehensive LWF Benefits Management
         </h2>
-      <StickyStackedSections items={plans} />
+        <p className="max-w-3xl mx-auto text-center px-4 text-[1.2rem] text-gray-600 font-bold">
+          While the primary focus of LWF is employer compliance, our meticulous
+          management directly ensures your employees can access the benefits the
+          fund provides, fostering a positive workplace.
+        </p>
+
+        <StickyStackedSections items={plans} />
       </div>
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

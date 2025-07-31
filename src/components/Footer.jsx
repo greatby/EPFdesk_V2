@@ -34,7 +34,7 @@ export default function Footer() {
 
   return (
     <footer
-      className="z-[9999] w-full border-t border-solid border-t-[#11110d1a] bg-[#ffffffa8] px-5 backdrop-blur-[3px]"
+      className="z-[9999] w-full border-t border-solid border-t-[#11110d1a] bg-[#ffffffa8] backdrop-blur-[3px]"
       id="footer-section"
     >
       <div className="bg-white px-4 py-12 text-sm text-gray-700 sm:px-6 lg:px-12">
@@ -98,13 +98,16 @@ export default function Footer() {
         </div>
 
         {/* Trust Signals (visible on all pages) */}
-        <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
-          <p>© 2025 EPFdesk.com All rights reserved.</p>
-        </div>
+       
 
         {/* Scroll To Top */}
-        {showScroll && (
-          <div className="mt-8 flex justify-center">
+       
+      </div>
+       <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
+          <p>© 2025 EPFdesk.com All rights reserved.</p>
+        </div>
+         {showScroll && (
+          <div className="my-8 flex justify-center">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="flex cursor-pointer items-center gap-2 rounded-full bg-gray-700 px-4 py-2 text-white transition hover:bg-gray-600 dark:bg-gray-300 dark:text-black dark:hover:bg-gray-200"
@@ -114,7 +117,6 @@ export default function Footer() {
             </button>
           </div>
         )}
-      </div>
     </footer>
   );
 }
