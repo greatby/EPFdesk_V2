@@ -208,8 +208,8 @@ state LWF board.`,
         `Educational Assistance: Facilitating eligibility for scholarships and financial
 aid for workers' children, and supporting adult education programs.`,
         `Housing & Social Security: Ensuring access to housing schemes, financial
-aid during emergencies, and other social security measures (e.g., marriage
-assistance, funeral benefits, natural disaster relief).`,
+aid during emergencies, and other social security measures marriage
+assistance, funeral benefits, natural disaster relief.`,
         `Skill Development & Recreation: Supporting eligibility for vocational training,
 skill upgradation programs, and access to recreational facilities like sports
 clubs and cultural events.`,
@@ -226,17 +226,17 @@ diverse state requirements, minimizing financial discrepancies and audit risks.`
         `Zero audit failures across our client portfolio for LWF compliance over 5+
 years, demonstrating our robust control environment and deep understanding
 of state-specific acts.`,
-        `Rapid average response times (e.g., 2-4 hours) for all client queries and
+        `Rapid average response times 2-4 hours for all client queries and
 urgent matters, ensuring prompt resolution by specialists.`,
         `100% deadline adherence for all LWF submissions, completely eliminating
-interest and penalties (which can vary, e.g., imprisonment in some states for
-willful default).`,
+interest and penalties which can vary, imprisonment in some states for
+willful default.`,
       ],
     },
     {
       title: "Complete HR & Finance Team Liberation",
       features: [
-        `Significant reduction (e.g., 85%) in administrative time typically spent on
+        `Significant reduction 85% in administrative time typically spent on
 understanding, calculating, and filing LWF returns for each applicable state.`,
         `Complete elimination of penalty and interest risks across all operating
 states, leading to direct financial savings and peace of mind.`,
@@ -278,24 +278,24 @@ ensuring you are always informed and compliant nationwide.`,
     {
       title: "Key Employer LWF Concerns We Resolve:",
       features: [
-        `Applicability & Registration: Determining "LWF applicability rules India" for your
-establishment, "LWF registration process" with each State Labour Welfare Board,
-and managing "coverage continuity" for changing workforces.`,
-        `Contribution Management: Accurate "LWF contribution rates by state" (e.g.,
-Maharashtra, Karnataka, Delhi), correct wage component inclusion, and handling
-"monthly, half-yearly, or annual deductions" as per state law.`,
-        `Filing & Remittance: Managing "LWF forms and deadlines India" (e.g., Form A,
-Form F, Form A-1), ensuring "online LWF payments" where available, and
-maintaining "digital record keeping.`,
-        `Risk & Audit: Addressing "Labour Welfare Fund penalties non-compliance
-India" (fines, interest, imprisonment) and providing "audit readiness support."`,
+        `Applicability & Registration: Determining LWF applicability rules India for your
+establishment, LWF registration process with each State Labour Welfare Board,
+and managing coverage continuity for changing workforces.`,
+        `Contribution Management: Accurate LWF contribution rates by state
+Maharashtra, Karnataka, Delhi, correct wage component inclusion, and handling
+monthly, half-yearly, or annual deductions as per state law.`,
+        `Filing & Remittance: Managing LWF forms and deadlines India(Form A,
+Form F, Form A-1), ensuring online LWF payments where available, and
+maintaining digital record keeping.`,
+        `Risk & Audit: Addressing Labour Welfare Fund penalties non-compliance
+India (fines, interest, imprisonment) and providing audit readiness support.`,
         `Multi-State Coordination: Seamlessly managing LWF compliance across multiple
-states, understanding the nuances of "LWF Act states India."`,
+states, understanding the nuances of LWF Act states India.`,
       ],
     },
     {
       title:
-        "Employee LWF Benefits Support We Ensure (by facilitating eligibility):",
+        "Employee LWF Benefits Support We Ensure by facilitating eligibility",
       features: [
         `Medical & Health: Eligibility for medical facilities, including dental care.`,
         `Education: Access to scholarships and financial aid for children's education.`,
@@ -311,7 +311,7 @@ recreational facilities where provided by the LWF Board.7`,
 export default function LWFServicesSection() {
   return (
     <section className="py-8 px-4 md:px-12">
-      <div className="space-y-4 mx-auto">
+      <div className="mx-auto">
         <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
           Ensuring Employee Well-being: Comprehensive LWF Benefits Management
         </h2>
@@ -336,10 +336,10 @@ export default function LWFServicesSection() {
           {/* <MiddlePanelTabs tabsData={lwfMiddletabsData}/> */}
           <PastelCardSlider cardsData={pastelCardsLwf} />
         </FadeInWhenVisible>
-        <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
+        <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold mt-8 mb-12 text-center">
           Ensuring Employee Well-being: Comprehensive LWF Benefits Management
         </h2>
-        <p className="max-w-3xl mx-auto text-center px-4 text-[1.2rem] text-gray-600 font-bold">
+        <p className="max-w-5xl mx-auto text-center px-4 text-[1.4rem] mb-10 text-gray-600 font-bold">
           While the primary focus of LWF is employer compliance, our meticulous
           management directly ensures your employees can access the benefits the
           fund provides, fostering a positive workplace.

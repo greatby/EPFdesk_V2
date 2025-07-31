@@ -140,10 +140,10 @@ export default function EPFServicesSection() {
           <PastelCardSlider cardsData={pastelCardsEpfo} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>
-          <h2 className="text-3xl sm:text-5xl text-center font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-5xl text-center font-bold mb-14 text-gray-900">
             Comprehensive Employer EPF Compliance Services
           </h2>
-          <p className="max-w-3xl mx-auto mt-6 text-center px-4 text-[1.2rem] mb-6 text-gray-600 font-bold">
+          <p className="max-w-5xl mx-auto mt-6 text-center px-4 text-[1.4rem] mb-6 text-gray-600 font-bold">
             Our end-to-end EPF management solution eliminates administrative
             burdens while ensuring 100% regulatory compliance and audit
             readiness.

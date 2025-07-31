@@ -73,11 +73,11 @@ const HorizontalCards = ({cardsData,link}) => {
                 <div
                   key={i}
                   className={`absolute ${bg} rounded-full ${
-                    i === 0 ? "w-14 h-14 top-0 right-0" : "w-10 h-10 bottom-0 left-0"
+                    i === 0 ? "w-20 h-20 top-0 right-0" : "w-14 h-14 bottom-0 left-0"
                   } opacity-30`}
                 />
               ))}
-              <div className="z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white text-4xl shadow-lg">
+              <div className="z-10 flex h-32 w-32 items-center justify-center rounded-full bg-white text-6xl shadow-lg">
                 {card.icon}
               </div>
             </div>

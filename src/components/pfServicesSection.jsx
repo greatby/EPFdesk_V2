@@ -203,7 +203,7 @@ discrepancies and audit risks.`,
       `Zero audit failures across our client portfolio for PT compliance over 5+ years,
 demonstrating our robust control environment and deep understanding of
 state-specific acts.`,
-      `Rapid average response times (e.g., 2-4 hours) for all client queries and urgent
+      `Rapid average response times  2-4 hour for all client queries and urgent
 matters, ensuring prompt resolution by dedicated specialists.`,
       `100% deadline adherence for all Professional Tax submissions, completely
 eliminating interest and penalties.`,
@@ -212,7 +212,7 @@ eliminating interest and penalties.`,
   {
     title: "Complete HR & Finance Team Liberation",
     features: [
-      `Significant reduction (e.g., 85%) in administrative time typically spent on
+      `Significant reduction 85% in administrative time typically spent on
 understanding, calculating, and filing Professional Tax returns for each
 applicable state.`,
       `Complete elimination of penalty and interest risks across all operating states,
@@ -259,16 +259,16 @@ ensuring you are always informed and compliant nationwide.`,
   {
     title: "Key Employer PT Concerns We Resolve:",
     features: [
-      `Applicability & Registration: Determining "Professional tax applicability rules India"
-for your establishment, "PT registration process" with each State Tax Department,
-and distinguishing between "PTEC vs PTRC."`,
-      `Contribution Management: Accurate "Professional tax slab rates by state" (e.g.,
-Maharashtra, Karnataka, West Bengal), correct wage component inclusion, and
-handling "monthly/quarterly/annual deductions."`,
-      `Filing & Remittance: Managing "Professional tax forms and deadlines India" (e.g.,
-Form III), ensuring "online PT payments," and maintaining "digital record keeping."`,
-      `Risk & Audit: Addressing "Professional Tax penalties for non-compliance India"
-(fines, interest, legal action) and providing "audit readiness support."`,
+      `Applicability & Registration: Determining Professional tax applicability rules India
+for your establishment, PT registration process with each State Tax Department,
+and distinguishing between PTEC vs PTRC.`,
+      `Contribution Management: Accurate Professional tax slab rates by state
+Maharashtra, Karnataka, West Bengal, correct wage component inclusion, and
+handling monthly/quarterly/annual deductions.`,
+      `Filing & Remittance: Managing Professional tax forms and deadlines India (
+Form III), ensuring online PT payments, and maintaining digital record keeping.`,
+      `Risk & Audit: Addressing Professional Tax penalties for non-compliance India
+(fines, interest, legal action) and providing audit readiness support.`,
       `Multi-State Coordination: Seamlessly managing Professional Tax compliance
 across multiple states, understanding the nuances of "Professional Tax Act states
 India."`,
@@ -277,8 +277,8 @@ India."`,
   {
     title: "Employee PT Concerns We Support (via employer compliance):",
     features: [
-      `Ensuring correct "Professional tax deduction from salary" based on state laws.`,
-      `Clarifying "Professional tax exemption limit" for employees.`,
+      `Ensuring correct Professional tax deduction from salary based on state laws.`,
+      `Clarifying Professional tax exemption limit" for employees.`,
       `Ensuring transparent reporting of PT deductions on payslips.`,
     ],
   },

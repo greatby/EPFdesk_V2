@@ -56,10 +56,10 @@ const Posh = () => {
         <LargeCardSlider cardsData={largeCardsPoshOne} />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
-        <h2 className="text-3xl sm:text-5xl max-w-5xl px-2 mx-auto font-bold mt-16 mb-10 text-center">
+        <h2 className="text-3xl sm:text-5xl max-w-5xl px-2 mx-auto font-bold mt-16 mb-12 text-center">
           Why EPFdesk.com: Your Definitive Partner for POSH Act Compliance{" "}
         </h2>
-        <p className="max-w-4xl mx-auto mt-6 text-center px-4 text-[1.3rem] mb-6 text-gray-600 font-bold">
+        <p className="max-w-5xl mx-auto mt-6 text-center px-4 text-[1.4rem] mb-10 text-gray-600 font-bold">
           EPFdesk.com stands as India's premier choice for comprehensive POSH
           Act compliance, redefining workplace safety and legal integrity for
           mid-to-large enterprises.

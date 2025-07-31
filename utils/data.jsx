@@ -166,18 +166,18 @@ export const plans = {
       title: "Guaranteeing ESIC Benefits Access for Your Workforce",
       features: [
         `Full Medical Care Access: We ensure proper registration and contribution records
-so employees can effortlessly access "ESIC medical benefits for family," and
-locate "ESIC dispensary nearby"and "ESIC hospital list."`,
+so employees can effortlessly access ESIC medical benefits for family, and
+locate ESIC dispensary nearby and ESIC hospital list.`,
         `Robust Cash Benefits Eligibility: Our accurate contribution management means
-employees are eligible for vital support like "ESIC sickness benefit eligibility"(70% wages), "ESIC maternity benefit rules" (100% wages), "ESIC disablement
-benefit" (90% wages), and "ESIC unemployment allowance" under Atal Bimit
+employees are eligible for vital support like ESIC sickness benefit eligibility(70% wages), ESIC maternity benefit rules (100% wages), ESIC disablement
+benefit (90% wages), and ESIC unemployment allowance under Atal Bimit
 Vyakti Kalyan Yojana (ABVKY).`,
         `Comprehensive Additional Benefits: We manage data crucial for dependents to
-access "ESIC dependent benefits," and ensure eligibility for "ESIC funeral
-expenses" (₹15,000), "ESIC confinement expenses," and "ESIC vocational
+access ESIC dependent benefits, and ensure eligibility for ESIC funeral
+expenses (₹15,000), ESIC confinement expenses, and ESIC vocational
 rehabilitation.`,
-        `Seamless Access Tools: We ensure accurate details for employees to "download
-ESIC E-Pehchan card" and "check ESI registration of an employee online,"
+        `Seamless Access Tools: We ensure accurate details for employees to download
+ESIC E-Pehchan card and check ESI registration of an employee online,
 facilitating their access to benefits.`,
         `Your Benefit: A healthier, more secure workforce, reduced employee frustration related
 to ESIC benefits, and a stronger employer reputation that aids in talent retention.`,
@@ -188,7 +188,7 @@ to ESIC benefits, and a stronger employer reputation that aids in talent retenti
       features: [
         "99.9% Accuracy in ESIC Filings: Consistent 99.9% accuracy rate in all ESIC filings and contribution calculations, rigorously minimizing financial discrepancies and audit risks.",
         "Zero Audit Failures in 5+ Years: Zero audit failures across our client portfolio for 5+ years, a testament to our robust control environment and unwavering commitment to compliance integrity.",
-        "Rapid Query Resolution (2–4 hrs): Rapid average response times (e.g., 2-4 hours) for all client queries and urgent matters, ensuring your concerns are addressed promptly by dedicated specialists.",
+        "Rapid Query Resolution (2–4 hrs): Rapid average response times 2-4 hours for all client queries and urgent matters, ensuring your concerns are addressed promptly by dedicated specialists.",
         "100% Deadline Adherence: 100% deadline adherence for all ESIC submissions, completely eliminating interest charges and 'legal consequences of ESIC non-compliance.'",
       ],
     },
@@ -236,30 +236,30 @@ you are always informed and compliant.`,
     {
       title: "Key Employer ESIC Concerns We Resolve",
       features: [
-        `Registration & Setup: Navigating the "ESIC registration process," assessing "ESIC
-Act applicability," compiling "required documentation," and managing "ESIC code
-allocation."`,
-        `Ongoing Compliance: Ensuring accurate "monthly contribution calculations and
-payments,"managing "ESIC return filing" and "deadlines," and handling "wage
-ceiling and exemption"compliance.`,
-        `Risk & Audit Management: Addressing "penalties for late ESIC payments,"
-understanding "consequences of non-compliance," and providing "ESIC audit
-support."`,
-        `Portal & Data Management: Assisting with "ESIC employer portal login," "employee
-data updates,"and "generating ESIC ID."`,
+        `Registration & Setup: Navigating the ESIC registration process, assessing ESIC
+Act applicability, compiling required documentation, and managing ESIC code
+allocation.`,
+        `Ongoing Compliance: Ensuring accurate monthly contribution calculations and
+payments,managing ESIC return filing and deadlines, and handling wage
+ceiling and exemption compliance.`,
+        `Risk & Audit Management: Addressing penalties for late ESIC payments,
+understanding consequences of non-compliance, and providing ESIC audit
+support.`,
+        `Portal & Data Management: Assisting with ESIC employer portal login, employee
+data updates,and generating ESIC ID`,
       ],
     },
     {
       title: "Employee ESIC Benefits Support We Ensure",
       features: [
-        `Medical Benefit Access: Seamless access to "ESIC medical care" including
+        `Medical Benefit Access: Seamless access to ESIC medical care including
 dispensaries and hospital networks for employees and their families.`,
-        `Cash Benefits Eligibility: Ensuring eligibility for "sickness benefit," "maternity
-benefit," "disablement benefit," and "unemployment allowance (ABVKY)."`,
-        `Other Benefits: Facilitating access to "dependent benefits," "funeral expenses," and
-"vocational rehabilitation."`,
-        `Access Tools: Support for "E-Pehchan card generation" and checking "ESIC
-registration status of an employee online."`,
+        `Cash Benefits Eligibility: Ensuring eligibility for sickness benefit, maternity
+benefit, disablement benefit, and unemployment allowance (ABVKY).`,
+        `Other Benefits: Facilitating access to dependent benefits, funeral expenses, and
+vocational rehabilitation.`,
+        `Access Tools: Support for E-Pehchan card generation and checking ESIC
+registration status of an employee online.`,
       ],
     },
   ],
@@ -2552,28 +2552,28 @@ export const verticalCardsEsic = {
   cardsVer: [
     {
       title: "Monthly ESIC return filing",
-      subtitle: `We manage the entire \"ESIC return filing process\" with 100% accuracy and punctuality before the 15th of the following month deadline.`,
+      subtitle: `We manage the entire ESIC return filing process with 100% accuracy and punctuality before the 15th of the following month deadline.`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "Employee data updates & IP Management",
-      subtitle: `We handle \"how to update employee details in ESIC portal by employer,\" ensuring accurate records for your workforce, including \"generating ESIC Code number\" (17-digit ID) and managing \"ESIC login for insured person\" access.`,
+      subtitle: `We handle how to update employee details in ESIC portal by employer, ensuring accurate records for your workforce, including generating ESIC Code number (17-digit ID) and managing ESIC login for insured person access.`,
       icon: "🔨",
       bubble: "Build!",
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
     },
     {
       title: "Employer Portal Navigation",
-      subtitle: `We expertly manage all interactions on the \"ESIC employer login portal,\" ensuring accurate data reflection, complete submissions, and efficient grievance management (like EPFiGMS)`,
+      subtitle: `We expertly manage all interactions on the ESIC employer login portal, ensuring accurate data reflection, complete submissions, and efficient grievance management like EPFiGMS`,
       icon: "🌟",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
     {
       title: "Contribution Period Tracking",
-      subtitle: `We meticulously track \"ESIC Contribution Period vs. Cash Benefit Period\" to maintain continuous coverage for your employees, even if salaries briefly exceed the ceiling.`,
+      subtitle: `We meticulously track ESIC Contribution Period vs. Cash Benefit Period to maintain continuous coverage for your employees, even if salaries briefly exceed the ceiling.`,
       icon: "🦋",
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
@@ -2596,20 +2596,20 @@ export const horizontalCardsEsic = {
   cardsHor: [
     {
       title: "Complete ESIC registration process",
-      subtitle: `We guide you through and meticulously handle all steps for \"ESIC registration process online India,\" including online application, documentation, and swift ESIC code allocation.`,
+      subtitle: `We guide you through and meticulously handle all steps for ESIC registration process online India, including online application, documentation, and swift ESIC code allocation.`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
     },
     {
       title: "Precise applicability assessment",
-      subtitle: `We accurately determine \"Who is eligible for ESIC registration?\" based on employee count (e.g., 10+ or 20+ depending on state) and wage limits, ensuring correct and ongoing coverage without a hitch.`,
+      subtitle: `We accurately determine Who is eligible for ESIC registration? based on employee count 10+ or 20+ depending on state and wage limits, ensuring correct and ongoing coverage without a hitch.`,
       icon: "🎯",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
     },
     {
-      title: "Rapid average response time (e.g., 2-4 hours) for client queries",
+      title: "Rapid average response time 2-4 hours for client queries",
       subtitle:
         "Ensuring your concerns are addressed promptly by dedicated specialists, improving your operational efficiency.",
       icon: "🤝",
@@ -2618,14 +2618,14 @@ export const horizontalCardsEsic = {
     },
     {
       title: "Required documentation compilation",
-      subtitle: `We assist in gathering and submitting all \"documents required for ESIC registration,\" streamlining the initial setup within statutory time limits.`,
+      subtitle: `We assist in gathering and submitting all documents required for ESIC registration, streamlining the initial setup within statutory time limits.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
     },
     {
       title: "Coverage continuity management",
-      subtitle: `We advise on crucial aspects like the \"once covered, always covered\" rule, ensuring compliance even if the number of employees temporarily goes below the minimum limit.`,
+      subtitle: `We advise on crucial aspects like the once covered, always covered rule, ensuring compliance even if the number of employees temporarily goes below the minimum limit.`,
       icon: "⚡",
       bubble: "Empower!",
       bg: "bg-gradient-to-br from-[#84fab0] to-[#8fd3f4]",
@@ -2649,7 +2649,7 @@ export const largeCardsEsic = {
     {
       title: "Continuous regulatory monitoring",
       subtitle:
-        'Our dedicated experts meticulously monitor the latest "ESIC Act amendments," "ESIC circulars," and "ESIC contribution rate changes."',
+        'Our dedicated experts meticulously monitor the latest ESIC Act amendments, ESIC circulars, and ESIC contribution rate changes.',
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
@@ -2657,7 +2657,7 @@ export const largeCardsEsic = {
     {
       title: "Impact analysis & strategic advice",
       subtitle:
-        'We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the "consequences of ESIC non-compliance."',
+        'We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the consequences of ESIC non-compliance.',
       icon: "🔗",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -2665,7 +2665,7 @@ export const largeCardsEsic = {
     {
       title: "Penalty prevention strategies",
       subtitle:
-        'We implement proactive measures to safeguard against "what happens if employer does not pay ESIC contribution?" and other common non-compliance scenarios.',
+        'We implement proactive measures to safeguard against what happens if employer does not pay ESIC contribution? and other common non-compliance scenarios.',
       icon: "💼",
       bubble: "Consult!",
       bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
@@ -2697,36 +2697,36 @@ export const pastelCardsEsic = {
   cards: [
     {
       title: "Precision contribution calculation",
-      subtitle: `We perform accurate "ESIC calculation on salary" using the "current ESIC contribution rate employer and employee" (e.g., Employer: 3.25%, Employee: 0.75%) and the "ESIC wage ceiling current" (₹21,000 for general employees, ₹25,000 for persons with disabilities).`,
+      subtitle: `We perform accurate ESIC calculation on salary using the current ESIC contribution rate employer and employee, Employer: 3.25%, Employee: 0.75% and the ESIC wage ceiling current ₹21,000 for general employees, ₹25,000 for persons with disabilities.`,
       icon: "🎨",
       bubble: "Create!",
       bg: "from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "Correct wage component inclusion",
-      subtitle: `We meticulously identify and include all applicable "salary components for ESIC wages" (Basic, DA, HRA, CCA, production incentive, night shift, meal/food allowance), ensuring "ESIC is deducted on gross salary, not just basic."`,
+      subtitle: `We meticulously identify and include all applicable salary components for ESIC wages (Basic, DA, HRA, CCA, production incentive, night shift, meal/food allowance), ensuring ESIC is deducted on gross salary, not just basic.`,
       icon: "🌱",
       bubble: "Grow!",
       bg: "from-[#ffd3a5] to-[#fd9853]",
     },
     {
       title: "Exemption management",
-      subtitle: `We accurately identify and manage "exemptions from ESIC contributions for low-wage employees" (e.g., daily wage up to ₹176), optimizing your deductions while remaining compliant.`,
+      subtitle: `We accurately identify and manage exemptions from ESIC contributions for low-wage employees daily wage up to ₹176, optimizing your deductions while remaining compliant.`,
       icon: "🤝",
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
     },
     {
       title: "Timely payment facilitation",
-      subtitle: `We generate accurate "ESIC challan online" and support "how to pay ESIC contribution online," guaranteeing deposits are made well before the "Monthly ESIC return filing deadline"`,
+      subtitle: `We generate accurate ESIC challan online and support how to pay ESIC contribution online, guaranteeing deposits are made well before the Monthly ESIC return filing deadline`,
       icon: "✨",
       bubble: "Dream!",
       bg: "from-[#d299c2] to-[#fef9d7]",
     },
     {
       title: "Your Benefit",
-      subtitle: `Zero calculation errors, robust protection from "penalty for late ESIC
-payment" (including 12% interest and damages), optimized contribution accuracy, and
+      subtitle: `Zero calculation errors, robust protection from penalty for late ESIC
+payment including 12% interest and damages, optimized contribution accuracy, and
 guaranteed timely payments.`,
       icon: "❤️",
       bubble: "Grow!",
@@ -2742,7 +2742,7 @@ export const verticalCardsLwf = {
   cardsVer: [
     {
       title: "Precise applicability assessment",
-      subtitle: ` We accurately determine "LWF applicability rules India" for your establishment in each state, considering factors like employee thresholds (which vary significantly by state) and industry type`,
+      subtitle: ` We accurately determine LWF applicability rules India for your establishment in each state, considering factors like employee thresholds which vary significantly by state and industry type`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
@@ -2756,7 +2756,7 @@ export const verticalCardsLwf = {
     },
     {
       title: "Multi-state coverage analysis",
-      subtitle: `We manage the complexities for companies with branches in various states, ensuring compliance where "LWF is mandatory" and where it is "not applicable" (e.g., states like Uttar Pradesh, Bihar which may not have LWF)`,
+      subtitle: `We manage the complexities for companies with branches in various states, ensuring compliance where LWF is mandatory and where it is not applicable states like Uttar Pradesh, Bihar which may not have LWF`,
       icon: "🌟",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -2787,28 +2787,28 @@ export const horizontalCardsLwf = {
   cardsHor: [
     {
       title: "Precision Contribution Calculation",
-      subtitle: `We accurately determine "how much is the LWF contribution" for both employer and employee shares, navigating varying "LWF contribution rates by state" (e.g., Maharashtra, Karnataka, Delhi)`,
+      subtitle: `We accurately determine how much is the LWF contribution for both employer and employee shares, navigating varying LWF contribution rates by state Maharashtra, Karnataka, Delhi`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
     },
     {
       title: "State-specific Wage Inclusion",
-      subtitle: `We precisely identify "what salary components are included in LWF wages" and whether "LWF deduction is on gross salary or basic," aligning with each state's specific LWF Act.`,
+      subtitle: `We precisely identify what salary components are included in LWF wages and whether LWF deduction is on gross salary or basic, aligning with each state's specific LWF Act.`,
       icon: "🎯",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
     },
     {
       title: "Deduction Frequency Management",
-      subtitle: `We track and ensure correct deduction based on the state's mandate – whether monthly, half-yearly, or annually, clarifying queries like "What is the frequency of LWF deduction?"`,
+      subtitle: `We track and ensure correct deduction based on the state's mandate – whether monthly, half-yearly, or annually, clarifying queries like What is the frequency of LWF deduction?`,
       icon: "🤝",
       bubble: "Collaborate!",
       bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
     },
     {
       title: "Timely Payment Facilitation",
-      subtitle: ` We generate accurate LWF challans and support "online LWF payments" where available, ensuring deposits are made well before the varied "LWF due dates" for each state.`,
+      subtitle: ` We generate accurate LWF challans and support online LWF payments where available, ensuring deposits are made well before the varied LWF due dates for each state.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -2831,7 +2831,7 @@ export const largeCardsLwf = {
   cards: [
     {
       title: "State-Specific Return Filing",
-      subtitle: `We manage the entire "LWF return filing process" using the correct "LWF forms" (e.g., Form A, Form F, Form A-1, which vary by state) with accuracy and punctuality as per each state's deadline.`,
+      subtitle: `We manage the entire LWF return filing process using the correct LWF forms (Form A, Form F, Form A-1, which vary by state) with accuracy and punctuality as per each state's deadline.`,
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
@@ -2876,21 +2876,21 @@ export const pastelCardsLwf = {
   cards: [
     {
       title: "Continuous Regulatory Monitoring",
-      subtitle: `Our dedicated experts continuously monitor the highly fragmented "LWF Act states India" for any new amendments, circulars, or rate changes from each respective State Labour Welfare Board.`,
+      subtitle: `Our dedicated experts continuously monitor the highly fragmented LWF Act states India for any new amendments, circulars, or rate changes from each respective State Labour Welfare Board.`,
       icon: "🎨",
       bubble: "Create!",
       bg: "from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "Impact Analysis & Strategic Advice",
-      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and "penalties for noncompliance with LWF.`,
+      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and penalties for noncompliance with LWF.`,
       icon: "🌱",
       bubble: "Grow!",
       bg: "from-[#ffd3a5] to-[#fd9853]",
     },
     {
       title: "Penalty Prevention Strategies",
-      subtitle: `We implement proactive measures to safeguard against "what happens if employer does not pay ESIC contribution?" and other common non-compliance scenarios.`,
+      subtitle: `We implement proactive measures to safeguard against what happens if employer does not pay ESIC contribution? and other common non-compliance scenarios.`,
       icon: "🤝",
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
@@ -2922,14 +2922,14 @@ export const verticalCardsPf = {
   cardsVer: [
     {
       title: "Precision Contribution Calculation",
-      subtitle: `We accurately determine "how to calculate professional tax on salary" for both employer and employee shares, meticulously applying varying "Professional tax slab rates by state" (e.g., "Maharashtra professional tax slab," "Karnataka PT slab rates").`,
+      subtitle: `We accurately determine how to calculate professional tax on salary for both employer and employee shares, meticulously applying varying Professional tax slab rates by state Maharashtra professional tax slab, Karnataka PT slab rates.`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "Correct Wage Component Inclusion",
-      subtitle: `We precisely identify whether "professional tax is deducted from gross salary or basic salary," aligning with each state's specific PT Act and ensuring accurate calculation against the "professional tax exemption limit" (minimum salary threshold).`,
+      subtitle: `We precisely identify whether professional tax is deducted from gross salary or basic salary, aligning with each state's specific PT Act and ensuring accurate calculation against the professional tax exemption limit (minimum salary threshold).`,
       icon: "🔨",
       bubble: "Build!",
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
@@ -2943,7 +2943,7 @@ export const verticalCardsPf = {
     },
     {
       title: "Timely Payment Facilitation",
-      subtitle: ` We generate accurate PT challans and support "how to pay professional tax online," ensuring deposits are made well before the varied "Professional tax due dates by state" (e.g., 20th of succeeding month in Karnataka, 15th in Gujarat)`,
+      subtitle: ` We generate accurate PT challans and support how to pay professional tax online, ensuring deposits are made well before the varied Professional tax due dates by state 20th of succeeding month in Karnataka, 15th in Gujarat`,
       icon: "🦋",
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
@@ -2951,8 +2951,8 @@ export const verticalCardsPf = {
     {
       title: "Your Benefit",
       subtitle: `Zero calculation errors, accurate contributions aligned with each
-state's unique rules, and robust protection from "penalty for late professional tax
-payment" and associated interest.`,
+state's unique rules, and robust protection from penalty for late professional tax
+payment and associated interest.`,
       icon: "❤️",
       bubble: "Build!",
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
@@ -2967,28 +2967,28 @@ export const horizontalCardsPf = {
   cardsHor: [
     {
       title: "Precise applicability assessment",
-      subtitle: `We accurately determine "Is professional tax mandatory in all states in India?" and identify "Which states have professional tax in India" relevant to your business operations. We assess applicability based on employee count, income thresholds, and specific state laws (e.g., in Maharashtra, Karnataka, West Bengal, Gujarat, Tamil Nadu, Telangana, Kerala)`,
+      subtitle: `We accurately determine Is professional tax mandatory in all states in India? and identify Which states have professional tax in India relevant to your business operations. We assess applicability based on employee count, income thresholds, and specific state laws in Maharashtra, Karnataka, West Bengal, Gujarat, Tamil Nadu, Telangana, Kerala`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
     },
     {
       title: "State-specific registration management",
-      subtitle: `We guide you through and handle all steps for the "Professional tax registration online process," ensuring you obtain the correct Professional Tax Registration Certificate (PTRC) for employers or Professional Tax Enrollment Certificate (PTEC)for the establishment, within statutory timelines.`,
+      subtitle: `We guide you through and handle all steps for the Professional tax registration online process, ensuring you obtain the correct Professional Tax Registration Certificate (PTRC) for employers or Professional Tax Enrollment Certificate (PTEC)for the establishment, within statutory timelines.`,
       icon: "🎯",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
     },
     {
       title: "Required documentation compilation",
-      subtitle: `We assist in gathering and submitting all necessary "documents required for professional tax registration," streamlining the initial setup for each applicable state.`,
+      subtitle: `We assist in gathering and submitting all necessary documents required for professional tax registration, streamlining the initial setup for each applicable state.`,
       icon: "🤝",
       bubble: "Collaborate!",
       bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
     },
     {
       title: "Coverage analysis for evolving operations",
-      subtitle: ` We provide insights into "Professional tax enrollment certificate (PTEC) vs registration certificate (PTRC)" and manage compliance as your workforce or business locations change.`,
+      subtitle: ` We provide insights into Professional tax enrollment certificate (PTEC) vs registration certificate (PTRC) and manage compliance as your workforce or business locations change.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -3012,7 +3012,7 @@ export const largeCardsPf = {
   cards: [
     {
       title: "State-Specific Return Filing",
-      subtitle: `We manage the entire "Professional tax return filing online"process, using the correct "PT return forms by state" (e.g., Form III for Maharashtra) with 100% accuracy and punctuality as per each state's varied deadlines.`,
+      subtitle: `We manage the entire "Professional tax return filing online process, using the correct PT return forms by state (Form III for Maharashtra) with 100% accuracy and punctuality as per each state's varied deadlines.`,
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
@@ -3026,14 +3026,14 @@ export const largeCardsPf = {
     },
     {
       title: "Digital Record Keeping",
-      subtitle: `We maintain meticulous digital records of all PT challans, payment receipts, and filed returns, creating a robust audit trail for future reference and addressing queries about "Professional tax challan download.`,
+      subtitle: `We maintain meticulous digital records of all PT challans, payment receipts, and filed returns, creating a robust audit trail for future reference and addressing queries about Professional tax challan download.`,
       icon: "💼",
       bubble: "Consult!",
       bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
     },
     {
       title: "Online Portal Navigation",
-      subtitle: `We expertly manage interactions with various State Tax Department online portals (the "professional tax login portal state wise"), ensuring accurate data reflection and complete submissions across diverse systems.`,
+      subtitle: `We expertly manage interactions with various State Tax Department online portals the professional tax login portal state wise, ensuring accurate data reflection and complete submissions across diverse systems.`,
       icon: "🤖",
       bubble: "Automate!",
       bg: "bg-gradient-to-br from-[#43e97b] to-[#38f9d7]",
@@ -3063,14 +3063,14 @@ export const pastelCardsPf = {
     },
     {
       title: "Impact Analysis & Strategic Advice",
-      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and "consequences of not paying professional tax`,
+      subtitle: `We translate complex, state-specific legal updates into clear, actionable insights for your business operations, ensuring you understand the implications and consequences of not paying professional tax`,
       icon: "🌱",
       bubble: "Grow!",
       bg: "from-[#ffd3a5] to-[#fd9853]",
     },
     {
       title: "Penalty Prevention Strategies",
-      subtitle: `We implement proactive measures to safeguard against "penalty for late professional tax payment" (which can be daily fines or percentage of tax due) and other forms of "legal action for PT non-compliance.`,
+      subtitle: `We implement proactive measures to safeguard against penalty for late professional tax payment which can be daily fines or percentage of tax due and other forms of legal action for PT non-compliance.`,
       icon: "🤝",
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
@@ -3153,7 +3153,7 @@ export const horizontalCardsDesk = {
   cardsHor: [
     {
       title: "Guided Ticket Creation",
-      subtitle: `Employees can easily log tickets for virtually all EPF issues. This includes common queries like "How to check EPF balance online," "How to activate UAN," "How to update EPF KYC," and "EPF withdrawal process."`,
+      subtitle: `Employees can easily log tickets for virtually all EPF issues. This includes common queries like How to check EPF balance online, How to activate UAN, How to update EPF KYC, and EPF withdrawal process.`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
@@ -3174,7 +3174,7 @@ export const horizontalCardsDesk = {
     },
     {
       title: "Comprehensive Issue Coverage",
-      subtitle: `Our system handles a vast range of concerns, from simple queries (e.g.,"How to download EPF passbook") to more complex EPF transfer cases and pension-related inquiries."`,
+      subtitle: `Our system handles a vast range of concerns, from simple queries How to download EPF passbook to more complex EPF transfer cases and pension-related inquiries.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -3182,7 +3182,7 @@ export const horizontalCardsDesk = {
     {
       title: "Employee Benefits",
       subtitle: `Clear process guidance, complete transparency, proactive updates, and expert resolution for any
-EPF complexity, from "UAN login issues" to "name mismatch in EPF account."`,
+EPF complexity, from UAN login issues to name mismatch in EPF account.`,
       icon: "❤️",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
@@ -3197,7 +3197,7 @@ export const largeCardsDesk = {
   cards: [
     {
       title: "Dedicated EPF Specialists",
-      subtitle: `Our team comprises seasoned professionals who take full ownership of each employee query, specializing in accurate resolutions for issues like "Why is my EPF passbook not updated?" or "What to do if employer is not depositing PF?"`,
+      subtitle: `Our team comprises seasoned professionals who take full ownership of each employee query, specializing in accurate resolutions for issues like Why is my EPF passbook not updated? or What to do if employer is not depositing PF?`,
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
@@ -3226,8 +3226,8 @@ export const largeCardsDesk = {
     {
       title: "Business Benefits",
       subtitle: `Zero HR involvement required for individual EPF issues, access to expert problem-solving,
-efficient direct EPFO liaison, and comprehensive issue resolution that covers all angles, including potential "tax
-implications on EPF withdrawal."`,
+efficient direct EPFO liaison, and comprehensive issue resolution that covers all angles, including potential tax
+implications on EPF withdrawal.`,
       icon: "❤️",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -3242,21 +3242,21 @@ export const pastelCardsDesk = {
   cards: [
     {
       title: "Local Teams Across Major Metros",
-      subtitle: `Unlike purely online services, our on-ground teams in key Indian cities (including Delhi NCR, Mumbai, Bengaluru, Chennai, and Hyderabad, Pune) provide invaluable physical support where it matters most.`,
+      subtitle: `Unlike purely online services, our on-ground teams in key Indian cities including Delhi NCR, Mumbai, Bengaluru, Chennai, and Hyderabad, Pune provide invaluable physical support where it matters most.`,
       icon: "🎨",
       bubble: "Create!",
       bg: "from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "In-Person EPFO Office Representation",
-      subtitle: `For complex or unresolved cases that mandate direct interaction, submission of physical documents, or follow-ups at regional EPFO offices, our local teams ensure swift and effective resolution. This addresses queries related to "EPFO portal usage" and "employer's guide to EPFiGMS."`,
+      subtitle: `For complex or unresolved cases that mandate direct interaction, submission of physical documents, or follow-ups at regional EPFO offices, our local teams ensure swift and effective resolution. This addresses queries related to EPFO portal usage and employer's guide to EPFiGMS.`,
       icon: "🌱",
       bubble: "Grow!",
       bg: "from-[#ffd3a5] to-[#fd9853]",
     },
     {
       title: "Physical Verification Assistance",
-      subtitle: `When required by EPFO processes (e.g., for certain withdrawal claims or death claim processing), our teams provide on-ground assistance for physical verification, bridging any logistical gaps.`,
+      subtitle: `When required by EPFO processes for certain withdrawal claims or death claim processing, our teams provide on-ground assistance for physical verification, bridging any logistical gaps.`,
       icon: "🤝",
       bubble: "Connect!",
       bg: "from-[#a8edea] to-[#fed6e3]",
@@ -3278,8 +3278,8 @@ export const verticalCardsEpfo = {
     "Our commitment to precision is foundational to your peace of mind and protection against non-compliance penalties.",
   cardsVer: [
     {
-      title: "Consistently high accuracy rate in EPF filings (e.g., 99.9%)",
-      subtitle: `Our multi-layered validation and expert review process minimizes discrepancies, significantly reducing "interest on delayed EPF contributions" for your business`,
+      title: "Consistently high accuracy rate in EPF filings 99.9%",
+      subtitle: `Our multi-layered validation and expert review process minimizes discrepancies, significantly reducing interest on delayed EPF contributions for your business`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
@@ -3292,7 +3292,7 @@ export const verticalCardsEpfo = {
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
     },
     {
-      title: "Rapid average response time (e.g., 2-4 hours) for client queries",
+      title: "Rapid average response time 2-4 hours for client queries",
       subtitle: `Ensuring your concerns are addressed promptly by dedicated specialists, improving your operational efficiency.`,
       icon: "🌟",
       bubble: "Shine!",
@@ -3300,7 +3300,7 @@ export const verticalCardsEpfo = {
     },
     {
       title: "100% deadline adherence for all submissions",
-      subtitle: `Protecting you from "legal consequences of EPF non-compliance" and preserving your organization's reputation.`,
+      subtitle: `Protecting you from legal consequences of EPF non-compliance and preserving your organization's reputation.`,
       icon: "🦋",
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
@@ -3337,7 +3337,7 @@ export const horizontalCardsEpfo = {
     },
     {
       title: "Penalty-Free Compliance",
-      subtitle: `100% elimination of penalty & interest risks: Never worry about 'what if employer does not deposit PF' — we ensure flawless and timely compliance.`,
+      subtitle: `100% elimination of penalty & interest risks: Never worry about what if employer does not deposit PF — we ensure flawless and timely compliance.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -3546,14 +3546,15 @@ export const horizontalCardsLinks = [
     gradient: "from-[#84fab0] to-[#8fd3f4]",
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
   },
-  // {
-  //   title: "Impact",
-  //   subtitle: "Make a difference that matters in the world",
-  //   icon: "🌍",
-  //   bubble: "Impact!",
-  //   gradient: "from-[#f093fb] to-[#f5576c]",
-  //   bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
-  // },
+  {
+    title: "POSH",
+    subtitle: `EPFdesk.com offers comprehensive POSH Act compliance services, including implementation, training, complaint redressal, advisory, and an independent complaint hotline. We ensure 100% adherence to the POSH Act 2013, fostering a safe, respectful workplace while protecting your organization’s reputation and legal integrity.`,
+    icon: "🛡️",
+    link: "/posh",
+    bubble: "Impact!",
+    gradient: "from-[#f093fb] to-[#f5576c]",
+    bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
+  },
 ];
 
 export const plansEpfManagement = {
@@ -3563,9 +3564,9 @@ export const plansEpfManagement = {
       title: "Complete HR Team Liberation",
       //  icon: ClipboardDocumentCheckIcon,
       features: [
-        `Significant reduction (e.g., 80%) in daily EPF-related employee queries: Freeing up countless hours
+        `Significant reduction 80% in daily EPF-related employee queries: Freeing up countless hours
  previously spent on routine tasks.`,
-        `Valuable HR bandwidth reclaimed (e.g., 15-20 hours monthly): Allowing your HR team to focus on strategic
+        `Valuable HR bandwidth reclaimed 15-20 hours monthly: Allowing your HR team to focus on strategic
  initiatives like talent acquisition, employee development programs, and fostering a vibrant workplace culture.`,
         `Eliminated EPFO liaison requirement: Your HR team no longer needs to be the middleman for individual
  employee EPF issues, reducing their administrative overhead.`,
@@ -3608,7 +3609,7 @@ within 24 hours of onboarding completion, experiencing instant value.`,
       //  icon: UsersIcon,
       features: [
         `Optional HR Dashboard: While we handle direct employee resolution, your HR team can access an optional
-dashboard to monitor common query trends (anonymized), view overall ticket resolution rates, and identify areas for
+dashboard to monitor common query trends anonymized, view overall ticket resolution rates, and identify areas for
 internal communication.`,
         `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
 organizational-level support, reporting needs, and any high-level strategic consultations.`,
@@ -3622,21 +3623,21 @@ growing with your workforce from mid-sized companies to large enterprises.`,
       title: "Common Employee Issues We Resolve:",
       //  icon: UsersIcon,
       features: [
-        `EPF balance checking and passbook updates: Including "How to check EPF balance online" and resolving "Why is
-my EPF passbook not updated?"`,
-        `UAN activation, linking, and Aadhaar integration: Expert assistance with "How to activate UAN," "How to know
-your UAN," and managing "Common UAN login issues and solutions."`,
-        `KYC document updates and verification: Guidance and processing for "How to update EPF KYC"and other member
+        `EPF balance checking and passbook updates: Including How to check EPF balance online and resolving Why is
+my EPF passbook not updated?`,
+        `UAN activation, linking, and Aadhaar integration: Expert assistance with How to activate UAN, How to know
+your UAN, and managing Common UAN login issues and solutions.`,
+        `KYC document updates and verification: Guidance and processing for How to update EPF KYC and other member
 profile corrections.`,
-        `EPF withdrawal claims (partial and full settlement): Navigating "EPF withdrawal rules" and assisting with "How
-to withdraw EPF online" and required documents.`,
-        `EPF transfer between employers and states: Expertly managing the "EPF transfer process" to ensure seamless
+        `EPF withdrawal claims (partial and full settlement): Navigating EPF withdrawal rules and assisting with How
+to withdraw EPF online and required documents.`,
+        `EPF transfer between employers and states: Expertly managing the EPF transfer process to ensure seamless
 continuity of funds.`,
-        `Pension-related queries and processing: Understanding "Understanding EPS benefits" and assisting with "How
-to get EPS Scheme Certificate."`,
+        `Pension-related queries and processing: Understanding EPS benefits and assisting with How
+to get EPS Scheme Certificate.`,
         `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
-        `Name, date of birth, and contact detail corrections: Efficiently handling "Name mismatch in EPF account" and
-"Changing mobile number/email in EPF."`,
+        `Name, date of birth, and contact detail corrections: Efficiently handling Name mismatch in EPF account and
+Changing mobile number/email in EPF.`,
       ],
     },
   ],
@@ -3651,11 +3652,11 @@ export const epfManagementPlans = {
       features: [
         `Monthly employee additions and deletions with immediate EPFO reflection: We precisely
 manage your roster updates, ensuring compliance from day one for new hires and seamless
-processing for exits. This addresses common employer queries about "How to add new
-employee in EPF" and "deletion of member."`,
+processing for exits. This addresses common employer queries about How to add new
+employee in EPF and deletion of member.`,
         `Automated UAN generation and linking for all new hires within 24 hours: Swift UAN allocation
-and linking to Aadhaar streamline onboarding and prevent delays. This directly answers "How
-to generate UAN for new employees" and "Linking Aadhaar with UAN by employer."`,
+and linking to Aadhaar streamline onboarding and prevent delays. This directly answers How
+to generate UAN for new employees and Linking Aadhaar with UAN by employer.`,
         `Complete employee data management and ongoing verification: We maintain pristine member
 records, proactively correcting discrepancies and managing updates like name, DOB, and KYC
 to mitigate future issues.`,
@@ -3671,21 +3672,21 @@ for every employee, and simplify member profile corrections and updates.`,
       //  icon: UsersIcon,
       features: [
         `Precision EPF challan creation validated against latest EPFO norms: Our system guarantees
-accurate calculations for all employees, including complex scenarios like "EPF calculation for
-salary above ₹15,000," and ensures correct "EPF contribution breakdown for employer and
+accurate calculations for all employees, including complex scenarios like EPF calculation for
+salary above ₹15,000, and ensures correct "EPF contribution breakdown for employer and
 employee."`,
-        `Automated contribution calculation based on "basic wages" as per EPF Act: We accurately
-determine taxable components and ensure correct inclusion of salary components (like
-Dearness Allowance) for EPF, clarifying "What components of salary are included in EPF basic
-wages?"`,
+        `Automated contribution calculation based on basic wages as per EPF Act: We accurately
+determine taxable components and ensure correct inclusion of salary components like
+Dearness Allowance for EPF, clarifying What components of salary are included in EPF basic
+wages?`,
         `Pre-submission validation to catch errors before filing: Our multi-layered checks identify
-discrepancies before your "monthly EPF ECR online" filing, preventing costly mistakes and
-addressing "errors in ECR filing and how to correct them."`,
+discrepancies before your monthly EPF ECR online filing, preventing costly mistakes and
+addressing errors in ECR filing and how to correct them.`,
         `Payment timeline management with timely reminders and alerts: We ensure your contributions
-are remitted well before the "Monthly EPF return filing deadline" (15th of every month),
-completely protecting you from "penalties for late EPF payment" and interest charges.`,
+are remitted well before the Monthly EPF return filing deadline 15th of every month,
+completely protecting you from penalties for late EPF payment and interest charges.`,
         `Your Benefit: Near-zero calculation errors, guaranteed timely submissions, complete protection from
-late payment penalties, and a simplified "EPF challan generation process" that protects your bottom
+late payment penalties, and a simplified EPF challan generation process that protects your bottom
 line.`,
       ],
     },
@@ -3694,40 +3695,40 @@ line.`,
       //  icon: UsersIcon,
       features: [
         `Accurate and timely monthly ECR (Electronic Challan-cum-Return) filing: We manage your core
-monthly submission with utmost precision, streamlining "How to file monthly EPF ECR online"
+monthly submission with utmost precision, streamlining How to file monthly EPF ECR online
 for your team.`,
         `Comprehensive handling of all employer approvals, declarations, and annexures: Ensuring
-every required document, including "Nomination Form" and other necessary declarations, is
+every required document, including Nomination Form" and other necessary declarations, is
 properly processed and uploaded.`,
         `Secure digital document management with ironclad audit trails: All filed records are securely
-managed and easily retrievable, providing crucial support during any "EPFO audit process for
-employers" and helping you "prepare for an EPF inspection" with confidence.`,
+managed and easily retrievable, providing crucial support during any EPFO audit process for
+employers" and helping you "prepare for an EPF inspection with confidence.`,
         `Proactive error detection and swift resubmission when needed: We identify and correct "errors
-in ECR filing" promptly, ensuring continuous compliance and mitigating "legal consequences of
-EPF non-compliance."`,
+in ECR filing" promptly, ensuring continuous compliance and mitigating legal consequences of
+EPF non-compliance.`,
         `Your Benefit: Flawless compliance records, stress-free EPFO audits, immediate document retrieval for
-any inquiry, and unwavering adherence to "EPFO electronic submission guidelines."`,
+any inquiry, and unwavering adherence to EPFO electronic submission guidelines.`,
         `Your Benefit: Flawless compliance records, stress-free EPFO audits, immediate document retrieval for
-any inquiry, and unwavering adherence to "EPFO electronic submission guidelines."`,
+any inquiry, and unwavering adherence to EPFO electronic submission guidelines.`,
       ],
     },
     {
       title: "Proactive Regulatory Updates & Advisory",
       //  icon: UsersIcon,
       features: [
-        `Continuous monitoring of all EPFO circulars, notifications, and "EPF & MP Act 1952 latest
-amendments": Our experts are constantly updating their knowledge base, providing you with
+        `Continuous monitoring of all EPFO circulars, notifications, and EPF & MP Act 1952 latest
+amendments: Our experts are constantly updating their knowledge base, providing you with
 real-time insights.`,
         `Impact analysis of new regulations on your specific business operations: We translate complex
 legal jargon into actionable insights tailored to your organizational structure and workforce,
-including the "New Social Security Code impact on EPF for employers."`,
+including the New Social Security Code impact on EPF for employers.`,
         `Strategic recommendations for policy adaptations: We advise on necessary internal
 adjustments to ensure seamless compliance with evolving laws, allowing you to strategically
 adapt your HR and payroll policies ahead of time.`,
         `Advance notice of upcoming compliance requirements and deadlines: You're always prepared,
-eliminating last-minute rushes and ensuring "best practices for EPF compliance in India."`,
+eliminating last-minute rushes and ensuring best practices for EPF compliance in India.`,
         `Your Benefit: Perpetual compliance, strategic advantage from early adaptation, complete elimination
-of compliance surprises, and expert navigation of the most recent "EPFO circulars and notifications."`,
+of compliance surprises, and expert navigation of the most recent EPFO circulars and notifications.`,
       ],
     },
   ],
@@ -3740,18 +3741,18 @@ export const verticalCardsPosh = {
   cardsVer: [
     {
       title: "Internal Committee (IC) Formation & Training",
-      subtitle: `Difficulty in "forming a valid
-Internal Committee (IC) under POSH Act," ensuring diverse representation,
-and providing "mandatory POSH training for IC members."`,
+      subtitle: `Difficulty in forming a valid
+Internal Committee under POSH Act, ensuring diverse representation,
+and providing mandatory POSH training for IC members.`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
     },
     {
       title: "Awareness & Policy Dissemination",
-      subtitle: `Challenges in ensuring "POSH
-awareness training for all employees" (including contract staff) and effectively
-communicating the "POSH policy" across the organization, especially in multilocation
+      subtitle: `Challenges in ensuring POSH
+awareness training for all employees including contract staff and effectively
+communicating the POSH policy across the organization, especially in multilocation
 or hybrid work setups.`,
       icon: "🔨",
       bubble: "Build!",
@@ -3760,8 +3761,8 @@ or hybrid work setups.`,
     {
       title: "Record-Keeping & Reporting",
       subtitle: `Meticulous documentation of complaints,
-inquiries, IC proceedings, and annual reports (e.g., "POSH annual report
-filing") is administratively heavy and crucial for compliance.`,
+inquiries, IC proceedings, and annual reports POSH annual report
+filing is administratively heavy and crucial for compliance.`,
       icon: "🌟",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -3774,9 +3775,9 @@ export const horizontalCardsPosh = {
   cardsHor: [
     {
       title: "Fair & Timely Inquiry Process",
-      subtitle: `Ensuring "fair and impartial inquiry process
-under POSH Act" within the strict "POSH complaint timeline" (e.g., 90 days
-for inquiry) can be challenging, especially without specialized expertise.`,
+      subtitle: `Ensuring fair and impartial inquiry process
+under POSH Act within the strict POSH complaint timeline 90 days
+for inquiry can be challenging, especially without specialized expertise.`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
@@ -3784,7 +3785,7 @@ for inquiry) can be challenging, especially without specialized expertise.`,
     {
       title: "Preventing Victimization",
       subtitle: `Protecting the complainant and witnesses from
-"victimization under POSH Act" during and after an inquiry requires careful
+victimization under POSH Act during and after an inquiry requires careful
 procedural adherence and a sensitive approach.`,
       icon: "🎯",
       bubble: "Focus!",
@@ -3792,8 +3793,8 @@ procedural adherence and a sensitive approach.`,
     },
     {
       title: "Maintaining Confidentiality",
-      subtitle: `The utmost importance of "confidentiality in
-POSH complaints"throughout the inquiry process is often difficult to manage
+      subtitle: `The utmost importance of confidentiality in
+POSH complaints throughout the inquiry process is often difficult to manage
 internally without robust protocols.`,
       icon: "🤝",
       bubble: "Collaborate!",
@@ -3802,9 +3803,9 @@ internally without robust protocols.`,
     {
       title: "Legal Scrutiny & Penalties",
       subtitle: `Mishandling a complaint, procedural lapses, or
-non-compliance can lead to severe "penalties for non-compliance with POSH
-Act" (e.g., fines up to ₹50,000, cancellation of business license) and "legal
-action against the employer."`,
+non-compliance can lead to severe penalties for non-compliance with POSH
+Act fines up to ₹50,000, cancellation of business license and legal
+action against the employer.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -3818,7 +3819,7 @@ export const largeCardsPosh = {
     {
       title: "Shifting Workplace Culture",
       subtitle: `Moving beyond mere compliance to foster a truly
-"safe and respectful workplace culture" where employees feel empowered to
+safe and respectful workplace culture where employees feel empowered to
 speak up requires continuous effort and expert guidance.`,
       icon: "🛡️",
       bubble: "Protect!",
@@ -3826,8 +3827,8 @@ speak up requires continuous effort and expert guidance.`,
     },
     {
       title: "Employee Awareness & Trust",
-      subtitle: `Ensuring all employees (including those asking
-"what is sexual harassment at workplace" or "how to file POSH complaint")
+      subtitle: `Ensuring all employees including those asking
+what is sexual harassment at workplace or how to file POSH complaint
 are adequately informed and trust the redressal mechanism.`,
       icon: "🔗",
       bubble: "Integrate!",
@@ -3836,7 +3837,7 @@ are adequately informed and trust the redressal mechanism.`,
     {
       title: "Reputational Damage",
       subtitle: `Even a single mishandled POSH complaint or public
-accusation can result in severe "reputational damage for companies" and loss
+accusation can result in severe reputational damage for companies and loss
 of employee and public trust.`,
       icon: "💼",
       bubble: "Consult!",
@@ -3852,8 +3853,8 @@ export const pastelCardsPosh = {
   cards: [
     {
       title: "IC Constitution Guidance",
-      subtitle: `Expert assistance in "forming Internal
-Committee (IC) under POSH Act," ensuring it meets all statutory
+      subtitle: `Expert assistance in forming Internal
+Committee under POSH Act, ensuring it meets all statutory
 requirements regarding composition, gender balance, and external
 member inclusion.`,
       icon: "🎨",
@@ -3862,8 +3863,8 @@ member inclusion.`,
     },
     {
       title: "Mandatory IC Training",
-      subtitle: `Comprehensive "POSH training for IC
-members," equipping them with the legal knowledge, procedural steps,
+      subtitle: `Comprehensive POSH training for IC
+members, equipping them with the legal knowledge, procedural steps,
 and sensitivity required to conduct fair and impartial inquiries.`,
       icon: "🌱",
       bubble: "Grow!",
@@ -3897,7 +3898,7 @@ export const verticalCardsPoshOne = {
     {
       title: "POSH Policy Development & Review",
       subtitle: `Drafting or updating your
-organization's "POSH policy India" to be clear, comprehensive, legally
+organization's POSH policy India to be clear, comprehensive, legally
 compliant, and reflective of your company's values.`,
       icon: "📚",
       bubble: "Learn!",
@@ -3906,10 +3907,10 @@ compliant, and reflective of your company's values.`,
     {
       title: "Mandatory Employee Training",
       subtitle: `Conducting engaging and impactful
-"POSH awareness training for all employees" (including contract,
-temporary, and remote staff) through online modules or interactive
-workshops, explaining "what is sexual harassment at workplace" and
-"how to file POSH complaint."`,
+POSH awareness training for all employees including contract,
+temporary, and remote staff through online modules or interactive
+workshops, explaining what is sexual harassment at workplace and
+how to file POSH complaint.`,
       icon: "🔨",
       bubble: "Build!",
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
@@ -3917,7 +3918,7 @@ workshops, explaining "what is sexual harassment at workplace" and
     {
       title: "Policy Dissemination & Display",
       subtitle: `Ensuring the POSH policy is effectively
-communicated, displayed (e.g., at workplaces, on intranets), and
+communicated, displayed at workplaces, on intranets, and
 acknowledged by all employees as mandated by the Act.`,
       icon: "🌟",
       bubble: "Shine!",
@@ -3955,9 +3956,9 @@ complainant) and impartiality, which significantly enhances employee trust.`,
     {
       title: "End-to-End Inquiry Support",
       subtitle: `Providing expert guidance and support
-throughout the "POSH complaint inquiry process," from initial complaint
-receipt to final report submission within the "POSH complaint timeline"
-(90 days).`,
+throughout the POSH complaint inquiry process, from initial complaint
+receipt to final report submission within the POSH complaint timeline
+90 days.`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
@@ -3966,8 +3967,8 @@ receipt to final report submission within the "POSH complaint timeline"
       title: "Impartial Inquiry Conduct",
       subtitle: `Assisting the IC in conducting fair, unbiased,
 and legally sound inquiries, including evidence gathering, witness
-interviews, and procedural adherence to ensure "fair inquiry process
-under POSH Act."`,
+interviews, and procedural adherence to ensure fair inquiry process
+under POSH Act.`,
       icon: "🎯",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
@@ -3975,8 +3976,8 @@ under POSH Act."`,
     {
       title: "Confidentiality & Victimization Prevention",
       subtitle: `Implementing strict
-protocols to ensure "confidentiality in POSH complaints" and actively
-preventing "victimization under POSH Act" for complainants and
+protocols to ensure confidentiality in POSH complaints and actively
+preventing victimization under POSH Act for complainants and
 witnesses.`,
       icon: "🤝",
       bubble: "Collaborate!",
@@ -3986,7 +3987,7 @@ witnesses.`,
       title: "Final Report & Recommendations",
       subtitle: `Expert assistance in drafting
 comprehensive inquiry reports and recommendations for appropriate
-action, including "consequences of sexual harassment at workplace."`,
+action, including consequences of sexual harassment at workplace.`,
       icon: "💡",
       bubble: "Innovate!",
       bg: "bg-gradient-to-br from-[#d4fc79] to-[#96e6a1]",
@@ -4013,16 +4014,16 @@ export const largeCardsPoshOne = {
     {
       title: "Annual Report Filing",
       subtitle: `Meticulous preparation and timely filing of your
-"POSH annual report to District Officer" (detailing complaints received,
-actions taken, training conducted) as mandated by the Act.`,
+POSH annual report to District Officer detailing complaints received,
+actions taken, training conducted as mandated by the Act.`,
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
     },
     {
       title: "Continuous Regulatory Updates",
-      subtitle: `Monitoring "latest amendments to
-POSH Act 2013" and related guidelines, providing timely alerts and
+      subtitle: `Monitoring latest amendments to
+POSH Act 2013 and related guidelines, providing timely alerts and
 actionable insights for ongoing compliance.`,
       icon: "🔗",
       bubble: "Integrate!",
@@ -4031,7 +4032,7 @@ actionable insights for ongoing compliance.`,
     {
       title: "Audit Readiness Support",
       subtitle: `Providing comprehensive assistance during
-any "POSH compliance audits" or legal reviews, ensuring all
+any POSH compliance audits or legal reviews, ensuring all
 documentation is organized and processes are defensible.`,
       icon: "💼",
       bubble: "Consult!",
@@ -4049,7 +4050,7 @@ substantive requirements.`,
     {
       title: "Your Benefit",
       subtitle: `Guaranteed continuous POSH compliance, complete protection
-from "penalties for non-compliance with POSH Act," enhanced legal
+from penalties for non-compliance with POSH Act, enhanced legal
 standing, and a demonstrable commitment to corporate social responsibility.`,
       icon: "❤️",
       bubble: "Automate!",
@@ -4087,8 +4088,8 @@ ensuring your company remains ahead of compliance curves.`,
 comprehensive training, inquiry management, and annual reporting, we cover the
 full spectrum of POSH compliance.`,
         `Protecting Your Reputation & Legal Standing: Our meticulous approach
-safeguards your business from severe "reputational damage," "legal action,"
-and "financial penalties" associated with POSH non-compliance.`,
+safeguards your business from severe reputational damage, legal action,
+and financial penalties associated with POSH non-compliance.`,
         `Cultivating a Positive Culture: By ensuring transparent processes and
 accessible support, we help build a workplace where employees feel safe,
 respected, and empowered, enhancing morale and productivity.`,
@@ -4122,21 +4123,21 @@ any POSH-related questions from your HR or legal teams.`,
       title: "Key Employer POSH Concerns We Resolve",
       //  icon: UsersIcon,
       features: [
-        `Implementation & Policy: Guidance on "POSH Act applicability," drafting/
-reviewing "POSH policy India," and ensuring its proper dissemination.`,
-        `Internal Committee (IC): Assistance with "forming an Internal Committee (IC)
-under POSH Act,"ensuring "IC member training," and handling "IC
-composition requirements."`,
-        `Employee Training: Conducting "POSH awareness training for all
-employees," "mandatory POSH training requirements," and ensuring "POSH
-compliance for remote workers."`,
-        `Complaint Handling: Support for "POSH complaint inquiry process," "POSH
-complaint timeline," "confidentiality in POSH complaints," and preventing
-"victimization under POSH Act."`,
-        `Reporting & Audit: Preparing "POSH annual report to District Officer" and
-providing "POSH compliance audit" support.`,
-        `Penalties: Advising on "penalties for non-compliance with POSH Act" and
-"legal action against employer under POSH Act."`,
+        `Implementation & Policy: Guidance on POSH Act applicability, drafting/
+reviewing POSH policy India, and ensuring its proper dissemination.`,
+        `Internal Committee (IC): Assistance with forming an Internal Committee (IC)
+under POSH Act,ensuring IC member training, and handling IC
+composition requirements.`,
+        `Employee Training: Conducting POSH awareness training for all
+employees, mandatory POSH training requirements, and ensuring POSH
+compliance for remote workers.`,
+        `Complaint Handling: Support for POSH complaint inquiry process, POSH
+complaint timeline, confidentiality in POSH complaints, and preventing
+victimization under POSH Act.`,
+        `Reporting & Audit: Preparing POSH annual report to District Officer and
+providing POSH compliance audit" support.`,
+        `Penalties: Advising on penalties for non-compliance with POSH Act and
+legal action against employer under POSH Act.`,
       ],
     },
     {
@@ -4158,11 +4159,11 @@ culture.`,
       title: "Proactive IC Preparedness & Mock Inquiry Drills",
       //  icon: UsersIcon,
       features: [
-        `What We Offer: Go beyond standard training with "mock inquiry drills" and
+        `What We Offer: Go beyond standard training with mock inquiry drills and
 preparedness workshops for your Internal Committee. We simulate complaint
 scenarios, allowing your IC to practice their skills in a controlled environment and
-identify areas for improvement before a real case arises. This is a unique "IC
-readiness assessment."`,
+identify areas for improvement before a real case arises. This is a unique IC
+readiness assessment.`,
         `Your Benefit: An exceptionally prepared and confident IC, minimizing procedural
 errors in real-time sensitive situations, and significantly reducing legal risks by
 demonstrating proactive readiness.`,
@@ -4173,8 +4174,8 @@ demonstrating proactive readiness.`,
       //  icon: UsersIcon,
       features: [
         `What We Offer: Strategic advisory on integrating POSH principles into broader
-organizational values. This includes workshops on "bystander intervention
-training," "unconscious bias awareness," and "respectful communication"
+organizational values. This includes workshops on bystander intervention
+training, unconscious bias awareness, and respectful communication"
 to build a truly inclusive environment where harassment is less likely to occur.`,
         `Your Benefit: A genuinely safer, more inclusive, and psychologically secure
 workplace, leading to increased employee morale, reduced turnover, and a
@@ -4186,8 +4187,8 @@ stronger employer brand, moving beyond mere legal compliance.`,
       //  icon: UsersIcon,
       features: [
         `What We Offer: Provide expert advisory and support for post-inquiry phases,
-including guidance on "reintegration strategies" for involved parties (where
-appropriate and legally permissible) and support for "workplace rehabilitation"
+including guidance on reintegration strategies for involved parties where
+appropriate and legally permissible and support for workplace rehabilitation
 to ensure a harmonious environment after resolution. This may also include
 recommended professional counseling resources.`,
         `Your Benefit: A holistic approach to workplace safety that extends beyond legal
@@ -4199,10 +4200,10 @@ organizational well-being even after difficult situations.`,
       title: "Anonymized Trend Reporting & Strategic Insights",
       //  icon: UsersIcon,
       features: [
-        `What We Offer: Leveraging our experience (and with proper client data consent
-and anonymization), we can provide aggregate, anonymized reports on
-"common POSH complaint trends," "types of workplace harassment
-reported," and "training effectiveness metrics."`,
+        `What We Offer: Leveraging our experience and with proper client data consent
+and anonymization, we can provide aggregate, anonymized reports on
+common POSH complaint trends, types of workplace harassment
+reported, and training effectiveness metrics.`,
         `Your Benefit: Data-driven insights to proactively identify and address systemic
 issues, measure the impact of your POSH initiatives, and continuously refine
 your workplace safety strategies, turning compliance data into actionable
