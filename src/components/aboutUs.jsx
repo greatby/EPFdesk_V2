@@ -16,10 +16,36 @@ const heroData = [
     gradient: "from-orange-200 to-orange-300",
     icon: "🌱",
     title: "The EPFDesk Story",
-    subtitle: `Born from Necessity: Our Journey to Simplify HR & Labour Compliance for Every Indian Business.
-Even as seasoned professionals navigating India's dynamic business landscape, we faced the same persistent headaches that plague countless enterprises: the labyrinthine complexities of HR and Labour compliance. We witnessed firsthand how precious hours, once dedicated to innovation and growth, were consumed by deciphering ever-changing regulations, managing mountains of paperwork, and the constant apprehension of non-compliance. It wasn't just about avoiding penalties; it was about the sheer drain on productivity and the mental burden it placed on businesses and their valuable employees.
-We realized that if even we, with our deep understanding of the regulatory environment, found it challenging, what about the rest of India's vibrant business community? This shared struggle ignited a powerful resolve within us. We envisioned a world where Indian businesses, regardless of their size, could operate with complete peace of mind, knowing their compliance was meticulously handled. A world where they could channel their energy entirely into what they do best – innovating, expanding, and creating opportunities – all while their employees thrived in a secure and compliant environment.
-This vision wasn't just a dream; it became our mission. We founded EPFDesk to transform the daunting world of HR and Labour compliance into a seamless, stress-free experience. We decided to take on the burden ourselves, so you don't have to. Our purpose is clear: to be the steadfast partner that empowers every Indian business to flourish, unburdened by compliance worries, and to contribute to a more productive and prosperous India for all.`,
+    subtitle: (
+      <p>
+        <strong className="text-black">Born from Necessity:</strong> Our Journey
+        to Simplify HR & Labour Compliance for Every Indian Business. Even as
+        seasoned professionals navigating India's dynamic business landscape, we
+        faced the same persistent headaches that plague countless enterprises:
+        the labyrinthine complexities of HR and Labour compliance. We witnessed
+        firsthand how precious hours, once dedicated to innovation and growth,
+        were consumed by deciphering ever-changing regulations, managing
+        mountains of paperwork, and the constant apprehension of non-compliance.
+        It wasn't just about avoiding penalties; it was about the sheer drain on
+        productivity and the mental burden it placed on businesses and their
+        valuable employees. We realized that if even we, with our deep
+        understanding of the regulatory environment, found it challenging, what
+        about the rest of India's vibrant business community? This shared
+        struggle ignited a powerful resolve within us. We envisioned a world
+        where Indian businesses, regardless of their size, could operate with
+        complete peace of mind, knowing their compliance was meticulously
+        handled. A world where they could channel their energy entirely into
+        what they do best – innovating, expanding, and creating opportunities –
+        all while their employees thrived in a secure and compliant environment.
+        This vision wasn't just a dream; it became our mission. We founded
+        EPFDesk to transform the daunting world of HR and Labour compliance into
+        a seamless, stress-free experience. We decided to take on the burden
+        ourselves, so you don't have to. Our purpose is clear: to be the
+        steadfast partner that empowers every Indian business to flourish,
+        unburdened by compliance worries, and to contribute to a more productive
+        and prosperous India for all.
+      </p>
+    ),
     speech: "Grow!",
     cta1: "Begin Growth",
     cta2: "Explore Path",
@@ -28,8 +54,24 @@ This vision wasn't just a dream; it became our mission. We founded EPFDesk to tr
     gradient: "from-teal-200 to-pink-200",
     icon: "🤝",
     title: "Our Unmatched Expertise",
-    subtitle: `Beyond Regulations: Deep Industry Insight, Proactive Strategies, Flawless Execution.
-At EPFDesk, our expertise transcends mere legal interpretation. We don't just read the labour laws; we intimately understand their practical implications, the nuances of their application across diverse industries, and their direct impact on both businesses and employees. Our team comprises seasoned legal minds, HR veterans, and compliance specialists who continuously track the dynamic regulatory landscape. This profound insight enables us to not only ensure meticulous adherence but also to foresee upcoming changes and proactively guide your business. From the intricate details of Provident Fund and ESI to complex industrial relations and contract labour management, our execution is rooted in precision, efficiency, and an unwavering commitment to minimizing risk and maximizing your operational peace of mind.`,
+    subtitle: (
+      <p>
+        <strong className="text-black">Beyond Regulations:</strong> Deep Industry Insight, Proactive Strategies,
+        Flawless Execution. At EPFDesk, our expertise transcends mere legal
+        interpretation. We don't just read the labour laws; we intimately
+        understand their practical implications, the nuances of their
+        application across diverse industries, and their direct impact on both
+        businesses and employees. Our team comprises seasoned legal minds, HR
+        veterans, and compliance specialists who continuously track the dynamic
+        regulatory landscape. This profound insight enables us to not only
+        ensure meticulous adherence but also to foresee upcoming changes and
+        proactively guide your business. From the intricate details of Provident
+        Fund and ESI to complex industrial relations and contract labour
+        management, our execution is rooted in precision, efficiency, and an
+        unwavering commitment to minimizing risk and maximizing your operational
+        peace of mind.
+      </p>
+    ),
     speech: "Connect!",
     cta1: "Join Community",
     cta2: "Meet People",
@@ -58,38 +100,63 @@ Our relationship with you extends far beyond transactional compliance. We are de
     gradient: "from-pink-300 to-yellow-100",
     icon: "✨",
     title: "Connect With Us: Your Journey to Effortless Compliance Starts Here",
-    subtitle: <div className="p-6 md:p-10 max-w-5xl mx-auto space-y-6">
-  <h2 className="text-3xl font-semibold text-gray-800">
-    Have questions about EPF or any other HR & Labour compliance?
-  </h2>
-  <p className="text-gray-600">
-    Ready to transform your business's approach to regulations? EPFDesk is strategically located to serve you across India.
-    Reach out to us today, and let our experts guide you toward peace of mind and enhanced productivity, no matter where your business operates.
-  </p>
+    subtitle: (
+      <div className="p-6 md:p-10 max-w-5xl mx-auto space-y-6">
+        <h2 className="text-3xl font-semibold text-gray-800">
+          Have questions about EPF or any other HR & Labour compliance?
+        </h2>
+        <p className="text-gray-600">
+          Ready to transform your business's approach to regulations? EPFDesk is
+          strategically located to serve you across India. Reach out to us
+          today, and let our experts guide you toward peace of mind and enhanced
+          productivity, no matter where your business operates.
+        </p>
 
-  <div className="border-t text-left border-gray-200 pt-4">
-    <h3 className="text-2xl font-semibold text-gray-900">Get in Touch</h3>
-    <p className="text-gray-600">Mobile: <span className="font-medium">+919243188888</span></p>
-    <p className="text-gray-600">Email: <a href="mailto:hello@epfdesk.com" className="hover:underline">hello@epfdesk.com</a></p>
-  </div>
+        <div className="border-t text-left border-gray-200 pt-4">
+          <h3 className="text-2xl font-semibold text-gray-900">Get in Touch</h3>
+          <p className="text-gray-600">
+            Mobile: <span className="font-medium">+919243188888</span>
+          </p>
+          <p className="text-gray-600">
+            Email:{" "}
+            <a href="mailto:hello@epfdesk.com" className="hover:underline">
+              hello@epfdesk.com
+            </a>
+          </p>
+        </div>
 
-  <div className="border-t text-left border-gray-200 pt-4">
-    <h3 className="text-2xl font-semibold text-gray-900">Our Offices & Pan-India Network</h3>
-    <p className="text-gray-600">EPFDesk is proud to serve businesses across all states of India, supported by our robust network and strategically located offices in major metropolitan hubs.</p>
+        <div className="border-t text-left border-gray-200 pt-4">
+          <h3 className="text-2xl font-semibold text-gray-900">
+            Our Offices & Pan-India Network
+          </h3>
+          <p className="text-gray-600">
+            EPFDesk is proud to serve businesses across all states of India,
+            supported by our robust network and strategically located offices in
+            major metropolitan hubs.
+          </p>
 
-    <ul className="list-disc pl-6 mt-2 text-gray-700 space-y-1">
-      <li><strong>New Delhi, Delhi, India</strong></li>
-      <li><strong>Mumbai, Maharashtra, India</strong></li>
-      <li><strong>Hyderabad, Telangana, India</strong></li>
-      <li><strong>Chennai, Tamil Nadu, India</strong></li>
-      <li>
-        <strong>Bengaluru, Karnataka, India - </strong>
-         62/63 Church Street, Karnataka, 560001<br />
-      </li>
-    </ul>
-  </div>
-</div>
-,
+          <ul className="list-disc pl-6 mt-2 text-gray-700 space-y-1">
+            <li>
+              <strong>New Delhi, Delhi, India</strong>
+            </li>
+            <li>
+              <strong>Mumbai, Maharashtra, India</strong>
+            </li>
+            <li>
+              <strong>Hyderabad, Telangana, India</strong>
+            </li>
+            <li>
+              <strong>Chennai, Tamil Nadu, India</strong>
+            </li>
+            <li>
+              <strong>Bengaluru, Karnataka, India - </strong>
+              62/63 Church Street, Karnataka, 560001
+              <br />
+            </li>
+          </ul>
+        </div>
+      </div>
+    ),
     speech: "Dream!",
     cta1: "Start Dreaming",
     cta2: "Get Inspired",
