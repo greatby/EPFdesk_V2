@@ -468,9 +468,10 @@ available to streamline the process for maximum efficiency.`,
 
 export const epfDeskFaq = [
   {
-    question: "How do our employees get access to the EPFDesk platform?",
-    answer: `After company onboarding, employees receive secure login credentials or guided registration instructions for immediate
-platform use via a dedicated portal link.`,
+    question: "How do our employees get support from EPFDesk?",
+    answer: `Employees simply email their EPF-related queries to a dedicated, secure EPFDesk
+email address provided by us. Each email automatically generates a unique ticket ID,
+and employees receive email updates on their query's progress.`,
   },
   {
     question: "What specific EPF issues can employees resolve through EPFDesk?",
@@ -507,9 +508,10 @@ our local experts manage all interactions directly, ensuring resolution without 
   },
   {
     question:
-      "Can the platform handle high volumes of employee queries for large companies?",
-    answer: `Yes, our scalable platform and expert teams are specifically designed and equipped to handle high query volumes for
-organizations of all sizes, from mid-sized companies to large enterprises seamlessly.`,
+      "Can the email-based system handle high volumes of employee queries for large companies?",
+    answer: `Yes, our robust email ticketing system and expert teams are specifically designed
+and equipped to efficiently manage high query volumes for organizations of all sizes,
+from mid-sized companies to large enterprises seamlessly.`,
   },
 ];
 
@@ -2487,7 +2489,7 @@ export const heroSlides = [
     icon: "🎯",
     title: "EPFDesk: Your Direct Line to Effortless EPF Solutions & Support",
     subtitle:
-      "EPFDesk empowers your employees with instant EPF query resolution. Check balance, track claims, update KYC & more – all issues handled by our experts. Free your HR team from daily EPF queries.",
+      "EPFDesk empowers your employees with instant EPF query resolution via email. Check balance, track claims, update KYC – all issues handled by our experts. Free your HR team from daily EPF queries.",
   },
   {
     id: 3,
@@ -2649,7 +2651,7 @@ export const largeCardsEsic = {
     {
       title: "Continuous regulatory monitoring",
       subtitle:
-        'Our dedicated experts meticulously monitor the latest ESIC Act amendments, ESIC circulars, and ESIC contribution rate changes.',
+        "Our dedicated experts meticulously monitor the latest ESIC Act amendments, ESIC circulars, and ESIC contribution rate changes.",
       icon: "🛡️",
       bubble: "Protect!",
       bg: "bg-gradient-to-br from-[#f093fb] to-[#f5576c]",
@@ -2657,7 +2659,7 @@ export const largeCardsEsic = {
     {
       title: "Impact analysis & strategic advice",
       subtitle:
-        'We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the consequences of ESIC non-compliance.',
+        "We translate complex legal updates into clear, actionable business insights tailored to your operations, ensuring you understand the consequences of ESIC non-compliance.",
       icon: "🔗",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -2665,7 +2667,7 @@ export const largeCardsEsic = {
     {
       title: "Penalty prevention strategies",
       subtitle:
-        'We implement proactive measures to safeguard against what happens if employer does not pay ESIC contribution? and other common non-compliance scenarios.',
+        "We implement proactive measures to safeguard against what happens if employer does not pay ESIC contribution? and other common non-compliance scenarios.",
       icon: "💼",
       bubble: "Consult!",
       bg: "bg-gradient-to-br from-[#ff6b6b] to-[#ffd93d]",
@@ -3096,48 +3098,55 @@ early adaptation to unique state-specific regulatory shifts.`,
 
 export const verticalCardsDesk = {
   mainTitle: "Complete Employee EPF Support Platform",
-  mainSubtitleVer: "Secure & Intuitive Employee Access (24/7)",
+  mainSubtitleVer: "Effortless Employee Access (24/7 via Email)",
   subText:
     "Give your employees direct, secure access to EPF expertise anytime, anywhere, fostering self-service and reducing reliance on HR.",
   cardsVer: [
     {
-      title: "Dedicated Member Login Portal",
-      subtitle: `Provides secure, personalized employee access to the EPFDesk platform, making it their central hub for all EPF matters.`,
+      title: "Dedicated Query Email Address:",
+      subtitle: `Employees simply email their EPF
+questions or issues to a designated, secure EPFDesk email address. This means no
+new logins or portals for them to remember.`,
       icon: "📚",
       bubble: "Learn!",
       bg: "bg-gradient-to-br from-[#a8e6cf] to-[#dcedc1]",
     },
     {
-      title: "User-Friendly Interface",
-      subtitle: `Designed for clarity and ease of use, ensuring all employees, regardless of technical skill, can effortlessly navigate and find solutions.`,
+      title: "User-Friendly Initiation",
+      subtitle: `The process is as simple as sending an email,
+making expert support accessible to all employees, regardless of technical
+skill.`,
       icon: "🔨",
       bubble: "Build!",
       bg: "bg-gradient-to-br from-[#ffd3a5] to-[#fd9853]",
     },
     {
-      title: "Mobile-Responsive Design",
-      subtitle: `Guarantees seamless support availability on any device – desktop, tablet, or smartphone – for ultimate convenience.`,
+      title: "Mobile-Responsive Convenience",
+      subtitle: `Employees can submit queries from
+any device where they access their email – desktop, tablet, or smartphone
+– ensuring support is always at their fingertips.`,
       icon: "🌟",
       bubble: "Shine!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
     },
     {
-      title: "Instant Expert Access",
+      title: "Instant Expert Engagement",
       subtitle: `Employees get immediate access to EPF expertise without needing HR intervention, streamlining their journey from query to resolution.`,
       icon: "🦋",
       bubble: "Transform!",
       bg: "bg-gradient-to-br from-[#d299c2] to-[#fef9d7]",
     },
-    {
-      title: "Coaching for when HR can’t be everywhere",
-      subtitle: `71% of HR leaders don’t think they are effectively developing midlevel leaders.`,
-      icon: "🧭",
-      bubble: "Shine!",
-      bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
-    },
+    // {
+    //   title: "Coaching for when HR can’t be everywhere",
+    //   subtitle: `71% of HR leaders don’t think they are effectively developing midlevel leaders.`,
+    //   icon: "🧭",
+    //   bubble: "Shine!",
+    //   bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
+    // },
     {
       title: "Employee Benefits",
-      subtitle: `Round-the-clock EPF support, intuitive self-service options, secure data handling, and mobile
+      subtitle: `Round-the-clock EPF support via a familiar communication
+method, intuitive initiation, secure data handling via email, and mobile
 convenience, enhancing their overall experience.`,
       icon: "❤️",
       bubble: "Build!",
@@ -3147,27 +3156,36 @@ convenience, enhancing their overall experience.`,
 };
 
 export const horizontalCardsDesk = {
-  mainSubtitleHor: "Streamlined Query Management System",
+  mainSubtitleHor: "Streamlined Query Management & Tracking System",
   subTextHor:
     "Employees can resolve any EPF issue with guided, transparent processes, ensuring they are always informed.",
   cardsHor: [
     {
-      title: "Guided Ticket Creation",
-      subtitle: `Employees can easily log tickets for virtually all EPF issues. This includes common queries like How to check EPF balance online, How to activate UAN, How to update EPF KYC, and EPF withdrawal process.`,
+      title: "Unique Ticket Creation per Email",
+      subtitle: `Every incoming employee email
+automatically generates a unique ticket ID. Employees receive an instant
+auto-response confirming receipt and providing this ID for future
+reference.`,
       icon: "🔍",
       bubble: "Discover!",
       bg: "bg-gradient-to-br from-[#ff9a9e] to-[#fecfef]",
     },
     {
-      title: "Automated Notifications",
-      subtitle: `Employees receive proactive updates via email or SMS as their ticket progresses through the resolution stages`,
+      title: "Expert-Guided Resolution",
+      subtitle: `Our dedicated specialists immediately begin
+working on the query. This includes common issues like How to check
+EPF balance online, How to activate UAN, How to update EPF
+KYC, and EPF withdrawl process.`,
       icon: "🎯",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
     },
     {
-      title: "Real-time Progress Tracking",
-      subtitle: `Each submitted ticket comes with a clear, live progress bar, transparent status updates, and estimated resolution timelines.`,
+      title: "Real-time Progress Updates (via Email)",
+      subtitle: `Employees receive proactive
+updates via email as their ticket progresses through the resolution stages,
+keeping them fully informed without having to manually check a portal.
+This includes status changes and estimated resolution timelines.`,
       icon: "🤝",
       bubble: "Collaborate!",
       bg: "bg-gradient-to-br from-[#ffecd2] to-[#fcb69f]",
@@ -3181,8 +3199,9 @@ export const horizontalCardsDesk = {
     },
     {
       title: "Employee Benefits",
-      subtitle: `Clear process guidance, complete transparency, proactive updates, and expert resolution for any
-EPF complexity, from UAN login issues to name mismatch in EPF account.`,
+      subtitle: `Clear process guidance, complete transparency via email,
+proactive updates on resolution status, and expert resolution for any EPF
+complexity, from UAN login issues to name mismatch in EPF account.`,
       icon: "❤️",
       bubble: "Focus!",
       bg: "bg-gradient-to-br from-[#a18cd1] to-[#fbc2eb]",
@@ -3204,7 +3223,10 @@ export const largeCardsDesk = {
     },
     {
       title: "Direct EPFO Communication Channels",
-      subtitle: `We ensure all employee data relevant for PT contributions is accurately maintained and updated, handling nuances like wage thresholds and employee categories for applicability in each state.`,
+      subtitle: `We utilize established channels
+for faster resolution and documentation exchange with the Employees'
+Provident Fund Organisation (EPFO), eliminating the need for your HR to
+act as a middleman.`,
       icon: "🔗",
       bubble: "Integrate!",
       bg: "bg-gradient-to-br from-[#a8edea] to-[#fed6e3]",
@@ -3580,8 +3602,9 @@ export const plansEpfManagement = {
       features: [
         `Instant expert access: Employees experience swift resolution, eliminating frustration associated with delayed
  responses or unanswered questions.`,
-        `Transparent resolution process: Builds confidence in how their EPF matters are managed, as they can track
- progress in real-time.`,
+        `Transparent resolution process: Builds confidence in how their EPF
+matters are managed, as they can track progress in real-time via email
+updates.`,
         `Professional support quality: The consistent and expert support enhances the perception of employer care
  and commitment to employee well-being.`,
         `Empowered workforce: Employees feel more in control and informed about their provident fund matters,
@@ -3591,17 +3614,20 @@ and a positive impact on overall employee retention.`,
       ],
     },
     {
-      title: "24-Hour Platform Activation",
+      title: "24-Hour System Activation",
       //  icon: UsersIcon,
       features: [
-        `Platform Setup & Configuration: Our team handles the swift setup of your company's EPFDesk portal,
-customizing access configuration as needed.`,
-        `Employee Credential Generation/Guided Registration: We facilitate the creation of secure login credentials
-or guide your employees through a simple self-registration process.`,
-        `Comprehensive Employee Onboarding Kit Delivery: We provide easy-to-understand usage guides, FAQs, and
-tutorials to ensure your employees can quickly adopt and benefit from the platform.`,
-        `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
-within 24 hours of onboarding completion, experiencing instant value.`,
+        `System Setup & Configuration: Our team handles the swift setup of
+your company's dedicated EPFDesk email query system, customizing
+routing and auto-responses as needed.`,
+        `Employee Communication Kit Delivery: We provide easy-to-understand
+usage guides and FAQs for your employees, explaining how to use the
+new email system and what to expect.`,
+        `Immediate System Availability: Your employees can begin emailing
+queries and accessing expert support within 24 hours of onboarding
+completion, experiencing instant value.`,
+//         `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
+// within 24 hours of onboarding completion, experiencing instant value.`,
       ],
     },
     {
@@ -3613,14 +3639,15 @@ dashboard to monitor common query trends anonymized, view overall ticket resolut
 internal communication.`,
         `Dedicated Client Manager: You'll have an assigned client manager who serves as your single point of contact for
 organizational-level support, reporting needs, and any high-level strategic consultations.`,
-        `Continuous Platform Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
+        `Continuous System Enhancement: We constantly enhance the EPFDesk platform based on user feedback, evolving
 EPFO processes, and emerging employee needs, ensuring your employees always have access to the best support.`,
-        `Scalable Solution: Our platform and expert teams are built to handle ever-increasing query volumes, seamlessly
-growing with your workforce from mid-sized companies to large enterprises.`,
+        `Scalable Solution: Our system and expert teams are built to handle everincreasing
+query volumes, seamlessly growing with your workforce from midsized
+companies to large enterprises.`,
       ],
     },
     {
-      title: "Common Employee Issues We Resolve:",
+      title: "Common Employee Issues We Resolve",
       //  icon: UsersIcon,
       features: [
         `EPF balance checking and passbook updates: Including How to check EPF balance online and resolving Why is
@@ -3638,6 +3665,24 @@ to get EPS Scheme Certificate.`,
         `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
         `Name, date of birth, and contact detail corrections: Efficiently handling Name mismatch in EPF account and
 Changing mobile number/email in EPF.`,
+      ],
+    },
+     {
+      title: "Complex Case Expertise",
+      //  icon: UsersIcon,
+      features: [
+        `Inter-state EPF transfers with multiple previous employers and complex legacy
+account merging.`,
+        `Disputed contribution claims, discrepancies, and corrections with EPFO.`,
+        `Physical document verification requirements and submission for specialized
+cases.`,
+        `Court case related EPF issues requiring specific liaison and documentation.`,
+        `Deceased member claim processing, handled with sensitivity and expertise.`,
+        `Addressing concerns like What to do if employer is not depositing PF? by
+liaising with relevant authorities.`,
+//         `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
+//         `Name, date of birth, and contact detail corrections: Efficiently handling Name mismatch in EPF account and
+// Changing mobile number/email in EPF.`,
       ],
     },
   ],

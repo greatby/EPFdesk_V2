@@ -12,8 +12,7 @@ import { epfDeskServices, epfDeskStatergy } from "../../utils/data";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import VerticalCarousel from "./verticalCarousel";
-import StickyScrollSections from './scrollSyncComponent'
-
+import StickyScrollSections from "./scrollSyncComponent";
 
 const EPFSlider = () => {
   const sliderRef = useRef(null);
@@ -336,13 +335,13 @@ export default function EPFdeskServices({ plans }) {
       <div className="space-y-4 mx-auto">
         {/* <EPFSlider epfServices={epfDeskStatergy} /> */}
         <h2 className="text-3xl sm:text-5xl text-center font-bold mb-10 text-gray-900">
-            Unlock the Strategic Value of Your HR Team
-          </h2>
-          <p className="text-[1.4rem] text-center text-gray-600 mt-2">
-            Our EPFDesk services ensure employee support is handled with care—so
-            HR can focus on what matters.
-          </p>
-         <StickyScrollSections items={plansEpfManagement}/>
+          Strategic Benefits for Your Organization
+        </h2>
+        <p className="text-[1.4rem] text-center text-gray-600 mt-2">
+          Beyond supporting your employees, EPFDesk delivers tangible strategic
+          advantages to your HR function and overall business operations.
+        </p>
+        <StickyScrollSections items={plansEpfManagement} />
       </div>
     </section>
   );
