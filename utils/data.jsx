@@ -3103,7 +3103,7 @@ export const verticalCardsDesk = {
     "Give your employees direct, secure access to EPF expertise anytime, anywhere, fostering self-service and reducing reliance on HR.",
   cardsVer: [
     {
-      title: "Dedicated Query Email Address:",
+      title: "Dedicated Query Email Address",
       subtitle: `Employees simply email their EPF
 questions or issues to a designated, secure EPFDesk email address. This means no
 new logins or portals for them to remember.`,
