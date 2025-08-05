@@ -252,7 +252,7 @@ export default function Navbar({ banner }) {
             </Link>
           ))}
 
-          {user ? (
+          {/* {user ? (
             <button
               onClick={handleLogout}
               className="text-[18px] font-semibold text-red-600 hover:text-red-800 p-2"
@@ -266,7 +266,7 @@ export default function Navbar({ banner }) {
             >
               Sign In
             </Link>
-          )}
+          )} */}
         </div>
 
         {/* Mobile Nav Button */}
@@ -314,7 +314,7 @@ export default function Navbar({ banner }) {
                   </Link>
                 ))}
 
-                {user ? (
+                {/* {user ? (
                   <button
                     onClick={() => {
                       handleLogout();
@@ -332,7 +332,7 @@ export default function Navbar({ banner }) {
                   >
                     Sign In
                   </Link>
-                )}
+                )} */}
               </div>
             </motion.div>
           </Dialog>
