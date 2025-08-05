@@ -115,7 +115,7 @@ Our relationship with you extends far beyond transactional compliance. We are de
         <div className="text-left border-gray-200 pt-4">
           <h3 className="text-2xl font-semibold text-gray-900">Get in Touch</h3>
           <p className="text-gray-600">
-            Mobile: <span className="font-medium">919591773588</span>
+            Mobile: <span className="font-medium">+919591773588</span>
           </p>
           <p className="text-gray-600">
             Email:{" "}

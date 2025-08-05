@@ -302,13 +302,13 @@ export default function Navbar({ banner }) {
                 </button>
               </div>
 
-              <div className="space-y-6 mt-10">
+              <div className="mt-10">
                 {links.map(({ href, label }) => (
                   <Link
                     key={href}
                     to={href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block text-sm font-medium text-gray-800 hover:text-blue-600 py-2"
+                    className="text-[1rem] flex text-gray-600 hover:text-blue-600 py-2"
                   >
                     {label}
                   </Link>
