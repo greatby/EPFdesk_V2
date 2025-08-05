@@ -2,6 +2,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 export default function FloatingFormToggle({ animate = true }) {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -61,49 +62,119 @@ export default function FloatingFormToggle({ animate = true }) {
     }));
   };
 
-   const API_BASE =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:3000"
-    : "https://ep-fdesk-v2.vercel.app";
+  //  const API_BASE =
+  // process.env.NODE_ENV === "development"
+  //   ? "http://localhost:3000"
+  //   : "https://ep-fdesk-v2.vercel.app";
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const validationErrors = validate();
+  //   if (Object.keys(validationErrors).length > 0) {
+  //     setErrors(validationErrors);
+  //     return;
+  //   }
+
+  //   // try {
+  //   //   const res = await axios.post(
+  //   //     "http://localhost:5000/api/contact",
+  //   //     formData
+  //   //   );
+  //   //   alert("✅ Form submitted successfully!");
+  //   //   setFormData({
+  //   //     fullName: "",
+  //   //     email: "",
+  //   //     company: "",
+  //   //     employees: "",
+  //   //     message: "",
+  //   //     findUs: "",
+  //   //   });
+  //   //   setErrors({});
+  //   // } catch (err) {
+  //   //   alert("❌ Something went wrong.");
+  //   // }
+  //   // setFormData({})
+  //   //   setIsOpen(false);
+  //   try {
+  //     const res = await axios.post(`${API_BASE}/api/contact`, formDataWithType);
+  //     alert("✅ Your message was sent successfully!");
+  //     console.log(res.data);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  //   setIsOpen(false);
+  // };
+
+const API_BASE =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost/epfdesk/server"
+    : "https://epfdesk.com/server";
+
+//   const handleSubmit = async (e) => {
+//   e.preventDefault();
+
+//   try {
+//     const response = await fetch(`${API_BASE}/process_form.php`, {
+//       method: "POST",
+//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//       body: new URLSearchParams(formData).toString(),
+//     });
+
+//     const result = await response.json();
+//     console.log(result);
+//     if (result.success) {
+//       alert("✅ Message sent successfully!");
+//     } else {
+//       alert("❌ " + result.message);
+//     }
+//   } catch (error) {
+//     console.error("Error:", error);
+//     alert("❌ Something went wrong.");
+//   }
+//   setIsOpen(false);
+// };
+ const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
+
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
-    // try {
-    //   const res = await axios.post(
-    //     "http://localhost:5000/api/contact",
-    //     formData
-    //   );
-    //   alert("✅ Form submitted successfully!");
-    //   setFormData({
-    //     fullName: "",
-    //     email: "",
-    //     company: "",
-    //     employees: "",
-    //     message: "",
-    //     findUs: "",
-    //   });
-    //   setErrors({});
-    // } catch (err) {
-    //   alert("❌ Something went wrong.");
-    // }
-    // setFormData({})
-    //   setIsOpen(false);
-    try {
-      const res = await axios.post(`${API_BASE}/api/contact`, formDataWithType);
-      alert("✅ Your message was sent successfully!");
-      console.log(res.data);
-    } catch (err) {
-      console.error(err);
-    }
-    setIsOpen(false);
-  };
+    const formPayload = new FormData();
+    Object.entries(formData).forEach(([key, value]) =>
+      formPayload.append(key, value)
+    );
+    formPayload.append("access_key", "a9718221-b638-4ee6-bdc2-138fbe895a91");
 
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formPayload,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Form Submitted Successfully!");
+        setFormData({
+          fullName: "",
+          email: "",
+          company: "",
+          employees: "",
+          message: "",
+          findUs: "",
+        });
+        setErrors({});
+        setIsOpen(false);
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      toast.error("Network error. Please try again later.");
+    }
+  };
   return (
     <>
       <>
@@ -153,7 +224,7 @@ export default function FloatingFormToggle({ animate = true }) {
               </button>
             </div>
 
-            <form className="space-y-6 py-2" onSubmit={handleSubmit}>
+            {/* <form className="space-y-6 py-2" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
                   <label className="mb-1 text-left block text-sm font-medium">
@@ -284,6 +355,116 @@ export default function FloatingFormToggle({ animate = true }) {
                 </a>{" "}
                 apply.
               </p>
+            </form> */}
+            <form className="space-y-6 py-2" onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium">Full name</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    placeholder="First and last name"
+                    className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                  />
+                  {errors.fullName && (
+                    <p className="text-sm text-red-600 mt-1">
+                      {errors.fullName}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">Work email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="name@company.com"
+                    className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                  />
+                  {errors.email && (
+                    <p className="text-sm text-red-600 mt-1">{errors.email}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">Company</label>
+                  <input
+                    type="text"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Company name"
+                    className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                  />
+                  {errors.company && (
+                    <p className="text-sm text-red-600 mt-1">
+                      {errors.company}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium">Company size</label>
+                  <select
+                    name="employees"
+                    value={formData.employees}
+                    onChange={handleChange}
+                    className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                  >
+                    <option value="">Number of employees</option>
+                    <option>1-10</option>
+                    <option>11-50</option>
+                    <option>51-200</option>
+                    <option>201-500</option>
+                    <option>500+</option>
+                  </select>
+                  {errors.employees && (
+                    <p className="text-sm text-red-600 mt-1">
+                      {errors.employees}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium">
+                  Message <span className="text-gray-500">(optional)</span>
+                </label>
+                <textarea
+                  rows="4"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Tell us about your project, needs, and timeline."
+                  className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium">
+                  Where did you find us?{" "}
+                  <span className="text-gray-500">(optional)</span>
+                </label>
+                <input
+                  type="text"
+                  name="findUs"
+                  value={formData.findUs}
+                  onChange={handleChange}
+                  placeholder="How did you hear about us?"
+                  className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full rounded bg-black py-2 text-sm font-medium text-white hover:bg-gray-900"
+              >
+                Contact sales
+              </button>
             </form>
           </div>
         </div>
