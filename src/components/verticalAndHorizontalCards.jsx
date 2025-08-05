@@ -214,14 +214,17 @@ const VerticalAndHorizontalCards = ({ horizontalCards, verticalCards }) => {
   const paginationRefVer = useRef(null);
   const paginationRefHor = useRef(null);
   const { mainSubtitleHor, cardsHor,subTextHor } = horizontalCards;
-  const { mainTitle, mainSubtitleVer, cardsVer, subText } = verticalCards;
+  const { mainTitle, mainSubtitleVer, cardsVer, subText,subTitleVer } = verticalCards;
 
   return (
     <div className="min-h-screen px-4">
       <div className="max-w-[1400px] mx-auto">
-        <h1 className="text-4xl sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-12">
+        <h1 className="text-4xl sm:text-5xl mt-16 font-extrabold text-center text-gray-800 mb-10">
           {mainTitle}
         </h1>
+         <p className="max-w-4xl mx-auto text-center px-4 text-[1.2rem] mb-8 text-gray-600 font-bold">
+          {subTitleVer}
+        </p>
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-6">
           {mainSubtitleVer}
         </h2>

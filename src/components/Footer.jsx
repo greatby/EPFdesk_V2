@@ -59,27 +59,30 @@ export default function Footer() {
               Quick Links
             </h5>
             <ul className="space-y-3 text-[1rem] columns-1 md:columns-2">
-              <li>
-                <Link to="/epf">EPFO</Link>
-              </li>
-              <li>
+               <li>
                 <Link to="/epfDesk">EPFDesk</Link>
               </li>
               <li>
+                <Link to="/epf">EPFO</Link>
+              </li>
+             
+              <li>
                 <Link to="/esic">ESIC</Link>
+              </li>
+                <li>
+                <Link to="/posh">POSH</Link>
+              </li>
+               <li>
+                <Link to="/lwf">LWF</Link>
               </li>
               <li>
                 <Link to="/pt">PT</Link>
               </li>
-               <li>
-                <Link to="/posh">POSH</Link>
-              </li>
+             
               {/* <li>
                 <Link to="/labour">License & Registration</Link>
               </li> */}
-              <li>
-                <Link to="/lwf">LWF</Link>
-              </li>
+             
               <li>
                 <Link to="/about">About Us</Link>
               </li>

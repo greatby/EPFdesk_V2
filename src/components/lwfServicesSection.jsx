@@ -213,9 +213,9 @@ assistance, funeral benefits, natural disaster relief.`,
         `Skill Development & Recreation: Supporting eligibility for vocational training,
 skill upgradation programs, and access to recreational facilities like sports
 clubs and cultural events.`,
-`Your Benefit: A more secure and supported workforce, reduced employee
+        `Your Benefit: A more secure and supported workforce, reduced employee
 frustration related to benefit access, a stronger employer reputation, and improved
-industrial relations by demonstrating commitment to employee welfare.`
+industrial relations by demonstrating commitment to employee welfare.`,
       ],
     },
     {
@@ -315,6 +315,13 @@ export default function LWFServicesSection() {
         <h2 className="text-4xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
           Ensuring Employee Well-being: Comprehensive LWF Benefits Management
         </h2>
+        <p className="max-w-4xl mx-auto mt-8 text-center px-4 text-[1.2rem] text-gray-600 font-bold">
+          EPFDesk.com offers specialized LWF Compliance services, transforming
+          this complex, multi-state obligation into a seamless and stress-free
+          process. We ensure meticulous adherence to every state's unique LWF
+          Act, safeguarding your business from penalties and guaranteeing your
+          contributions genuinely benefit your workforce.
+        </p>
         <FadeInWhenVisible>
           <LatticeTabs cards={lwfCards} />
         </FadeInWhenVisible>

@@ -207,6 +207,12 @@ export default function ESCIServicesSection({ plans }) {
           <h2 className="text-3xl sm:text-5xl max-w-5xl mx-auto font-bold my-8 text-center">
             {plans.mainTitle}
           </h2>
+          <p className="max-w-4xl mx-auto mt-8 text-center px-4 text-[1.2rem] text-gray-600 font-bold">
+            While your employees can find detailed benefit information on our
+            wiki, our ESIC compliance service
+            directly ensures they receive their full social security
+            entitlements seamlessly, enhancing employee satisfaction.
+          </p>
           <LatticeTabs cards={esciCards} />
         </FadeInWhenVisible>
         <FadeInWhenVisible>

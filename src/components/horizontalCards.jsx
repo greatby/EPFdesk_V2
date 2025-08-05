@@ -57,7 +57,7 @@ const HorizontalCards = ({cardsData,link}) => {
       {cardsData.map((card, index) => (
         <div
           key={index}
-          className={`relative rounded-2xl h-auto md:h-[440px] shadow-md p-6 flex flex-col lg:flex-row items-center gap-8 bg-gradient-to-br ${card.gradient}`}
+          className={`relative rounded-2xl h-auto md:h-auto lg:h-[440px] shadow-md p-6 flex flex-col lg:flex-row items-center gap-8 bg-gradient-to-br ${card.gradient}`}
         >
           {/* Animated BG bubbles */}
           <div className="absolute inset-0 pointer-events-none z-0">
@@ -73,11 +73,11 @@ const HorizontalCards = ({cardsData,link}) => {
                 <div
                   key={i}
                   className={`absolute ${bg} rounded-full ${
-                    i === 0 ? "w-20 h-20 top-0 right-0" : "w-14 h-14 bottom-0 left-0"
+                    i === 0 ? "w-36 h-36 top-0 right-0" : "w-16 h-16 bottom-0 left-0"
                   } opacity-30`}
                 />
               ))}
-              <div className="z-10 flex h-32 w-32 items-center justify-center rounded-full bg-white text-6xl shadow-lg">
+              <div className="z-10 flex h-52 w-52 items-center justify-center rounded-full bg-white text-[9rem] shadow-lg">
                 {card.icon}
               </div>
             </div>

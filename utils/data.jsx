@@ -2918,6 +2918,9 @@ early adaptation to unique state-specific regulatory shifts.`,
 
 export const verticalCardsPf = {
   mainTitle: "Comprehensive Professional Tax Compliance Services",
+  subTitleVer: `Our end-to-end PT solution eliminates administrative burdens, ensures flawless
+regulatory adherence, and provides complete peace of mind for your multi-state
+operations.`,
   mainSubtitleVer: "Accurate PT Contribution Calculation & Payment",
   subText:
     "Eliminate calculation errors and ensure timely payments based on diverse, statespecific slab rates and rules, protecting your business from costly penalties.",
@@ -3098,6 +3101,9 @@ early adaptation to unique state-specific regulatory shifts.`,
 
 export const verticalCardsDesk = {
   mainTitle: "Complete Employee EPF Support Platform",
+  subTitleVer: `Our comprehensive platform empowers your workforce with instant access to EPF
+expertise, ensuring their peace of mind while completely liberating your HR team from
+administrative queries.`,
   mainSubtitleVer: "Effortless Employee Access (24/7 via Email)",
   subText:
     "Give your employees direct, secure access to EPF expertise anytime, anywhere, fostering self-service and reducing reliance on HR.",
@@ -3519,16 +3525,6 @@ Your assigned manager becomes an extension of your team, managing all compliance
 
 export const horizontalCardsLinks = [
   {
-    title: "EPF",
-    subtitle:
-      "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
-    icon: "🔍",
-    link: "/epf",
-    bubble: "Discover!",
-    gradient: "from-[#ff9a9e] to-[#fecfef]",
-    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
-  },
-  {
     title: "EPFdesk",
     subtitle:
       "Say goodbye to endless employee EPF queries. Our unique EPF Desk platform offers a direct, transparent channel for your workforce to resolve all their EPF issues. Our on-ground experts handle everything from status updates to complex EPFO interactions, allowing your HR to focus on core employee engagement.",
@@ -3538,6 +3534,18 @@ export const horizontalCardsLinks = [
     gradient: "from-[#a18cd1] to-[#fbc2eb]",
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
   },
+
+  {
+    title: "EPF",
+    subtitle:
+      "Reclaim up to 90% of your HR's time spent on EPF administration. We meticulously handle monthly employee additions/deletions, precise challan creation, and all employer approvals, ensuring flawless compliance and freeing your teams for strategic growth.",
+    icon: "🔍",
+    link: "/epf",
+    bubble: "Discover!",
+    gradient: "from-[#ff9a9e] to-[#fecfef]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+  },
+
   {
     title: "ESIC",
     subtitle:
@@ -3549,14 +3557,13 @@ export const horizontalCardsLinks = [
     bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
   },
   {
-    title: "PT",
-    subtitle:
-      "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
-    icon: "💡",
-    link: "/pt",
-    bubble: "Innovate!",
-    gradient: "from-[#d4fc79] to-[#96e6a1]",
-    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
+    title: "POSH",
+    subtitle: `EPFdesk.com offers comprehensive POSH Act compliance services, including implementation, training, complaint redressal, advisory, and an independent complaint hotline. We ensure 100% adherence to the POSH Act 2013, fostering a safe, respectful workplace while protecting your organization’s reputation and legal integrity.`,
+    icon: "🛡️",
+    link: "/posh",
+    bubble: "Impact!",
+    gradient: "from-[#f093fb] to-[#f5576c]",
+    bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
   },
   {
     title: "LWF",
@@ -3569,13 +3576,14 @@ export const horizontalCardsLinks = [
     bgs: ["bg-[#d299c2]", "bg-[#ff6b6b]"],
   },
   {
-    title: "POSH",
-    subtitle: `EPFdesk.com offers comprehensive POSH Act compliance services, including implementation, training, complaint redressal, advisory, and an independent complaint hotline. We ensure 100% adherence to the POSH Act 2013, fostering a safe, respectful workplace while protecting your organization’s reputation and legal integrity.`,
-    icon: "🛡️",
-    link: "/posh",
-    bubble: "Impact!",
-    gradient: "from-[#f093fb] to-[#f5576c]",
-    bgs: ["bg-[#4ecdc4]", "bg-[#ffe66d]"],
+    title: "PT",
+    subtitle:
+      "Eliminate the headaches of varying state-specific Professional Tax laws. We provide accurate calculation, timely remittance, and meticulous filing for all applicable states, guaranteeing your PT compliance is always precise and penalty-free.",
+    icon: "💡",
+    link: "/pt",
+    bubble: "Innovate!",
+    gradient: "from-[#d4fc79] to-[#96e6a1]",
+    bgs: ["bg-[#ff6b6b]", "bg-[#4ecdc4]"],
   },
 ];
 
@@ -3626,8 +3634,8 @@ new email system and what to expect.`,
         `Immediate System Availability: Your employees can begin emailing
 queries and accessing expert support within 24 hours of onboarding
 completion, experiencing instant value.`,
-//         `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
-// within 24 hours of onboarding completion, experiencing instant value.`,
+        //         `Immediate Platform Availability: Your employees can begin raising tickets and accessing expert support
+        // within 24 hours of onboarding completion, experiencing instant value.`,
       ],
     },
     {
@@ -3667,7 +3675,7 @@ to get EPS Scheme Certificate.`,
 Changing mobile number/email in EPF.`,
       ],
     },
-     {
+    {
       title: "Complex Case Expertise",
       //  icon: UsersIcon,
       features: [
@@ -3680,9 +3688,9 @@ cases.`,
         `Deceased member claim processing, handled with sensitivity and expertise.`,
         `Addressing concerns like What to do if employer is not depositing PF? by
 liaising with relevant authorities.`,
-//         `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
-//         `Name, date of birth, and contact detail corrections: Efficiently handling Name mismatch in EPF account and
-// Changing mobile number/email in EPF.`,
+        //         `EPFO portal login issues and technical problems: Troubleshooting access and navigation for employees.`,
+        //         `Name, date of birth, and contact detail corrections: Efficiently handling Name mismatch in EPF account and
+        // Changing mobile number/email in EPF.`,
       ],
     },
   ],
@@ -3782,6 +3790,8 @@ of compliance surprises, and expert navigation of the most recent EPFO circulars
 export const verticalCardsPosh = {
   mainTitle:
     "The Critical Challenges of POSH Act Compliance for Indian Businesses",
+  subTitleVer: `Even well-intentioned organizations frequently face significant operational, legal, and
+cultural hurdles in effectively implementing and maintaining POSH Act compliance.`,
   mainSubtitleVer: "Operational Complexities & Administrative Burden",
   cardsVer: [
     {
