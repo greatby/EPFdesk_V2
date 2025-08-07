@@ -235,7 +235,7 @@ const LinkButtons = () => {
       <div className="my-5 flex flex-row lg:items-center justify-center gap-2 md:flex-row">
         <button
           onClick={() => {
-            const phone = "919591773588";
+            const phone = "919243188888";
             const text = encodeURIComponent("Hi, I need help with EPFdesk.");
             window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
           }}
