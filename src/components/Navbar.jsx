@@ -233,7 +233,7 @@ export default function Navbar({ banner }) {
   };
 
   return (
-    <header className={`fixed z-50 w-full border-b pl-3 pr-10 backdrop-blur-md`}>
+    <header className={`fixed z-50 w-full border-b px-5 backdrop-blur-md`}>
       <div className="flex items-center justify-between h-[72px]">
         {/* Logo */}
         <Link to="/" title="Home">
