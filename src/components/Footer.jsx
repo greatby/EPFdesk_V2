@@ -169,7 +169,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex gap-5 mt-4">
               <a
-                href="https://www.instagram.com/epfdesk/"
+                href="https://www.instagram.com/1rskindia/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-pink-600 transition"
@@ -177,7 +177,7 @@ export default function Footer() {
                 <FaInstagram className="w-6 h-6" />
               </a>
               <a
-                href="https://x.com/epfdesk"
+                href="https://x.com/1RSKIndia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-sky-500 transition"
@@ -185,7 +185,7 @@ export default function Footer() {
                 <FaXTwitter className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/company/108133988/admin/dashboard/"
+                href="https://www.linkedin.com/company/1rsk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-blue-700 transition"
