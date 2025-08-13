@@ -160,7 +160,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* Company Description */}
           <div>
-            <h4 className="text-lg flex flex-col font-semibold mb-3 text-gray-900">
+            <h4 className="text-2xl flex flex-col font-bold mb-3 text-gray-900">
               EPFdesk.com
               {/* <a
                 href="mailto:hello@epfdesk.com"
@@ -171,7 +171,7 @@ export default function Footer() {
             </h4>
 
             {/* Social Links */}
-            <div className="flex gap-5 mt-4">
+            <div className="flex gap-7 mt-4">
               <div className="flex flex-col gap-5">
                 <a
                   href="https://www.instagram.com/epfdesk/"
@@ -257,6 +257,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/pt">PT</Link>
+              </li>
+              <li>
+                <Link to="https://1rsk.com/">1RSK</Link>
               </li>
               <li>
                 <Link to="/about">About Us</Link>
