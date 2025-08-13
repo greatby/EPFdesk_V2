@@ -128,7 +128,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
-import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -169,7 +169,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex gap-5 mt-4">
               <a
-                href="https://www.instagram.com/1rskindia/"
+                href="https://www.instagram.com/epfdesk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-pink-600 transition"
@@ -177,7 +177,7 @@ export default function Footer() {
                 <FaInstagram className="w-6 h-6" />
               </a>
               <a
-                href="https://x.com/1RSKIndia"
+                href="https://x.com/epfdesk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-sky-500 transition"
@@ -185,12 +185,20 @@ export default function Footer() {
                 <FaXTwitter className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/company/1rsk/"
+                href="https://www.linkedin.com/company/108133988/admin/dashboard/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-blue-700 transition"
               >
                 <FaLinkedin className="w-6 h-6" />
+              </a>
+                <a
+                href="https://www.youtube.com/@epfdesk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-blue-700 transition"
+              >
+                <FaYoutube className="w-6 h-6" />
               </a>
             </div>
           </div>
