@@ -129,7 +129,8 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 import { FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
-
+import { IoMail } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
 export default function Footer() {
   const navigate = useNavigate();
   const [showScroll, setShowScroll] = useState(false);
@@ -158,12 +159,12 @@ export default function Footer() {
           <div>
             <h4 className="text-lg flex flex-col font-semibold mb-3 text-gray-900">
               EPFdesk.com
-              <a
+              {/* <a
                 href="mailto:hello@epfdesk.com"
                 className="text-[1rem] font-medium hover:underline"
               >
                 hello@epfdesk.com
-              </a>
+              </a> */}
             </h4>
 
             {/* Social Links */}
@@ -196,10 +197,25 @@ export default function Footer() {
                 href="https://www.youtube.com/@epfdesk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-500 hover:text-blue-700 transition"
+                className="text-gray-500 hover:text-red-700 transition"
               >
                 <FaYoutube className="w-6 h-6" />
               </a>
+               <a href="mailto:hello@epfdesk.com" className="text-gray-500 hover:text-blue-700 transition">
+              <IoMail className="w-6 h-6"/>
+            </a>
+            <a
+              onClick={() => {
+                const phone = "919243188888";
+                const text = encodeURIComponent(
+                  "Hi, I need help with EPFdesk."
+                );
+                window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
+              }}
+              className="text-gray-500 hover:text-green-700 transition cursor-pointer"
+            >
+              <IoLogoWhatsapp className="w-6 h-6" />
+            </a>
             </div>
           </div>
 
