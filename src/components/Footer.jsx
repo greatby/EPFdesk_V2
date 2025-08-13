@@ -49,7 +49,7 @@
 //               >
 //                 hello@epfdesk.com
 //               </a>
-             
+
 //             </h4>
 //           </div>
 
@@ -65,7 +65,7 @@
 //               <li>
 //                 <Link to="/epf">EPFO</Link>
 //               </li>
-             
+
 //               <li>
 //                 <Link to="/esic">ESIC</Link>
 //               </li>
@@ -78,11 +78,11 @@
 //               <li>
 //                 <Link to="/pt">PT</Link>
 //               </li>
-             
+
 //               {/* <li>
 //                 <Link to="/labour">License & Registration</Link>
 //               </li> */}
-             
+
 //               <li>
 //                 <Link to="/about">About Us</Link>
 //               </li>
@@ -101,10 +101,9 @@
 //         </div>
 
 //         {/* Trust Signals (visible on all pages) */}
-       
 
 //         {/* Scroll To Top */}
-       
+
 //       </div>
 //        <div className="mt-12 border-t pt-6 text-center text-xs text-gray-500 space-y-1">
 //           <p>© 2025 EPFdesk.com All rights reserved.</p>
@@ -124,11 +123,15 @@
 //   );
 // }
 
-
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
-import { FaInstagram, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+  FaYoutube,
+} from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
 export default function Footer() {
@@ -169,53 +172,65 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex gap-5 mt-4">
-              <a
-                href="https://www.instagram.com/epfdesk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-pink-600 transition"
-              >
-                <FaInstagram className="w-6 h-6" />
-              </a>
-              <a
-                href="https://x.com/epfdesk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-sky-500 transition"
-              >
-                <FaXTwitter className="w-6 h-6" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/108133988/admin/dashboard/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-blue-700 transition"
-              >
-                <FaLinkedin className="w-6 h-6" />
-              </a>
+              <div className="flex flex-col gap-5">
                 <a
-                href="https://www.youtube.com/@epfdesk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-red-700 transition"
-              >
-                <FaYoutube className="w-6 h-6" />
-              </a>
-               <a href="mailto:hello@epfdesk.com" className="text-gray-500 hover:text-blue-700 transition">
-              <IoMail className="w-6 h-6"/>
-            </a>
-            <a
-              onClick={() => {
-                const phone = "919243188888";
-                const text = encodeURIComponent(
-                  "Hi, I need help with EPFdesk."
-                );
-                window.open(`https://wa.me/${phone}?text=${text}`, "_blank");
-              }}
-              className="text-gray-500 hover:text-green-700 transition cursor-pointer"
-            >
-              <IoLogoWhatsapp className="w-6 h-6" />
-            </a>
+                  href="https://www.instagram.com/epfdesk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-pink-600 transition"
+                >
+                  <FaInstagram className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://x.com/epfdesk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-sky-500 transition"
+                >
+                  <FaXTwitter className="w-6 h-6" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-5">
+                <a
+                  href="https://www.linkedin.com/company/108133988/admin/dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-blue-700 transition"
+                >
+                  <FaLinkedin className="w-6 h-6" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@epfdesk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-red-700 transition"
+                >
+                  <FaYoutube className="w-6 h-6" />
+                </a>
+              </div>
+              <div className="flex flex-col gap-5">
+                <a
+                  href="mailto:hello@epfdesk.com"
+                  className="text-gray-500 hover:text-blue-700 transition"
+                >
+                  <IoMail className="w-6 h-6" />
+                </a>
+                <a
+                  onClick={() => {
+                    const phone = "919243188888";
+                    const text = encodeURIComponent(
+                      "Hi, I need help with EPFdesk."
+                    );
+                    window.open(
+                      `https://wa.me/${phone}?text=${text}`,
+                      "_blank"
+                    );
+                  }}
+                  className="text-gray-500 hover:text-green-700 transition cursor-pointer"
+                >
+                  <IoLogoWhatsapp className="w-6 h-6" />
+                </a>
+              </div>
             </div>
           </div>
 
