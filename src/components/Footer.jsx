@@ -258,9 +258,9 @@ export default function Footer() {
               <li>
                 <Link to="/pt">PT</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="https://1rsk.com/">1RSK</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about">About Us</Link>
               </li>

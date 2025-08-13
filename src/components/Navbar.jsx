@@ -207,7 +207,7 @@ const links = [
   { href: "/posh", label: "POSH" },
   { href: "/lwf", label: "LWF" },
   { href: "/pt", label: "PT" },
-  { href: "https://1rsk.com", label: "1RSK" },
+  // { href: "https://1rsk.com", label: "1RSK" },
   { href: "/about", label: "About Us" },
 ];
 
